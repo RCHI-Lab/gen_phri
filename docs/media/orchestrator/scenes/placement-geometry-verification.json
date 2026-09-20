@@ -1,0 +1,117 @@
+{
+  "method": "Compare precompression rtx3 exports with decoded web exports: float32 position hashes, winding-aware triangle sets, and world matrices to1e-10. No quantization or simplification. All meshes/instances present.",
+  "scenes": {
+    "accept-before": {
+      "nodes": 131,
+      "matched": 131,
+      "issues": []
+    },
+    "accept-after": {
+      "nodes": 131,
+      "matched": 131,
+      "issues": []
+    },
+    "resume-before": {
+      "nodes": 117,
+      "matched": 117,
+      "issues": []
+    },
+    "resume-after": {
+      "nodes": 117,
+      "matched": 117,
+      "issues": []
+    },
+    "backtrack-before": {
+      "nodes": 152,
+      "matched": 152,
+      "issues": []
+    },
+    "backtrack-after": {
+      "nodes": 145,
+      "matched": 145,
+      "issues": []
+    }
+  },
+  "human_control": [
+    {
+      "mesh": "right-forearm.obj",
+      "source_vertices": 1008,
+      "export_vertices": 1008,
+      "max_vertex_distance": 0.0,
+      "source_faces": 1996,
+      "export_faces": 1996
+    },
+    {
+      "mesh": "main-body.obj",
+      "source_vertices": 1740,
+      "export_vertices": 1740,
+      "max_vertex_distance": 0.0,
+      "source_faces": 3354,
+      "export_faces": 3354
+    },
+    {
+      "mesh": "right-upperleg.obj",
+      "source_vertices": 254,
+      "export_vertices": 254,
+      "max_vertex_distance": 0.0,
+      "source_faces": 464,
+      "export_faces": 464
+    },
+    {
+      "mesh": "left-forearm.obj",
+      "source_vertices": 1008,
+      "export_vertices": 1008,
+      "max_vertex_distance": 0.0,
+      "source_faces": 1996,
+      "export_faces": 1996
+    },
+    {
+      "mesh": "right-lowerleg.obj",
+      "source_vertices": 453,
+      "export_vertices": 453,
+      "max_vertex_distance": 0.0,
+      "source_faces": 887,
+      "export_faces": 887
+    },
+    {
+      "mesh": "left-upperarm.obj",
+      "source_vertices": 284,
+      "export_vertices": 284,
+      "max_vertex_distance": 0.0,
+      "source_faces": 524,
+      "export_faces": 524
+    },
+    {
+      "mesh": "right-upperarm.obj",
+      "source_vertices": 284,
+      "export_vertices": 284,
+      "max_vertex_distance": 0.0,
+      "source_faces": 524,
+      "export_faces": 524
+    },
+    {
+      "mesh": "head.obj",
+      "source_vertices": 4929,
+      "export_vertices": 4929,
+      "max_vertex_distance": 0.0,
+      "source_faces": 9782,
+      "export_faces": 9782
+    },
+    {
+      "mesh": "left-upperleg.obj",
+      "source_vertices": 254,
+      "export_vertices": 254,
+      "max_vertex_distance": 0.0,
+      "source_faces": 464,
+      "export_faces": 464
+    },
+    {
+      "mesh": "left-lowerleg.obj",
+      "source_vertices": 453,
+      "export_vertices": 453,
+      "max_vertex_distance": 0.0,
+      "source_faces": 887,
+      "export_faces": 887
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+# Task 20/50 of task_suite/tasks_llm.json -- towel_drying / back (sitting).
+# Written by task_suite/room_suite.py configs; description [llm].
+# Original: The person is sitting in a shallow accent chair after a sweaty, restless night. The robot uses its bare tip to dab repeatedly down their spine and lower back, gently patting away the night sweat so they can feel fresh and comfortable.
+run_name: room2_t20_towel_drying_back
+task: bathing
+robot: stretch
+human_indices:
+- 0
+cuda_id: 3
+task_description: An adult of average build sits in a winged accent chair with a seat depth of roughly 40-45 cm, feet flat on the floor and thighs slightly parted, their spine clear of the backrest, and their hands resting beside their hips without overlapping their legs. Starting from a clearly separated non-contact pose behind the chair, the robot approaches from above and behind over the top edge of the chair back, holding a sponge pad flat against the skin. The robot performs four gentle dabbing presses downward along the midline of the back across spine2, spine1, and spine, only the sponge pad making light contact while the robot arm and base remain entirely outside the chair's backrest, wings, and armrests. The robot then lifts the sponge pad cleanly clear of the back and retreats to a separated non-contact pose so the end of the task is unambiguous.
+human_posture: sitting
+furniture_name: bedroom_accent_chair_0
+target_segments:
+- spine
+- spine1
+- spine2
+human_placement_impl: vlm
+scene:
+  enabled: true
+  order: room_first
+  room_policy: download_delete
+  scene_tries: 16
+  fetch_min_free_gb: 5
+  exclude_support:
+  - 23:bedroom_bed_0
+vlm_model: gemini-3.7-flash
+orchestrator:
+  model: gemini-3.7-flash
+  stage_attempt_cap: 5
+  item_execution_cap: 40
+  outer_loop_cap: 1
+  llm_call_cap: 600
+  review_on_success: true
+  cross_validate_humans: 0
+  stage_timeouts_s:
+    per_vlm_iter: 1800.0
+    per_cross_val_body: 300.0
+    default: 3600.0
+seated_view: back

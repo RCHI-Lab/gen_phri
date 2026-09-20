@@ -1,0 +1,37 @@
+# Task 29/50 of task_suite/tasks_llm.json -- hand_warming / right_knuckles (lying).
+# Written by task_suite/room_suite.py configs; description [llm].
+# Original: The person is lying down and feeling agitated, their right hand clenched in a tight, cold fist. Adapting to their tension, the robot presses its warm bare tip very slowly and steadily against the outside of their knuckles and index finger, offering soothing thermal comfort until they naturally relax.
+run_name: room2_t29_hand_warming_right_knuckles
+task: bathing
+robot: stretch
+human_indices:
+- 0
+cuda_id: 3
+task_description: An adult of average build is lying supine on a standard bed with both legs extended straight and slightly separated. The left arm rests alongside the torso on the mattress, while the right arm extends along the right side with the right hand gently curled so the right knuckles and the base of the right index finger face upward. Starting from a clearly separated non-contact pose, a robot approaches from the right side of the bed. It warms the target region by pressing the sponge pad flat against the rightHand and rightHandIndex1, applying light, steady contact across the knuckles in a single continuous smoothing press. Contact remains strictly confined to the right knuckles, with only the tool touching the human while the rest of the robot stays completely clear. The robot then lifts the sponge pad cleanly away from the hand and retreats to a clearly separated non-contact pose so the end of the task is unambiguous.
+human_posture: lying
+furniture_name: bed
+target_segments:
+- rightHand
+- rightHandIndex1
+human_placement_impl: vlm
+scene:
+  enabled: true
+  order: room_first
+  room_policy: download_delete
+  scene_tries: 8
+  fetch_min_free_gb: 5
+  exclude_support:
+  - 23:bedroom_bed_0
+vlm_model: gemini-3.7-flash
+orchestrator:
+  model: gemini-3.7-flash
+  stage_attempt_cap: 5
+  item_execution_cap: 40
+  outer_loop_cap: 1
+  llm_call_cap: 600
+  review_on_success: true
+  cross_validate_humans: 0
+  stage_timeouts_s:
+    per_vlm_iter: 1800.0
+    per_cross_val_body: 300.0
+    default: 3600.0

@@ -1,0 +1,39 @@
+# Task 31/50 of task_suite/tasks_llm.json -- comforting_touch / upper_back (sitting).
+# Written by task_suite/room_suite.py configs; description [llm].
+# Original: Sitting in a shallow accent chair, the person feels lonely before sleep. The robot performs a careful, sequential comforting pass, gently pressing its tip against the middle of their back, up to their upper back, and finally the base of their neck to provide deep reassurance.
+run_name: room2_t31_comforting_t_upper_back
+task: bathing
+robot: stretch
+human_indices:
+- 0
+cuda_id: 0
+task_description: An adult of average build sits in a winged accent chair (seat depth about 45 cm), feet flat on the floor and knees bent at right angles, with their torso separated from the backrest and their spine clear of the chair wings. Their hands rest lightly apart near their knees without stacking limbs. Starting from a clearly separated non-contact pose behind the chair, the robot approaches from above over the top edge of the chair back with a flat sponge pad. It makes gentle physical contact against the middle back (spine1) and performs two smooth upward strokes moving along the upper back (spine2) to the base of the neck, maintaining light pressure before lifting. Only the sponge pad contacts the person, while the robot base and arm remain entirely clear of the person and outside the chair back and side wings. The robot then lifts the tool completely clear and retreats to a separated non-contact pose.
+human_posture: sitting
+furniture_name: bedroom_accent_chair_0
+target_segments:
+- spine1
+- spine2
+- neck
+human_placement_impl: vlm
+scene:
+  enabled: true
+  order: room_first
+  room_policy: download_delete
+  scene_tries: 16
+  fetch_min_free_gb: 5
+  exclude_support:
+  - 23:bedroom_bed_0
+vlm_model: gemini-3.7-flash
+orchestrator:
+  model: gemini-3.7-flash
+  stage_attempt_cap: 5
+  item_execution_cap: 40
+  outer_loop_cap: 1
+  llm_call_cap: 600
+  review_on_success: true
+  cross_validate_humans: 0
+  stage_timeouts_s:
+    per_vlm_iter: 1800.0
+    per_cross_val_body: 300.0
+    default: 3600.0
+seated_view: back

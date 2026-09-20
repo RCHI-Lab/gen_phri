@@ -1,0 +1,36 @@
+# Task 15/50 of task_suite/tasks_llm.json -- itch_relief / right_shoulder (lying).
+# Written by task_suite/room_suite.py configs; description [llm].
+# Original: The person is lying flat in bed, feeling a sudden tickle. The robot makes a single, quick pass with its bare tip over their right shoulder to immediately scratch the exact spot and relieve the itch.
+run_name: room2_t15_itch_relief_right_shoulder
+task: scratching
+robot: stretch
+human_indices:
+- 0
+cuda_id: 0
+task_description: An adult of average build lies supine on a flat bed, head facing upward, both legs extended straight with slight separation, and both arms resting flat on the mattress away from the torso to leave the right shoulder fully exposed. Starting from a clearly separated non-contact pose beside the bed, the robot approaches with its scratcher oriented downward. The narrow tip makes light physical contact with the right shoulder and executes a single quick scratching stroke along the top surface of the right shoulder. Contact is confined strictly to the right shoulder with only the narrow tip touching the skin while the rest of the robot remains clear of the body. The robot then lifts the tip clear and retreats to a separated non-contact pose so the end of the task is unambiguous.
+human_posture: lying
+furniture_name: bed
+target_segments:
+- rightShoulder
+human_placement_impl: vlm
+scene:
+  enabled: true
+  order: room_first
+  room_policy: download_delete
+  scene_tries: 8
+  fetch_min_free_gb: 5
+  exclude_support:
+  - 23:bedroom_bed_0
+vlm_model: gemini-3.7-flash
+orchestrator:
+  model: gemini-3.7-flash
+  stage_attempt_cap: 5
+  item_execution_cap: 40
+  outer_loop_cap: 1
+  llm_call_cap: 600
+  review_on_success: true
+  cross_validate_humans: 0
+  stage_timeouts_s:
+    per_vlm_iter: 1800.0
+    per_cross_val_body: 300.0
+    default: 3600.0

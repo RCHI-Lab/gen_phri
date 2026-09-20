@@ -1,0 +1,37 @@
+# Task 08/50 of task_suite/tasks_llm.json -- hand_warming / right_palm (sitting).
+# Written by task_suite/room_suite.py configs; description [llm].
+# Original: The person is sitting quietly in the accent chair with their right hand resting palm-up on their thigh. The robot gently presses its heated bare tip against the center of their palm, holding it there to radiate warmth into the cold tissue and restore healthy circulation without requiring them to move.
+run_name: room2_t08_hand_warming_right_palm
+task: bathing
+robot: stretch
+human_indices:
+- 0
+cuda_id: 1
+task_description: An adult of average build sits upright in a winged accent chair (seat depth about 45 cm), feet flat on the floor and knees separated at hip width. Their right arm extends slightly forward over the right armrest with the right hand supinated so the right palm faces upward and remains clearly separated from the thighs. Starting from a clearly separated non-contact pose in front of the chair, the robot approaches from the front-right, positioning its sponge pad flat against the center of the right palm. It presses lightly against the skin, holding flat contact across three warming press-and-hold cycles to soothe the palm, ensuring only the sponge pad makes contact while the robot base and arm remain entirely outside the chair wings and armrests. The robot then lifts the tool straight up clear of the right hand and retreats to a separated non-contact pose.
+human_posture: sitting
+furniture_name: bedroom_accent_chair_0
+target_segments:
+- rightHand
+human_placement_impl: vlm
+scene:
+  enabled: true
+  order: room_first
+  room_policy: download_delete
+  scene_tries: 16
+  fetch_min_free_gb: 5
+  exclude_support:
+  - 23:bedroom_bed_0
+vlm_model: gemini-3.7-flash
+orchestrator:
+  model: gemini-3.7-flash
+  stage_attempt_cap: 5
+  item_execution_cap: 40
+  outer_loop_cap: 1
+  llm_call_cap: 600
+  review_on_success: true
+  cross_validate_humans: 0
+  stage_timeouts_s:
+    per_vlm_iter: 1800.0
+    per_cross_val_body: 300.0
+    default: 3600.0
+seated_view: front

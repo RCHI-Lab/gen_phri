@@ -1,0 +1,37 @@
+# Task 47/50 of task_suite/tasks_llm.json -- towel_drying / left_hip_thigh (lying).
+# Written by task_suite/room_suite.py configs; description [llm].
+# Original: The person is lying in bed after a morning wash. To prevent skin maceration, the robot performs a highly thorough, careful sequence of overlapping patting motions with its bare tip across the left hip and upper leg, ensuring every drop of moisture is dabbed away.
+run_name: room2_t47_towel_drying_left_hip_thigh
+task: bathing
+robot: stretch
+human_indices:
+- 0
+cuda_id: 0
+task_description: An adult of average build is lying supine on a flat bed mattress. Both arms rest alongside the torso, spaced slightly away from the body, while both legs extend straight with a slight separation between the thighs to keep the left hip and left upper leg fully accessible. Starting from a clearly separated non-contact pose beside the bed, a robot approaches the left hip and left upper leg. It performs three overlapping patting motions with the sponge pad held flat against the skin, pressing lightly to dry the surface as it moves progressively down the hips and leftUpLeg toward the knee. Contact remains confined strictly to the hips and leftUpLeg, and only the sponge pad touches the person while the rest of the robot stays entirely clear. The robot then lifts the sponge pad away and retreats to a separated non-contact pose so the end of the task is unambiguous.
+human_posture: lying
+furniture_name: bed
+target_segments:
+- hips
+- leftUpLeg
+human_placement_impl: vlm
+scene:
+  enabled: true
+  order: room_first
+  room_policy: download_delete
+  scene_tries: 8
+  fetch_min_free_gb: 5
+  exclude_support:
+  - 23:bedroom_bed_0
+vlm_model: gemini-3.7-flash
+orchestrator:
+  model: gemini-3.7-flash
+  stage_attempt_cap: 5
+  item_execution_cap: 40
+  outer_loop_cap: 1
+  llm_call_cap: 600
+  review_on_success: true
+  cross_validate_humans: 0
+  stage_timeouts_s:
+    per_vlm_iter: 1800.0
+    per_cross_val_body: 300.0
+    default: 3600.0

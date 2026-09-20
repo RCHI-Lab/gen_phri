@@ -1,0 +1,831 @@
+{
+  "camera": {
+    "position": [
+      2.5211598763557426,
+      3.325514460553648,
+      -2.1979848639131974
+    ],
+    "target": [
+      1.4211598763557423,
+      0.9255144605536482,
+      -3.5979848639131973
+    ],
+    "fov": 50,
+    "presentation": "Elevated oblique view to show the bed rail obstruction and open bedside access."
+  },
+  "bounds": {
+    "min": [
+      -0.050008265083843824,
+      -0.10000000149011562,
+      -4.550000000372529
+    ],
+    "max": [
+      5.550008265083844,
+      2.7000000476837167,
+      0.05000000037252894
+    ]
+  },
+  "subjectBounds": {
+    "min": [
+      0.4502801822324309,
+      -0.005097899404044971,
+      -4.41497658354134
+    ],
+    "max": [
+      2.392039570479054,
+      1.8561268205113415,
+      -2.780993144285054
+    ]
+  },
+  "source": {
+    "source_host": "rtx3",
+    "source_repository": "/home/npechuk/src/gen_sim_phri/",
+    "run": "room2_t16_back_percuss_mid_back",
+    "iteration": 4,
+    "source_files": [
+      {
+        "file": "scene_generation/robot_placement/data/room2_t16_back_percuss_mid_back/iter_04/robot_config.json",
+        "sha256": "ef8a0364d505096c203f532076b8f4727d061f1030d6300e277229d9fad550fd"
+      },
+      {
+        "file": "scene_generation/scenesmith/data/room2_t13_sponge_bathi_right_foot/room_scene.json",
+        "sha256": "116945f6c5bef6721f093a058a3c3d8dc1a2d82da35fd229f6bbc1bcb7698d21"
+      },
+      {
+        "file": "human_generation/generate_actuated_mesh.py",
+        "sha256": "03b087cfba1af485d564b0cfcdd69603f0afb32ed5649d29ba96ca21629b8041"
+      },
+      {
+        "file": "resources/models/smplx/SMPLX_NEUTRAL.npz",
+        "sha256": "376021446ddc86e99acacd795182bbef903e61d33b76b9d8b359c2b0865bd992"
+      },
+      {
+        "file": "resources/stretch/stretch_gs_virtual_base_bathing_sphere_rotated_big_aruco.xml",
+        "sha256": "6bcb8d0862be6be720db1539c1113c34232f5776fa1c18d11b9b85d800c868cd"
+      },
+      {
+        "file": "scene_assets/scenesmith/NotGenerated_scene_071/floor_plans/bedroom/floors/floor.glb",
+        "sha256": "abe171fbef13d6bea7182367f9d6835b1ffb27a8cc71898b9c93b7640289da76"
+      },
+      {
+        "file": "scene_assets/scenesmith/NotGenerated_scene_071/floor_plans/bedroom/walls/north_wall/wall.glb",
+        "sha256": "968dd4e687778faf1922b2f3100496d3f9cfddf0d3d80e0f1f9b8b26cb77855d"
+      },
+      {
+        "file": "scene_assets/scenesmith/NotGenerated_scene_071/floor_plans/bedroom/windows/window_2/window.glb",
+        "sha256": "520395d8843c792a30b9f202a2a6c61cd1771eebd97054335c361698dc3001e1"
+      },
+      {
+        "file": "scene_assets/scenesmith/NotGenerated_scene_071/floor_plans/bedroom/walls/north_wall_exterior/wall.glb",
+        "sha256": "0da01be891a1c49733370fa2ab700836891d9b55f97d06cfc78d5cac111fbd76"
+      },
+      {
+        "file": "scene_assets/scenesmith/NotGenerated_scene_071/floor_plans/bedroom/walls/south_wall/wall.glb",
+        "sha256": "02fab5f37c6ddd06dbee072fc6669b7aa9ddc93143a3a9afad2aacbc6feb4ad6"
+      },
+      {
+        "file": "scene_assets/scenesmith/NotGenerated_scene_071/floor_plans/bedroom/walls/south_wall_exterior/wall.glb",
+        "sha256": "f65baec74021d72db3491d21f1b4cf5856dc50c87ed78dda7cfa9482b69e840e"
+      },
+      {
+        "file": "scene_assets/scenesmith/NotGenerated_scene_071/floor_plans/bedroom/walls/east_wall/wall.glb",
+        "sha256": "66925295ad24f3e4aef48e62e95a5571f043b47fc345c707a194105d1ec4d5b2"
+      },
+      {
+        "file": "scene_assets/scenesmith/NotGenerated_scene_071/floor_plans/bedroom/windows/window_1/window.glb",
+        "sha256": "cffbed9771377ea48d3617f8fa27426347a927b5d1ed2afde724b64d30ad4ecc"
+      },
+      {
+        "file": "scene_assets/scenesmith/NotGenerated_scene_071/floor_plans/bedroom/walls/east_wall_exterior/wall.glb",
+        "sha256": "667e79ac8eefbe07c40a558dd009dec0b3917526e2dae3d77ea747991717eda1"
+      },
+      {
+        "file": "scene_assets/scenesmith/NotGenerated_scene_071/floor_plans/bedroom/walls/west_wall/wall.glb",
+        "sha256": "8bb9bf8708c0961acd57cddbff50aadf75931b2b266689a22064500b0df01780"
+      },
+      {
+        "file": "scene_assets/scenesmith/NotGenerated_scene_071/floor_plans/bedroom/walls/west_wall_exterior/wall.glb",
+        "sha256": "9ad97d2cb1357abe1deabb9895ee050c71f2dcae257c925f98e588da510f1a5e"
+      },
+      {
+        "file": "scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/furniture/sdf/2f4a7963f16e4c06b7624e970bb906461ad1d600/bed.glb",
+        "sha256": "d9836043173ac9ae3984715ba449b0f783c22fa0a62f26d2522731e983e220c7"
+      },
+      {
+        "file": "scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/furniture/sdf/d959903a7b709cb037958ea246bde455f9858772/task_chair.glb",
+        "sha256": "f4bcac1bad88cd8029505c622c9878f376d931e665e46b1fb1ef556dd2455eb1"
+      },
+      {
+        "file": "scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/furniture/sdf/08901e442a1995c0b952536f6ab4e2b78d12fc27/side_table.glb",
+        "sha256": "8788d5b2c95f117b50ba644b325d95838da4a4a53157932715fff2df2efa9930"
+      },
+      {
+        "file": "scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/furniture/sdf/3f28e55e96c9f14cd017e13cffa16b02e5db452e/credenza.glb",
+        "sha256": "b80a02d0caba396a18fc69026ffd03016f5db0d900427363142c2a5eef380e2d"
+      },
+      {
+        "file": "scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/furniture/sdf/ed95c877f692c3fad1b50a96e21ea1e02101dd42/bookcase.glb",
+        "sha256": "42e08b395b97c8dcb138c779e8a21e5459e8ff5585d210f4d2195eb6543a090d"
+      },
+      {
+        "file": "scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/wall_mounted/sdf/1b08c08513ae90ca235d9a51a9ce8cc174ae5c2c/print.glb",
+        "sha256": "c9119ca5194c8a95057a2fd1eb167a1336c734e3cc32ac0e7edea7de3465c21a"
+      },
+      {
+        "file": "scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/wall_mounted/sdf/2defe14f5fd9e16764bd77f9a7b24328d9191b21/mirror.glb",
+        "sha256": "b133c7752a3ef418971671629a9ffc209f77f12d1c0f7624723a9c95aea8b38a"
+      },
+      {
+        "file": "scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/wall_mounted/sdf/2cfd823ec1ebdd3a3361cc093b6b109cf1c08d85/art_print.glb",
+        "sha256": "ba1e99068975c6f478e58d1c33d007847656f225bfe2aa21a0560f9e6e22b7b1"
+      },
+      {
+        "file": "scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/wall_mounted/sdf/2cfd823ec1ebdd3a3361cc093b6b109cf1c08d85/art_print.glb",
+        "sha256": "ba1e99068975c6f478e58d1c33d007847656f225bfe2aa21a0560f9e6e22b7b1"
+      },
+      {
+        "file": "scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/wall_mounted/sdf/7ce49155b21fea189e2fcc51a4f0d88cc8a418a5/clock.glb",
+        "sha256": "cadd0e26141700e369e1f004906bf5d8c8b023bda2596a503f9ccd1e906ef569"
+      },
+      {
+        "file": "scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/wall_mounted/sdf/6c55afb0c44fbb54d0753277d164a38111f96d1c/print.glb",
+        "sha256": "b0092d76e7a867440d63ea02696a2c578f7f1a2755fb3c35c65c6161092c7c6c"
+      },
+      {
+        "file": "scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/wall_mounted/sdf/6c55afb0c44fbb54d0753277d164a38111f96d1c/print.glb",
+        "sha256": "b0092d76e7a867440d63ea02696a2c578f7f1a2755fb3c35c65c6161092c7c6c"
+      },
+      {
+        "file": "scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/wall_mounted/sdf/bc2efa5088d5b25f7aacaaf18ff555f187f3056a/mirror.glb",
+        "sha256": "c811d1dc201cf12ff08f1cc2e9a29b2abe8c2d0c74babb7d13e558b742edb92d"
+      },
+      {
+        "file": "scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/wall_mounted/sdf/59a8bb467d1eb1db87d5d8a375e77f8a7f0f1b9a/photography_print.glb",
+        "sha256": "d09ae04b45febc379c0b91fd5262490cc370170fa37e1cb4cb028eba4f3ded53"
+      },
+      {
+        "file": "scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/ceiling_mounted/sdf/82e45a038d4661cde412e372a76816cb6c347d10/track_light.glb",
+        "sha256": "9a1bcd655bb6f42767338c57a089acda66655b828664f085b77748835c113c86"
+      },
+      {
+        "file": "scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/ceiling_mounted/sdf/555c117758ea218eb017c9ff667699d2714c2889/smoke_detector.glb",
+        "sha256": "b070c9f459590ca783c06b5a3358d95cb46d133f913fcf51b624f7da02b3d25d"
+      },
+      {
+        "file": "scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/manipuland/sdf/5569775f4baa61461eb81749c0e21bfb186e12e3/ballpoint_pen.glb",
+        "sha256": "149647fc3ea1fd419e8d849be193c43cffb203e0cb08d68864def7511d809c04"
+      },
+      {
+        "file": "scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/manipuland/sdf/23ab7b9737739ba9e6ea60558b6b8c60e90c2542/desk_lamp_bar.glb",
+        "sha256": "9fe57952b722a452ea187d47d57ff9c9523cd4d7d38d0f3bbe0dc8b093778669"
+      },
+      {
+        "file": "scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/manipuland/sdf/4681d7a50b9f9a12acaaeeb06349203ac7235303/printer_paper_pad.glb",
+        "sha256": "d86ed9d37d66261ccc1fc804fce37f703a9465d5e05104e63170034688d83640"
+      },
+      {
+        "file": "scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/manipuland/sdf/9bb35fc8b2b7c1983d60882948c9f834bdb9faf3/laptop.glb",
+        "sha256": "61e64476f4a3abe091c4b95736ee432febb9336f094cceb898e6f5c05e8779c5"
+      },
+      {
+        "file": "scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/manipuland/sdf/81c6dd3830a8df6644bd1f6b9a239615234e888f/hardcover_novel.glb",
+        "sha256": "8a091c65e26f56858000827ca7a648a83a7d7b54cf069375f2ca66bbafd4fb91"
+      },
+      {
+        "file": "scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/manipuland/sdf/9bb636b990db93bd65e3b05842bbf256653d3970/round_cork_coaster.glb",
+        "sha256": "3282040aa2336a38367e39543bcc0ef4eabb14bf02fef309ad38db319d673bc0"
+      },
+      {
+        "file": "scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/manipuland/sdf/5742501065a46cf69165e60257b42a86f5fadf8b/coffee_mug.glb",
+        "sha256": "f72444fccdffa2cf82a39f9f904cd0674e6c7744ae70848ea0d0d99387d76cc6"
+      },
+      {
+        "file": "scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/manipuland/sdf/77a9494c79e0cbc30ab49127f456c7d7f4a53e64/smartphone.glb",
+        "sha256": "111f167c5d3438820730bb50d5eb6f9436d9f8ff0116f33749d86e563459f577"
+      },
+      {
+        "file": "scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/manipuland/sdf/29c9ab6ad9b6d2c5830c113a3abec93a1a6e4e13/potted_succulent.glb",
+        "sha256": "e0db2eb098b33e8c760561375e446cd9a4d5819bd890747de35ac46f82ebb73b"
+      },
+      {
+        "file": "scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/manipuland/sdf/5efaa6062b1262ea0b978b327e281ceb1600ad19/storage_box.glb",
+        "sha256": "ab0414b9ae51d59f001cf15d3e0d832f3d6d60d39bcc6d9bd73edff991f21207"
+      },
+      {
+        "file": "scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/manipuland/sdf/81c6dd3830a8df6644bd1f6b9a239615234e888f/hardcover_novel.glb",
+        "sha256": "8a091c65e26f56858000827ca7a648a83a7d7b54cf069375f2ca66bbafd4fb91"
+      },
+      {
+        "file": "scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/manipuland/sdf/0a03d59304e236ca3888d1db52303bfebb580805/bud_vase.glb",
+        "sha256": "3f13621d4424473cb3cd6b00cc49080759bea39d58b65d7a469eb5124e97b9da"
+      },
+      {
+        "file": "scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/manipuland/sdf/9434ebf4ba8489f4ba751d2b67688d120f822d0c/paperback_book.glb",
+        "sha256": "d284ee4a76814578bf42116ebf56e12713025eca9bc4a9e954023cd8f1fc3be3"
+      },
+      {
+        "file": "scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/manipuland/sdf/9434ebf4ba8489f4ba751d2b67688d120f822d0c/paperback_book.glb",
+        "sha256": "d284ee4a76814578bf42116ebf56e12713025eca9bc4a9e954023cd8f1fc3be3"
+      },
+      {
+        "file": "scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/manipuland/sdf/1d04ad185c04aa63c539897f538002019d1b5d3a/file_holder.glb",
+        "sha256": "10deaed54c19de5d009f164dc3fa17d8bbd02b08955a6acbdefe3bfa34214706"
+      },
+      {
+        "file": "scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/manipuland/sdf/6305d9ce403689f0085d59aa72008c136ef8fa58/tiny_paperback_booklet.glb",
+        "sha256": "3bb13bbd2071c32e7b6c25dbb35a3e10734142ee1bbb0e8e18a8d3606acf5da4"
+      },
+      {
+        "file": "scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/manipuland/sdf/6305d9ce403689f0085d59aa72008c136ef8fa58/tiny_paperback_booklet.glb",
+        "sha256": "3bb13bbd2071c32e7b6c25dbb35a3e10734142ee1bbb0e8e18a8d3606acf5da4"
+      },
+      {
+        "file": "scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/manipuland/sdf/6305d9ce403689f0085d59aa72008c136ef8fa58/tiny_paperback_booklet.glb",
+        "sha256": "3bb13bbd2071c32e7b6c25dbb35a3e10734142ee1bbb0e8e18a8d3606acf5da4"
+      },
+      {
+        "file": "scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/manipuland/sdf/6305d9ce403689f0085d59aa72008c136ef8fa58/tiny_paperback_booklet.glb",
+        "sha256": "3bb13bbd2071c32e7b6c25dbb35a3e10734142ee1bbb0e8e18a8d3606acf5da4"
+      },
+      {
+        "file": "scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/manipuland/sdf/6305d9ce403689f0085d59aa72008c136ef8fa58/tiny_paperback_booklet.glb",
+        "sha256": "3bb13bbd2071c32e7b6c25dbb35a3e10734142ee1bbb0e8e18a8d3606acf5da4"
+      },
+      {
+        "file": "scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/manipuland/sdf/6305d9ce403689f0085d59aa72008c136ef8fa58/tiny_paperback_booklet.glb",
+        "sha256": "3bb13bbd2071c32e7b6c25dbb35a3e10734142ee1bbb0e8e18a8d3606acf5da4"
+      },
+      {
+        "file": "scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/manipuland/sdf/6ea1f9bd1fe5ae7cfcb44d3d3b7f0799464db426/framed_photo.glb",
+        "sha256": "139e219b7cdf3667f837ed832df5a2643cab1e3533c14d8b97b7ece623ac1cf5"
+      },
+      {
+        "file": "scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/manipuland/sdf/81c6dd3830a8df6644bd1f6b9a239615234e888f/hardcover_novel.glb",
+        "sha256": "8a091c65e26f56858000827ca7a648a83a7d7b54cf069375f2ca66bbafd4fb91"
+      },
+      {
+        "file": "scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/manipuland/sdf/9434ebf4ba8489f4ba751d2b67688d120f822d0c/paperback_book.glb",
+        "sha256": "d284ee4a76814578bf42116ebf56e12713025eca9bc4a9e954023cd8f1fc3be3"
+      },
+      {
+        "file": "scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/manipuland/sdf/77a9494c79e0cbc30ab49127f456c7d7f4a53e64/smartphone.glb",
+        "sha256": "111f167c5d3438820730bb50d5eb6f9436d9f8ff0116f33749d86e563459f577"
+      },
+      {
+        "file": "scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/furniture/sdf/desk_1767983153/E_body_1_combined.glb",
+        "sha256": "18f4300d25cc5987fd197f8ac29b30e9b6b7ac0c072b6285ae6745bf6b08e96d"
+      },
+      {
+        "file": "scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/furniture/sdf/desk_1767983153/E_drawer1_6_combined.glb",
+        "sha256": "730a06c81a9c494a24dd819997f0095641d28404cc66caacbb1ceb45d3c43e87"
+      },
+      {
+        "file": "scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/furniture/sdf/desk_1767983153/E_drawer2_7_combined.glb",
+        "sha256": "a77fc1163d880e7e00982b4948092179698dd3deb6f6c1798bf5661785124136"
+      },
+      {
+        "file": "resources/stretch/assets/base_link_0.obj",
+        "sha256": "9d3a1643fa7890b33f955242089fe127f7e192e32d858524db5c7da26c5122b4"
+      },
+      {
+        "file": "resources/stretch/assets/base_link_2.obj",
+        "sha256": "59ddb2d2a81b7a2f00fb8f74d0e6711f04c9f404691d8dac442788ea36dab870"
+      },
+      {
+        "file": "resources/stretch/assets/base_link_3.obj",
+        "sha256": "f4929a1511adfa84b91a4912e839a05d21f5715b930260dd81fb677b501b4a46"
+      },
+      {
+        "file": "resources/stretch/assets/base_link_4.obj",
+        "sha256": "5fb87192b939bbc69614454be52ac3211cc42c39410f9a6f72d3cf366125d414"
+      },
+      {
+        "file": "resources/stretch/assets/base_link_5.obj",
+        "sha256": "523f308172b2e910ed8990aa7d2f19bb98e81100335e6b8eef7867938676f302"
+      },
+      {
+        "file": "resources/stretch/assets/base_link_6.obj",
+        "sha256": "ac3ecf44cdc94e163478e8f491f9a8e511d9eaef605671905284df1202a6f6dd"
+      },
+      {
+        "file": "resources/stretch/assets/base_link_7.obj",
+        "sha256": "dfbaf9645fc6d2a9b3ee5e66e25c48f9ca135c42fb1333a516bf2e2d17bb0aa3"
+      },
+      {
+        "file": "resources/stretch/assets/base_link_8.obj",
+        "sha256": "24c7ed85eb63097d8f647c168c718194249b74d98eba7463ada1dd64faed9932"
+      },
+      {
+        "file": "resources/stretch/assets/base_link_casterless.stl",
+        "sha256": "d2d5bd2dc9f1d4ffde2321efd2067debeaabb2172f000b036f2ab6b5d043fac8"
+      },
+      {
+        "file": "resources/stretch/assets/link_aruco_right_base.obj",
+        "sha256": "7f0e7f41b9fe29c2091f39ff18a3b6742cfbe9c65434c60c51cde856db55d73b"
+      },
+      {
+        "file": "resources/stretch/assets/link_aruco_left_base.obj",
+        "sha256": "7f0e7f41b9fe29c2091f39ff18a3b6742cfbe9c65434c60c51cde856db55d73b"
+      },
+      {
+        "file": "resources/stretch/assets/respeaker_base.obj",
+        "sha256": "70acc76cf2a54fa419dc6d509919ae46a06d8f0f4bcdc46e88ba916de3a5c79a"
+      },
+      {
+        "file": "resources/stretch/assets/link_mast.obj",
+        "sha256": "dd28da988909e7f4dda26c296a3a54ba9a84c516c2f7d7059aa36fbc056d98c6"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_0.obj",
+        "sha256": "601b3ad3cf1d024cb0ef9f96e5e3a7cc671fc18d4d26140f3f14317765da1d00"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_1.obj",
+        "sha256": "ecc74a0b02815df93883f35ccbf56e312c707b088d087fb3e18ec780a78f41af"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_2.obj",
+        "sha256": "c81d8441cd7e5dc8fd74b9462783c61c5fda0f02eeaa0f87ed4f6addf3b195c0"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_3.obj",
+        "sha256": "d7e69ff8ae36d1c74ea5a0a941a48eb19c33f8d19d8d4e631545e96e8655f615"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_4.obj",
+        "sha256": "bdbb7bc5b816a9b55dcda9b9863f36e650e3c64ed9357897c7a11ba1e043f88f"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_5.obj",
+        "sha256": "243616144e0e7579582f9fc30573a489d08d33cbad25d714042ad01e7f8fb307"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_6.obj",
+        "sha256": "35eb02b748cb53695622b431c94c2beab837990713d30c163f98ee967f9e4b4a"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_7.obj",
+        "sha256": "7f2e724404d6034b0e893575ec920083dd77fb7e2f89e0964b74b4f23da01ab7"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_8.obj",
+        "sha256": "458e7850c870b35968f3c511d0cb64898c212575e1cea0c83110f70b1c713e81"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_9.obj",
+        "sha256": "e230e0ba13bc8e22abe74326e888cf8295b9546c6b67cc6ac5844253e52b2c92"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_10.obj",
+        "sha256": "f07adce0e40cd224bfd8dc49ff95bedd33cdf615406b627cba77449349a44ba0"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_11.obj",
+        "sha256": "90754a150e6a6c8bf97f188888c0ce87ff2e49c58b1074fd9f45b38f1d1a278d"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_pan_0.obj",
+        "sha256": "b1436e3f2c22d6d08b662deff47405673334839cd563c19b90bad351e2d0ae8b"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_pan_1.obj",
+        "sha256": "54370f2201f4ce69910bb61a902d0c07c167e90f4921882ebeb9432cc152f90a"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_tilt_0.obj",
+        "sha256": "c0330bea8f0c4bee0b35b4366e9e3d3cd5ca1023a121a3d5f0c65dc5f393e03f"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_tilt_1.obj",
+        "sha256": "4d1cb6f2207d6986e45f99428c8eece8fa6a24fba6fb1d3475c5f774df7545eb"
+      },
+      {
+        "file": "resources/stretch/assets/link_right_wheel_0.obj",
+        "sha256": "f2b821eb94f5437ccfdc5efb2b9bdf10c4fd584aa54f45f306e051a4ca04ccbb"
+      },
+      {
+        "file": "resources/stretch/assets/link_right_wheel_1.obj",
+        "sha256": "695bca8ae8e307e1c9e56505b33b293f2806b872254966e4d06a1c36e56b102e"
+      },
+      {
+        "file": "resources/stretch/assets/link_left_wheel_0.obj",
+        "sha256": "32a02f8d4fa8b6f4c8174965365b7c386104e5bcbead3e1d06daa455411eecdf"
+      },
+      {
+        "file": "resources/stretch/assets/link_left_wheel_1.obj",
+        "sha256": "1d38982dc60a8c05c64120b6b05ceba7f40c98bde0904c5385b097d9bf07fc91"
+      },
+      {
+        "file": "resources/stretch/assets/link_lift_0.obj",
+        "sha256": "ad629cb6eaeafec45a814365102c758b3b131df35534fc3215c373c9c34d066f"
+      },
+      {
+        "file": "resources/stretch/assets/link_lift_1.obj",
+        "sha256": "3c4f265261ac9db81af975204c1120dad88c9b41e4869b0f2202ab0bc669b344"
+      },
+      {
+        "file": "resources/stretch/assets/link_lift_2.obj",
+        "sha256": "9cc0064b7e8add7e401a891f9a2cb7b6c11f66fe91007023e449f3eb903ea227"
+      },
+      {
+        "file": "resources/stretch/assets/link_lift_3.obj",
+        "sha256": "0a3e16d2b30bff8a529efa9778e4c2b3f2eeb052bd29e5c414c0da6d7e72ea41"
+      },
+      {
+        "file": "resources/stretch/assets/link_lift_4.obj",
+        "sha256": "9755b22de6e30c44b883fe6720e09e6c608981fe1e3572bd22e81d82eff08288"
+      },
+      {
+        "file": "resources/stretch/assets/link_lift_5.obj",
+        "sha256": "ed85f90c8aa70761c5322f57d7d3245bef1d560711512a995ec1e669815acb65"
+      },
+      {
+        "file": "resources/stretch/assets/link_lift_6.obj",
+        "sha256": "f3811817e908e890ddebd011c733de5b407cd781b537a1e281dccd247da0eb70"
+      },
+      {
+        "file": "resources/stretch/assets/link_lift_7.obj",
+        "sha256": "65122e665930affc87dffc2ce790fdc326e7b988522101ed7f10d4ab6cba8cd7"
+      },
+      {
+        "file": "resources/stretch/assets/link_lift_8.obj",
+        "sha256": "0b67a66d5c8c4ce1067dba66b2cbf7b8539bf905a414a232e1b722e42d4acdf2"
+      },
+      {
+        "file": "resources/stretch/assets/link_lift_9.obj",
+        "sha256": "5eaf46cb89705c2c9910a6453f70d63b2d407c2a86e0fc60caec6abf857ddd35"
+      },
+      {
+        "file": "resources/stretch/assets/link_aruco_shoulder.obj",
+        "sha256": "6a9ace409ff326eec456770a96d2aec9e1e100aa9fcd6afe9b320eb03d62164f"
+      },
+      {
+        "file": "resources/stretch/assets/link_arm_l4_0.obj",
+        "sha256": "f81406eb8b4efa49df82044b5075078a600e44514cd90129e6ddd6136cf22e8f"
+      },
+      {
+        "file": "resources/stretch/assets/link_arm_l4_1.obj",
+        "sha256": "1fb20913eca87594ca504642a48b1b1004f8f594b19cbc45ea709b76375666f5"
+      },
+      {
+        "file": "resources/stretch/assets/link_arm_l3_0.obj",
+        "sha256": "44b748d6c32ff8898d55ea8c92ea177c43ab31fb2a20af4e1069d3d149d6f044"
+      },
+      {
+        "file": "resources/stretch/assets/link_arm_l3_1.obj",
+        "sha256": "f32e67a44270312b51f1af8aa8458a29bf8714f9b7d3d4b892e579056414c4fa"
+      },
+      {
+        "file": "resources/stretch/assets/link_arm_l2_0.obj",
+        "sha256": "e5c7bdce8e28efa3360202623fe01c35dd0bdd404318766d500920d139662500"
+      },
+      {
+        "file": "resources/stretch/assets/link_arm_l2_1.obj",
+        "sha256": "6b0ed71768eb30301a2109bd4375b24137bccaee7529b110fdad7b0e0b5076e4"
+      },
+      {
+        "file": "resources/stretch/assets/link_arm_l1_0.obj",
+        "sha256": "0ebb391b8bfa377332034341ff1c0193c8ca494ff6beb7a593cccbb09aeb0ec8"
+      },
+      {
+        "file": "resources/stretch/assets/link_arm_l1_1.obj",
+        "sha256": "4ef086e1abfbcdea46a546a96ab8b602574f1f0aa1668c95a336c6534700c3eb"
+      },
+      {
+        "file": "resources/stretch/assets/link_arm_l0_0.obj",
+        "sha256": "ebc8bbc182891fa029c677a8f1e32e3ed53f11a986b68a28defb8daa9b714a37"
+      },
+      {
+        "file": "resources/stretch/assets/link_arm_l0_1.obj",
+        "sha256": "0ff60709a54b06ab24330c769c50ba677fd95459eaf0439f15579ab8042346a4"
+      },
+      {
+        "file": "resources/stretch/assets/link_arm_l0_2.obj",
+        "sha256": "bc8bda8c3321fb5f64ebb0294bb8c3191e65ac51e619384f19f0133f362e888d"
+      },
+      {
+        "file": "resources/stretch/assets/link_aruco_inner_wrist.obj",
+        "sha256": "2cba33928cc667457e3b7fb60359c05687688f4923bc7bb6f965a8aae446dbf9"
+      },
+      {
+        "file": "resources/stretch/assets/link_aruco_top_wrist.obj",
+        "sha256": "514f4515903781d69729fe4130396e8b2ae301a4356024c2b5beba9888036074"
+      },
+      {
+        "file": "resources/stretch/assets/laser.obj",
+        "sha256": "febe15452ffde5d069943fa51fb08426079ad4419c983a84b3a47d822d87c8a9"
+      },
+      {
+        "file": "resources/stretch/assets/link_gripper_fingertip_left.stl",
+        "sha256": "7cb02cd1d0d5a2599b75365f1d61963a581ee49f2438fc79aefa964a952df77a"
+      },
+      {
+        "file": "resources/stretch/assets/link_gripper_fingertip_right.stl",
+        "sha256": "dbfb702f50aa53a077e5188e0b4269a8bddff485d197e5c06d9e4321cb5ea6a5"
+      },
+      {
+        "file": "resources/stretch/assets/link_gripper_finger_left_0.obj",
+        "sha256": "7a886141e5501877f9b776b204f2694537994ebccfdf7715c6771c6406234002"
+      },
+      {
+        "file": "resources/stretch/assets/link_gripper_finger_left_1.obj",
+        "sha256": "16291341862cd7aa35ff767c6868252cb695d4222459a55ed1bf8c32cecb9615"
+      },
+      {
+        "file": "resources/stretch/assets/link_gripper_finger_right_0.obj",
+        "sha256": "b5e8d67538153b0f37939f0bcc9c850f80446578a2d1f9cfc78adc3737b480cb"
+      },
+      {
+        "file": "resources/stretch/assets/link_gripper_finger_right_1.obj",
+        "sha256": "37159f986750a6d18f4d7904051fd32f77297660a9aeec2d8751c08ce3aa2575"
+      },
+      {
+        "file": "resources/stretch/assets/link_gripper_0.obj",
+        "sha256": "5feed27dc9f0febc1fc15fcef98c9a47bbe64c451e33197460d4abb7c11b9279"
+      },
+      {
+        "file": "resources/stretch/assets/link_gripper_1.obj",
+        "sha256": "5fa25ae6ee8653098dade84361e5c24385abb56773d261c47602a2e742254a78"
+      },
+      {
+        "file": "resources/stretch/assets/link_wrist_yaw.obj",
+        "sha256": "53fcc361ab7a3b82326b8344bcb2654d61d0b2d06b8e9ab9566f75d9fc266bd4"
+      },
+      {
+        "file": "resources/stretch/assets/link_DW3_tablet_12in.stl",
+        "sha256": "0bfc56ed791d36d68d446a40728d7550c8e5118267ada12aa25da7132abd97e7"
+      },
+      {
+        "file": "resources/stretch/assets/link_DW3_wrist_pitch.stl",
+        "sha256": "9fb47ba958d9ce65d8020d3aa328aa62bc47d4bbb01fd30e3b632a6b25238b5c"
+      },
+      {
+        "file": "resources/stretch/assets/link_DW3_wrist_quick_connect.stl",
+        "sha256": "f5df1f4dd28dd975340e68d2601f66c52a457cace5192585a22f6c14685ea2f5"
+      },
+      {
+        "file": "resources/stretch/assets/link_DW3_wrist_yaw_bottom.stl",
+        "sha256": "e6e7052e8334f01edc3b8d03e698c06bc03d27289f9568e20baed562d6a36cab"
+      },
+      {
+        "file": "resources/stretch/assets/link_SE3_head_nav_cam.stl",
+        "sha256": "be4645b82f4b4912b257a7f675176504d83377c3d5c7e9528efd2aa8e6d5623d"
+      },
+      {
+        "file": "resources/stretch/assets/link_SG3_aruco_d405.obj",
+        "sha256": "8fd74cef03a4fe8b3bd2ad2a003b0f482296d46d228cb3c6c288cc36f1c38834"
+      },
+      {
+        "file": "resources/stretch/assets/link_SG3_gripper_body.stl",
+        "sha256": "7fc5236786c964d83bf48d0fd1ad8ea155dfc771f1ff4bc27c7bc2d86eabb80d"
+      },
+      {
+        "file": "resources/stretch/assets/link_d405.stl",
+        "sha256": "0ab47dd3a933d54a9b4630a629700708fa63bd88f5475a2bdc3b8dfc222ee35a"
+      },
+      {
+        "file": "resources/stretch/assets/link_d405_lens.stl",
+        "sha256": "967f212d148ce40295b3a97f3a006e15943fa48a118fbd3350172faf3818a246"
+      },
+      {
+        "file": "resources/stretch/assets/link_d405_front_plate.stl",
+        "sha256": "20d6fa80713951301393a3d9d4d96c1b8ae8b05a9eab64da76d54445d568a2ee"
+      },
+      {
+        "file": "resources/stretch/assets/link_SG3_gripper_left_finger.stl",
+        "sha256": "9b521e35a032a590879e3d3d520219c3f848ee89e69fddf5c5f6372d06869423"
+      },
+      {
+        "file": "resources/stretch/assets/link_SG3_gripper_right_finger.stl",
+        "sha256": "85a729e0c81cc2caeddf47323ef1deb05bebb521f89af60b60f5fa361c692c70"
+      },
+      {
+        "file": "resources/stretch/assets/link_SG3_gripper_left_finger_0.obj",
+        "sha256": "a504ed43c451dfe771934a68fe7fe0141d873ec876bf16a39e7327ca0ec865cb"
+      },
+      {
+        "file": "resources/stretch/assets/link_SG3_gripper_right_finger_0.obj",
+        "sha256": "bf8786fa70e213ad51a58c4b2a8d1f4c046593f31f1b1f27481c134108f1d368"
+      },
+      {
+        "file": "resources/stretch/assets/link_SG3_gripper_left_finger_1.obj",
+        "sha256": "1b23f6cf2907318cb00b14a41092083303d4945be4ffb750c0a9bf9fc7706ec9"
+      },
+      {
+        "file": "resources/stretch/assets/link_SG3_gripper_right_finger_1.obj",
+        "sha256": "ad42d88c7b94aaa776b617244b1f1675646a54e9f517fc431b721a98ff7cd152"
+      },
+      {
+        "file": "resources/stretch/assets/link_SG3_gripper_left_inner_finger.stl",
+        "sha256": "2021148766fd93c1fae24723eb5f65ec981cd1889fbc6be6f8458793207df383"
+      },
+      {
+        "file": "resources/stretch/assets/link_SG3_gripper_right_inner_finger.stl",
+        "sha256": "9b5becd4ccf93151e4599f038a9be3f7123656fe910462977a0f4a16eada941c"
+      },
+      {
+        "file": "resources/stretch/assets/link_SG3_gripper_inner_finger.stl",
+        "sha256": "3bee8ab82e230fe1132f5703dbf5b18982cc51398d8c45cba9aa2e31347bb6a0"
+      },
+      {
+        "file": "resources/stretch/assets/link_SG3_gripper_left_finger_aruco.obj",
+        "sha256": "19ceeca8956d2e845a2a53c08ab015c79cdded2873dd282d1e764a8e193db491"
+      },
+      {
+        "file": "resources/stretch/assets/link_SG3_gripper_right_finger_aruco.obj",
+        "sha256": "f5555f3a3cd025c7ed1f45fda2b5d5813eba0a079ca05cbe46834220682e1154"
+      },
+      {
+        "file": "resources/stretch/assets/link_SG3_gripper_right_fingertip.stl",
+        "sha256": "c9a680cb46f39fa53dba46e4bff7e537346a4f5caa04f3b41e551cd63d885d4d"
+      },
+      {
+        "file": "resources/stretch/assets/link_SG3_gripper_left_fingertip.stl",
+        "sha256": "bb4ac16a6b9ff712cf4b2c4051ca498547c687ab1a985c51fad484c5d426aefa"
+      },
+      {
+        "file": "resources/stretch/assets/big_aruco_plate.stl",
+        "sha256": "41195315eca742171154d73613cade538413d63ac627cfdbb815600f6e66c3c8"
+      },
+      {
+        "file": "resources/stretch/assets/hand_crush.png",
+        "sha256": "b3fddc2877eca3542299291dce3e098558cc7dcdade10aae5526aeddc95604b8"
+      },
+      {
+        "file": "resources/stretch/assets/serial.png",
+        "sha256": "9f7a63de6f4c5f677d3f302ff0fb78db1e1af30a40668d7f297a147cfcb87b04"
+      },
+      {
+        "file": "resources/stretch/assets/mobile_base_right_corner_aruco_sticker.png",
+        "sha256": "025e8d8eaca6303c45ed979cea2278097dc56b6c40558af15b67b228249725d0"
+      },
+      {
+        "file": "resources/stretch/assets/mobile_base_left_corner_aruco_sticker.png",
+        "sha256": "e99edecf442109ff6c2311c2325ae10e709e723524eb9a4a41af343abcc5b882"
+      },
+      {
+        "file": "resources/stretch/assets/hand_pinch.png",
+        "sha256": "9c4b6d023cdf52828b3c95da8abc14393ed9256bb8ccbb86f220090ef2e81dc7"
+      },
+      {
+        "file": "resources/stretch/assets/arm_inner_wrist_aruco_sticker.png",
+        "sha256": "100ad8dca698e0b7362f57abec97b3f535c2a62e251048e63ad99c435d21c549"
+      },
+      {
+        "file": "resources/stretch/assets/arm_top_wrist_aruco_sticker.png",
+        "sha256": "7cc7ff50704807befd82d6ac441f0de7460e58923dc3771deb8bc8e8f528cedf"
+      },
+      {
+        "file": "resources/stretch/assets/shoulder_aruco_sticker.png",
+        "sha256": "13813d08a1cd2c06ea4726a916b1e789362f2ad500aa11b0998cd2209d8eaef1"
+      },
+      {
+        "file": "resources/stretch/assets/right_finger_aruco.png",
+        "sha256": "acb2a13762796e37352cbf952c62ee4ff8545c23659f66ce341cedae2b8b24c8"
+      },
+      {
+        "file": "resources/stretch/assets/left_finger_aruco.png",
+        "sha256": "6120990ed390a4f6debf6d37218820ca489991324c9ddbd88cb7af89ad972e75"
+      },
+      {
+        "file": "resources/stretch/assets/gripper_cam_aruco_sticker.png",
+        "sha256": "81c18ca457cd12d430729ea06c6d2cbf51a7a03d869a6f3cd3c57031d16ea49c"
+      }
+    ],
+    "texture_sha256": "d0647ad83f5aab1b899b04ab68085688c4b54522056d9cead9f4c595f4f7f918",
+    "texture_file": "human_generation/smplitex/requested_20260914/SMPLitex-texture-00026.png",
+    "provenance_file": "backtrack-before.provenance.json",
+    "room_reconstruction": "Full undropped original scene071 survives in t13 later scene snapshot; t16 selection log line11 removes bedroom_armchair_0; source scene071 confirmed by fetch/convert logs.",
+    "dropped_entities": [
+      "bedroom_armchair_0"
+    ],
+    "human_reconstruction": "Deterministic original SMPL-X segment generator from recorded betas and axis-angle joint values; no random pose, optimization or simulation; root transform and scale0.9 preserved. Only texture/face UV registration changed.",
+    "human_parameters": {
+      "joint_angles": {
+        "left_elbow": {
+          "x": 0.0075541608740810045,
+          "y": -1.676744633450311,
+          "z": 0.024802884815762496
+        },
+        "left_hip": {
+          "x": -14.540209157960694,
+          "y": -1.1750754564842198,
+          "z": -5.819721165804133
+        },
+        "left_knee": {
+          "x": 1.4744393394329995,
+          "y": -0.28222744524932014,
+          "z": 0.17568509863464984
+        },
+        "left_shoulder": {
+          "x": -0.8185458250293424,
+          "y": -6.908652248763742,
+          "z": -79.94105314020617
+        },
+        "neck": {
+          "x": -1.8557079694225158,
+          "y": -46.8686214808441,
+          "z": 0.5570382121945056
+        },
+        "right_elbow": {
+          "x": -0.018621295145109847,
+          "y": 1.6768294772064074,
+          "z": 0.02617726528560918
+        },
+        "right_hip": {
+          "x": -14.708407688914136,
+          "y": 1.110053229524462,
+          "z": 6.196580268354171
+        },
+        "right_knee": {
+          "x": 1.3274850446758248,
+          "y": 0.10837247045637008,
+          "z": 0.4134088321809519
+        },
+        "right_shoulder": {
+          "x": -0.4306662656143412,
+          "y": 7.111197666619062,
+          "z": 79.947555480296
+        }
+      },
+      "betas": [
+        1.5409960746765137,
+        -0.293428897857666,
+        -2.1787893772125244,
+        0.5684312582015991,
+        -1.0845223665237427,
+        -1.3985954523086548,
+        0.40334683656692505,
+        0.8380263447761536,
+        -0.7192575931549072,
+        -0.40334352850914
+      ],
+      "pos": [
+        1.727579116821289,
+        3.5548784732818604,
+        1.6328455209732056
+      ],
+      "quat": [
+        -0.021040668711066246,
+        0.7187168598175049,
+        0.6946237087249756,
+        -0.02238931693136692
+      ],
+      "scene_json": "/home/npechuk/src/gen_sim_phri/scene_generation/scenesmith/data/room2_t16_back_percuss_mid_back/room_scene.json",
+      "furniture_name": "bedroom_bed_0"
+    },
+    "robot_joint_positions": {
+      "joint_base_x": 0,
+      "joint_lift": 0.85,
+      "joint_arm_l0": 0.005,
+      "joint_arm_l1": 0.005,
+      "joint_arm_l2": 0.005,
+      "joint_arm_l3": 0.005,
+      "joint_wrist_yaw": 0,
+      "joint_wrist_pitch": -0.3,
+      "joint_wrist_roll": 0,
+      "joint_head_pan": -1.57,
+      "joint_head_tilt": -0.3
+    },
+    "robot_base_matrix": [
+      [
+        -0.68215001834996,
+        -0.7312122485743449,
+        0.0,
+        1.1333072185516357
+      ],
+      [
+        0.7312122485743449,
+        -0.68215001834996,
+        0.0,
+        3.113004684448242
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  "export": {
+    "file": "backtrack-before.glb",
+    "sha256": "1941521e2c5998ba956d483e49e1cec5cff30a1b8ffac9d2f82373ed549a68c4",
+    "bytes": 12006300,
+    "compression": "Lossless EXT_meshopt_compression. No quantization or simplification; texture images resized to1024 max.",
+    "geometry_verification": {
+      "matched_mesh_nodes": 152,
+      "total_mesh_nodes": 152,
+      "positions": "SHA256 equality of raw float32 POSITION buffers",
+      "triangles": "Identical winding-aware triangle sets (meshopt may cyclically rotate index triples)",
+      "transforms": "Maximum matrix difference <=1e-10",
+      "issues": []
+    }
+  }
+}

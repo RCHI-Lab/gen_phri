@@ -1,0 +1,38 @@
+# Task 24/50 of task_suite/tasks_llm.json -- sponge_bathing / right_hand_forearm (sitting).
+# Written by task_suite/room_suite.py configs; description [llm].
+# Original: Sitting in the chair after a messy lunch, the person has sticky food residue on their arm. The robot performs a quick, localized spot-clean, dabbing and rubbing its tip thoroughly over the right hand and forearm to wash away the spill.
+run_name: room2_t24_sponge_bathi_right_hand_forearm
+task: bathing
+robot: stretch
+human_indices:
+- 0
+cuda_id: 2
+task_description: An adult of average build is seated upright in a winged accent chair (seat depth about 45 cm), knees bent with feet flat on the floor and thighs slightly separated. The right arm rests extended forward over the front of the right armrest with the palm down, keeping the right hand and right forearm clearly exposed and lifted away from the lap. Starting from a clearly separated non-contact pose, the robot approaches from the front-right, keeping its base and arm entirely outside the chair's back, wings, and armrests. It brings the sponge pad flat against the skin and performs three gentle wiping passes along the right hand and right forearm to clean away residue, pressing lightly with only the sponge pad contacting the skin. It then lifts the sponge clear of the limb and retreats to a separated non-contact pose so the end of the task is unambiguous.
+human_posture: sitting
+furniture_name: bedroom_accent_chair_0
+target_segments:
+- rightHand
+- rightForeArm
+human_placement_impl: vlm
+scene:
+  enabled: true
+  order: room_first
+  room_policy: download_delete
+  scene_tries: 16
+  fetch_min_free_gb: 5
+  exclude_support:
+  - 23:bedroom_bed_0
+vlm_model: gemini-3.7-flash
+orchestrator:
+  model: gemini-3.7-flash
+  stage_attempt_cap: 5
+  item_execution_cap: 40
+  outer_loop_cap: 1
+  llm_call_cap: 600
+  review_on_success: true
+  cross_validate_humans: 0
+  stage_timeouts_s:
+    per_vlm_iter: 1800.0
+    per_cross_val_body: 300.0
+    default: 3600.0
+seated_view: front

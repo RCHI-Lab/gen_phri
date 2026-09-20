@@ -1,0 +1,26 @@
+{
+  "before": {
+    "vertices": 10667,
+    "triangles": 20878,
+    "max_vertex_error_m": 1.2425251050274255e-08,
+    "topology_exact": true,
+    "bounds_match": true,
+    "camera_offset": [
+      1.6,
+      0.35,
+      2.7
+    ]
+  },
+  "after": {
+    "vertices": 10667,
+    "triangles": 20878,
+    "max_vertex_error_m": 1.2449588804308576e-08,
+    "topology_exact": true,
+    "bounds_match": true,
+    "camera_offset": [
+      1.6,
+      0.35,
+      2.7
+    ]
+  }
+}

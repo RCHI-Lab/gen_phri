@@ -1,0 +1,36 @@
+# Task 43/50 of task_suite/tasks_llm.json -- lotion_application / hips (lying).
+# Written by task_suite/room_suite.py configs; description [llm].
+# Original: The person is lying flat in bed with sore, fragile skin around their hips. Adapting to their discomfort, the robot moves its bare tip with extreme gentleness, lightly feathering barrier cream over the hip area without pressing hard.
+run_name: room2_t43_lotion_appli_hips
+task: bathing
+robot: stretch
+human_indices:
+- 0
+cuda_id: 2
+task_description: An adult of average build is lying supine on a flat bed mattress of standard height. Both arms rest straight alongside the torso slightly away from the body, and both legs extend straight and slightly parted to prevent self-collision and leave the hips fully exposed. Starting from a clearly separated non-contact pose, the robot approaches the hips holding a sponge pad flat against the skin. The robot makes real, gentle contact with the hips and applies lotion across the hip area in two smooth, feather-light horizontal passes moving from right to left, keeping contact strictly confined to the hips. Throughout the motion, only the sponge pad touches the person while the rest of the robot stays completely clear of the body. The robot then lifts the sponge pad straight up clear of the body and retreats to a clearly separated non-contact pose so the end of the task is unambiguous.
+human_posture: lying
+furniture_name: bed
+target_segments:
+- hips
+human_placement_impl: vlm
+scene:
+  enabled: true
+  order: room_first
+  room_policy: download_delete
+  scene_tries: 8
+  fetch_min_free_gb: 5
+  exclude_support:
+  - 23:bedroom_bed_0
+vlm_model: gemini-3.7-flash
+orchestrator:
+  model: gemini-3.7-flash
+  stage_attempt_cap: 5
+  item_execution_cap: 40
+  outer_loop_cap: 1
+  llm_call_cap: 600
+  review_on_success: true
+  cross_validate_humans: 0
+  stage_timeouts_s:
+    per_vlm_iter: 1800.0
+    per_cross_val_body: 300.0
+    default: 3600.0

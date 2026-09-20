@@ -1,0 +1,37 @@
+# Task 37/50 of task_suite/tasks_llm.json -- skin_assessment / left_shoulder (sitting).
+# Written by task_suite/room_suite.py configs; description [llm].
+# Original: The person is sitting on a simple chair without armrests, with both forearms resting on their thighs to expose their upper back. The robot presses its tip against the bony ridge of the left shoulder blade to check for blanching, making sure the skin is healthy before they settle back.
+run_name: room2_t37_skin_assessm_left_shoulder
+task: scratching
+robot: stretch
+human_indices:
+- 0
+cuda_id: 0
+task_description: An adult of average build sits on a plain chair with no armrests and no wings (seat depth about 45 cm), knees bent, feet flat on the floor, and both forearms resting on the thighs so the arms stay well clear of the sides of the seat. The left shoulder is clear above the top edge of the chair back. Starting from a clearly separated non-contact pose, the robot approaches from behind and above, keeping its base and arm entirely outside the chair, and lowers its scratcher tip onto the posterior surface of the left shoulder, pressing lightly across three brief blanching assessment presses. Only the narrow scratcher tip touches the left shoulder while the rest of the robot stays clear. The robot then lifts the tool clear of the body and retreats to a separated non-contact pose so the end of the task is unambiguous.
+human_posture: sitting
+furniture_name: bedroom_accent_chair_0
+target_segments:
+- leftShoulder
+human_placement_impl: vlm
+scene:
+  enabled: true
+  order: room_first
+  room_policy: download_delete
+  scene_tries: 16
+  fetch_min_free_gb: 5
+  exclude_support:
+  - 23:bedroom_bed_0
+vlm_model: gemini-3.7-flash
+orchestrator:
+  model: gemini-3.7-flash
+  stage_attempt_cap: 5
+  item_execution_cap: 40
+  outer_loop_cap: 1
+  llm_call_cap: 600
+  review_on_success: true
+  cross_validate_humans: 0
+  stage_timeouts_s:
+    per_vlm_iter: 1800.0
+    per_cross_val_body: 300.0
+    default: 3600.0
+seated_view: back

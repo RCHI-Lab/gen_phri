@@ -1,0 +1,38 @@
+# Task 12/50 of task_suite/tasks_llm.json -- back_percussion / upper_back_prone (lying).
+# Written by task_suite/room_suite.py configs; description [llm].
+# Original: The person is lying face down on the bed, too weak today to sit up for their usual chest treatment. The robot adapts to the flat position, tapping rhythmically with its bare tip across both shoulder blades and the upper spine so the mucus still drains as it would in the chair.
+run_name: room2_t12_back_percuss_upper_back_prone
+task: bathing
+robot: stretch
+human_indices:
+- 0
+cuda_id: 3
+task_description: An adult of average build is lying prone on a standard bed with a horizontal mattress, head turned to one side. Both arms rest flat alongside the torso without touching the body, and both legs extend straight with slight separation, leaving the upper back completely exposed and reachable. Starting from a clearly separated non-contact pose beside the bed, a robot holding a scratcher approaches the person. The robot performs percussion therapy by lightly tapping its narrow tip rhythmically across the left shoulder, spine2, and right shoulder, moving across the upper back in two complete back-and-forth passes. Contact is strictly confined to the tip on the upper back while the rest of the robot body stays entirely clear of the person. The robot then lifts the tool clear of the body and retreats to a separated non-contact pose so the end of the task is unambiguous.
+human_posture: lying
+furniture_name: bed
+target_segments:
+- spine2
+- leftShoulder
+- rightShoulder
+human_placement_impl: vlm
+scene:
+  enabled: true
+  order: room_first
+  room_policy: download_delete
+  scene_tries: 8
+  fetch_min_free_gb: 5
+  exclude_support:
+  - 23:bedroom_bed_0
+vlm_model: gemini-3.7-flash
+orchestrator:
+  model: gemini-3.7-flash
+  stage_attempt_cap: 5
+  item_execution_cap: 40
+  outer_loop_cap: 1
+  llm_call_cap: 600
+  review_on_success: true
+  cross_validate_humans: 0
+  stage_timeouts_s:
+    per_vlm_iter: 1800.0
+    per_cross_val_body: 300.0
+    default: 3600.0

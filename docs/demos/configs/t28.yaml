@@ -1,0 +1,42 @@
+# Task 28/50 of task_suite/tasks_llm.json -- skin_assessment / spine (sitting).
+# Written by task_suite/room_suite.py configs; description [llm].
+# Original: The person is sitting on a low backless ottoman. The robot performs a thorough sequence, pressing its tip lightly against multiple vertebrae down the spine to ensure proper capillary refill across the whole back.
+run_name: room2_t28_skin_assessm_spine
+task: scratching
+robot: stretch
+human_indices:
+- 0
+cuda_id: 3
+task_description: "An adult of average build sits on a low backless upholstered ottoman (seat height about 45 cm, no backrest and no armrests), both feet flat on the floor, knees bent at ninety degrees and spaced comfortably apart, hands resting lightly on the tops of the knees. The whole back along spine2, spine1 and spine is open to the room with nothing behind it. Starting from a clearly separated non-contact pose behind the person, the robot approaches the back directly from behind at back height, keeping its base and whole arm clear of the ottoman and of the person's arms. It presses its scratcher tip lightly against three successive points moving downward along the spine from spine2 to spine to assess capillary refill, ensuring only the narrow tool tip contacts the skin while the rest of the robot remains clear. It then lifts the scratcher tip clear of the body and retreats to a separated non-contact pose so the end of the task is unambiguous."
+human_posture: sitting
+furniture_name: bedroom_ottoman_1
+target_segments:
+- spine
+- spine1
+- spine2
+human_placement_impl: vlm
+scene:
+  enabled: true
+  order: room_first
+  support_types: [ottoman, stool, bench, pouf]
+  room_scene_json: scene_assets/scenesmith/NotGenerated_scene_025/scene_drake.json
+  room_entity: bedroom_ottoman_1
+  room_policy: download_delete
+  scene_tries: 16
+  fetch_min_free_gb: 5
+  exclude_support:
+  - 23:bedroom_bed_0
+vlm_model: gemini-3.7-flash
+orchestrator:
+  model: gemini-3.7-flash
+  stage_attempt_cap: 5
+  item_execution_cap: 40
+  outer_loop_cap: 1
+  llm_call_cap: 600
+  review_on_success: true
+  cross_validate_humans: 0
+  stage_timeouts_s:
+    per_vlm_iter: 1800.0
+    per_cross_val_body: 300.0
+    default: 3600.0
+seated_view: back

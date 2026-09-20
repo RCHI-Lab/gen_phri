@@ -1,0 +1,37 @@
+# Task 16/50 of task_suite/tasks_llm.json -- back_percussion / mid_back (lying).
+# Written by task_suite/room_suite.py configs; description [llm].
+# Original: The person is lying prone on the bed, feeling deeply exhausted and sore from a prolonged coughing fit. The robot adapts by applying a much gentler, slower tapping motion with its bare tip along their mid-spine, loosening mucus without causing them extra discomfort.
+run_name: room2_t16_back_percuss_mid_back
+task: bathing
+robot: stretch
+human_indices:
+- 0
+cuda_id: 3
+task_description: An adult of average build is lying prone on a flat bed, head turned to the right with both arms resting on the mattress alongside the torso and both legs extending straight and slightly separated. Starting from a clearly separated non-contact pose, a robot equipped with a scratcher approaches from the side of the bed. It performs back percussion by applying three gentle, rhythmic tapping motions along the mid back across spine1 and spine2, pressing the narrow tip of the scratcher lightly against the skin before lifting slightly between each tap. Contact remains strictly confined to spine1 and spine2 with only the narrow tip touching the skin while the rest of the robot stays entirely clear of the body. The robot then lifts the tool clear and retreats to a clearly separated non-contact pose so the end of the task is unambiguous.
+human_posture: lying
+furniture_name: bed
+target_segments:
+- spine1
+- spine2
+human_placement_impl: vlm
+scene:
+  enabled: true
+  order: room_first
+  room_policy: download_delete
+  scene_tries: 8
+  fetch_min_free_gb: 5
+  exclude_support:
+  - 23:bedroom_bed_0
+vlm_model: gemini-3.7-flash
+orchestrator:
+  model: gemini-3.7-flash
+  stage_attempt_cap: 5
+  item_execution_cap: 40
+  outer_loop_cap: 1
+  llm_call_cap: 600
+  review_on_success: true
+  cross_validate_humans: 0
+  stage_timeouts_s:
+    per_vlm_iter: 1800.0
+    per_cross_val_body: 300.0
+    default: 3600.0

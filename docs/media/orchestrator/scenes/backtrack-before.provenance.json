@@ -1,0 +1,5272 @@
+{
+  "case": "backtrack",
+  "side": "before",
+  "run": "room2_t16_back_percuss_mid_back",
+  "iteration": 4,
+  "recorded_config": {
+    "source": "/home/npechuk/src/gen_sim_phri/scene_generation/robot_placement/data/room2_t16_back_percuss_mid_back/iter_04/robot_config.json",
+    "sha256": "ef8a0364d505096c203f532076b8f4727d061f1030d6300e277229d9fad550fd",
+    "mtime_utc": "2026-09-11T15:44:37.509572+00:00",
+    "bytes": 3345
+  },
+  "config": {
+    "robot_pos": [
+      1.1333072185516357,
+      3.113004684448242,
+      0.0
+    ],
+    "robot_quat": [
+      0.9303795592591082,
+      0.0,
+      0.0,
+      0.36659770281989995
+    ],
+    "human_config": {
+      "joint_angles": {
+        "left_elbow": {
+          "x": 0.0075541608740810045,
+          "y": -1.676744633450311,
+          "z": 0.024802884815762496
+        },
+        "left_hip": {
+          "x": -14.540209157960694,
+          "y": -1.1750754564842198,
+          "z": -5.819721165804133
+        },
+        "left_knee": {
+          "x": 1.4744393394329995,
+          "y": -0.28222744524932014,
+          "z": 0.17568509863464984
+        },
+        "left_shoulder": {
+          "x": -0.8185458250293424,
+          "y": -6.908652248763742,
+          "z": -79.94105314020617
+        },
+        "neck": {
+          "x": -1.8557079694225158,
+          "y": -46.8686214808441,
+          "z": 0.5570382121945056
+        },
+        "right_elbow": {
+          "x": -0.018621295145109847,
+          "y": 1.6768294772064074,
+          "z": 0.02617726528560918
+        },
+        "right_hip": {
+          "x": -14.708407688914136,
+          "y": 1.110053229524462,
+          "z": 6.196580268354171
+        },
+        "right_knee": {
+          "x": 1.3274850446758248,
+          "y": 0.10837247045637008,
+          "z": 0.4134088321809519
+        },
+        "right_shoulder": {
+          "x": -0.4306662656143412,
+          "y": 7.111197666619062,
+          "z": 79.947555480296
+        }
+      },
+      "betas": [
+        1.5409960746765137,
+        -0.293428897857666,
+        -2.1787893772125244,
+        0.5684312582015991,
+        -1.0845223665237427,
+        -1.3985954523086548,
+        0.40334683656692505,
+        0.8380263447761536,
+        -0.7192575931549072,
+        -0.40334352850914
+      ],
+      "pos": [
+        1.727579116821289,
+        3.5548784732818604,
+        1.6328455209732056
+      ],
+      "quat": [
+        -0.021040668711066246,
+        0.7187168598175049,
+        0.6946237087249756,
+        -0.02238931693136692
+      ],
+      "scene_json": "/home/npechuk/src/gen_sim_phri/scene_generation/scenesmith/data/room2_t16_back_percuss_mid_back/room_scene.json",
+      "furniture_name": "bedroom_bed_0"
+    },
+    "placement_correction": {
+      "applied": false,
+      "search": {
+        "ok": true,
+        "applied": false,
+        "dx_m": 0.0,
+        "dy_m": 0.0,
+        "dyaw_deg": 0.0,
+        "pos": [
+          1.1333072185516357,
+          3.113004684448242,
+          0.0
+        ],
+        "rot": [
+          [
+            0.7312122485743446,
+            -0.68215001834996,
+            0.0
+          ],
+          [
+            0.68215001834996,
+            0.7312122485743446,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "clearance_before_mm": 107.29,
+        "clearance_after_mm": 107.29,
+        "margin_before_mm": 112.29,
+        "reach_before": 0.0,
+        "reach_after": 0.0,
+        "reason": "generated pose kept: statically clear, but only 0.00 of probes are reached with the arm clear (min 0.25; worst None) and no pose improves it; exact-check cap of 60 reached at r=0.04 m before any pose verified (5085 of 9320 poses passed the floor plan; exact rejections: trajectory_margin 57, no_reach 60)",
+        "candidates_2d": 9320,
+        "survivors_2d": 5085,
+        "exact_checks": 60,
+        "seconds": 176.141,
+        "blockers_before": {
+          "human": 314.2,
+          "furniture": 107.3,
+          "room": 924.4,
+          "obstacles": 290.4
+        },
+        "reach_free_before": 0.0,
+        "reach_limited_before": 0.0,
+        "arm_clear_reach_frac_before": 0.0,
+        "arm_margin_before_mm": null,
+        "arm_worst_before": null,
+        "reach_limited_after": 0.0,
+        "arm_clear_reach_frac_after": 0.0,
+        "arm_margin_after_mm": null,
+        "arm_worst_after": null,
+        "arm_clear": false,
+        "deferred_2d": 5085,
+        "rejections": {
+          "static": 0,
+          "trajectory_margin": 57,
+          "reach_below_generated": 0,
+          "no_reach": 60,
+          "travel": 0,
+          "arm": 0
+        },
+        "prefilter": true,
+        "travel_model": true,
+        "travel_prediction": {
+          "travel": {
+            "bad_ok": 31,
+            "bad_wrong": 0,
+            "good_ok": 3,
+            "good_wrong": 26
+          },
+          "reach": {
+            "bad_ok": 60,
+            "bad_wrong": 0,
+            "good_ok": 0,
+            "good_wrong": 0
+          }
+        },
+        "setup_seconds": 12.089,
+        "prefilter_ms_per_candidate": 7.651
+      },
+      "generated_pos": [
+        1.1333072185516357,
+        3.113004684448242,
+        0.0
+      ],
+      "generated_rot": [
+        [
+          0.7312122485743446,
+          -0.68215001834996,
+          0.0
+        ],
+        [
+          0.68215001834996,
+          0.7312122485743446,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  },
+  "room": {
+    "source": {
+      "source": "/home/npechuk/src/gen_sim_phri/scene_generation/scenesmith/data/room2_t13_sponge_bathi_right_foot/room_scene.json",
+      "sha256": "116945f6c5bef6721f093a058a3c3d8dc1a2d82da35fd229f6bbc1bcb7698d21",
+      "mtime_utc": "2026-09-11T23:00:05.993194+00:00",
+      "bytes": 1155468
+    },
+    "drop": [
+      "bedroom_armchair_0"
+    ],
+    "evidence": "Full undropped original scene071 survives in t13 later scene snapshot; t16 selection log line11 removes bedroom_armchair_0; source scene071 confirmed by fetch/convert logs.",
+    "room_marker": {
+      "order": "room_first",
+      "entity": "bedroom_armchair_0",
+      "scene_id": 71,
+      "description": "A large bedroom with a lofted twin bed in one corner, freeing up the floor space below for a comfy armchair and a small side table. A bookcase stands against the wall next to the armchair, while a small desk, equipped with a pen and some papers along with a lamp for studying, is positioned near the window.",
+      "source": "scene_assets/scenesmith/NotGenerated_scene_071/scene_drake.json",
+      "welded_props": 25,
+      "dropped_entities": [],
+      "dropped_links": [],
+      "reason": "the room is used as authored: nothing is substituted, so nothing is displaced and no prop needs to fall anywhere"
+    },
+    "mesh_sources": [
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_071/floor_plans/bedroom/floors/floor.glb",
+        "sha256": "abe171fbef13d6bea7182367f9d6835b1ffb27a8cc71898b9c93b7640289da76",
+        "mtime_utc": "2026-09-14T09:23:21.255706+00:00",
+        "bytes": 2544,
+        "entity": "room_geometry_bedroom__v0",
+        "world_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            2.75
+          ],
+          [
+            0.0,
+            2.220446049250313e-16,
+            -1.0,
+            2.25
+          ],
+          [
+            0.0,
+            1.0,
+            2.220446049250313e-16,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_071/floor_plans/bedroom/walls/north_wall/wall.glb",
+        "sha256": "968dd4e687778faf1922b2f3100496d3f9cfddf0d3d80e0f1f9b8b26cb77855d",
+        "mtime_utc": "2026-09-14T09:23:21.498706+00:00",
+        "bytes": 16752972,
+        "entity": "room_geometry_bedroom__v1",
+        "world_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            2.75
+          ],
+          [
+            0.0,
+            2.220446049250313e-16,
+            -1.0,
+            4.475
+          ],
+          [
+            0.0,
+            1.0,
+            2.220446049250313e-16,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_071/floor_plans/bedroom/windows/window_2/window.glb",
+        "sha256": "520395d8843c792a30b9f202a2a6c61cd1771eebd97054335c361698dc3001e1",
+        "mtime_utc": "2026-09-14T09:23:21.837706+00:00",
+        "bytes": 2856,
+        "entity": "room_geometry_bedroom__v2",
+        "world_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            4.259118873315757
+          ],
+          [
+            0.0,
+            2.220446049250313e-16,
+            -1.0,
+            4.475
+          ],
+          [
+            0.0,
+            1.0,
+            2.220446049250313e-16,
+            1.5
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_071/floor_plans/bedroom/walls/north_wall_exterior/wall.glb",
+        "sha256": "0da01be891a1c49733370fa2ab700836891d9b55f97d06cfc78d5cac111fbd76",
+        "mtime_utc": "2026-09-14T09:23:21.855706+00:00",
+        "bytes": 8773876,
+        "entity": "room_geometry_bedroom__v3",
+        "world_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            2.75
+          ],
+          [
+            0.0,
+            2.220446049250313e-16,
+            -1.0,
+            4.525
+          ],
+          [
+            0.0,
+            1.0,
+            2.220446049250313e-16,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_071/floor_plans/bedroom/walls/south_wall/wall.glb",
+        "sha256": "02fab5f37c6ddd06dbee072fc6669b7aa9ddc93143a3a9afad2aacbc6feb4ad6",
+        "mtime_utc": "2026-09-14T09:23:22.020707+00:00",
+        "bytes": 16751556,
+        "entity": "room_geometry_bedroom__v4",
+        "world_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            2.75
+          ],
+          [
+            0.0,
+            2.220446049250313e-16,
+            -1.0,
+            0.02499999999999991
+          ],
+          [
+            0.0,
+            1.0,
+            2.220446049250313e-16,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_071/floor_plans/bedroom/walls/south_wall_exterior/wall.glb",
+        "sha256": "f65baec74021d72db3491d21f1b4cf5856dc50c87ed78dda7cfa9482b69e840e",
+        "mtime_utc": "2026-09-14T09:23:22.341707+00:00",
+        "bytes": 8772460,
+        "entity": "room_geometry_bedroom__v5",
+        "world_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            2.75
+          ],
+          [
+            0.0,
+            2.220446049250313e-16,
+            -1.0,
+            -0.02499999999999991
+          ],
+          [
+            0.0,
+            1.0,
+            2.220446049250313e-16,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_071/floor_plans/bedroom/walls/east_wall/wall.glb",
+        "sha256": "66925295ad24f3e4aef48e62e95a5571f043b47fc345c707a194105d1ec4d5b2",
+        "mtime_utc": "2026-09-14T09:23:22.478707+00:00",
+        "bytes": 16752916,
+        "entity": "room_geometry_bedroom__v6",
+        "world_matrix": [
+          [
+            -3.6732051035270885e-06,
+            -2.2204460492353336e-16,
+            0.9999999999932538,
+            5.475
+          ],
+          [
+            0.9999999999932538,
+            -8.156153760212811e-22,
+            3.6732051035270885e-06,
+            2.25
+          ],
+          [
+            0.0,
+            1.0,
+            2.220446049250313e-16,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_071/floor_plans/bedroom/windows/window_1/window.glb",
+        "sha256": "cffbed9771377ea48d3617f8fa27426347a927b5d1ed2afde724b64d30ad4ecc",
+        "mtime_utc": "2026-09-14T09:23:22.793707+00:00",
+        "bytes": 2844,
+        "entity": "room_geometry_bedroom__v7",
+        "world_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            5.475
+          ],
+          [
+            0.0,
+            2.220446049250313e-16,
+            -1.0,
+            2.1733169073710563
+          ],
+          [
+            0.0,
+            1.0,
+            2.220446049250313e-16,
+            1.35
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_071/floor_plans/bedroom/walls/east_wall_exterior/wall.glb",
+        "sha256": "667e79ac8eefbe07c40a558dd009dec0b3917526e2dae3d77ea747991717eda1",
+        "mtime_utc": "2026-09-14T09:23:22.809707+00:00",
+        "bytes": 8773820,
+        "entity": "room_geometry_bedroom__v8",
+        "world_matrix": [
+          [
+            -3.6732051035270885e-06,
+            -2.2204460492353336e-16,
+            0.9999999999932538,
+            5.525
+          ],
+          [
+            0.9999999999932538,
+            -8.156153760212811e-22,
+            3.6732051035270885e-06,
+            2.25
+          ],
+          [
+            0.0,
+            1.0,
+            2.220446049250313e-16,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_071/floor_plans/bedroom/walls/west_wall/wall.glb",
+        "sha256": "8bb9bf8708c0961acd57cddbff50aadf75931b2b266689a22064500b0df01780",
+        "mtime_utc": "2026-09-14T09:23:22.947707+00:00",
+        "bytes": 16752628,
+        "entity": "room_geometry_bedroom__v9",
+        "world_matrix": [
+          [
+            -3.6732051035270885e-06,
+            -2.2204460492353336e-16,
+            0.9999999999932538,
+            0.02499999999999991
+          ],
+          [
+            0.9999999999932538,
+            -8.156153760212811e-22,
+            3.6732051035270885e-06,
+            2.25
+          ],
+          [
+            0.0,
+            1.0,
+            2.220446049250313e-16,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_071/floor_plans/bedroom/walls/west_wall_exterior/wall.glb",
+        "sha256": "9ad97d2cb1357abe1deabb9895ee050c71f2dcae257c925f98e588da510f1a5e",
+        "mtime_utc": "2026-09-14T09:23:23.276708+00:00",
+        "bytes": 8773532,
+        "entity": "room_geometry_bedroom__v10",
+        "world_matrix": [
+          [
+            -3.6732051035270885e-06,
+            -2.2204460492353336e-16,
+            0.9999999999932538,
+            -0.02499999999999991
+          ],
+          [
+            0.9999999999932538,
+            -8.156153760212811e-22,
+            3.6732051035270885e-06,
+            2.25
+          ],
+          [
+            0.0,
+            1.0,
+            2.220446049250313e-16,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/furniture/sdf/2f4a7963f16e4c06b7624e970bb906461ad1d600/bed.glb",
+        "sha256": "d9836043173ac9ae3984715ba449b0f783c22fa0a62f26d2522731e983e220c7",
+        "mtime_utc": "2026-09-14T09:23:23.422708+00:00",
+        "bytes": 3213332,
+        "entity": "bedroom_bed_0",
+        "world_matrix": [
+          [
+            -0.8797780301295157,
+            -3.1808531012364826e-06,
+            0.019764050478363583,
+            1.4724399665978922
+          ],
+          [
+            0.01976396155580049,
+            0.0025019690270031017,
+            0.8797744744959409,
+            3.5935033578636064
+          ],
+          [
+            -5.937213126202343e-05,
+            0.8799964432546704,
+            -0.0025012664951857295,
+            -0.0027870048495595274
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/furniture/sdf/d959903a7b709cb037958ea246bde455f9858772/task_chair.glb",
+        "sha256": "f4bcac1bad88cd8029505c622c9878f376d931e665e46b1fb1ef556dd2455eb1",
+        "mtime_utc": "2026-09-14T09:23:23.596708+00:00",
+        "bytes": 4387760,
+        "entity": "bedroom_task_chair_0",
+        "world_matrix": [
+          [
+            0.9999447509707518,
+            0.0003274008120981877,
+            0.01050656055756076,
+            4.296288351068807
+          ],
+          [
+            0.010506333563373889,
+            0.000687495964866304,
+            -0.9999445706159685,
+            3.4574938657911285
+          ],
+          [
+            -0.00033460588246078806,
+            0.9999997100789614,
+            0.00068401819924081,
+            -0.0022075838245117683
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/furniture/sdf/08901e442a1995c0b952536f6ab4e2b78d12fc27/side_table.glb",
+        "sha256": "8788d5b2c95f117b50ba644b325d95838da4a4a53157932715fff2df2efa9930",
+        "mtime_utc": "2026-09-14T09:23:23.783708+00:00",
+        "bytes": 1711720,
+        "entity": "bedroom_side_table_0",
+        "world_matrix": [
+          [
+            0.9997245972435747,
+            5.389020716989629e-05,
+            0.023467568302190933,
+            1.8440799991245531
+          ],
+          [
+            0.023467567641465653,
+            1.2860447969583934e-05,
+            -0.9997245986288434,
+            3.2618359142903257
+          ],
+          [
+            -5.4177169174072774e-05,
+            0.9999999984652272,
+            1.1592234084792106e-05,
+            -0.00017647599155305287
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/furniture/sdf/3f28e55e96c9f14cd017e13cffa16b02e5db452e/credenza.glb",
+        "sha256": "b80a02d0caba396a18fc69026ffd03016f5db0d900427363142c2a5eef380e2d",
+        "mtime_utc": "2026-09-14T09:23:23.932708+00:00",
+        "bytes": 3852200,
+        "entity": "bedroom_credenza_0",
+        "world_matrix": [
+          [
+            0.9499999999998402,
+            -5.50857790839325e-07,
+            -1.358038435959887e-09,
+            4.200390548264328
+          ],
+          [
+            -6.346393412841125e-10,
+            0.0012475597856984467,
+            -0.9499991808389,
+            0.40221165527091873
+          ],
+          [
+            5.508590992528684e-07,
+            0.9499991808387402,
+            0.001247559785697869,
+            -0.001324596255766281
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/furniture/sdf/ed95c877f692c3fad1b50a96e21ea1e02101dd42/bookcase.glb",
+        "sha256": "42e08b395b97c8dcb138c779e8a21e5459e8ff5585d210f4d2195eb6543a090d",
+        "mtime_utc": "2026-09-14T09:23:24.184709+00:00",
+        "bytes": 2197908,
+        "entity": "bedroom_bookcase_0",
+        "world_matrix": [
+          [
+            -1.490436137698281e-06,
+            -1.2778076287377628e-05,
+            -0.6939999998807632,
+            0.25683754128347847
+          ],
+          [
+            -0.69399999999595,
+            -1.8439180736247375e-06,
+            1.4904700886261275e-06,
+            3.249566999520234
+          ],
+          [
+            -1.8439455161616725e-06,
+            0.693999999879914,
+            -1.2778072327299986e-05,
+            -3.228624427672925e-05
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/wall_mounted/sdf/1b08c08513ae90ca235d9a51a9ce8cc174ae5c2c/print.glb",
+        "sha256": "c9119ca5194c8a95057a2fd1eb167a1336c734e3cc32ac0e7edea7de3465c21a",
+        "mtime_utc": "2026-09-14T09:23:24.743709+00:00",
+        "bytes": 1107360,
+        "entity": "bedroom_print_0",
+        "world_matrix": [
+          [
+            0.9997499019933462,
+            -0.022363663928228535,
+            -1.2739978266402274e-16,
+            4.109515784954213
+          ],
+          [
+            -1.2246467991473522e-16,
+            2.220446049250313e-16,
+            -1.0,
+            0.04999999999999982
+          ],
+          [
+            0.022363663928228535,
+            0.9997499019933462,
+            2.1925031306726012e-16,
+            1.5634387345414513
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/wall_mounted/sdf/2defe14f5fd9e16764bd77f9a7b24328d9191b21/mirror.glb",
+        "sha256": "b133c7752a3ef418971671629a9ffc209f77f12d1c0f7624723a9c95aea8b38a",
+        "mtime_utc": "2026-09-14T09:23:24.792709+00:00",
+        "bytes": 750980,
+        "entity": "bedroom_mirror_0",
+        "world_matrix": [
+          [
+            0.9999553658571468,
+            0.009448084117959107,
+            -1.2036131770344691e-16,
+            0.805162311054703
+          ],
+          [
+            -1.224646799147354e-16,
+            2.2204460492503136e-16,
+            -1.0000000000000002,
+            0.04999999999999982
+          ],
+          [
+            -0.009448084117959107,
+            0.9999553658571468,
+            2.2319175075172864e-16,
+            1.2419679653855056
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/wall_mounted/sdf/2cfd823ec1ebdd3a3361cc093b6b109cf1c08d85/art_print.glb",
+        "sha256": "ba1e99068975c6f478e58d1c33d007847656f225bfe2aa21a0560f9e6e22b7b1",
+        "mtime_utc": "2026-09-14T09:23:24.914709+00:00",
+        "bytes": 1317624,
+        "entity": "bedroom_art_print_0",
+        "world_matrix": [
+          [
+            -0.999994724801828,
+            -0.0032481330817332563,
+            1.2174296496865973e-16,
+            2.6371430816904398
+          ],
+          [
+            1.2246484142099276e-16,
+            -2.2204460466273375e-16,
+            1.0000000000000002,
+            4.45
+          ],
+          [
+            -0.0032481330817332563,
+            0.999994724801828,
+            2.2244121543620986e-16,
+            1.5658994219521647
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/wall_mounted/sdf/2cfd823ec1ebdd3a3361cc093b6b109cf1c08d85/art_print.glb",
+        "sha256": "ba1e99068975c6f478e58d1c33d007847656f225bfe2aa21a0560f9e6e22b7b1",
+        "mtime_utc": "2026-09-14T09:23:24.914709+00:00",
+        "bytes": 1317624,
+        "entity": "bedroom_art_print_1",
+        "world_matrix": [
+          [
+            -0.9999834523979902,
+            0.005752819325906816,
+            1.2374054253552582e-16,
+            3.2805211997182857
+          ],
+          [
+            1.2246518653788325e-16,
+            -2.220446063822991e-16,
+            1.0,
+            4.45
+          ],
+          [
+            0.005752819325906816,
+            0.9999834523979902,
+            2.2133641198465834e-16,
+            1.5570200935320924
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/wall_mounted/sdf/7ce49155b21fea189e2fcc51a4f0d88cc8a418a5/clock.glb",
+        "sha256": "cadd0e26141700e369e1f004906bf5d8c8b023bda2596a503f9ccd1e906ef569",
+        "mtime_utc": "2026-09-14T09:23:25.027709+00:00",
+        "bytes": 33060,
+        "entity": "bedroom_clock_0",
+        "world_matrix": [
+          [
+            -0.9999902596094034,
+            -0.004413693047538187,
+            1.2148374854500874e-16,
+            5.202990966104854
+          ],
+          [
+            1.2246497812782638e-16,
+            -2.2204460426691757e-16,
+            0.9999999999999999,
+            4.45
+          ],
+          [
+            -0.004413693047538187,
+            0.9999902596094034,
+            2.2258296428827186e-16,
+            1.8
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/wall_mounted/sdf/6c55afb0c44fbb54d0753277d164a38111f96d1c/print.glb",
+        "sha256": "b0092d76e7a867440d63ea02696a2c578f7f1a2755fb3c35c65c6161092c7c6c",
+        "mtime_utc": "2026-09-14T09:23:25.044709+00:00",
+        "bytes": 687392,
+        "entity": "bedroom_print_1",
+        "world_matrix": [
+          [
+            -3.3306690738754696e-16,
+            -2.198762005800603e-16,
+            1.0,
+            5.45
+          ],
+          [
+            0.9999705186816124,
+            -0.007678656629060408,
+            3.313619031099923e-16,
+            3.763371754437437
+          ],
+          [
+            0.007678656629060409,
+            0.9999705186816124,
+            2.2203805875733725e-16,
+            1.5100756052089115
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/wall_mounted/sdf/6c55afb0c44fbb54d0753277d164a38111f96d1c/print.glb",
+        "sha256": "b0092d76e7a867440d63ea02696a2c578f7f1a2755fb3c35c65c6161092c7c6c",
+        "mtime_utc": "2026-09-14T09:23:25.044709+00:00",
+        "bytes": 687392,
+        "entity": "bedroom_print_2",
+        "world_matrix": [
+          [
+            1.6653345369377348e-16,
+            -2.229119666630197e-16,
+            1.0,
+            5.45
+          ],
+          [
+            0.9999694660508549,
+            0.007814535556776168,
+            -1.6479827823339651e-16,
+            0.7649150210734761
+          ],
+          [
+            -0.007814535556776168,
+            0.9999694660508549,
+            2.246399102403218e-16,
+            1.4995594172050748
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/wall_mounted/sdf/bc2efa5088d5b25f7aacaaf18ff555f187f3056a/mirror.glb",
+        "sha256": "c811d1dc201cf12ff08f1cc2e9a29b2abe8c2d0c74babb7d13e558b742edb92d",
+        "mtime_utc": "2026-09-14T09:23:25.302710+00:00",
+        "bytes": 2350496,
+        "entity": "bedroom_mirror_1",
+        "world_matrix": [
+          [
+            -4.440892098500626e-16,
+            2.218277644905342e-16,
+            -1.0,
+            0.04999999999999982
+          ],
+          [
+            -0.9999975553372012,
+            -0.0022111805944581087,
+            4.435982291285483e-16,
+            0.7501002093983469
+          ],
+          [
+            -0.0022111805944581087,
+            0.9999975553372012,
+            2.2291142383883436e-16,
+            1.6006428886278186
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/wall_mounted/sdf/59a8bb467d1eb1db87d5d8a375e77f8a7f0f1b9a/photography_print.glb",
+        "sha256": "d09ae04b45febc379c0b91fd5262490cc370170fa37e1cb4cb028eba4f3ded53",
+        "mtime_utc": "2026-09-14T09:23:25.552710+00:00",
+        "bytes": 1701084,
+        "entity": "bedroom_photography_print_0",
+        "world_matrix": [
+          [
+            1.6653345369377348e-16,
+            2.2182776449053426e-16,
+            -1.0000000000000002,
+            0.04999999999999982
+          ],
+          [
+            -0.9999978378219925,
+            0.00207950747542702,
+            -1.6607171027795363e-16,
+            3.413471322961955
+          ],
+          [
+            0.00207950747542702,
+            0.9999978378219925,
+            2.2226096525956695e-16,
+            1.55
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/ceiling_mounted/sdf/82e45a038d4661cde412e372a76816cb6c347d10/track_light.glb",
+        "sha256": "9a1bcd655bb6f42767338c57a089acda66655b828664f085b77748835c113c86",
+        "mtime_utc": "2026-09-14T09:23:25.723710+00:00",
+        "bytes": 5571424,
+        "entity": "bedroom_track_light_0",
+        "world_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            3.440126360185979
+          ],
+          [
+            0.0,
+            2.220446049250313e-16,
+            -1.0,
+            3.68728499990341
+          ],
+          [
+            0.0,
+            1.0,
+            2.220446049250313e-16,
+            2.7
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/ceiling_mounted/sdf/555c117758ea218eb017c9ff667699d2714c2889/smoke_detector.glb",
+        "sha256": "b070c9f459590ca783c06b5a3358d95cb46d133f913fcf51b624f7da02b3d25d",
+        "mtime_utc": "2026-09-14T09:23:25.842710+00:00",
+        "bytes": 1652408,
+        "entity": "bedroom_smoke_detector_0",
+        "world_matrix": [
+          [
+            0.9999984777163695,
+            -3.8743856428268607e-19,
+            0.001744868173732465,
+            0.5672042192300655
+          ],
+          [
+            0.001744868173732465,
+            2.22044266910164e-16,
+            -0.9999984777163695,
+            1.6386595912894701
+          ],
+          [
+            0.0,
+            1.0,
+            2.220446049250313e-16,
+            2.7
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/manipuland/sdf/5569775f4baa61461eb81749c0e21bfb186e12e3/ballpoint_pen.glb",
+        "sha256": "149647fc3ea1fd419e8d849be193c43cffb203e0cb08d68864def7511d809c04",
+        "mtime_utc": "2026-09-14T09:23:25.982710+00:00",
+        "bytes": 581064,
+        "entity": "bedroom_ballpoint_pen_0",
+        "world_matrix": [
+          [
+            -0.9631461507695299,
+            0.053949206764044265,
+            -0.2635127612609468,
+            3.931983305825279
+          ],
+          [
+            -0.26323252437788436,
+            0.012364072322404463,
+            0.9646531852563663,
+            3.959930289453924
+          ],
+          [
+            0.05530036498509643,
+            0.998467131559741,
+            0.002292777219523865,
+            0.8023772880431772
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/manipuland/sdf/23ab7b9737739ba9e6ea60558b6b8c60e90c2542/desk_lamp_bar.glb",
+        "sha256": "9fe57952b722a452ea187d47d57ff9c9523cd4d7d38d0f3bbe0dc8b093778669",
+        "mtime_utc": "2026-09-14T09:23:26.031710+00:00",
+        "bytes": 843968,
+        "entity": "bedroom_desk_lamp_bar_0",
+        "world_matrix": [
+          [
+            -0.8976444916956203,
+            8.48445512475324e-05,
+            0.4407202733366297,
+            3.7697084301346275
+          ],
+          [
+            0.44072027273629727,
+            -2.665501894000147e-05,
+            0.897644495604331,
+            3.8808465274820323
+          ],
+          [
+            8.790765164239754e-05,
+            0.9999999960454561,
+            -1.3465982838466483e-05,
+            0.8025340429699389
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/manipuland/sdf/4681d7a50b9f9a12acaaeeb06349203ac7235303/printer_paper_pad.glb",
+        "sha256": "d86ed9d37d66261ccc1fc804fce37f703a9465d5e05104e63170034688d83640",
+        "mtime_utc": "2026-09-14T09:23:26.071710+00:00",
+        "bytes": 654788,
+        "entity": "bedroom_printer_paper_pad_0",
+        "world_matrix": [
+          [
+            -0.9958125158121924,
+            0.004065201356323633,
+            -0.09132856885840715,
+            4.094603013809857
+          ],
+          [
+            -0.09132815355500268,
+            0.0002880667822486775,
+            0.9958208098778429,
+            4.0438073074143475
+          ],
+          [
+            0.004074520833929124,
+            0.999991695543249,
+            8.44068265493514e-05,
+            0.8019305655333231
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/manipuland/sdf/9bb35fc8b2b7c1983d60882948c9f834bdb9faf3/laptop.glb",
+        "sha256": "61e64476f4a3abe091c4b95736ee432febb9336f094cceb898e6f5c05e8779c5",
+        "mtime_utc": "2026-09-14T09:23:26.130710+00:00",
+        "bytes": 113200,
+        "entity": "bedroom_laptop_0",
+        "world_matrix": [
+          [
+            -0.9979524179470853,
+            6.657096713103408e-05,
+            -0.06396066824129094,
+            4.654697611722208
+          ],
+          [
+            -0.06396067359496867,
+            -8.166249559341699e-05,
+            0.9979524164831282,
+            3.999899877811396
+          ],
+          [
+            6.121146972762791e-05,
+            0.9999999944497717,
+            8.575320883261315e-05,
+            0.8024842131400103
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/manipuland/sdf/81c6dd3830a8df6644bd1f6b9a239615234e888f/hardcover_novel.glb",
+        "sha256": "8a091c65e26f56858000827ca7a648a83a7d7b54cf069375f2ca66bbafd4fb91",
+        "mtime_utc": "2026-09-14T09:23:26.155710+00:00",
+        "bytes": 1643220,
+        "entity": "bedroom_hardcover_novel_0",
+        "world_matrix": [
+          [
+            0.6878119356079462,
+            4.094767505559231e-05,
+            0.13005667825428432,
+            1.7035058807223435
+          ],
+          [
+            0.13005667803674198,
+            7.525374970867896e-06,
+            -0.687811936826787,
+            3.19139472392376
+          ],
+          [
+            -4.1632892799814103e-05,
+            0.6999999987618977,
+            -2.135369516715143e-07,
+            0.45033461079573117
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/manipuland/sdf/9bb636b990db93bd65e3b05842bbf256653d3970/round_cork_coaster.glb",
+        "sha256": "3282040aa2336a38367e39543bcc0ef4eabb14bf02fef309ad38db319d673bc0",
+        "mtime_utc": "2026-09-14T09:23:26.422711+00:00",
+        "bytes": 719028,
+        "entity": "bedroom_round_cork_coaster_0_s0_0",
+        "world_matrix": [
+          [
+            0.95991290137927,
+            5.533566500048745e-05,
+            0.2802984457744925,
+            1.9814112193399023
+          ],
+          [
+            0.28029844550180905,
+            1.2781664204238695e-05,
+            -0.9599129029687529,
+            3.375053559708677
+          ],
+          [
+            -5.670009943918389e-05,
+            0.9999999983872966,
+            -3.24121650969917e-06,
+            0.45031769687501333
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/manipuland/sdf/5742501065a46cf69165e60257b42a86f5fadf8b/coffee_mug.glb",
+        "sha256": "f72444fccdffa2cf82a39f9f904cd0674e6c7744ae70848ea0d0d99387d76cc6",
+        "mtime_utc": "2026-09-14T09:23:26.473711+00:00",
+        "bytes": 657644,
+        "entity": "bedroom_coffee_mug_0_s0_1",
+        "world_matrix": [
+          [
+            0.8624208973361049,
+            2.4836684314825472e-05,
+            0.2573522784455711,
+            1.9822868189138718
+          ],
+          [
+            0.25735227725626925,
+            3.936903552917194e-05,
+            -0.8624208971500468,
+            3.3761827584009723
+          ],
+          [
+            -3.505709618073479e-05,
+            0.8999999987962324,
+            3.062322408934451e-05,
+            0.45431623803573884
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/manipuland/sdf/77a9494c79e0cbc30ab49127f456c7d7f4a53e64/smartphone.glb",
+        "sha256": "111f167c5d3438820730bb50d5eb6f9436d9f8ff0116f33749d86e563459f577",
+        "mtime_utc": "2026-09-14T09:23:26.614711+00:00",
+        "bytes": 1056856,
+        "entity": "bedroom_smartphone_0",
+        "world_matrix": [
+          [
+            0.9357793768019395,
+            0.0015325196843310523,
+            -0.3525827694819915,
+            1.7201930534915126
+          ],
+          [
+            -0.35258609976736754,
+            0.004107786260715739,
+            -0.935770360902114,
+            3.3795321784957273
+          ],
+          [
+            1.4248158147166928e-05,
+            0.9999903886915382,
+            0.004384326805403146,
+            0.45015376462039514
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/manipuland/sdf/29c9ab6ad9b6d2c5830c113a3abec93a1a6e4e13/potted_succulent.glb",
+        "sha256": "e0db2eb098b33e8c760561375e446cd9a4d5819bd890747de35ac46f82ebb73b",
+        "mtime_utc": "2026-09-14T09:23:26.759711+00:00",
+        "bytes": 8636320,
+        "entity": "bedroom_potted_succulent_0",
+        "world_matrix": [
+          [
+            0.1948720371002161,
+            -0.0037640620551151974,
+            -0.9808214521477685,
+            0.2176245608912155
+          ],
+          [
+            -0.9808286648614613,
+            -0.0006060529959371863,
+            -0.1948711443129783,
+            3.3776581790919837
+          ],
+          [
+            0.00013907730039174255,
+            0.9999927322418957,
+            -0.003810002741883295,
+            1.2984617028261092
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/manipuland/sdf/5efaa6062b1262ea0b978b327e281ceb1600ad19/storage_box.glb",
+        "sha256": "ab0414b9ae51d59f001cf15d3e0d832f3d6d60d39bcc6d9bd73edff991f21207",
+        "mtime_utc": "2026-09-14T09:23:27.265712+00:00",
+        "bytes": 904892,
+        "entity": "bedroom_storage_box_0",
+        "world_matrix": [
+          [
+            0.0021544814753063357,
+            -0.004931585246378198,
+            -0.9999855187334117,
+            0.24415126826914735
+          ],
+          [
+            -0.9999976790588703,
+            -1.3275314424847783e-06,
+            -0.002154501127952402,
+            3.141155602745863
+          ],
+          [
+            9.297593757766603e-06,
+            0.9999878396586608,
+            -0.004931576660601065,
+            0.5170195474649534
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/manipuland/sdf/81c6dd3830a8df6644bd1f6b9a239615234e888f/hardcover_novel.glb",
+        "sha256": "8a091c65e26f56858000827ca7a648a83a7d7b54cf069375f2ca66bbafd4fb91",
+        "mtime_utc": "2026-09-14T09:23:26.155710+00:00",
+        "bytes": 1643220,
+        "entity": "bedroom_hardcover_novel_1",
+        "world_matrix": [
+          [
+            -0.1159445514734189,
+            -4.150120088051176e-06,
+            -0.6903309792892135,
+            0.2667880564551628
+          ],
+          [
+            -0.6903309792705484,
+            -5.951757398707475e-06,
+            0.11594455150606474,
+            3.3650918586208043
+          ],
+          [
+            -6.556951894067079e-06,
+            0.6999999999623953,
+            -3.1069751748614312e-06,
+            0.5173756900850612
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/manipuland/sdf/0a03d59304e236ca3888d1db52303bfebb580805/bud_vase.glb",
+        "sha256": "3f13621d4424473cb3cd6b00cc49080759bea39d58b65d7a469eb5124e97b9da",
+        "mtime_utc": "2026-09-14T09:23:27.656712+00:00",
+        "bytes": 1242300,
+        "entity": "bedroom_bud_vase_0",
+        "world_matrix": [
+          [
+            -0.11138118673601172,
+            1.59603831165871e-06,
+            -0.9937777574683037,
+            0.21386115447571097
+          ],
+          [
+            -0.9937777574691532,
+            -1.1114342969902099e-06,
+            0.11138118673432196,
+            3.0991380791818486
+          ],
+          [
+            -9.267500420103006e-07,
+            0.9999999999981088,
+            1.7099002451729204e-06,
+            1.2992709546839993
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/manipuland/sdf/9434ebf4ba8489f4ba751d2b67688d120f822d0c/paperback_book.glb",
+        "sha256": "d284ee4a76814578bf42116ebf56e12713025eca9bc4a9e954023cd8f1fc3be3",
+        "mtime_utc": "2026-09-14T09:23:27.714712+00:00",
+        "bytes": 1249084,
+        "entity": "bedroom_paperback_book_0_s1_0",
+        "world_matrix": [
+          [
+            0.019991038291398144,
+            -4.796187769255043e-06,
+            -0.9998001592143445,
+            0.283070964770495
+          ],
+          [
+            -0.9998001592137441,
+            -5.016619551995829e-06,
+            -0.019991038267320738,
+            3.37217353942342
+          ],
+          [
+            -4.919736253570791e-06,
+            0.999999999975915,
+            -4.89551672887753e-06,
+            0.7663186742689769
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/manipuland/sdf/9434ebf4ba8489f4ba751d2b67688d120f822d0c/paperback_book.glb",
+        "sha256": "d284ee4a76814578bf42116ebf56e12713025eca9bc4a9e954023cd8f1fc3be3",
+        "mtime_utc": "2026-09-14T09:23:27.714712+00:00",
+        "bytes": 1249084,
+        "entity": "bedroom_paperback_book_1_s1_1",
+        "world_matrix": [
+          [
+            0.015771861378043595,
+            -1.0065266106328568e-05,
+            -0.9998756164080421,
+            0.28307392864306413
+          ],
+          [
+            -0.9998756164356698,
+            -6.946438365899996e-06,
+            -0.01577186130855296,
+            3.372348648853884
+          ],
+          [
+            -6.7868263618820385e-06,
+            0.9999999999252187,
+            -1.017357241563243e-05,
+            0.7833395549280086
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/manipuland/sdf/1d04ad185c04aa63c539897f538002019d1b5d3a/file_holder.glb",
+        "sha256": "10deaed54c19de5d009f164dc3fa17d8bbd02b08955a6acbdefe3bfa34214706",
+        "mtime_utc": "2026-09-14T09:23:28.225712+00:00",
+        "bytes": 25180,
+        "entity": "bedroom_file_holder_0_f0_c",
+        "world_matrix": [
+          [
+            0.0009065931780996017,
+            3.8166490400716904e-08,
+            -0.9999995890443195,
+            0.23690063263989414
+          ],
+          [
+            -0.999999589025783,
+            -6.088842951537808e-06,
+            -0.000906593178315207,
+            3.279514529767541
+          ],
+          [
+            -6.088875050773047e-06,
+            0.9999999999814622,
+            3.2646371232889256e-08,
+            1.0330704075035715
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/manipuland/sdf/6305d9ce403689f0085d59aa72008c136ef8fa58/tiny_paperback_booklet.glb",
+        "sha256": "3bb13bbd2071c32e7b6c25dbb35a3e10734142ee1bbb0e8e18a8d3606acf5da4",
+        "mtime_utc": "2026-09-14T09:23:28.244712+00:00",
+        "bytes": 2751372,
+        "entity": "bedroom_tiny_paperback_booklet_0_f0_0",
+        "world_matrix": [
+          [
+            -0.9545419915344722,
+            -0.2980579407837171,
+            -0.0033242041415001253,
+            0.2023466467956383
+          ],
+          [
+            -0.2978620286635235,
+            0.9533729803174982,
+            0.04856101606208347,
+            3.237523509477747
+          ],
+          [
+            -0.011304790040263857,
+            0.0473436831721175,
+            -0.9988146862085299,
+            1.123915708156708
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/manipuland/sdf/6305d9ce403689f0085d59aa72008c136ef8fa58/tiny_paperback_booklet.glb",
+        "sha256": "3bb13bbd2071c32e7b6c25dbb35a3e10734142ee1bbb0e8e18a8d3606acf5da4",
+        "mtime_utc": "2026-09-14T09:23:28.244712+00:00",
+        "bytes": 2751372,
+        "entity": "bedroom_tiny_paperback_booklet_0_f0_1",
+        "world_matrix": [
+          [
+            -0.06935469365466557,
+            -0.9968964596813348,
+            -0.037247485054549,
+            0.20886933941485353
+          ],
+          [
+            -0.9974349707556502,
+            0.06863283073356974,
+            0.0203227374920963,
+            3.245087137327676
+          ],
+          [
+            -0.017703264719903855,
+            0.03856142139909413,
+            -0.9990994000588425,
+            1.1251743484409436
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/manipuland/sdf/6305d9ce403689f0085d59aa72008c136ef8fa58/tiny_paperback_booklet.glb",
+        "sha256": "3bb13bbd2071c32e7b6c25dbb35a3e10734142ee1bbb0e8e18a8d3606acf5da4",
+        "mtime_utc": "2026-09-14T09:23:28.244712+00:00",
+        "bytes": 2751372,
+        "entity": "bedroom_tiny_paperback_booklet_0_f0_2",
+        "world_matrix": [
+          [
+            0.27610537078553093,
+            -0.12634945423188498,
+            -0.9527862507607302,
+            0.2293860705457309
+          ],
+          [
+            -0.886055072495853,
+            0.3506242557617236,
+            -0.30326397704954344,
+            3.283218715569331
+          ],
+          [
+            0.37238720806138476,
+            0.9279539033200098,
+            -0.015143334685752756,
+            1.131168173623929
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/manipuland/sdf/6305d9ce403689f0085d59aa72008c136ef8fa58/tiny_paperback_booklet.glb",
+        "sha256": "3bb13bbd2071c32e7b6c25dbb35a3e10734142ee1bbb0e8e18a8d3606acf5da4",
+        "mtime_utc": "2026-09-14T09:23:28.244712+00:00",
+        "bytes": 2751372,
+        "entity": "bedroom_tiny_paperback_booklet_0_f0_3",
+        "world_matrix": [
+          [
+            0.07376853340173051,
+            0.5370464401773727,
+            -0.8403209652106569,
+            0.2432262790378994
+          ],
+          [
+            -0.9411343776662439,
+            0.3162153232945654,
+            0.11947364767381032,
+            3.2748699772648058
+          ],
+          [
+            0.32988526286351444,
+            0.7820415528643768,
+            0.5287596078927974,
+            1.1145422751234964
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/manipuland/sdf/6305d9ce403689f0085d59aa72008c136ef8fa58/tiny_paperback_booklet.glb",
+        "sha256": "3bb13bbd2071c32e7b6c25dbb35a3e10734142ee1bbb0e8e18a8d3606acf5da4",
+        "mtime_utc": "2026-09-14T09:23:28.244712+00:00",
+        "bytes": 2751372,
+        "entity": "bedroom_tiny_paperback_booklet_0_f0_4",
+        "world_matrix": [
+          [
+            0.010595187364940084,
+            -0.9775738666151743,
+            -0.21032612133484396,
+            0.27873238640673836
+          ],
+          [
+            -0.9997826959608243,
+            -0.014132855882026566,
+            0.015323943419499216,
+            3.292874968759098
+          ],
+          [
+            -0.017952795381442954,
+            0.21011805656743437,
+            -0.9775111761214379,
+            1.0545002093782176
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/manipuland/sdf/6305d9ce403689f0085d59aa72008c136ef8fa58/tiny_paperback_booklet.glb",
+        "sha256": "3bb13bbd2071c32e7b6c25dbb35a3e10734142ee1bbb0e8e18a8d3606acf5da4",
+        "mtime_utc": "2026-09-14T09:23:28.244712+00:00",
+        "bytes": 2751372,
+        "entity": "bedroom_tiny_paperback_booklet_0_f0_5",
+        "world_matrix": [
+          [
+            0.009822781124940127,
+            -0.994987957653843,
+            -0.09951119080187171,
+            0.27137131579760476
+          ],
+          [
+            -0.11998693734952759,
+            -0.09996977743663094,
+            0.9877293042452228,
+            3.2920809695724254
+          ],
+          [
+            -0.9927268747427223,
+            0.002237794250030881,
+            -0.12036753898141503,
+            1.096305992221721
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/manipuland/sdf/6ea1f9bd1fe5ae7cfcb44d3d3b7f0799464db426/framed_photo.glb",
+        "sha256": "139e219b7cdf3667f837ed832df5a2643cab1e3533c14d8b97b7ece623ac1cf5",
+        "mtime_utc": "2026-09-14T09:23:29.870714+00:00",
+        "bytes": 1691280,
+        "entity": "bedroom_framed_photo_0",
+        "world_matrix": [
+          [
+            0.927508422826873,
+            0.15321001814099397,
+            0.34096160476869447,
+            4.457788126697706
+          ],
+          [
+            0.3737457235575459,
+            -0.3959625950556667,
+            -0.8387656153176697,
+            1.1289343374296374
+          ],
+          [
+            0.006500746699694707,
+            0.9053951146643209,
+            -0.42452023112488757,
+            0.00828546446255547
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/manipuland/sdf/81c6dd3830a8df6644bd1f6b9a239615234e888f/hardcover_novel.glb",
+        "sha256": "8a091c65e26f56858000827ca7a648a83a7d7b54cf069375f2ca66bbafd4fb91",
+        "mtime_utc": "2026-09-14T09:23:26.155710+00:00",
+        "bytes": 1643220,
+        "entity": "bedroom_hardcover_novel_2",
+        "world_matrix": [
+          [
+            0.6978293756270886,
+            4.90098027238107e-06,
+            0.05508323236601349,
+            4.456523563930109
+          ],
+          [
+            0.05508323237939435,
+            -1.748298952388472e-06,
+            -0.6978293756410525,
+            0.35105800043522084
+          ],
+          [
+            -4.748208637235892e-06,
+            0.6999999999806599,
+            -2.128537430835906e-06,
+            -5.839950855162725e-07
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/manipuland/sdf/9434ebf4ba8489f4ba751d2b67688d120f822d0c/paperback_book.glb",
+        "sha256": "d284ee4a76814578bf42116ebf56e12713025eca9bc4a9e954023cd8f1fc3be3",
+        "mtime_utc": "2026-09-14T09:23:27.714712+00:00",
+        "bytes": 1249084,
+        "entity": "bedroom_paperback_book_0",
+        "world_matrix": [
+          [
+            -0.9843729940774559,
+            -0.008032161710069713,
+            -0.17591274231632217,
+            1.6010587807277428
+          ],
+          [
+            -0.1759446300656751,
+            0.003447293498548282,
+            0.9843940284858437,
+            3.790504084596547
+          ],
+          [
+            -0.00730038917032641,
+            0.9999617995432618,
+            -0.0048066383433356145,
+            1.534608000205996
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/manipuland/sdf/77a9494c79e0cbc30ab49127f456c7d7f4a53e64/smartphone.glb",
+        "sha256": "111f167c5d3438820730bb50d5eb6f9436d9f8ff0116f33749d86e563459f577",
+        "mtime_utc": "2026-09-14T09:23:26.614711+00:00",
+        "bytes": 1056856,
+        "entity": "bedroom_smartphone_1",
+        "world_matrix": [
+          [
+            -0.9803747199794701,
+            -0.00343803867224928,
+            0.19711313582626502,
+            1.7249261434784307
+          ],
+          [
+            0.197128951179151,
+            -0.00511007515206755,
+            0.980364250541067,
+            3.5883045367761834
+          ],
+          [
+            -0.0023632672687189573,
+            0.999981033331147,
+            0.005687525453856135,
+            1.534107944408525
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/furniture/sdf/desk_1767983153/E_body_1_combined.glb",
+        "sha256": "18f4300d25cc5987fd197f8ac29b30e9b6b7ac0c072b6285ae6745bf6b08e96d",
+        "mtime_utc": "2026-09-14T09:23:30.784715+00:00",
+        "bytes": 697808,
+        "entity": "bedroom_desk_0__E_body_1",
+        "world_matrix": [
+          [
+            -0.9999999976697028,
+            6.826824383210761e-05,
+            2.038920864975736e-07,
+            4.270025864047678
+          ],
+          [
+            1.984020720621779e-07,
+            -8.041827254168138e-05,
+            0.9999999967664311,
+            4.124872735582058
+          ],
+          [
+            6.826826000800691e-05,
+            0.9999999944361743,
+            8.041825880972185e-05,
+            0.00656999674741341
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/furniture/sdf/desk_1767983153/E_drawer1_6_combined.glb",
+        "sha256": "730a06c81a9c494a24dd819997f0095641d28404cc66caacbb1ceb45d3c43e87",
+        "mtime_utc": "2026-09-14T09:23:30.861715+00:00",
+        "bytes": 121412,
+        "entity": "bedroom_desk_0__E_drawer1_6",
+        "world_matrix": [
+          [
+            -0.9999999976697028,
+            6.826824383210761e-05,
+            2.038920864975736e-07,
+            4.270025864047678
+          ],
+          [
+            1.984020720621779e-07,
+            -8.041827254168138e-05,
+            0.9999999967664311,
+            4.124872735582058
+          ],
+          [
+            6.826826000800691e-05,
+            0.9999999944361743,
+            8.041825880972185e-05,
+            0.00656999674741341
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_071/room_bedroom/generated_assets/furniture/sdf/desk_1767983153/E_drawer2_7_combined.glb",
+        "sha256": "a77fc1163d880e7e00982b4948092179698dd3deb6f6c1798bf5661785124136",
+        "mtime_utc": "2026-09-14T09:23:30.884715+00:00",
+        "bytes": 118216,
+        "entity": "bedroom_desk_0__E_drawer2_7",
+        "world_matrix": [
+          [
+            -0.9999999976697028,
+            6.826824383210761e-05,
+            2.038920864975736e-07,
+            4.270025864047678
+          ],
+          [
+            1.984020720621779e-07,
+            -8.041827254168138e-05,
+            0.9999999967664311,
+            4.124872735582058
+          ],
+          [
+            6.826826000800691e-05,
+            0.9999999944361743,
+            8.041825880972185e-05,
+            0.00656999674741341
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      }
+    ],
+    "ceiling_cull": [
+      "bedroom_flush_mount_0",
+      "bedroom_gimbal_downlight_0"
+    ]
+  },
+  "human": {
+    "method": "Deterministic original SMPL-X segment generator from recorded betas and axis-angle joint values; no random pose, optimization or simulation; root transform and scale0.9 preserved. Only texture/face UV registration changed.",
+    "config": {
+      "joint_angles": {
+        "left_elbow": {
+          "x": 0.0075541608740810045,
+          "y": -1.676744633450311,
+          "z": 0.024802884815762496
+        },
+        "left_hip": {
+          "x": -14.540209157960694,
+          "y": -1.1750754564842198,
+          "z": -5.819721165804133
+        },
+        "left_knee": {
+          "x": 1.4744393394329995,
+          "y": -0.28222744524932014,
+          "z": 0.17568509863464984
+        },
+        "left_shoulder": {
+          "x": -0.8185458250293424,
+          "y": -6.908652248763742,
+          "z": -79.94105314020617
+        },
+        "neck": {
+          "x": -1.8557079694225158,
+          "y": -46.8686214808441,
+          "z": 0.5570382121945056
+        },
+        "right_elbow": {
+          "x": -0.018621295145109847,
+          "y": 1.6768294772064074,
+          "z": 0.02617726528560918
+        },
+        "right_hip": {
+          "x": -14.708407688914136,
+          "y": 1.110053229524462,
+          "z": 6.196580268354171
+        },
+        "right_knee": {
+          "x": 1.3274850446758248,
+          "y": 0.10837247045637008,
+          "z": 0.4134088321809519
+        },
+        "right_shoulder": {
+          "x": -0.4306662656143412,
+          "y": 7.111197666619062,
+          "z": 79.947555480296
+        }
+      },
+      "betas": [
+        1.5409960746765137,
+        -0.293428897857666,
+        -2.1787893772125244,
+        0.5684312582015991,
+        -1.0845223665237427,
+        -1.3985954523086548,
+        0.40334683656692505,
+        0.8380263447761536,
+        -0.7192575931549072,
+        -0.40334352850914
+      ],
+      "pos": [
+        1.727579116821289,
+        3.5548784732818604,
+        1.6328455209732056
+      ],
+      "quat": [
+        -0.021040668711066246,
+        0.7187168598175049,
+        0.6946237087249756,
+        -0.02238931693136692
+      ],
+      "scene_json": "/home/npechuk/src/gen_sim_phri/scene_generation/scenesmith/data/room2_t16_back_percuss_mid_back/room_scene.json",
+      "furniture_name": "bedroom_bed_0"
+    },
+    "generated_urdf": {
+      "source": "/tmp/orchestrator-3d/work/backtrack-before/actuate-smplx.urdf",
+      "sha256": "1eff80bb572bb303ab651a34339f53c2599b0a60bc33c39864e62117db1c7259",
+      "mtime_utc": "2026-09-19T18:05:52.070785+00:00",
+      "bytes": 19135
+    },
+    "generated_meshes": [
+      {
+        "source": "/tmp/orchestrator-3d/work/backtrack-before/meshes/main-body.obj",
+        "sha256": "d09fabc4610c3d589a7e353027657434fef34abcac0c78713044d3d3f621149b",
+        "mtime_utc": "2026-09-19T18:05:52.069785+00:00",
+        "bytes": 310903
+      },
+      {
+        "source": "/tmp/orchestrator-3d/work/backtrack-before/meshes/left-forearm.obj",
+        "sha256": "95308bea605e6254a7177728e5f7691403d3249a8e699158979e45e1d0087178",
+        "mtime_utc": "2026-09-19T18:05:51.188784+00:00",
+        "bytes": 173863
+      },
+      {
+        "source": "/tmp/orchestrator-3d/work/backtrack-before/meshes/left-upperarm.obj",
+        "sha256": "f5cc4e42f5a234b18abf6450c1b6f6b275bf6e413c2a181748fc2e773477bd36",
+        "mtime_utc": "2026-09-19T18:05:51.263784+00:00",
+        "bytes": 46547
+      },
+      {
+        "source": "/tmp/orchestrator-3d/work/backtrack-before/meshes/right-forearm.obj",
+        "sha256": "67ec8efdf9c07fcf87a9d1c3f29b12d9396e4575776df86eec977128583623ff",
+        "mtime_utc": "2026-09-19T18:05:51.346784+00:00",
+        "bytes": 174625
+      },
+      {
+        "source": "/tmp/orchestrator-3d/work/backtrack-before/meshes/right-upperarm.obj",
+        "sha256": "be9a74b0723f82b28928e23ab0beeb365d9d134f98fdba0d127d73bce74e2cd1",
+        "mtime_utc": "2026-09-19T18:05:51.422784+00:00",
+        "bytes": 46563
+      },
+      {
+        "source": "/tmp/orchestrator-3d/work/backtrack-before/meshes/left-lowerleg.obj",
+        "sha256": "4c25f6b1a172e75b243bc4ce6cc9e76c2ab60a0f409a733f917e05e7895689df",
+        "mtime_utc": "2026-09-19T18:05:51.499784+00:00",
+        "bytes": 77156
+      },
+      {
+        "source": "/tmp/orchestrator-3d/work/backtrack-before/meshes/left-upperleg.obj",
+        "sha256": "9dcdea5f8179733b1e0982a69494cc9b28244066a8ea9239e15a82b0a7850297",
+        "mtime_utc": "2026-09-19T18:05:51.574785+00:00",
+        "bytes": 41096
+      },
+      {
+        "source": "/tmp/orchestrator-3d/work/backtrack-before/meshes/right-lowerleg.obj",
+        "sha256": "33ddd95e0a125667db46606c10bfc486820873493590fa6c7e7e6bd3e0e006ab",
+        "mtime_utc": "2026-09-19T18:05:51.651785+00:00",
+        "bytes": 76766
+      },
+      {
+        "source": "/tmp/orchestrator-3d/work/backtrack-before/meshes/right-upperleg.obj",
+        "sha256": "4b931f1cf472750eacc45c458bad7c6d7c0abec535d3d463472167abdbe1da8e",
+        "mtime_utc": "2026-09-19T18:05:51.726785+00:00",
+        "bytes": 41065
+      },
+      {
+        "source": "/tmp/orchestrator-3d/work/backtrack-before/meshes/head.obj",
+        "sha256": "38dc43f467b3d98b1cb18574de35536a07b3e2311086c8760d43154c0e03ef18",
+        "mtime_utc": "2026-09-19T18:05:51.976785+00:00",
+        "bytes": 925469
+      }
+    ],
+    "generator": {
+      "source": "/home/npechuk/src/gen_sim_phri/human_generation/generate_actuated_mesh.py",
+      "sha256": "03b087cfba1af485d564b0cfcdd69603f0afb32ed5649d29ba96ca21629b8041",
+      "mtime_utc": "2026-09-14T19:18:30.875162+00:00",
+      "bytes": 10756
+    },
+    "model": {
+      "source": "/home/npechuk/src/gen_sim_phri/resources/models/smplx/SMPLX_NEUTRAL.npz",
+      "sha256": "376021446ddc86e99acacd795182bbef903e61d33b76b9d8b359c2b0865bd992",
+      "mtime_utc": "2020-09-11T08:13:54+00:00",
+      "bytes": 108752058
+    },
+    "texture": {
+      "source": "/home/npechuk/src/gen_sim_phri/human_generation/smplitex/requested_20260914/SMPLitex-texture-00026.png",
+      "sha256": "d0647ad83f5aab1b899b04ab68085688c4b54522056d9cead9f4c595f4f7f918",
+      "mtime_utc": "2026-09-14T20:08:49.868725+00:00",
+      "bytes": 387626
+    },
+    "validation_against_retained_original": "Recorded pose/betas applied through the same deterministic generator; ACCEPT control reconstruction exactly matched all10 retained source meshes."
+  },
+  "robot": {
+    "source": {
+      "source": "/home/npechuk/src/gen_sim_phri/resources/stretch/stretch_gs_virtual_base_bathing_sphere_rotated_big_aruco.xml",
+      "sha256": "6bcb8d0862be6be720db1539c1113c34232f5776fa1c18d11b9b85d800c868cd",
+      "mtime_utc": "2026-05-20T02:15:34+00:00",
+      "bytes": 34583
+    },
+    "joint_positions": {
+      "joint_base_x": 0,
+      "joint_lift": 0.85,
+      "joint_arm_l0": 0.005,
+      "joint_arm_l1": 0.005,
+      "joint_arm_l2": 0.005,
+      "joint_arm_l3": 0.005,
+      "joint_wrist_yaw": 0,
+      "joint_wrist_pitch": -0.3,
+      "joint_wrist_roll": 0,
+      "joint_head_pan": -1.57,
+      "joint_head_tilt": -0.3
+    },
+    "other_joint_positions": "MuJoCo default qpos0, matching freshly built Genesis renderer without simulation",
+    "configure_rotation": "+90 degrees world Z, applied by original Stretch.configure",
+    "world_base_matrix": [
+      [
+        -0.68215001834996,
+        -0.7312122485743449,
+        0.0,
+        1.1333072185516357
+      ],
+      [
+        0.7312122485743449,
+        -0.68215001834996,
+        0.0,
+        3.113004684448242
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "visual_geometries": [
+      {
+        "index": 2,
+        "body": "base_link_mobile",
+        "type": 7,
+        "matrix": [
+          [
+            -0.7312122485743459,
+            0.6821500183499609,
+            0.0,
+            1.2973620440219715
+          ],
+          [
+            -0.6821500183499609,
+            -0.7312122485743459,
+            0.0,
+            2.9371504954721153
+          ],
+          [
+            0.0,
+            0.0,
+            1.0000000000000013,
+            0.025396954155023597
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 26100,
+        "faces": 9842
+      },
+      {
+        "index": 3,
+        "body": "base_link_mobile",
+        "type": 7,
+        "matrix": [
+          [
+            0.0,
+            0.6821500183499618,
+            0.7312122485743469,
+            1.263202063168015
+          ],
+          [
+            0.0,
+            -0.7312122485743469,
+            0.6821500183499618,
+            2.974248451237997
+          ],
+          [
+            1.0000000000000027,
+            0.0,
+            0.0,
+            0.1599999964237213
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 20,
+        "faces": 16
+      },
+      {
+        "index": 4,
+        "body": "base_link_mobile",
+        "type": 7,
+        "matrix": [
+          [
+            -0.68215001834996,
+            -0.7312122485743449,
+            0.0,
+            1.3092215545638215
+          ],
+          [
+            0.7312122485743449,
+            -0.68215001834996,
+            0.0,
+            2.929559963433404
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.11394207258900367
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 8,
+        "faces": 4
+      },
+      {
+        "index": 5,
+        "body": "base_link_mobile",
+        "type": 7,
+        "matrix": [
+          [
+            0.0,
+            0.6821500183499618,
+            0.7312122485743469,
+            1.294071198929789
+          ],
+          [
+            0.0,
+            -0.7312122485743469,
+            0.6821500183499618,
+            2.942511993525752
+          ],
+          [
+            1.0000000000000027,
+            0.0,
+            0.0,
+            0.10131825670883286
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 140,
+        "faces": 70
+      },
+      {
+        "index": 6,
+        "body": "base_link_mobile",
+        "type": 7,
+        "matrix": [
+          [
+            -0.10351607602649673,
+            0.743199511356313,
+            -0.6610135462483535,
+            1.2099103047884054
+          ],
+          [
+            0.09829449111746821,
+            0.6689745674646859,
+            0.7367572334910628,
+            3.0264671804583854
+          ],
+          [
+            0.9897588671085722,
+            0.011292227644897252,
+            -0.1423020399529863,
+            0.04699342015951234
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 25074,
+        "faces": 14093
+      },
+      {
+        "index": 7,
+        "body": "base_link_mobile",
+        "type": 7,
+        "matrix": [
+          [
+            0.0,
+            0.6821500183499618,
+            0.7312122485743469,
+            1.1011461641710303
+          ],
+          [
+            0.0,
+            -0.7312122485743469,
+            0.6821500183499618,
+            2.9495751745210623
+          ],
+          [
+            1.0000000000000027,
+            0.0,
+            0.0,
+            0.1607470065355301
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 17,
+        "faces": 13
+      },
+      {
+        "index": 8,
+        "body": "base_link_mobile",
+        "type": 7,
+        "matrix": [
+          [
+            -0.9197410614806754,
+            -0.35335563525640107,
+            0.17092739645517774,
+            1.0961410897150174
+          ],
+          [
+            0.38290504668326447,
+            -0.9034857439843237,
+            0.19260642679199486,
+            2.9275540933241575
+          ],
+          [
+            0.08637189966005884,
+            0.24259700214478802,
+            0.9662745932184464,
+            0.12637953608024818
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 316,
+        "faces": 162
+      },
+      {
+        "index": 9,
+        "body": "base_link_mobile",
+        "type": 7,
+        "matrix": [
+          [
+            0.03774849244203871,
+            0.7880696921736385,
+            -0.6144275478815292,
+            1.2098613802560743
+          ],
+          [
+            -0.04224294675583204,
+            0.6155746030469221,
+            0.786945640773883,
+            3.0339930677506737
+          ],
+          [
+            0.998394002770322,
+            -0.0037507813825723435,
+            0.0565273992970034,
+            0.10413896524844021
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 180080,
+        "faces": 72511
+      },
+      {
+        "index": 12,
+        "body": "link_mast",
+        "type": 7,
+        "matrix": [
+          [
+            -0.6821500183499609,
+            0.7312122485743459,
+            0.0,
+            1.0802976162235465
+          ],
+          [
+            0.7312122485743459,
+            0.6821500183499609,
+            0.0,
+            2.9719232113165166
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0000000000000013,
+            0.7359000107288367
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 96,
+        "faces": 60
+      },
+      {
+        "index": 14,
+        "body": "link_head",
+        "type": 7,
+        "matrix": [
+          [
+            0.7312122485743447,
+            -0.6821500183499599,
+            0.0,
+            1.0112231913570482
+          ],
+          [
+            0.6821500183499599,
+            0.7312122485743447,
+            0.0,
+            2.9989425397383176
+          ],
+          [
+            0.0,
+            0.0,
+            0.9999999999999998,
+            1.3850597613400502
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 97513,
+        "faces": 34077
+      },
+      {
+        "index": 15,
+        "body": "link_head",
+        "type": 7,
+        "matrix": [
+          [
+            0.7311630883611504,
+            -0.6821500183499599,
+            -0.008478837381037958,
+            1.0189755795466062
+          ],
+          [
+            0.682104156645102,
+            0.7312122485743447,
+            -0.007909931878655211,
+            3.0065036463883694
+          ],
+          [
+            0.011595589922856557,
+            0.0,
+            0.9999327688871592,
+            1.3850201850934138
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 5548,
+        "faces": 2973
+      },
+      {
+        "index": 16,
+        "body": "link_head",
+        "type": 7,
+        "matrix": [
+          [
+            -0.6820931813122207,
+            -0.00039349567225788006,
+            0.7312651620093326,
+            1.0484506719155984
+          ],
+          [
+            0.731265040324266,
+            0.0004218626377225894,
+            0.6820932948149177,
+            3.0569927335006137
+          ],
+          [
+            -0.0005768942097056804,
+            0.9999998335965241,
+            1.1692079506173329e-16,
+            1.3843595890604135
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 97,
+        "faces": 83
+      },
+      {
+        "index": 17,
+        "body": "link_head",
+        "type": 7,
+        "matrix": [
+          [
+            -0.6821500183499609,
+            -0.7312122485743459,
+            0.0,
+            1.058155997655952
+          ],
+          [
+            0.7312122485743459,
+            -0.6821500183499609,
+            0.0,
+            3.0768931335925425
+          ],
+          [
+            0.0,
+            0.0,
+            1.0000000000000013,
+            1.3840623940097223
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 165,
+        "faces": 95
+      },
+      {
+        "index": 18,
+        "body": "link_head",
+        "type": 7,
+        "matrix": [
+          [
+            -0.6821500183499609,
+            -0.7312122485743459,
+            0.0,
+            1.028757315259848
+          ],
+          [
+            0.7312122485743459,
+            -0.6821500183499609,
+            0.0,
+            3.0494670177772605
+          ],
+          [
+            0.0,
+            0.0,
+            1.0000000000000013,
+            1.3840623912585246
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 172,
+        "faces": 96
+      },
+      {
+        "index": 19,
+        "body": "link_head",
+        "type": 7,
+        "matrix": [
+          [
+            0.7312122485743447,
+            -0.6821500183499599,
+            0.0,
+            1.0646240771301592
+          ],
+          [
+            0.6821500183499599,
+            0.7312122485743447,
+            0.0,
+            3.052680749203566
+          ],
+          [
+            0.0,
+            0.0,
+            0.9999999999999998,
+            1.3980977709550737
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 38,
+        "faces": 18
+      },
+      {
+        "index": 20,
+        "body": "link_head",
+        "type": 7,
+        "matrix": [
+          [
+            0.7312122485743447,
+            -0.6821500183499599,
+            0.0,
+            1.060383239168804
+          ],
+          [
+            0.6821500183499599,
+            0.7312122485743447,
+            0.0,
+            3.042880707808802
+          ],
+          [
+            0.0,
+            0.0,
+            0.9999999999999998,
+            1.399802631602502
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 151,
+        "faces": 92
+      },
+      {
+        "index": 21,
+        "body": "link_head",
+        "type": 7,
+        "matrix": [
+          [
+            0.0,
+            -0.7312122485743466,
+            0.6821500183499617,
+            1.0598648206352064
+          ],
+          [
+            0.0,
+            -0.6821500183499617,
+            -0.7312122485743466,
+            3.0396813843013746
+          ],
+          [
+            1.0000000000000024,
+            0.0,
+            0.0,
+            1.3986326844952683
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 428,
+        "faces": 344
+      },
+      {
+        "index": 22,
+        "body": "link_head",
+        "type": 7,
+        "matrix": [
+          [
+            0.0,
+            -0.7312122485743466,
+            0.6821500183499617,
+            1.0511921576700773
+          ],
+          [
+            0.0,
+            -0.6821500183499617,
+            -0.7312122485743466,
+            3.0308237207509
+          ],
+          [
+            1.0000000000000024,
+            0.0,
+            0.0,
+            1.4037223463062931
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 589,
+        "faces": 252
+      },
+      {
+        "index": 23,
+        "body": "link_head",
+        "type": 7,
+        "matrix": [
+          [
+            0.0,
+            -0.7312122485743466,
+            0.6821500183499617,
+            1.082481069405649
+          ],
+          [
+            0.0,
+            -0.6821500183499617,
+            -0.7312122485743466,
+            2.973956987312571
+          ],
+          [
+            1.0000000000000024,
+            0.0,
+            0.0,
+            1.4101240544872424
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 1556,
+        "faces": 736
+      },
+      {
+        "index": 24,
+        "body": "link_head",
+        "type": 7,
+        "matrix": [
+          [
+            0.009657883738606706,
+            0.9336871185307706,
+            0.3579596205878625,
+            1.0827285795616532
+          ],
+          [
+            0.002139892187549638,
+            -0.3579947945111792,
+            0.9337211296550658,
+            3.0288462055584358
+          ],
+          [
+            0.9999510718745819,
+            -0.008251775118934879,
+            -0.005455461874975087,
+            1.3896478580218377
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 16158,
+        "faces": 8636
+      },
+      {
+        "index": 25,
+        "body": "link_head",
+        "type": 7,
+        "matrix": [
+          [
+            0.040793366268465844,
+            0.9362384321700536,
+            0.3489892539839239,
+            1.0786919774849646
+          ],
+          [
+            -0.014738686513314093,
+            -0.34867814814984094,
+            0.9371266297158932,
+            3.0303736148380245
+          ],
+          [
+            0.9990588933533187,
+            -0.043372193056917585,
+            -0.00042483065381576646,
+            1.3637231506853584
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 25324,
+        "faces": 14555
+      },
+      {
+        "index": 27,
+        "body": "link_aruco_right_base",
+        "type": 7,
+        "matrix": [
+          [
+            0.0,
+            -0.7312122485743466,
+            0.6821500183499617,
+            1.2297533584014184
+          ],
+          [
+            0.0,
+            -0.6821500183499617,
+            -0.7312122485743466,
+            3.2009243496256996
+          ],
+          [
+            1.0000000000000024,
+            0.0,
+            0.0,
+            0.15962299999406282
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 120,
+        "faces": 76
+      },
+      {
+        "index": 29,
+        "body": "link_aruco_left_base",
+        "type": 7,
+        "matrix": [
+          [
+            0.0,
+            -0.7312122485743466,
+            0.6821500183499617,
+            1.0389113487970059
+          ],
+          [
+            0.0,
+            -0.6821500183499617,
+            -0.7312122485743466,
+            3.02288728773647
+          ],
+          [
+            1.0000000000000024,
+            0.0,
+            0.0,
+            0.15962299999406282
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 120,
+        "faces": 76
+      },
+      {
+        "index": 31,
+        "body": "laser",
+        "type": 7,
+        "matrix": [
+          [
+            0.0,
+            -0.6821500183499618,
+            -0.7312122485743469,
+            1.1305786184782358
+          ],
+          [
+            0.0,
+            0.7312122485743469,
+            -0.6821500183499618,
+            3.1159295334425394
+          ],
+          [
+            1.0000000000000027,
+            0.0,
+            0.0,
+            0.16564861872323206
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 1494,
+        "faces": 684
+      },
+      {
+        "index": 33,
+        "body": "link_right_wheel",
+        "type": 7,
+        "matrix": [
+          [
+            -0.7312122485743466,
+            0.6821500183499617,
+            0.0,
+            1.248582833076155
+          ],
+          [
+            -0.6821500183499617,
+            -0.7312122485743466,
+            0.0,
+            3.220545629849906
+          ],
+          [
+            0.0,
+            0.0,
+            1.0000000000000024,
+            0.05080000277412876
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 1142,
+        "faces": 636
+      },
+      {
+        "index": 34,
+        "body": "link_right_wheel",
+        "type": 7,
+        "matrix": [
+          [
+            -0.7312122485743466,
+            0.6739192103720504,
+            0.1056482154433531,
+            1.2495143199710042
+          ],
+          [
+            -0.6821500183499617,
+            -0.7223894567437898,
+            -0.11324674498882621,
+            3.2214144249853556
+          ],
+          [
+            0.0,
+            -0.15487533915032883,
+            0.9879340207337105,
+            0.0507986472818064
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 30454,
+        "faces": 12105
+      },
+      {
+        "index": 36,
+        "body": "link_left_wheel",
+        "type": 7,
+        "matrix": [
+          [
+            -0.7312122485743466,
+            0.6821500183499617,
+            0.0,
+            1.0180316062701031
+          ],
+          [
+            -0.6821500183499617,
+            -0.7312122485743466,
+            0.0,
+            3.0054637366422696
+          ],
+          [
+            0.0,
+            0.0,
+            1.0000000000000024,
+            0.05079999393775775
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 1134,
+        "faces": 636
+      },
+      {
+        "index": 37,
+        "body": "link_left_wheel",
+        "type": 7,
+        "matrix": [
+          [
+            -0.7312122485743476,
+            -0.10564821544335819,
+            -0.6739192103720506,
+            1.0171011396330614
+          ],
+          [
+            -0.6821500183499626,
+            0.11324674498883167,
+            0.7223894567437901,
+            3.004593847869079
+          ],
+          [
+            0.0,
+            0.9879340207337107,
+            -0.15487533915033627,
+            0.05079985377988598
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 30510,
+        "faces": 12105
+      },
+      {
+        "index": 39,
+        "body": "link_lift",
+        "type": 7,
+        "matrix": [
+          [
+            -0.7184526066895824,
+            0.0010924972826144865,
+            -0.6955750559002488,
+            1.0878375723848888
+          ],
+          [
+            -0.6955759138591179,
+            -0.00112842826333774,
+            0.7184517205134316,
+            2.9123649382512546
+          ],
+          [
+            5.551115123125783e-17,
+            0.9999987665489114,
+            0.0015706370230003652,
+            1.062443722240665
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 5180,
+        "faces": 2716
+      },
+      {
+        "index": 40,
+        "body": "link_lift",
+        "type": 7,
+        "matrix": [
+          [
+            -0.7312122485743447,
+            0.6821500183499599,
+            0.0,
+            1.2029375025041296
+          ],
+          [
+            -0.6821500183499599,
+            -0.7312122485743447,
+            0.0,
+            2.8978791737484157
+          ],
+          [
+            0.0,
+            0.0,
+            0.9999999999999998,
+            1.0746753971758172
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 40,
+        "faces": 18
+      },
+      {
+        "index": 41,
+        "body": "link_lift",
+        "type": 7,
+        "matrix": [
+          [
+            -0.7312122485743447,
+            0.6821500183499599,
+            0.0,
+            1.2026637531105453
+          ],
+          [
+            -0.6821500183499599,
+            -0.7312122485743447,
+            0.0,
+            2.888476498747563
+          ],
+          [
+            0.0,
+            0.0,
+            0.9999999999999998,
+            1.0746556270663823
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 289,
+        "faces": 109
+      },
+      {
+        "index": 42,
+        "body": "link_lift",
+        "type": 7,
+        "matrix": [
+          [
+            -0.7312122485743447,
+            0.6821500183499599,
+            0.0,
+            1.2009019826670941
+          ],
+          [
+            -0.6821500183499599,
+            -0.7312122485743447,
+            0.0,
+            2.885985232886608
+          ],
+          [
+            0.0,
+            0.0,
+            0.9999999999999998,
+            1.0738674109136526
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 717,
+        "faces": 392
+      },
+      {
+        "index": 43,
+        "body": "link_lift",
+        "type": 7,
+        "matrix": [
+          [
+            -0.7312122485743447,
+            0.6821500183499599,
+            0.0,
+            1.2025085372247548
+          ],
+          [
+            -0.6821500183499599,
+            -0.7312122485743447,
+            0.0,
+            2.8976570191382054
+          ],
+          [
+            0.0,
+            0.0,
+            0.9999999999999998,
+            1.0740373828433358
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 127,
+        "faces": 64
+      },
+      {
+        "index": 44,
+        "body": "link_lift",
+        "type": 7,
+        "matrix": [
+          [
+            0.977292505356626,
+            0.0,
+            -0.21189468840387135,
+            1.2019256228697364
+          ],
+          [
+            -0.2118946884038714,
+            0.0,
+            -0.977292505356626,
+            2.898064653917162
+          ],
+          [
+            0.0,
+            1.0000000000000022,
+            0.0,
+            1.0738440617180545
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 675,
+        "faces": 306
+      },
+      {
+        "index": 45,
+        "body": "link_lift",
+        "type": 7,
+        "matrix": [
+          [
+            -0.2845873970407665,
+            0.20580115505872365,
+            -0.936299043053051,
+            1.138714300487743
+          ],
+          [
+            -0.8128162818965513,
+            0.46603253048299415,
+            0.34949016068479805,
+            2.956857062700626
+          ],
+          [
+            0.5082712910734088,
+            0.8604996020383245,
+            0.0346515448783703,
+            1.0556628236091445
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 170,
+        "faces": 142
+      },
+      {
+        "index": 46,
+        "body": "link_lift",
+        "type": 7,
+        "matrix": [
+          [
+            -0.01682241755138736,
+            0.29771078920431504,
+            -0.9545078796212609,
+            1.155338658148417
+          ],
+          [
+            0.022703222068681358,
+            0.954510572786243,
+            0.2973115035564269,
+            2.9419808796379057
+          ],
+          [
+            0.9996007052695749,
+            -0.01666890610169061,
+            -0.02281616957217203,
+            1.0302524547152327
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 15483,
+        "faces": 7009
+      },
+      {
+        "index": 47,
+        "body": "link_lift",
+        "type": 7,
+        "matrix": [
+          [
+            0.16113417502447808,
+            0.3206862570259845,
+            -0.9333788631599987,
+            1.148670835226249
+          ],
+          [
+            0.23706300570389616,
+            0.9054724776432823,
+            0.35202375425129573,
+            2.9354883525219266
+          ],
+          [
+            0.9580380519404339,
+            -0.27799265599149603,
+            0.06987971271390814,
+            1.0826981003988876
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 20441,
+        "faces": 8889
+      },
+      {
+        "index": 57,
+        "body": "link_arm_l4",
+        "type": 7,
+        "matrix": [
+          [
+            -0.6821500183499599,
+            0.0,
+            0.7312122485743447,
+            1.2064018447049119
+          ],
+          [
+            0.7312122485743447,
+            0.0,
+            0.6821500183499599,
+            3.0384387844177594
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0,
+            1.05
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 166,
+        "faces": 96
+      },
+      {
+        "index": 58,
+        "body": "link_arm_l4",
+        "type": 7,
+        "matrix": [
+          [
+            0.7316190657289707,
+            0.6206543341346691,
+            -0.28199599320154123,
+            1.2875722620642116
+          ],
+          [
+            0.6817134574414558,
+            -0.66575470923665,
+            0.30337671148663536,
+            3.114122108797249
+          ],
+          [
+            0.000551910399910871,
+            -0.4141966497318385,
+            -0.9101872503753476,
+            1.0500422512490286
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 4479,
+        "faces": 2172
+      },
+      {
+        "index": 61,
+        "body": "link_arm_l3",
+        "type": 7,
+        "matrix": [
+          [
+            -0.6821500183499599,
+            0.0,
+            0.7312122485743447,
+            1.2179878533203234
+          ],
+          [
+            0.7312122485743447,
+            0.0,
+            0.6821500183499599,
+            3.0492474053141065
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0,
+            1.05
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 160,
+        "faces": 96
+      },
+      {
+        "index": 62,
+        "body": "link_arm_l3",
+        "type": 7,
+        "matrix": [
+          [
+            0.7309624766930922,
+            0.6350823679283011,
+            -0.2497283396278623,
+            1.3007069987292537
+          ],
+          [
+            0.6824175900225063,
+            -0.6804211707261,
+            0.26708287712918627,
+            3.126437464339333
+          ],
+          [
+            -0.000300823172768111,
+            -0.36564657303783343,
+            -0.9307537231357782,
+            1.049971378921909
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 4843,
+        "faces": 2320
+      },
+      {
+        "index": 65,
+        "body": "link_arm_l2",
+        "type": 7,
+        "matrix": [
+          [
+            -0.6821500183499599,
+            0.0,
+            0.7312122485743447,
+            1.2310321123895094
+          ],
+          [
+            0.7312122485743447,
+            0.0,
+            0.6821500183499599,
+            3.0614164322700357
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0,
+            1.05
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 166,
+        "faces": 96
+      },
+      {
+        "index": 66,
+        "body": "link_arm_l2",
+        "type": 7,
+        "matrix": [
+          [
+            0.7309271643302684,
+            0.6447270208595587,
+            -0.22376896348170655,
+            1.313869804788826
+          ],
+          [
+            0.6824553978425107,
+            -0.6906785827478678,
+            0.2392022685699772,
+            3.138716656248799
+          ],
+          [
+            -0.00033226456253496184,
+            -0.32755177286493387,
+            -0.9448331734720713,
+            1.0499705400915438
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 4762,
+        "faces": 2320
+      },
+      {
+        "index": 69,
+        "body": "link_arm_l1",
+        "type": 7,
+        "matrix": [
+          [
+            -0.6821500183499599,
+            0.0,
+            0.7312122485743447,
+            1.2440470166138873
+          ],
+          [
+            0.7312122485743447,
+            0.0,
+            0.6821500183499599,
+            3.0735580740064705
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0,
+            1.05
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 169,
+        "faces": 96
+      },
+      {
+        "index": 70,
+        "body": "link_arm_l1",
+        "type": 7,
+        "matrix": [
+          [
+            0.730883269106234,
+            0.6040138876041153,
+            -0.31776858013647785,
+            1.3270380676677416
+          ],
+          [
+            0.6825023633875891,
+            -0.6471127268043841,
+            0.33975821223063246,
+            3.1510004445865865
+          ],
+          [
+            -0.0004134137700252394,
+            -0.46520139981427755,
+            -0.8852047710557691,
+            1.0499675308230358
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 5255,
+        "faces": 2376
+      },
+      {
+        "index": 73,
+        "body": "link_arm_l0",
+        "type": 7,
+        "matrix": [
+          [
+            0.7262914919564376,
+            -0.1207596847944335,
+            -0.6766962148852679,
+            1.338163038551208
+          ],
+          [
+            0.6873123449223513,
+            0.14207368717353192,
+            0.7123319506594267,
+            3.168578210050619
+          ],
+          [
+            0.010119744514486329,
+            -0.9824622974655435,
+            0.18618653235316207,
+            1.0506523546620512
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 1404,
+        "faces": 654
+      },
+      {
+        "index": 74,
+        "body": "link_arm_l0",
+        "type": 7,
+        "matrix": [
+          [
+            -0.6821500183499599,
+            0.0,
+            0.7312122485743447,
+            1.2555648409137896
+          ],
+          [
+            0.7312122485743447,
+            0.0,
+            0.6821500183499599,
+            3.0843030818761767
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0,
+            1.0500000026921728
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 260,
+        "faces": 111
+      },
+      {
+        "index": 75,
+        "body": "link_arm_l0",
+        "type": 7,
+        "matrix": [
+          [
+            0.5911007215148313,
+            0.2912571651858638,
+            -0.7521763096193271,
+            1.2912331353839752
+          ],
+          [
+            0.777051144301846,
+            0.04446178288655774,
+            0.627865167851944,
+            3.187257264802384
+          ],
+          [
+            0.21631332867820946,
+            -0.9556110158377478,
+            -0.20004032154970622,
+            1.0467227289854666
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 14277,
+        "faces": 8064
+      },
+      {
+        "index": 79,
+        "body": "link_aruco_top_wrist",
+        "type": 7,
+        "matrix": [
+          [
+            0.0,
+            -0.6821500183499616,
+            -0.7312122485743465,
+            1.2928960514646475
+          ],
+          [
+            0.0,
+            0.7312122485743465,
+            -0.6821500183499616,
+            3.1837482003027913
+          ],
+          [
+            1.0000000000000022,
+            0.0,
+            0.0,
+            1.0791599999940629
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 120,
+        "faces": 76
+      },
+      {
+        "index": 81,
+        "body": "link_aruco_top_wrist_big",
+        "type": 7,
+        "matrix": [
+          [
+            -0.010313865024167387,
+            0.6814897250752162,
+            0.7317549991665074,
+            1.2836286731996407
+          ],
+          [
+            0.012241559561698838,
+            -0.7316530305824617,
+            0.6815673019291657,
+            3.1937012283802324
+          ],
+          [
+            0.9998718759960028,
+            0.01598741556385097,
+            -0.000796326458243457,
+            1.0820578805797498
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 236,
+        "faces": 460
+      },
+      {
+        "index": 83,
+        "body": "link_aruco_inner_wrist",
+        "type": 7,
+        "matrix": [
+          [
+            -0.7312122485743466,
+            -0.6821500183499617,
+            0.0,
+            1.2730619192264097
+          ],
+          [
+            -0.6821500183499617,
+            0.7312122485743466,
+            0.0,
+            3.1652448810590985
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0000000000000024,
+            1.0381
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 120,
+        "faces": 76
+      },
+      {
+        "index": 85,
+        "body": "link_wrist_yaw",
+        "type": 7,
+        "matrix": [
+          [
+            -0.6821500183499596,
+            0.7311921670450955,
+            -0.005419162024343281,
+            1.268453507189379
+          ],
+          [
+            0.7312122485743444,
+            0.6821312842333302,
+            -0.0050555519024122605,
+            3.2098370404610366
+          ],
+          [
+            0.0,
+            -0.0074112024722084455,
+            -0.9999725366618399,
+            1.0382952844451978
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 4626,
+        "faces": 2692
+      },
+      {
+        "index": 87,
+        "body": "link_wrist_yaw",
+        "type": 7,
+        "matrix": [
+          [
+            0.33782837208731875,
+            0.9090019345177459,
+            0.24410545683338164,
+            1.287130057486937
+          ],
+          [
+            -0.3908473312037123,
+            -0.10044752213078033,
+            0.9149582826493942,
+            3.1669968616394004
+          ],
+          [
+            0.8562186372088464,
+            -0.4045068334908425,
+            0.3213469572836251,
+            0.9940515773956605
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 1847,
+        "faces": 3729
+      },
+      {
+        "index": 89,
+        "body": "link_DW3_wrist_pitch",
+        "type": 7,
+        "matrix": [
+          [
+            -0.684872441989537,
+            0.7096181927593362,
+            -0.1655045579682536,
+            1.2670608652415405
+          ],
+          [
+            0.7275222630258267,
+            0.6786324402250077,
+            -0.1008432837428281,
+            3.207825704494853
+          ],
+          [
+            0.040756533280854434,
+            -0.18947303654934688,
+            -0.9810396900307863,
+            0.9697052181269095
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 1433,
+        "faces": 2842
+      },
+      {
+        "index": 91,
+        "body": "link_DW3_wrist_pitch",
+        "type": 7,
+        "matrix": [
+          [
+            0.7066971489005077,
+            -0.20129481965848467,
+            -0.6782768869086977,
+            1.2897126774704235
+          ],
+          [
+            0.6529302120186816,
+            -0.18369615750130225,
+            0.7348046406715859,
+            3.2301016716552318
+          ],
+          [
+            -0.27250922547527723,
+            -0.9621518161381378,
+            0.0016139185077277962,
+            0.953784373051927
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 381,
+        "faces": 758
+      },
+      {
+        "index": 93,
+        "body": "link_SG3_gripper_body",
+        "type": 7,
+        "matrix": [
+          [
+            -0.6845622422482828,
+            0.6956329252815895,
+            -0.21787466523711338,
+            1.3268948304720194
+          ],
+          [
+            0.7277911003041759,
+            0.6353484731788852,
+            -0.25817132286003164,
+            3.2656018837205036
+          ],
+          [
+            -0.04116613664218075,
+            -0.3353015820025909,
+            -0.9412110275068599,
+            0.959544386159423
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 14545,
+        "faces": 24513
+      },
+      {
+        "index": 95,
+        "body": "link_SG3_aruco_d405",
+        "type": 7,
+        "matrix": [
+          [
+            -0.6494785231674853,
+            -0.6826471228274211,
+            -0.3349187269168852,
+            1.32645688162689
+          ],
+          [
+            -0.6077840009651214,
+            0.7307462328182829,
+            -0.3108191618814998,
+            3.264162596818605
+          ],
+          [
+            0.45692040457284505,
+            0.0016878736127373672,
+            -0.8895059836603998,
+            1.0092441582360216
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 120,
+        "faces": 76
+      },
+      {
+        "index": 97,
+        "body": "link_d405",
+        "type": 7,
+        "matrix": [
+          [
+            0.6510723547943836,
+            0.33543581782086557,
+            0.680872676016118,
+            1.3391409717330949
+          ],
+          [
+            0.6055395937836947,
+            0.3113030579649642,
+            -0.7324016701660001,
+            3.2759524193557117
+          ],
+          [
+            -0.4576314993341044,
+            0.8891418437035316,
+            -0.0004388538598065761,
+            1.0003509337829166
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 1948,
+        "faces": 3892
+      },
+      {
+        "index": 98,
+        "body": "link_d405",
+        "type": 7,
+        "matrix": [
+          [
+            -0.33543581782086523,
+            0.6492116125103538,
+            0.6826471228274219,
+            1.3464798342895379
+          ],
+          [
+            -0.3113030579649636,
+            0.6075362946553502,
+            -0.730746232818284,
+            3.2828970490327136
+          ],
+          [
+            -0.8891418437035304,
+            -0.45762859707207715,
+            -0.0016878736127374228,
+            0.995158506039732
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 308,
+        "faces": 608
+      },
+      {
+        "index": 99,
+        "body": "link_d405",
+        "type": 7,
+        "matrix": [
+          [
+            0.6492116125103538,
+            -0.6826471228274221,
+            0.3354358178208653,
+            1.346334871840105
+          ],
+          [
+            0.6075362946553502,
+            0.7307462328182842,
+            0.3113030579649637,
+            3.282996864231485
+          ],
+          [
+            -0.45762859707207726,
+            0.001687873612737395,
+            0.8891418437035306,
+            0.9953694414270429
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 224,
+        "faces": 444
+      },
+      {
+        "index": 101,
+        "body": "scratcher",
+        "type": 2,
+        "matrix": [
+          [
+            0.6821498020619221,
+            0.2161253788773082,
+            -0.6985423882285304,
+            1.4238215775059948
+          ],
+          [
+            -0.7312120167302016,
+            0.20266414270113228,
+            -0.6513495465973433,
+            3.354872724697884
+          ],
+          [
+            0.0007963267108228968,
+            0.9551005527526163,
+            0.29628077898408217,
+            0.8976970276419655
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 642,
+        "faces": 1280
+      },
+      {
+        "index": 103,
+        "body": "link_gripper_slider",
+        "type": 6,
+        "matrix": [
+          [
+            -0.6821498020619047,
+            0.21612537887737404,
+            0.6985423882285274,
+            1.2910985237425745
+          ],
+          [
+            0.7312120167302183,
+            0.20266414270106684,
+            0.6513495465973455,
+            3.231116310844388
+          ],
+          [
+            -0.0007963267107332174,
+            0.9551005527526155,
+            -0.29628077898408556,
+            0.9539903756489418
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 8,
+        "faces": 12
+      },
+      {
+        "index": 104,
+        "body": "link_gripper_finger_left",
+        "type": 7,
+        "matrix": [
+          [
+            0.8320960656167857,
+            0.18262006903056996,
+            -0.5237041607361353,
+            1.4055700358304724
+          ],
+          [
+            -0.5517264918733727,
+            0.17602768845009206,
+            -0.8152374691241949,
+            3.3840106934469816
+          ],
+          [
+            -0.0566922900416901,
+            0.967297349984063,
+            0.24722827703084788,
+            0.8956088306150541
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 610,
+        "faces": 1218
+      },
+      {
+        "index": 106,
+        "body": "link_gripper_finger_left",
+        "type": 7,
+        "matrix": [
+          [
+            0.7578351333162263,
+            0.223026026813675,
+            -0.6131437858082628,
+            1.3401705175278065
+          ],
+          [
+            -0.6515564751350265,
+            0.2096393912073022,
+            -0.7290579437629473,
+            3.3230564080163814
+          ],
+          [
+            -0.034059806535013025,
+            0.9520035278390215,
+            0.30418614787800546,
+            0.9247712199814215
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 76,
+        "faces": 150
+      },
+      {
+        "index": 108,
+        "body": "link_gripper_finger_left",
+        "type": 7,
+        "matrix": [
+          [
+            0.21611523564182847,
+            -0.7568595609560772,
+            -0.6168126213955546,
+            1.3875723001777462
+          ],
+          [
+            0.20266472130422747,
+            0.6527565722836833,
+            -0.7299560727051602,
+            3.3448687760498625
+          ],
+          [
+            0.9551027251883231,
+            0.032748470648799266,
+            0.2944593724234431,
+            0.908250192887058
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 84,
+        "faces": 174
+      },
+      {
+        "index": 109,
+        "body": "rubber_tip_left",
+        "type": 7,
+        "matrix": [
+          [
+            0.8400993538017191,
+            0.495249088390015,
+            0.22127226710728523,
+            1.4252568205518743
+          ],
+          [
+            -0.5370621273399766,
+            0.8166891817821614,
+            0.21114699083114352,
+            3.3894641632487295
+          ],
+          [
+            -0.07614031204951377,
+            -0.29622140504839856,
+            0.9520795828459717,
+            0.8902185421321148
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 1256,
+        "faces": 2508
+      },
+      {
+        "index": 111,
+        "body": "link_SG3_gripper_left_finger_aruco",
+        "type": 7,
+        "matrix": [
+          [
+            -0.14822148340929547,
+            -0.9835258541812995,
+            -0.10347601660721954,
+            1.3973906976422334
+          ],
+          [
+            -0.8986453634217524,
+            0.1776294691814818,
+            -0.40110383004765177,
+            3.3688755565194066
+          ],
+          [
+            0.41287637696596113,
+            0.03353603785861714,
+            -0.9101694520847263,
+            0.9012526656106399
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 120,
+        "faces": 76
+      },
+      {
+        "index": 113,
+        "body": "link_gripper_finger_right",
+        "type": 7,
+        "matrix": [
+          [
+            0.49387980250072744,
+            -0.1800126175799958,
+            0.8506927754447224,
+            1.4516598002447954
+          ],
+          [
+            -0.8677684717242875,
+            -0.1642827778433075,
+            0.4690299013766449,
+            3.3342157530148397
+          ],
+          [
+            0.05532287197119476,
+            -0.9698487647133902,
+            -0.23734521992400454,
+            0.8953825838201351
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 598,
+        "faces": 1117
+      },
+      {
+        "index": 115,
+        "body": "link_gripper_finger_right",
+        "type": 7,
+        "matrix": [
+          [
+            0.6242680459611137,
+            -0.2149822494454174,
+            0.7510472949257497,
+            1.3966779956529998
+          ],
+          [
+            -0.7808021602491071,
+            -0.20277296329520467,
+            0.5909577919841774,
+            3.2824641548150675
+          ],
+          [
+            0.02524665011888622,
+            -0.955335416374728,
+            -0.2944432863522356,
+            0.9192411488895801
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 188,
+        "faces": 253
+      },
+      {
+        "index": 117,
+        "body": "link_gripper_finger_right",
+        "type": 7,
+        "matrix": [
+          [
+            -0.2161201185654042,
+            0.5986716791424427,
+            -0.7712874398977649,
+            1.4115078163135089
+          ],
+          [
+            -0.20264920119880467,
+            -0.8002585920408289,
+            -0.5643753069707437,
+            3.319100531107122
+          ],
+          [
+            -0.9551049134020652,
+            0.03432792533204948,
+            0.2942723193534098,
+            0.9080340972015478
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 84,
+        "faces": 174
+      },
+      {
+        "index": 118,
+        "body": "rubber_tip_right",
+        "type": 7,
+        "matrix": [
+          [
+            -0.47743216706020125,
+            0.851679313507577,
+            -0.21610384725743925,
+            1.4586458827181639
+          ],
+          [
+            0.8752278714690205,
+            0.4392111388690234,
+            -0.20265672576351226,
+            3.353597729705294
+          ],
+          [
+            -0.07768332420804389,
+            -0.28589495000199283,
+            -0.9551069985626478,
+            0.890090145845907
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 1256,
+        "faces": 2508
+      },
+      {
+        "index": 120,
+        "body": "link_SG3_gripper_right_finger_aruco",
+        "type": 7,
+        "matrix": [
+          [
+            -0.9070764157509135,
+            -0.40752609345472973,
+            0.10552184201391968,
+            1.4360851438203919
+          ],
+          [
+            -0.08591202804624379,
+            -0.06618157220839187,
+            -0.9941021692648169,
+            3.3271669387577063
+          ],
+          [
+            0.4121061749421685,
+            -0.9107922280375254,
+            0.025020350137089357,
+            0.9007891475495674
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 120,
+        "faces": 76
+      },
+      {
+        "index": 122,
+        "body": "link_aruco_shoulder",
+        "type": 7,
+        "matrix": [
+          [
+            0.0,
+            0.7312122485743466,
+            -0.6821500183499617,
+            1.153682754339683
+          ],
+          [
+            0.0,
+            0.6821500183499617,
+            0.7312122485743466,
+            2.912871374080952
+          ],
+          [
+            1.0000000000000024,
+            0.0,
+            0.0,
+            1.1363749999940629
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 120,
+        "faces": 76
+      },
+      {
+        "index": 124,
+        "body": "link_head_pan",
+        "type": 7,
+        "matrix": [
+          [
+            -0.6824527832530232,
+            -0.7297901413084131,
+            -0.04079887595573659,
+            1.1053695857713741
+          ],
+          [
+            0.7303698890991424,
+            -0.68305110730389,
+            0.001004941908369336,
+            3.1410480740438222
+          ],
+          [
+            -0.028601114095635486,
+            -0.029112445104786694,
+            0.9991668738566707,
+            1.3067641773020104
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 4420,
+        "faces": 2001
+      },
+      {
+        "index": 125,
+        "body": "link_head_pan",
+        "type": 7,
+        "matrix": [
+          [
+            0.5257080502307947,
+            -0.7986265988621539,
+            0.29296177483147007,
+            1.1229411238430609
+          ],
+          [
+            0.8452006397945283,
+            0.4514052548325286,
+            -0.2861278986755756,
+            3.123561797262435
+          ],
+          [
+            0.09626486593486033,
+            0.39803121925227014,
+            0.9123070886971638,
+            1.3525056058872396
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 8022,
+        "faces": 4153
+      },
+      {
+        "index": 128,
+        "body": "link_head_tilt",
+        "type": 7,
+        "matrix": [
+          [
+            0.6985258025825376,
+            0.6827540003996715,
+            -0.21426310476764227,
+            1.1481942828214171
+          ],
+          [
+            0.6527926930322057,
+            -0.7306483119536252,
+            -0.2000368570116038,
+            3.1297914849766393
+          ],
+          [
+            -0.2931269401644697,
+            -0.0001384830885919619,
+            -0.9560735211123943,
+            1.2673103573350735
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 11016,
+        "faces": 4502
+      },
+      {
+        "index": 129,
+        "body": "link_head_tilt",
+        "type": 7,
+        "matrix": [
+          [
+            0.6982551256498452,
+            0.6835210629155499,
+            -0.21269399628226265,
+            1.124019128939315
+          ],
+          [
+            0.648582731296072,
+            -0.7298157301304696,
+            -0.2161236699638888,
+            3.1077161816212815
+          ],
+          [
+            -0.3029525048060332,
+            0.01295980728751428,
+            -0.9529175322276445,
+            1.2793188106953528
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 37178,
+        "faces": 15573
+      },
+      {
+        "index": 132,
+        "body": "link_SE3_head_nav_cam",
+        "type": 7,
+        "matrix": [
+          [
+            0.8851839876562947,
+            -0.4565000858814574,
+            -0.0897606795157617,
+            1.1014036120044088
+          ],
+          [
+            0.15329636567606442,
+            0.10402762338132504,
+            0.9826894106706107,
+            3.1583914212257866
+          ],
+          [
+            -0.43926021020281314,
+            -0.8836209171154016,
+            0.16206339058752645,
+            1.2550994800815294
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 3274,
+        "faces": 6042
+      }
+    ],
+    "tool": "Actual placement-renderer default bathing sphere MJCF, including actual visual sphere; no approximate scratcher substituted.",
+    "referenced_assets": [
+      {
+        "file": "resources/stretch/assets/base_link_0.obj",
+        "sha256": "9d3a1643fa7890b33f955242089fe127f7e192e32d858524db5c7da26c5122b4"
+      },
+      {
+        "file": "resources/stretch/assets/base_link_2.obj",
+        "sha256": "59ddb2d2a81b7a2f00fb8f74d0e6711f04c9f404691d8dac442788ea36dab870"
+      },
+      {
+        "file": "resources/stretch/assets/base_link_3.obj",
+        "sha256": "f4929a1511adfa84b91a4912e839a05d21f5715b930260dd81fb677b501b4a46"
+      },
+      {
+        "file": "resources/stretch/assets/base_link_4.obj",
+        "sha256": "5fb87192b939bbc69614454be52ac3211cc42c39410f9a6f72d3cf366125d414"
+      },
+      {
+        "file": "resources/stretch/assets/base_link_5.obj",
+        "sha256": "523f308172b2e910ed8990aa7d2f19bb98e81100335e6b8eef7867938676f302"
+      },
+      {
+        "file": "resources/stretch/assets/base_link_6.obj",
+        "sha256": "ac3ecf44cdc94e163478e8f491f9a8e511d9eaef605671905284df1202a6f6dd"
+      },
+      {
+        "file": "resources/stretch/assets/base_link_7.obj",
+        "sha256": "dfbaf9645fc6d2a9b3ee5e66e25c48f9ca135c42fb1333a516bf2e2d17bb0aa3"
+      },
+      {
+        "file": "resources/stretch/assets/base_link_8.obj",
+        "sha256": "24c7ed85eb63097d8f647c168c718194249b74d98eba7463ada1dd64faed9932"
+      },
+      {
+        "file": "resources/stretch/assets/base_link_casterless.stl",
+        "sha256": "d2d5bd2dc9f1d4ffde2321efd2067debeaabb2172f000b036f2ab6b5d043fac8"
+      },
+      {
+        "file": "resources/stretch/assets/link_aruco_right_base.obj",
+        "sha256": "7f0e7f41b9fe29c2091f39ff18a3b6742cfbe9c65434c60c51cde856db55d73b"
+      },
+      {
+        "file": "resources/stretch/assets/link_aruco_left_base.obj",
+        "sha256": "7f0e7f41b9fe29c2091f39ff18a3b6742cfbe9c65434c60c51cde856db55d73b"
+      },
+      {
+        "file": "resources/stretch/assets/respeaker_base.obj",
+        "sha256": "70acc76cf2a54fa419dc6d509919ae46a06d8f0f4bcdc46e88ba916de3a5c79a"
+      },
+      {
+        "file": "resources/stretch/assets/link_mast.obj",
+        "sha256": "dd28da988909e7f4dda26c296a3a54ba9a84c516c2f7d7059aa36fbc056d98c6"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_0.obj",
+        "sha256": "601b3ad3cf1d024cb0ef9f96e5e3a7cc671fc18d4d26140f3f14317765da1d00"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_1.obj",
+        "sha256": "ecc74a0b02815df93883f35ccbf56e312c707b088d087fb3e18ec780a78f41af"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_2.obj",
+        "sha256": "c81d8441cd7e5dc8fd74b9462783c61c5fda0f02eeaa0f87ed4f6addf3b195c0"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_3.obj",
+        "sha256": "d7e69ff8ae36d1c74ea5a0a941a48eb19c33f8d19d8d4e631545e96e8655f615"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_4.obj",
+        "sha256": "bdbb7bc5b816a9b55dcda9b9863f36e650e3c64ed9357897c7a11ba1e043f88f"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_5.obj",
+        "sha256": "243616144e0e7579582f9fc30573a489d08d33cbad25d714042ad01e7f8fb307"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_6.obj",
+        "sha256": "35eb02b748cb53695622b431c94c2beab837990713d30c163f98ee967f9e4b4a"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_7.obj",
+        "sha256": "7f2e724404d6034b0e893575ec920083dd77fb7e2f89e0964b74b4f23da01ab7"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_8.obj",
+        "sha256": "458e7850c870b35968f3c511d0cb64898c212575e1cea0c83110f70b1c713e81"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_9.obj",
+        "sha256": "e230e0ba13bc8e22abe74326e888cf8295b9546c6b67cc6ac5844253e52b2c92"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_10.obj",
+        "sha256": "f07adce0e40cd224bfd8dc49ff95bedd33cdf615406b627cba77449349a44ba0"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_11.obj",
+        "sha256": "90754a150e6a6c8bf97f188888c0ce87ff2e49c58b1074fd9f45b38f1d1a278d"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_pan_0.obj",
+        "sha256": "b1436e3f2c22d6d08b662deff47405673334839cd563c19b90bad351e2d0ae8b"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_pan_1.obj",
+        "sha256": "54370f2201f4ce69910bb61a902d0c07c167e90f4921882ebeb9432cc152f90a"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_tilt_0.obj",
+        "sha256": "c0330bea8f0c4bee0b35b4366e9e3d3cd5ca1023a121a3d5f0c65dc5f393e03f"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_tilt_1.obj",
+        "sha256": "4d1cb6f2207d6986e45f99428c8eece8fa6a24fba6fb1d3475c5f774df7545eb"
+      },
+      {
+        "file": "resources/stretch/assets/link_right_wheel_0.obj",
+        "sha256": "f2b821eb94f5437ccfdc5efb2b9bdf10c4fd584aa54f45f306e051a4ca04ccbb"
+      },
+      {
+        "file": "resources/stretch/assets/link_right_wheel_1.obj",
+        "sha256": "695bca8ae8e307e1c9e56505b33b293f2806b872254966e4d06a1c36e56b102e"
+      },
+      {
+        "file": "resources/stretch/assets/link_left_wheel_0.obj",
+        "sha256": "32a02f8d4fa8b6f4c8174965365b7c386104e5bcbead3e1d06daa455411eecdf"
+      },
+      {
+        "file": "resources/stretch/assets/link_left_wheel_1.obj",
+        "sha256": "1d38982dc60a8c05c64120b6b05ceba7f40c98bde0904c5385b097d9bf07fc91"
+      },
+      {
+        "file": "resources/stretch/assets/link_lift_0.obj",
+        "sha256": "ad629cb6eaeafec45a814365102c758b3b131df35534fc3215c373c9c34d066f"
+      },
+      {
+        "file": "resources/stretch/assets/link_lift_1.obj",
+        "sha256": "3c4f265261ac9db81af975204c1120dad88c9b41e4869b0f2202ab0bc669b344"
+      },
+      {
+        "file": "resources/stretch/assets/link_lift_2.obj",
+        "sha256": "9cc0064b7e8add7e401a891f9a2cb7b6c11f66fe91007023e449f3eb903ea227"
+      },
+      {
+        "file": "resources/stretch/assets/link_lift_3.obj",
+        "sha256": "0a3e16d2b30bff8a529efa9778e4c2b3f2eeb052bd29e5c414c0da6d7e72ea41"
+      },
+      {
+        "file": "resources/stretch/assets/link_lift_4.obj",
+        "sha256": "9755b22de6e30c44b883fe6720e09e6c608981fe1e3572bd22e81d82eff08288"
+      },
+      {
+        "file": "resources/stretch/assets/link_lift_5.obj",
+        "sha256": "ed85f90c8aa70761c5322f57d7d3245bef1d560711512a995ec1e669815acb65"
+      },
+      {
+        "file": "resources/stretch/assets/link_lift_6.obj",
+        "sha256": "f3811817e908e890ddebd011c733de5b407cd781b537a1e281dccd247da0eb70"
+      },
+      {
+        "file": "resources/stretch/assets/link_lift_7.obj",
+        "sha256": "65122e665930affc87dffc2ce790fdc326e7b988522101ed7f10d4ab6cba8cd7"
+      },
+      {
+        "file": "resources/stretch/assets/link_lift_8.obj",
+        "sha256": "0b67a66d5c8c4ce1067dba66b2cbf7b8539bf905a414a232e1b722e42d4acdf2"
+      },
+      {
+        "file": "resources/stretch/assets/link_lift_9.obj",
+        "sha256": "5eaf46cb89705c2c9910a6453f70d63b2d407c2a86e0fc60caec6abf857ddd35"
+      },
+      {
+        "file": "resources/stretch/assets/link_aruco_shoulder.obj",
+        "sha256": "6a9ace409ff326eec456770a96d2aec9e1e100aa9fcd6afe9b320eb03d62164f"
+      },
+      {
+        "file": "resources/stretch/assets/link_arm_l4_0.obj",
+        "sha256": "f81406eb8b4efa49df82044b5075078a600e44514cd90129e6ddd6136cf22e8f"
+      },
+      {
+        "file": "resources/stretch/assets/link_arm_l4_1.obj",
+        "sha256": "1fb20913eca87594ca504642a48b1b1004f8f594b19cbc45ea709b76375666f5"
+      },
+      {
+        "file": "resources/stretch/assets/link_arm_l3_0.obj",
+        "sha256": "44b748d6c32ff8898d55ea8c92ea177c43ab31fb2a20af4e1069d3d149d6f044"
+      },
+      {
+        "file": "resources/stretch/assets/link_arm_l3_1.obj",
+        "sha256": "f32e67a44270312b51f1af8aa8458a29bf8714f9b7d3d4b892e579056414c4fa"
+      },
+      {
+        "file": "resources/stretch/assets/link_arm_l2_0.obj",
+        "sha256": "e5c7bdce8e28efa3360202623fe01c35dd0bdd404318766d500920d139662500"
+      },
+      {
+        "file": "resources/stretch/assets/link_arm_l2_1.obj",
+        "sha256": "6b0ed71768eb30301a2109bd4375b24137bccaee7529b110fdad7b0e0b5076e4"
+      },
+      {
+        "file": "resources/stretch/assets/link_arm_l1_0.obj",
+        "sha256": "0ebb391b8bfa377332034341ff1c0193c8ca494ff6beb7a593cccbb09aeb0ec8"
+      },
+      {
+        "file": "resources/stretch/assets/link_arm_l1_1.obj",
+        "sha256": "4ef086e1abfbcdea46a546a96ab8b602574f1f0aa1668c95a336c6534700c3eb"
+      },
+      {
+        "file": "resources/stretch/assets/link_arm_l0_0.obj",
+        "sha256": "ebc8bbc182891fa029c677a8f1e32e3ed53f11a986b68a28defb8daa9b714a37"
+      },
+      {
+        "file": "resources/stretch/assets/link_arm_l0_1.obj",
+        "sha256": "0ff60709a54b06ab24330c769c50ba677fd95459eaf0439f15579ab8042346a4"
+      },
+      {
+        "file": "resources/stretch/assets/link_arm_l0_2.obj",
+        "sha256": "bc8bda8c3321fb5f64ebb0294bb8c3191e65ac51e619384f19f0133f362e888d"
+      },
+      {
+        "file": "resources/stretch/assets/link_aruco_inner_wrist.obj",
+        "sha256": "2cba33928cc667457e3b7fb60359c05687688f4923bc7bb6f965a8aae446dbf9"
+      },
+      {
+        "file": "resources/stretch/assets/link_aruco_top_wrist.obj",
+        "sha256": "514f4515903781d69729fe4130396e8b2ae301a4356024c2b5beba9888036074"
+      },
+      {
+        "file": "resources/stretch/assets/laser.obj",
+        "sha256": "febe15452ffde5d069943fa51fb08426079ad4419c983a84b3a47d822d87c8a9"
+      },
+      {
+        "file": "resources/stretch/assets/link_gripper_fingertip_left.stl",
+        "sha256": "7cb02cd1d0d5a2599b75365f1d61963a581ee49f2438fc79aefa964a952df77a"
+      },
+      {
+        "file": "resources/stretch/assets/link_gripper_fingertip_right.stl",
+        "sha256": "dbfb702f50aa53a077e5188e0b4269a8bddff485d197e5c06d9e4321cb5ea6a5"
+      },
+      {
+        "file": "resources/stretch/assets/link_gripper_finger_left_0.obj",
+        "sha256": "7a886141e5501877f9b776b204f2694537994ebccfdf7715c6771c6406234002"
+      },
+      {
+        "file": "resources/stretch/assets/link_gripper_finger_left_1.obj",
+        "sha256": "16291341862cd7aa35ff767c6868252cb695d4222459a55ed1bf8c32cecb9615"
+      },
+      {
+        "file": "resources/stretch/assets/link_gripper_finger_right_0.obj",
+        "sha256": "b5e8d67538153b0f37939f0bcc9c850f80446578a2d1f9cfc78adc3737b480cb"
+      },
+      {
+        "file": "resources/stretch/assets/link_gripper_finger_right_1.obj",
+        "sha256": "37159f986750a6d18f4d7904051fd32f77297660a9aeec2d8751c08ce3aa2575"
+      },
+      {
+        "file": "resources/stretch/assets/link_gripper_0.obj",
+        "sha256": "5feed27dc9f0febc1fc15fcef98c9a47bbe64c451e33197460d4abb7c11b9279"
+      },
+      {
+        "file": "resources/stretch/assets/link_gripper_1.obj",
+        "sha256": "5fa25ae6ee8653098dade84361e5c24385abb56773d261c47602a2e742254a78"
+      },
+      {
+        "file": "resources/stretch/assets/link_wrist_yaw.obj",
+        "sha256": "53fcc361ab7a3b82326b8344bcb2654d61d0b2d06b8e9ab9566f75d9fc266bd4"
+      },
+      {
+        "file": "resources/stretch/assets/link_DW3_tablet_12in.stl",
+        "sha256": "0bfc56ed791d36d68d446a40728d7550c8e5118267ada12aa25da7132abd97e7"
+      },
+      {
+        "file": "resources/stretch/assets/link_DW3_wrist_pitch.stl",
+        "sha256": "9fb47ba958d9ce65d8020d3aa328aa62bc47d4bbb01fd30e3b632a6b25238b5c"
+      },
+      {
+        "file": "resources/stretch/assets/link_DW3_wrist_quick_connect.stl",
+        "sha256": "f5df1f4dd28dd975340e68d2601f66c52a457cace5192585a22f6c14685ea2f5"
+      },
+      {
+        "file": "resources/stretch/assets/link_DW3_wrist_yaw_bottom.stl",
+        "sha256": "e6e7052e8334f01edc3b8d03e698c06bc03d27289f9568e20baed562d6a36cab"
+      },
+      {
+        "file": "resources/stretch/assets/link_SE3_head_nav_cam.stl",
+        "sha256": "be4645b82f4b4912b257a7f675176504d83377c3d5c7e9528efd2aa8e6d5623d"
+      },
+      {
+        "file": "resources/stretch/assets/link_SG3_aruco_d405.obj",
+        "sha256": "8fd74cef03a4fe8b3bd2ad2a003b0f482296d46d228cb3c6c288cc36f1c38834"
+      },
+      {
+        "file": "resources/stretch/assets/link_SG3_gripper_body.stl",
+        "sha256": "7fc5236786c964d83bf48d0fd1ad8ea155dfc771f1ff4bc27c7bc2d86eabb80d"
+      },
+      {
+        "file": "resources/stretch/assets/link_d405.stl",
+        "sha256": "0ab47dd3a933d54a9b4630a629700708fa63bd88f5475a2bdc3b8dfc222ee35a"
+      },
+      {
+        "file": "resources/stretch/assets/link_d405_lens.stl",
+        "sha256": "967f212d148ce40295b3a97f3a006e15943fa48a118fbd3350172faf3818a246"
+      },
+      {
+        "file": "resources/stretch/assets/link_d405_front_plate.stl",
+        "sha256": "20d6fa80713951301393a3d9d4d96c1b8ae8b05a9eab64da76d54445d568a2ee"
+      },
+      {
+        "file": "resources/stretch/assets/link_SG3_gripper_left_finger.stl",
+        "sha256": "9b521e35a032a590879e3d3d520219c3f848ee89e69fddf5c5f6372d06869423"
+      },
+      {
+        "file": "resources/stretch/assets/link_SG3_gripper_right_finger.stl",
+        "sha256": "85a729e0c81cc2caeddf47323ef1deb05bebb521f89af60b60f5fa361c692c70"
+      },
+      {
+        "file": "resources/stretch/assets/link_SG3_gripper_left_finger_0.obj",
+        "sha256": "a504ed43c451dfe771934a68fe7fe0141d873ec876bf16a39e7327ca0ec865cb"
+      },
+      {
+        "file": "resources/stretch/assets/link_SG3_gripper_right_finger_0.obj",
+        "sha256": "bf8786fa70e213ad51a58c4b2a8d1f4c046593f31f1b1f27481c134108f1d368"
+      },
+      {
+        "file": "resources/stretch/assets/link_SG3_gripper_left_finger_1.obj",
+        "sha256": "1b23f6cf2907318cb00b14a41092083303d4945be4ffb750c0a9bf9fc7706ec9"
+      },
+      {
+        "file": "resources/stretch/assets/link_SG3_gripper_right_finger_1.obj",
+        "sha256": "ad42d88c7b94aaa776b617244b1f1675646a54e9f517fc431b721a98ff7cd152"
+      },
+      {
+        "file": "resources/stretch/assets/link_SG3_gripper_left_inner_finger.stl",
+        "sha256": "2021148766fd93c1fae24723eb5f65ec981cd1889fbc6be6f8458793207df383"
+      },
+      {
+        "file": "resources/stretch/assets/link_SG3_gripper_right_inner_finger.stl",
+        "sha256": "9b5becd4ccf93151e4599f038a9be3f7123656fe910462977a0f4a16eada941c"
+      },
+      {
+        "file": "resources/stretch/assets/link_SG3_gripper_inner_finger.stl",
+        "sha256": "3bee8ab82e230fe1132f5703dbf5b18982cc51398d8c45cba9aa2e31347bb6a0"
+      },
+      {
+        "file": "resources/stretch/assets/link_SG3_gripper_left_finger_aruco.obj",
+        "sha256": "19ceeca8956d2e845a2a53c08ab015c79cdded2873dd282d1e764a8e193db491"
+      },
+      {
+        "file": "resources/stretch/assets/link_SG3_gripper_right_finger_aruco.obj",
+        "sha256": "f5555f3a3cd025c7ed1f45fda2b5d5813eba0a079ca05cbe46834220682e1154"
+      },
+      {
+        "file": "resources/stretch/assets/link_SG3_gripper_right_fingertip.stl",
+        "sha256": "c9a680cb46f39fa53dba46e4bff7e537346a4f5caa04f3b41e551cd63d885d4d"
+      },
+      {
+        "file": "resources/stretch/assets/link_SG3_gripper_left_fingertip.stl",
+        "sha256": "bb4ac16a6b9ff712cf4b2c4051ca498547c687ab1a985c51fad484c5d426aefa"
+      },
+      {
+        "file": "resources/stretch/assets/big_aruco_plate.stl",
+        "sha256": "41195315eca742171154d73613cade538413d63ac627cfdbb815600f6e66c3c8"
+      },
+      {
+        "file": "resources/stretch/assets/hand_crush.png",
+        "sha256": "b3fddc2877eca3542299291dce3e098558cc7dcdade10aae5526aeddc95604b8"
+      },
+      {
+        "file": "resources/stretch/assets/serial.png",
+        "sha256": "9f7a63de6f4c5f677d3f302ff0fb78db1e1af30a40668d7f297a147cfcb87b04"
+      },
+      {
+        "file": "resources/stretch/assets/mobile_base_right_corner_aruco_sticker.png",
+        "sha256": "025e8d8eaca6303c45ed979cea2278097dc56b6c40558af15b67b228249725d0"
+      },
+      {
+        "file": "resources/stretch/assets/mobile_base_left_corner_aruco_sticker.png",
+        "sha256": "e99edecf442109ff6c2311c2325ae10e709e723524eb9a4a41af343abcc5b882"
+      },
+      {
+        "file": "resources/stretch/assets/hand_pinch.png",
+        "sha256": "9c4b6d023cdf52828b3c95da8abc14393ed9256bb8ccbb86f220090ef2e81dc7"
+      },
+      {
+        "file": "resources/stretch/assets/arm_inner_wrist_aruco_sticker.png",
+        "sha256": "100ad8dca698e0b7362f57abec97b3f535c2a62e251048e63ad99c435d21c549"
+      },
+      {
+        "file": "resources/stretch/assets/arm_top_wrist_aruco_sticker.png",
+        "sha256": "7cc7ff50704807befd82d6ac441f0de7460e58923dc3771deb8bc8e8f528cedf"
+      },
+      {
+        "file": "resources/stretch/assets/shoulder_aruco_sticker.png",
+        "sha256": "13813d08a1cd2c06ea4726a916b1e789362f2ad500aa11b0998cd2209d8eaef1"
+      },
+      {
+        "file": "resources/stretch/assets/right_finger_aruco.png",
+        "sha256": "acb2a13762796e37352cbf952c62ee4ff8545c23659f66ce341cedae2b8b24c8"
+      },
+      {
+        "file": "resources/stretch/assets/left_finger_aruco.png",
+        "sha256": "6120990ed390a4f6debf6d37218820ca489991324c9ddbd88cb7af89ad972e75"
+      },
+      {
+        "file": "resources/stretch/assets/gripper_cam_aruco_sticker.png",
+        "sha256": "81c18ca457cd12d430729ea06c6d2cbf51a7a03d869a6f3cd3c57031d16ea49c"
+      }
+    ]
+  },
+  "coordinate_conversion": "Z-up simulation to Y-up viewer: (x,y,z)->(x,z,-y)",
+  "export": {
+    "source": "/tmp/orchestrator-3d/backtrack-before.glb",
+    "sha256": "f7d00f0331146f69a0b9c36b4b7ffe6df2b1a441a38fa9f17a54a6399c4ae8f5",
+    "mtime_utc": "2026-09-19T18:06:08.633811+00:00",
+    "bytes": 104887692
+  },
+  "geometry_policy": "No mesh simplification; original room and robot meshes transformed by recorded configuration. Original SMPL-X generated deterministically from recorded parameters. Texture, UV registration and camera are presentation changes only.",
+  "web_export": {
+    "file": "backtrack-before.glb",
+    "sha256": "1941521e2c5998ba956d483e49e1cec5cff30a1b8ffac9d2f82373ed549a68c4",
+    "bytes": 12006300,
+    "compression": "Lossless EXT_meshopt_compression. No quantization or simplification; texture images resized to1024 max.",
+    "geometry_verification": {
+      "matched_mesh_nodes": 152,
+      "total_mesh_nodes": 152,
+      "positions": "SHA256 equality of raw float32 POSITION buffers",
+      "triangles": "Identical winding-aware triangle sets (meshopt may cyclically rotate index triples)",
+      "transforms": "Maximum matrix difference <=1e-10",
+      "issues": []
+    }
+  }
+}

@@ -1,0 +1,37 @@
+# Task 30/50 of task_suite/tasks_llm.json -- towel_drying / left_foot (lying).
+# Written by task_suite/room_suite.py configs; description [llm].
+# Original: The person is lying flat in bed after a foot soak. Because the soles of their feet are extremely ticklish, the robot adapts by using firm, deliberate dabs with its bare tip against the left foot and toes, patting away the moisture without triggering sudden spasms.
+run_name: room2_t30_towel_drying_left_foot
+task: bathing
+robot: stretch
+human_indices:
+- 0
+cuda_id: 3
+task_description: An adult of average build is lying supine on a flat bed with mattress height around 0.5 meters. Both arms rest alongside the torso with palms facing inward, and both legs extend straight with a distinct gap between them to ensure the feet remain separated. Starting from a clearly separated non-contact pose near the foot of the bed, the robot approaches the left foot with its sponge pad held flat against the skin. It performs three firm, deliberate dabbing motions along the sole of the left foot advancing toward the left toe base, pressing lightly onto the skin to pat away moisture without dragging. Contact is strictly confined to the left foot and left toe base while the rest of the robot stays completely clear of the person. Afterward, the robot lifts the sponge clear of the body and retreats to a clearly separated non-contact pose so the end of the task is unambiguous.
+human_posture: lying
+furniture_name: bed
+target_segments:
+- leftFoot
+- leftToeBase
+human_placement_impl: vlm
+scene:
+  enabled: true
+  order: room_first
+  room_policy: download_delete
+  scene_tries: 8
+  fetch_min_free_gb: 5
+  exclude_support:
+  - 23:bedroom_bed_0
+vlm_model: gemini-3.7-flash
+orchestrator:
+  model: gemini-3.7-flash
+  stage_attempt_cap: 5
+  item_execution_cap: 40
+  outer_loop_cap: 1
+  llm_call_cap: 600
+  review_on_success: true
+  cross_validate_humans: 0
+  stage_timeouts_s:
+    per_vlm_iter: 1800.0
+    per_cross_val_body: 300.0
+    default: 3600.0

@@ -1,0 +1,36 @@
+# Task 48/50 of task_suite/tasks_llm.json -- comforting_touch / head (lying).
+# Written by task_suite/room_suite.py configs; description [llm].
+# Original: The person is lying flat on their back in bed, exhausted after a difficult washing routine. The robot lightly rests its bare tip against the top of their head. It holds this gentle, stabilizing contact to soothe their tiredness and offer a quiet moment of emotional support.
+run_name: room2_t48_comforting_t_head
+task: bathing
+robot: stretch
+human_indices:
+- 0
+cuda_id: 2
+task_description: An adult of average build is lying supine on a flat bed with a mattress height of 0.5 meters. Both legs extend straight forward with slight separation, and both arms rest relaxed alongside the torso without touching the hips, leaving the head clearly exposed and accessible. Starting from a clearly separated non-contact pose, a robot approaches with a sponge pad oriented flat against the skin. The robot gently places the sponge pad against the top of the head, maintaining a light, stabilizing contact for a single steady stationary hold. Throughout the interaction, only the sponge pad touches the head while the rest of the robot stays clear of the body. The robot then lifts the sponge pad vertically clear of the head and retreats to a clearly separated non-contact pose so the end of the task is unambiguous.
+human_posture: lying
+furniture_name: bed
+target_segments:
+- head
+human_placement_impl: vlm
+scene:
+  enabled: true
+  order: room_first
+  room_policy: download_delete
+  scene_tries: 8
+  fetch_min_free_gb: 5
+  exclude_support:
+  - 23:bedroom_bed_0
+vlm_model: gemini-3.7-flash
+orchestrator:
+  model: gemini-3.7-flash
+  stage_attempt_cap: 5
+  item_execution_cap: 40
+  outer_loop_cap: 1
+  llm_call_cap: 600
+  review_on_success: true
+  cross_validate_humans: 0
+  stage_timeouts_s:
+    per_vlm_iter: 1800.0
+    per_cross_val_body: 300.0
+    default: 3600.0

@@ -1,0 +1,38 @@
+# Task 21/50 of task_suite/tasks_llm.json -- comforting_touch / left_hand (sitting).
+# Written by task_suite/room_suite.py configs; description [llm].
+# Original: The person is sitting in a shallow accent chair with their feet flat, appearing highly agitated and restless. The robot slowly and gently rests its tip over their left hand and index finger. It maintains a soft, still contact to offer a calming, reassuring touch without overstimulating them.
+run_name: room2_t21_comforting_t_left_hand
+task: bathing
+robot: stretch
+human_indices:
+- 0
+cuda_id: 2
+task_description: An adult of average build is seated upright in a winged accent chair with a seat depth of about 40 to 45 cm, knees bent so the lower legs hang vertically with feet flat on the floor. Their left forearm extends forward along the left armrest so the left hand and left index finger rest exposed palm-down on the forward edge of the armrest, while the right arm rests separately on the right armrest with no overlapping limbs. Starting from a clearly separated non-contact pose, the robot approaches from the front-left and gently places its sponge pad flat against the back of the left hand and the base of the left index finger. It applies a light, static reassuring press held steadily in place for one comforting touch cycle, ensuring only the sponge pad touches the skin while the robot base and arm remain entirely outside the chair wings and armrests. The robot then lifts the sponge pad vertically clear of the hand and retreats to a separated non-contact pose so the end of the task is unambiguous.
+human_posture: sitting
+furniture_name: bedroom_accent_chair_0
+target_segments:
+- leftHand
+- leftHandIndex1
+human_placement_impl: vlm
+scene:
+  enabled: true
+  order: room_first
+  room_policy: download_delete
+  scene_tries: 16
+  fetch_min_free_gb: 5
+  exclude_support:
+  - 23:bedroom_bed_0
+vlm_model: gemini-3.7-flash
+orchestrator:
+  model: gemini-3.7-flash
+  stage_attempt_cap: 5
+  item_execution_cap: 40
+  outer_loop_cap: 1
+  llm_call_cap: 600
+  review_on_success: true
+  cross_validate_humans: 0
+  stage_timeouts_s:
+    per_vlm_iter: 1800.0
+    per_cross_val_body: 300.0
+    default: 3600.0
+seated_view: front

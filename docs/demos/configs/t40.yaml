@@ -1,0 +1,37 @@
+# Task 40/50 of task_suite/tasks_llm.json -- comforting_touch / right_arm (lying).
+# Written by task_suite/room_suite.py configs; description [llm].
+# Original: The person is lying quietly in bed during a restless, lonely night. The robot brings its tip down to gently rest on their right upper arm, sliding very softly down to their forearm. This soothing, sustained touch offers a continuous comforting presence through the dark hours.
+run_name: room2_t40_comforting_t_right_arm
+task: bathing
+robot: stretch
+human_indices:
+- 0
+cuda_id: 3
+task_description: An adult of average build is lying supine on a flat bed with the torso centered on the mattress. Both legs extend straight with slight separation, the left arm rests alongside the torso, and the right arm rests on the mattress slightly abducted so the right upper arm and right forearm are fully accessible. Starting from a clearly separated non-contact pose, a robot approaches from the right side of the bed and provides comforting touch. With the sponge pad held flat against the skin, the robot makes real light contact on the right upper arm and executes a single slow, continuous stroke moving distally down along the right forearm. Contact is strictly confined to the right upper arm and right forearm, while the rest of the robot remains clear of the person. The robot then lifts the sponge pad clear of the body and retreats to a separated non-contact pose so the end of the task is unambiguous.
+human_posture: lying
+furniture_name: bed
+target_segments:
+- rightArm
+- rightForeArm
+human_placement_impl: vlm
+scene:
+  enabled: true
+  order: room_first
+  room_policy: download_delete
+  scene_tries: 8
+  fetch_min_free_gb: 5
+  exclude_support:
+  - 23:bedroom_bed_0
+vlm_model: gemini-3.7-flash
+orchestrator:
+  model: gemini-3.7-flash
+  stage_attempt_cap: 5
+  item_execution_cap: 40
+  outer_loop_cap: 1
+  llm_call_cap: 600
+  review_on_success: true
+  cross_validate_humans: 0
+  stage_timeouts_s:
+    per_vlm_iter: 1800.0
+    per_cross_val_body: 300.0
+    default: 3600.0

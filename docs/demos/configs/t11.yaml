@@ -1,0 +1,38 @@
+# Task 11/50 of task_suite/tasks_llm.json -- edema_massage / left_leg_sequence (lying).
+# Written by task_suite/room_suite.py configs; description [llm].
+# Original: The person is lying flat in bed before sleep, their swollen left leg resting on a wedge pillow. The robot gently presses its bare tip starting at the top of the foot, dragging smoothly upward along the calf and thigh. This careful, sequenced pressure pushes the lymphatic fluid toward the heart.
+run_name: room2_t11_edema_massag_left_leg_sequence
+task: bathing
+robot: stretch
+human_indices:
+- 0
+cuda_id: 1
+task_description: An adult of average build is lying supine on a standard bed with their head supported, arms resting flat beside the torso, and legs extended straight with a slight gap between them to leave the left lower extremity fully accessible. Starting from a clearly separated non-contact pose beside the bed, a robot approaches the foot of the bed and applies a sponge pad held flat against the skin with light, gentle pressure. It performs a single continuous upward massage pass starting at the top of the leftFoot, smoothly gliding upward along the front of the leftLeg and continuing along the leftUpLeg toward the hip. Only the sponge pad contacts the person while the rest of the robot remains clear of the body. The robot then lifts the sponge pad cleanly off the thigh and retreats to a clearly separated non-contact pose so the end of the task is unambiguous.
+human_posture: lying
+furniture_name: bed
+target_segments:
+- leftFoot
+- leftLeg
+- leftUpLeg
+human_placement_impl: vlm
+scene:
+  enabled: true
+  order: room_first
+  room_policy: download_delete
+  scene_tries: 8
+  fetch_min_free_gb: 5
+  exclude_support:
+  - 23:bedroom_bed_0
+vlm_model: gemini-3.7-flash
+orchestrator:
+  model: gemini-3.7-flash
+  stage_attempt_cap: 5
+  item_execution_cap: 40
+  outer_loop_cap: 1
+  llm_call_cap: 600
+  review_on_success: true
+  cross_validate_humans: 0
+  stage_timeouts_s:
+    per_vlm_iter: 1800.0
+    per_cross_val_body: 300.0
+    default: 3600.0

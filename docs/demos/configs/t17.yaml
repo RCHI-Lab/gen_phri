@@ -1,0 +1,36 @@
+# Task 17/50 of task_suite/tasks_llm.json -- skin_assessment / hips (lying).
+# Written by task_suite/room_suite.py configs; description [llm].
+# Original: The person is lying on their side in bed, feeling quite sore and agitated today. The robot very slowly and softly presses its bare tip into the skin over the upward-facing hip bone, checking the blanch response while minimizing any additional discomfort.
+run_name: room2_t17_skin_assessm_hips
+task: scratching
+robot: stretch
+human_indices:
+- 0
+cuda_id: 0
+task_description: An adult of average build is lying on their right side on a standard-height bed. The head rests flat on the mattress, both arms extend forward onto the bed surface without touching each other, and both legs extend straight along the mattress with slight spacing between them to keep the upward-facing left side of the hips fully exposed. Starting from a clearly separated non-contact pose, a robot approaches to perform a skin assessment on the hips. The robot slowly presses the narrow tip of the scratcher perpendicularly into the skin over the hips in a single gentle press and release cycle, maintaining light contact strictly confined to the hips while the rest of the robot stays entirely clear of the person. It then lifts the scratcher tip clear of the body and retreats to a clearly separated non-contact pose so the end of the task is unambiguous.
+human_posture: lying
+furniture_name: bed
+target_segments:
+- hips
+human_placement_impl: vlm
+scene:
+  enabled: true
+  order: room_first
+  room_policy: download_delete
+  scene_tries: 8
+  fetch_min_free_gb: 5
+  exclude_support:
+  - 23:bedroom_bed_0
+vlm_model: gemini-3.7-flash
+orchestrator:
+  model: gemini-3.7-flash
+  stage_attempt_cap: 5
+  item_execution_cap: 40
+  outer_loop_cap: 1
+  llm_call_cap: 600
+  review_on_success: true
+  cross_validate_humans: 0
+  stage_timeouts_s:
+    per_vlm_iter: 1800.0
+    per_cross_val_body: 300.0
+    default: 3600.0

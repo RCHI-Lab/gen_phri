@@ -1,0 +1,4937 @@
+{
+  "case": "accept",
+  "side": "before",
+  "run": "room2_t07_itch_relief_scalp",
+  "iteration": 4,
+  "recorded_config": {
+    "source": "/home/npechuk/src/gen_sim_phri/scene_generation/robot_placement/data/room2_t07_itch_relief_scalp/iter_04/robot_config.json",
+    "sha256": "d369ec747f3b68914423c76ccbc86b44f32ca9ac4211bfec6623fc95d43aa95d",
+    "mtime_utc": "2026-09-11T22:29:37.439640+00:00",
+    "bytes": 3378
+  },
+  "config": {
+    "robot_pos": [
+      3.6473708882854323,
+      3.255378321571473,
+      0.0
+    ],
+    "robot_quat": [
+      0.8944207709907027,
+      0.0,
+      0.0,
+      -0.4472264352879837
+    ],
+    "human_config": {
+      "joint_angles": {
+        "left_hip": {
+          "x": -90.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "right_hip": {
+          "x": -90.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "left_knee": {
+          "x": 90.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "right_knee": {
+          "x": 90.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "neck": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "left_shoulder": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": -75.0
+        },
+        "right_shoulder": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 75.0
+        },
+        "left_elbow": {
+          "x": 0.0,
+          "y": -90.0,
+          "z": 0.0
+        },
+        "right_elbow": {
+          "x": 0.0,
+          "y": 90.0,
+          "z": 0.0
+        }
+      },
+      "betas": [
+        1.5409960746765137,
+        -0.293428897857666,
+        -2.1787893772125244,
+        0.5684312582015991,
+        -1.0845223665237427,
+        -1.3985954523086548,
+        0.40334683656692505,
+        0.8380263447761536,
+        -0.7192575931549072,
+        -0.40334352850914
+      ],
+      "pos": [
+        4.053404331207275,
+        2.8245091438293457,
+        0.9204975962638855
+      ],
+      "quat": [
+        0.5026286840438843,
+        0.502167284488678,
+        -0.49736613035202026,
+        -0.4978146255016327
+      ],
+      "scene_json": "/home/npechuk/src/gen_sim_phri/scene_generation/scenesmith/data/room2_t07_itch_relief_scalp/room_scene.json",
+      "furniture_name": "living_room_armchair_0",
+      "_seat_fit": {
+        "support_top_z": 0.40518,
+        "root_z": 0.9204976200115396,
+        "seat_sink_m": 0.00051,
+        "pelvis_gap_m": 0.00871,
+        "thigh_gap_m": -0.00051,
+        "foot_floor_m": -0.01307,
+        "residual_m": 0.0,
+        "feet_shift_m": 0.00949,
+        "status": "ok"
+      }
+    },
+    "placement_correction": {
+      "applied": true,
+      "search": {
+        "ok": true,
+        "applied": true,
+        "dx_m": 2.4492935982947064e-18,
+        "dy_m": 0.04,
+        "dyaw_deg": -10.0,
+        "pos": [
+          3.6473708882854323,
+          3.255378321571473,
+          0.0
+        ],
+        "rot": [
+          [
+            0.5999770311592059,
+            0.8000172261154039,
+            0.0
+          ],
+          [
+            -0.8000172261154039,
+            0.5999770311592059,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "clearance_before_mm": 18.88,
+        "clearance_after_mm": 45.87,
+        "margin_before_mm": -1.12,
+        "reach_before": 0.5,
+        "reach_after": 0.5,
+        "reason": "shifted 0.040 m, yaw -10 deg after 3 exact check(s)",
+        "candidates_2d": 80,
+        "survivors_2d": 54,
+        "exact_checks": 3,
+        "seconds": 20.795,
+        "blockers_before": {
+          "human": 18.9,
+          "furniture": 40.6,
+          "room": 1081.5,
+          "obstacles": 199.0
+        },
+        "reach_free_before": 0.5,
+        "reach_limited_before": 0.5,
+        "arm_clear_reach_frac_before": 0.5,
+        "arm_margin_before_mm": 360.8,
+        "arm_worst_before": {
+          "link": "link_DW3_wrist_pitch",
+          "surface": "furniture",
+          "clearance_mm": 355.8,
+          "limit_mm": -5.0
+        },
+        "margin_after_mm": 41.41,
+        "blockers_after": {
+          "human": 61.4,
+          "furniture": 45.9,
+          "room": 1028.2,
+          "obstacles": 146.8
+        },
+        "reach_limited_after": 0.5,
+        "reach_bar_met": true,
+        "arm_clear_reach_frac_after": 0.5,
+        "arm_margin_after_mm": 359.8,
+        "arm_worst_after": {
+          "link": "link_wrist_yaw",
+          "surface": "furniture",
+          "clearance_mm": 354.8,
+          "limit_mm": -5.0
+        },
+        "arm_clear": true,
+        "deferred_2d": 34,
+        "rejections": {
+          "static": 0,
+          "trajectory_margin": 2,
+          "reach_below_generated": 0,
+          "no_reach": 0,
+          "travel": 2,
+          "arm": 0
+        },
+        "prefilter": true,
+        "travel_model": true,
+        "travel_prediction": {
+          "travel": {
+            "bad_ok": 0,
+            "bad_wrong": 0,
+            "good_ok": 1,
+            "good_wrong": 2
+          },
+          "reach": {
+            "bad_ok": 0,
+            "bad_wrong": 0,
+            "good_ok": 3,
+            "good_wrong": 0
+          }
+        },
+        "setup_seconds": 11.233,
+        "prefilter_ms_per_candidate": 9.442
+      },
+      "generated_pos": [
+        3.6473708882854323,
+        3.215378321571473,
+        0.0
+      ],
+      "generated_rot": [
+        [
+          0.7297835653319255,
+          0.6836782487189593,
+          0.0
+        ],
+        [
+          -0.6836782487189593,
+          0.7297835653319255,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "d_local": [
+        -0.027347129948758396,
+        0.029191342613277046,
+        0.0
+      ],
+      "dyaw_deg": -10.0,
+      "d_world": [
+        0.0,
+        0.040000000000000036,
+        0.0
+      ]
+    }
+  },
+  "room": {
+    "source": {
+      "source": "/home/npechuk/src/gen_sim_phri/scene_generation/scenesmith/data/room2_t07_itch_relief_scalp/room_scene.json",
+      "sha256": "935380f0eb6df26067bba7a12997a16699f2ff73ba512700008ff80b2caea2fb",
+      "mtime_utc": "2026-09-11T20:46:38.319576+00:00",
+      "bytes": 785592
+    },
+    "drop": [],
+    "evidence": "Original room selection remains the same for this snapshot.",
+    "room_marker": {
+      "order": "room_first",
+      "entity": "living_room_armchair_0",
+      "scene_id": 13,
+      "description": "A living room with a sofa against the wall across from the door, a painting on the wall above the sofa, and a pendant light hanging in the middle of the room.",
+      "source": "scene_assets/scenesmith/NotGenerated_scene_013/scene_drake.json",
+      "welded_props": 12,
+      "dropped_entities": [],
+      "dropped_links": [],
+      "reason": "the room is used as authored: nothing is substituted, so nothing is displaced and no prop needs to fall anywhere"
+    },
+    "mesh_sources": [
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_013/floor_plans/living_room/floors/floor.glb",
+        "sha256": "6ae2c8abd431bd2a45cf902d1bfea76c73396606c15423d736d2b223847f7a88",
+        "mtime_utc": "2026-09-14T08:49:10.216836+00:00",
+        "bytes": 2540,
+        "entity": "room_geometry_living_room__v0",
+        "world_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            2.5
+          ],
+          [
+            0.0,
+            2.220446049250313e-16,
+            -1.0,
+            2.25
+          ],
+          [
+            0.0,
+            1.0,
+            2.220446049250313e-16,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_013/floor_plans/living_room/walls/north_wall/wall.glb",
+        "sha256": "335f06a404b23546728d63b189730faa9ed2f03d083f89b3ab171e658e58f77f",
+        "mtime_utc": "2026-09-14T08:49:10.399836+00:00",
+        "bytes": 16751556,
+        "entity": "room_geometry_living_room__v1",
+        "world_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            2.5
+          ],
+          [
+            0.0,
+            2.220446049250313e-16,
+            -1.0,
+            4.475
+          ],
+          [
+            0.0,
+            1.0,
+            2.220446049250313e-16,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_013/floor_plans/living_room/walls/north_wall_exterior/wall.glb",
+        "sha256": "e09d007ca1cb088a5201f98a28571211f87885200e638b15021c1fccb42699d9",
+        "mtime_utc": "2026-09-14T08:49:10.698836+00:00",
+        "bytes": 8772460,
+        "entity": "room_geometry_living_room__v2",
+        "world_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            2.5
+          ],
+          [
+            0.0,
+            2.220446049250313e-16,
+            -1.0,
+            4.525
+          ],
+          [
+            0.0,
+            1.0,
+            2.220446049250313e-16,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_013/floor_plans/living_room/walls/south_wall/wall.glb",
+        "sha256": "caf08b40edf1fcafedd6affc10ce763f2adfef1264ebdc821a7358b016d101bc",
+        "mtime_utc": "2026-09-14T08:49:10.832836+00:00",
+        "bytes": 16752684,
+        "entity": "room_geometry_living_room__v3",
+        "world_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            2.5
+          ],
+          [
+            0.0,
+            2.220446049250313e-16,
+            -1.0,
+            0.02499999999999991
+          ],
+          [
+            0.0,
+            1.0,
+            2.220446049250313e-16,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_013/floor_plans/living_room/walls/south_wall_exterior/wall.glb",
+        "sha256": "daa56fe3120d8d883039873700ae042f95dbf52e4001a8ad88aa9549472dcc9b",
+        "mtime_utc": "2026-09-14T08:49:11.114837+00:00",
+        "bytes": 8773588,
+        "entity": "room_geometry_living_room__v4",
+        "world_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            2.5
+          ],
+          [
+            0.0,
+            2.220446049250313e-16,
+            -1.0,
+            -0.02499999999999991
+          ],
+          [
+            0.0,
+            1.0,
+            2.220446049250313e-16,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_013/floor_plans/living_room/walls/east_wall/wall.glb",
+        "sha256": "91f3da1d10f30ce6aa527b1981a09137b254e4847bbded5115678141cd129ed2",
+        "mtime_utc": "2026-09-14T08:49:11.236837+00:00",
+        "bytes": 16752916,
+        "entity": "room_geometry_living_room__v5",
+        "world_matrix": [
+          [
+            -3.6732051035270885e-06,
+            -2.2204460492353336e-16,
+            0.9999999999932538,
+            4.975
+          ],
+          [
+            0.9999999999932538,
+            -8.156153760212811e-22,
+            3.6732051035270885e-06,
+            2.25
+          ],
+          [
+            0.0,
+            1.0,
+            2.220446049250313e-16,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_013/floor_plans/living_room/windows/window_1/window.glb",
+        "sha256": "3b3b373886fb2d14bf33f02bec3f56c652f6af3bc35764b6342693e5721b7cdc",
+        "mtime_utc": "2026-09-14T08:49:11.511837+00:00",
+        "bytes": 2816,
+        "entity": "room_geometry_living_room__v6",
+        "world_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            4.975
+          ],
+          [
+            0.0,
+            2.220446049250313e-16,
+            -1.0,
+            2.3555111400314037
+          ],
+          [
+            0.0,
+            1.0,
+            2.220446049250313e-16,
+            1.5
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_013/floor_plans/living_room/walls/east_wall_exterior/wall.glb",
+        "sha256": "5206e01f5a066e4ac0ce0bddc8162b8415db1801473557f669c4e186b2633e2f",
+        "mtime_utc": "2026-09-14T08:49:11.525837+00:00",
+        "bytes": 8773820,
+        "entity": "room_geometry_living_room__v7",
+        "world_matrix": [
+          [
+            -3.6732051035270885e-06,
+            -2.2204460492353336e-16,
+            0.9999999999932538,
+            5.025
+          ],
+          [
+            0.9999999999932538,
+            -8.156153760212811e-22,
+            3.6732051035270885e-06,
+            2.25
+          ],
+          [
+            0.0,
+            1.0,
+            2.220446049250313e-16,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_013/floor_plans/living_room/walls/west_wall/wall.glb",
+        "sha256": "399e07aee1e121bfed8444a30ce8a1beab8aeb5ef1ef5d624038aee9eb492c5a",
+        "mtime_utc": "2026-09-14T08:49:11.646837+00:00",
+        "bytes": 16752916,
+        "entity": "room_geometry_living_room__v8",
+        "world_matrix": [
+          [
+            -3.6732051035270885e-06,
+            -2.2204460492353336e-16,
+            0.9999999999932538,
+            0.02499999999999991
+          ],
+          [
+            0.9999999999932538,
+            -8.156153760212811e-22,
+            3.6732051035270885e-06,
+            2.25
+          ],
+          [
+            0.0,
+            1.0,
+            2.220446049250313e-16,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_013/floor_plans/living_room/windows/window_2/window.glb",
+        "sha256": "3b3b373886fb2d14bf33f02bec3f56c652f6af3bc35764b6342693e5721b7cdc",
+        "mtime_utc": "2026-09-14T08:49:11.927838+00:00",
+        "bytes": 2816,
+        "entity": "room_geometry_living_room__v9",
+        "world_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.02499999999999991
+          ],
+          [
+            0.0,
+            2.220446049250313e-16,
+            -1.0,
+            2.76890026457375
+          ],
+          [
+            0.0,
+            1.0,
+            2.220446049250313e-16,
+            1.5
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_013/floor_plans/living_room/walls/west_wall_exterior/wall.glb",
+        "sha256": "dc4b301c7608fa0a4a8f1ced28cde8ce9a0df447a98fa7d8e8d671d58d7b87b2",
+        "mtime_utc": "2026-09-14T08:49:11.943838+00:00",
+        "bytes": 8773820,
+        "entity": "room_geometry_living_room__v10",
+        "world_matrix": [
+          [
+            -3.6732051035270885e-06,
+            -2.2204460492353336e-16,
+            0.9999999999932538,
+            -0.02499999999999991
+          ],
+          [
+            0.9999999999932538,
+            -8.156153760212811e-22,
+            3.6732051035270885e-06,
+            2.25
+          ],
+          [
+            0.0,
+            1.0,
+            2.220446049250313e-16,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_013/room_living_room/generated_assets/furniture/sdf/05206ad5b8ad9956a076ab73038089b964ddb2fd/sofa.glb",
+        "sha256": "e4ffd20a4b13b961fc719a06654d6274e411dbadcc2d05cb39d0d8e2e4e49610",
+        "mtime_utc": "2026-09-14T08:49:12.064838+00:00",
+        "bytes": 14496504,
+        "entity": "living_room_sofa_0",
+        "world_matrix": [
+          [
+            -0.9999994671175211,
+            2.9185568086740035e-06,
+            -0.0010323546658175496,
+            2.492004756756184
+          ],
+          [
+            -0.0010323550993485606,
+            -0.00015266344844070155,
+            0.999999455468262,
+            3.986515907130324
+          ],
+          [
+            2.7609523961296367e-06,
+            0.9999999883426768,
+            0.00015266638007602884,
+            -0.0071223758073744635
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_013/room_living_room/generated_assets/furniture/sdf/c54816423cdd8e3e699b411d028aba1e5aef3f2c/armchair.glb",
+        "sha256": "caf8009faa1e3c0d3d4ea4ff470a8684569b8a974e367e0d6c11d50c52532a70",
+        "mtime_utc": "2026-09-14T08:49:12.419838+00:00",
+        "bytes": 5894604,
+        "entity": "living_room_armchair_0",
+        "world_matrix": [
+          [
+            -0.009614862903491783,
+            0.0009097557381840084,
+            0.9999533622903839,
+            4.207871264621851
+          ],
+          [
+            0.9999537761373495,
+            8.798717856757435e-06,
+            0.00961485887770186,
+            2.8271189653725486
+          ],
+          [
+            -5.1134468890331065e-08,
+            0.9999995861334541,
+            -0.0009097982842256404,
+            -0.0009608665568986526
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_013/room_living_room/generated_assets/furniture/sdf/e4f6dfda92befece946bd5d72a7cb16ff45ac3e6/ottoman.glb",
+        "sha256": "ace2299e6ecf9be512fde40f2d2183d27cc10f238222f04b413fe1fe56ff8aa7",
+        "mtime_utc": "2026-09-14T08:49:12.576838+00:00",
+        "bytes": 3017228,
+        "entity": "living_room_ottoman_0",
+        "world_matrix": [
+          [
+            0.9996932964390196,
+            2.219463097514215e-06,
+            0.024765157983758914,
+            3.4321779768401703
+          ],
+          [
+            0.02476515798683949,
+            -1.3714138099767333e-06,
+            -0.9996932964404665,
+            2.105806464236968
+          ],
+          [
+            -2.1848191006167713e-06,
+            0.9999999999965967,
+            -1.4259585467335354e-06,
+            -5.9374017384871935e-05
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_013/room_living_room/generated_assets/furniture/sdf/ea5ec37b381d5b1151ac375cd882c99af858e937/media_console.glb",
+        "sha256": "7b8f6a8db02033f2f564cfd8e2607c894a6f1012534310fe308d2eb0d0552009",
+        "mtime_utc": "2026-09-14T08:49:12.720839+00:00",
+        "bytes": 1670988,
+        "entity": "living_room_media_console_0",
+        "world_matrix": [
+          [
+            7.003696092522382e-07,
+            8.406793140605488e-05,
+            0.9999999964660463,
+            4.68083790976467
+          ],
+          [
+            0.9999726714984621,
+            -0.0073929869621755075,
+            -7.883734870648262e-08,
+            0.9783940670683535
+          ],
+          [
+            0.00739298692942134,
+            0.9999726679646601,
+            -8.407081177885193e-05,
+            -0.0002025096967312058
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_013/room_living_room/generated_assets/furniture/sdf/0d972ff8f4fa3b796bc392b5de7931ff6d8c7707/side_table.glb",
+        "sha256": "0d3bef2f6e6ac8130ef4c413f0e991daeab0f152a8447cc553f65e957b00cc22",
+        "mtime_utc": "2026-09-14T08:49:12.932839+00:00",
+        "bytes": 1712780,
+        "entity": "living_room_side_table_0",
+        "world_matrix": [
+          [
+            0.999596521006841,
+            6.191893786507961e-06,
+            0.028404139710272818,
+            1.0595618026345535
+          ],
+          [
+            0.028404139883340073,
+            -2.9929332165363568e-05,
+            -0.9995965205730375,
+            3.7952472978296212
+          ],
+          [
+            -5.339278552491019e-06,
+            0.9999999995329478,
+            -3.009313172581032e-05,
+            -2.229150009385734e-05
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_013/room_living_room/generated_assets/furniture/sdf/10f82d87bf341e228ce8dee47a5c39a438eb9cda/tea_table.glb",
+        "sha256": "6c6a3dab8e5f60ed6a4ad0a3c35489fc1f1ab51f1b4e8d722535fb32234f96b8",
+        "mtime_utc": "2026-09-14T08:49:12.983839+00:00",
+        "bytes": 7947264,
+        "entity": "living_room_tea_table_0",
+        "world_matrix": [
+          [
+            0.8459801471345426,
+            1.5893328327782001e-06,
+            -0.005795744274176276,
+            2.598582000565842
+          ],
+          [
+            -0.00579574427740435,
+            1.7192674289449478e-06,
+            -0.8459801471342664,
+            2.979728972488325
+          ],
+          [
+            -1.5775172451086721e-06,
+            0.8459999999967601,
+            1.730115223608675e-06,
+            -2.821079244196177e-05
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_013/room_living_room/generated_assets/furniture/sdf/rug_1767668151/rug.glb",
+        "sha256": "357e3fc0fb4a4e875dd85a69b911c0c6386cf971fdb6167e0910447303b071d8",
+        "mtime_utc": "2026-09-14T08:49:13.294839+00:00",
+        "bytes": 2684,
+        "entity": "living_room_rug_0",
+        "world_matrix": [
+          [
+            0.9999909152417321,
+            -9.464788744020558e-19,
+            0.004262561906071145,
+            2.628195908896406
+          ],
+          [
+            0.004262561906071145,
+            2.2204258770347088e-16,
+            -0.9999909152417321,
+            3.0077637356544344
+          ],
+          [
+            0.0,
+            1.0,
+            2.220446049250313e-16,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_013/room_living_room/generated_assets/furniture/sdf/ac88278d1e7c67f5b7496da19e3256bcadd59eb9/floor_lamp.glb",
+        "sha256": "ae00fea014454a1e78edac732e5c85d4b448b971740098ba6d51d63b668825d6",
+        "mtime_utc": "2026-09-14T08:49:13.483839+00:00",
+        "bytes": 5803680,
+        "entity": "living_room_floor_lamp_0",
+        "world_matrix": [
+          [
+            0.999992519132664,
+            0.00032993567878166516,
+            -0.0038539358007868567,
+            0.47727602341709385
+          ],
+          [
+            -0.0038538218876766396,
+            -0.00034520089100194815,
+            -0.9999925144185845,
+            4.089719757104145
+          ],
+          [
+            -0.0003312635910935757,
+            0.9999998859893898,
+            -0.000343926795259464,
+            -2.918054583040613e-05
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_013/room_living_room/generated_assets/wall_mounted/sdf/095296d62f260a7b39e7fa5df93a386807a14511/painting.glb",
+        "sha256": "c0e4c5f87faf041edd1fe2b8e8658974b8315e56447c61a7b039c32e0a595738",
+        "mtime_utc": "2026-09-14T08:49:13.665839+00:00",
+        "bytes": 1054888,
+        "entity": "living_room_painting_0",
+        "world_matrix": [
+          [
+            -1.0,
+            -2.719262146893782e-32,
+            1.2246467991473532e-16,
+            2.5
+          ],
+          [
+            1.2246467991473532e-16,
+            -2.220446049250313e-16,
+            1.0,
+            4.45
+          ],
+          [
+            0.0,
+            1.0,
+            2.220446049250313e-16,
+            1.68
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_013/room_living_room/generated_assets/wall_mounted/sdf/713797714014a1bdb4e0c2c13c722892e7c71999/mirror.glb",
+        "sha256": "33078e2bd83fc335a1d90ecebcf7a60139f5c23410945eea9e3fe408ff787e8c",
+        "mtime_utc": "2026-09-14T08:49:13.778840+00:00",
+        "bytes": 370976,
+        "entity": "living_room_mirror_0",
+        "world_matrix": [
+          [
+            1.0,
+            2.7192621468937816e-32,
+            -1.224646799147353e-16,
+            1.1400000000000001
+          ],
+          [
+            -1.224646799147353e-16,
+            2.220446049250313e-16,
+            -1.0,
+            0.04999999999999982
+          ],
+          [
+            0.0,
+            1.0,
+            2.220446049250313e-16,
+            1.1
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_013/room_living_room/generated_assets/wall_mounted/sdf/4f1317ff9ba2f1485bceb8d83985cd6868b2b5ec/line_drawing_print.glb",
+        "sha256": "bc2c4b73440ce828fcd3c8b03b8ee682b8ffa4b61bacec21a99e1fec2ab107a9",
+        "mtime_utc": "2026-09-14T08:49:13.876840+00:00",
+        "bytes": 1754052,
+        "entity": "living_room_line_drawing_print_0",
+        "world_matrix": [
+          [
+            0.9999774780989981,
+            0.006711430158175596,
+            -1.2097168491938403e-16,
+            4.151729799489248
+          ],
+          [
+            -1.2246467991473535e-16,
+            2.220446049250313e-16,
+            -1.0,
+            0.04999999999999982
+          ],
+          [
+            -0.006711430158175596,
+            0.9999774780989981,
+            2.2286151720451224e-16,
+            1.5349675606581652
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_013/room_living_room/generated_assets/wall_mounted/sdf/e7ffdf18bea72d67b5f3e2010c1db4c9f5664050/mirror.glb",
+        "sha256": "e5d1ce5b44c252e3508d161a8e0617d9c57d7052fd66490ef8edfb2906c9cb6b",
+        "mtime_utc": "2026-09-14T08:49:14.057840+00:00",
+        "bytes": 1086176,
+        "entity": "living_room_mirror_1",
+        "world_matrix": [
+          [
+            4.440892098500626e-16,
+            -2.2215302514227986e-16,
+            1.0,
+            4.95
+          ],
+          [
+            0.9999997708564851,
+            -0.0006769689634808442,
+            -4.442395271561052e-16,
+            3.731060923582371
+          ],
+          [
+            0.0006769689634808442,
+            0.9999997708564851,
+            2.2182771361045296e-16,
+            1.534808171283553
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_013/room_living_room/generated_assets/wall_mounted/sdf/6c55afb0c44fbb54d0753277d164a38111f96d1c/art_print.glb",
+        "sha256": "19ca4f9e5662d53f1fd6f53fbbf9f48fef4eda017090f996d5004701745d3877",
+        "mtime_utc": "2026-09-14T08:49:14.167840+00:00",
+        "bytes": 687408,
+        "entity": "living_room_art_print_0",
+        "world_matrix": [
+          [
+            -2.7755575615628914e-16,
+            -2.2377932840100816e-16,
+            1.0000000000000002,
+            4.95
+          ],
+          [
+            0.9999460628943534,
+            0.010386111018193145,
+            2.7986193607403133e-16,
+            0.7936020758739595
+          ],
+          [
+            -0.010386111018193145,
+            0.9999460628943534,
+            2.202979050057404e-16,
+            1.4465772086688289
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_013/room_living_room/generated_assets/wall_mounted/sdf/cb027637a3a3db4070f53c1ac004a37fae7f2fa0/wall_shelf.glb",
+        "sha256": "ff0d9c3130ffe98de3afe801baac3d5fe74dd014b2c6ebbc43772d4a6f4a34fb",
+        "mtime_utc": "2026-09-14T08:49:14.276840+00:00",
+        "bytes": 1709348,
+        "entity": "living_room_wall_shelf_0",
+        "world_matrix": [
+          [
+            -1.1102230246251565e-16,
+            2.211772431870429e-16,
+            -1.0,
+            0.04999999999999982
+          ],
+          [
+            -0.999955911612692,
+            -0.009390145410494443,
+            1.0893727133465382e-16,
+            0.9542896482337739
+          ],
+          [
+            -0.009390145410494443,
+            0.999955911612692,
+            2.229021770744781e-16,
+            1.0916063568631962
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_013/room_living_room/generated_assets/wall_mounted/sdf/3686480e047d1ba6aba585eba28d81867bfb4e2a/photograph.glb",
+        "sha256": "0c148d786b32409eab7c1062c6a14d973a7dcf0775a8436e83c40e7bc756d6d1",
+        "mtime_utc": "2026-09-14T08:49:14.380840+00:00",
+        "bytes": 570808,
+        "entity": "living_room_photograph_0",
+        "world_matrix": [
+          [
+            -4.440892098500626e-16,
+            2.203098814490545e-16,
+            -1.0,
+            0.04999999999999982
+          ],
+          [
+            -0.9999315587486555,
+            -0.011699479410824935,
+            4.4149140356645745e-16,
+            0.9567199174039902
+          ],
+          [
+            -0.011699479410824935,
+            0.9999315587486555,
+            2.2549885486636955e-16,
+            1.6397395669131734
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_013/room_living_room/generated_assets/wall_mounted/sdf/d8a9ab0770f17ef8709b94ef138472901652067f/clock.glb",
+        "sha256": "2d250655b622b228ede4f4ae2bbecafe7319bbf7f009424e05172161505f0aa2",
+        "mtime_utc": "2026-09-14T08:49:14.485840+00:00",
+        "bytes": 1853416,
+        "entity": "living_room_clock_0",
+        "world_matrix": [
+          [
+            -4.440892098500626e-16,
+            2.222614453595284e-16,
+            -1.0,
+            0.04999999999999982
+          ],
+          [
+            -0.9999965493974771,
+            0.0026270122076950215,
+            4.446725237378535e-16,
+            4.055835940042198
+          ],
+          [
+            0.0026270122076950215,
+            0.9999965493974771,
+            2.2095963656487184e-16,
+            1.7271168623422706
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_013/room_living_room/generated_assets/ceiling_mounted/sdf/240ec9fa0fcf6801b986e2d4ad49452b6da8898c/pendant_light.glb",
+        "sha256": "b29fc641eec627168172dc72ae722fc06a5b60e3db8c38b40d44beb19f43ec59",
+        "mtime_utc": "2026-09-14T08:49:14.623841+00:00",
+        "bytes": 130608,
+        "entity": "living_room_pendant_light_0",
+        "world_matrix": [
+          [
+            0.9999796015640362,
+            1.4182455948544535e-18,
+            -0.006387210332506364,
+            2.559973042553782
+          ],
+          [
+            -0.006387210332506364,
+            2.2204007556237664e-16,
+            -0.9999796015640362,
+            2.254233296705469
+          ],
+          [
+            0.0,
+            1.0000000000000002,
+            2.2204460492503136e-16,
+            2.7
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_013/room_living_room/generated_assets/ceiling_mounted/sdf/2281225b42551fd15d106a76c717d23a3406f63a/wall_washer_bar.glb",
+        "sha256": "e61a49e0819aac4e077ce7b11eee2b9a7a1a899205cb19e7b08cf6301a6a00fc",
+        "mtime_utc": "2026-09-14T08:49:14.639841+00:00",
+        "bytes": 114960,
+        "entity": "living_room_wall_washer_bar_0",
+        "world_matrix": [
+          [
+            0.9998626649344385,
+            -3.67985775567679e-18,
+            0.01657260601724242,
+            2.5
+          ],
+          [
+            0.01657260601724242,
+            2.2201411041465636e-16,
+            -0.9998626649344385,
+            4.1899999999999995
+          ],
+          [
+            0.0,
+            1.0,
+            2.220446049250313e-16,
+            2.7
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_013/room_living_room/generated_assets/manipuland/sdf/1efd5bef416b631dbe94e74e0a3554cf7474436a/table_lamp.glb",
+        "sha256": "638f77ab8bbdc137201a7af40ffb701fe20119bc02ff9b0307eef8111e1ae792",
+        "mtime_utc": "2026-09-14T08:49:14.654841+00:00",
+        "bytes": 2892072,
+        "entity": "living_room_table_lamp_0",
+        "world_matrix": [
+          [
+            0.9855750256033146,
+            9.959156811993152e-06,
+            -0.1692390877068336,
+            0.9891777282830416
+          ],
+          [
+            -0.1692390876708092,
+            -4.361253232938359e-06,
+            -0.9855750256501693,
+            3.702977705506294
+          ],
+          [
+            -1.0553590748835174e-05,
+            0.9999999999408974,
+            -2.6128636538835165e-06,
+            0.5010149495265538
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_013/room_living_room/generated_assets/manipuland/sdf/2d16bb0da869abae99bb080d54869111fdfa2c67/paperback_novel.glb",
+        "sha256": "ab959fd01fdc58181b51754950161a19d02d6cae1d36c4cafb43e86dcfe7640a",
+        "mtime_utc": "2026-09-14T08:49:14.847841+00:00",
+        "bytes": 1354236,
+        "entity": "living_room_paperback_novel_0",
+        "world_matrix": [
+          [
+            0.9407273281973996,
+            1.4971520026941518e-05,
+            0.33916381552051783,
+            0.9603467030779036
+          ],
+          [
+            0.3391638158473012,
+            -3.688259245886939e-05,
+            -0.9407273274756998,
+            3.9005414289673563
+          ],
+          [
+            -1.5748772385551909e-06,
+            0.9999999992077641,
+            -3.977426052219753e-05,
+            0.5010291500915361
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_013/room_living_room/generated_assets/manipuland/sdf/9bb636b990db93bd65e3b05842bbf256653d3970/cork_coaster.glb",
+        "sha256": "6dd03994ae34aa918d1a639f6e790c4017bcbe2edb3552d467613dd4a13ea86b",
+        "mtime_utc": "2026-09-14T08:49:14.974841+00:00",
+        "bytes": 719032,
+        "entity": "living_room_cork_coaster_0_f0_c",
+        "world_matrix": [
+          [
+            0.9794636450656253,
+            5.379555123698935e-06,
+            0.2016208520114405,
+            1.1428646670125888
+          ],
+          [
+            0.2016208520809835,
+            -3.0830993211260376e-05,
+            -0.9794636445808431,
+            3.8576274191118416
+          ],
+          [
+            9.470924519315474e-07,
+            0.9999999995102551,
+            -3.128246747955143e-05,
+            0.5010274054714862
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_013/room_living_room/generated_assets/manipuland/sdf/98c9f836f480292409eba3cc56d2d7de01624bdf/coffee_mug.glb",
+        "sha256": "812c1ad4570050369f92c9c6f6d112a70c241238b3d7b33f75a78c11f560cd40",
+        "mtime_utc": "2026-09-14T08:49:15.019841+00:00",
+        "bytes": 1209760,
+        "entity": "living_room_coffee_mug_2_f0_0",
+        "world_matrix": [
+          [
+            -0.9801632313788396,
+            6.401172999960583e-06,
+            -0.1981919267074628,
+            1.1428185046609936
+          ],
+          [
+            -0.19819192681069478,
+            -3.046823308788335e-05,
+            0.9801632309053178,
+            3.857375832821384
+          ],
+          [
+            2.3563659016557956e-07,
+            0.999999999515356,
+            3.1132502608534205e-05,
+            0.5050272501127877
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_013/room_living_room/generated_assets/manipuland/sdf/73e424cce8835563a1ca043e199122c3dfe62d11/art_book.glb",
+        "sha256": "5dcc8c4b45c8354d9d7ba0507d844061297c9192f582c50dde9358aae43eb00d",
+        "mtime_utc": "2026-09-14T08:49:15.073841+00:00",
+        "bytes": 1393420,
+        "entity": "living_room_art_book_0_s0_0",
+        "world_matrix": [
+          [
+            -0.13913927304789642,
+            7.985011679800031e-05,
+            0.9902728191360511,
+            4.720034882134495
+          ],
+          [
+            0.9902457496599334,
+            -0.007383136736305786,
+            0.13913606495934072,
+            0.3549660171650286
+          ],
+          [
+            0.007322429660966289,
+            0.9999727410864219,
+            0.0009482130395337359,
+            0.44519425107813293
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_013/room_living_room/generated_assets/manipuland/sdf/e46d683380db1069cea53aaec940d9c400c9b61d/hardcover_book.glb",
+        "sha256": "da98112002487e84520170fd10eeb83ae467747346f9fb99db762e3cacac91e6",
+        "mtime_utc": "2026-09-14T08:49:15.295841+00:00",
+        "bytes": 986944,
+        "entity": "living_room_hardcover_book_0_s0_1",
+        "world_matrix": [
+          [
+            -0.13932480199722425,
+            8.02706351274796e-05,
+            0.9902467334483158,
+            4.720212707917526
+          ],
+          [
+            0.9902196566001764,
+            -0.00738417105149781,
+            0.13932159093446767,
+            0.35501400654083715
+          ],
+          [
+            0.0073233346955605995,
+            0.9999727334155206,
+            0.0009493126089125566,
+            0.4753972336070269
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_013/room_living_room/generated_assets/manipuland/sdf/2d16bb0da869abae99bb080d54869111fdfa2c67/paperback_novel.glb",
+        "sha256": "ab959fd01fdc58181b51754950161a19d02d6cae1d36c4cafb43e86dcfe7640a",
+        "mtime_utc": "2026-09-14T08:49:14.847841+00:00",
+        "bytes": 1354236,
+        "entity": "living_room_paperback_novel_0_s0_2",
+        "world_matrix": [
+          [
+            -0.1387295354465996,
+            9.777355029353359e-05,
+            0.9903303016847982,
+            4.720174889421562
+          ],
+          [
+            0.9903036182914107,
+            -0.007327753734134504,
+            0.13872652098337923,
+            0.35502768279821084
+          ],
+          [
+            0.007270460350673746,
+            0.999973146872227,
+            0.0009197503707746818,
+            0.4874855764362685
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_013/room_living_room/generated_assets/manipuland/sdf/c32d0662ddc6b737900a1d186cbf844b869daf22/catchall_dish.glb",
+        "sha256": "62cad5005626904a06e64758544ad4cabeb1513587164acbaa064609bcdc2870",
+        "mtime_utc": "2026-09-14T08:49:15.526842+00:00",
+        "bytes": 1003376,
+        "entity": "living_room_catchall_dish_0",
+        "world_matrix": [
+          [
+            0.26591813253138685,
+            7.413031421253243e-05,
+            0.9639956126952635,
+            4.600344815030027
+          ],
+          [
+            0.9639694309096517,
+            -0.007390962493918681,
+            -0.2659103419296358,
+            0.9217717435955106
+          ],
+          [
+            0.007105143400533246,
+            0.9999726837159654,
+            -0.0020368503007969856,
+            0.44939310547034234
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_013/room_living_room/generated_assets/manipuland/sdf/29c9ab6ad9b6d2c5830c113a3abec93a1a6e4e13/potted_succulent.glb",
+        "sha256": "d48a729831db22682555f271ff88b6651021780ce93542592d3611c949ce68be",
+        "mtime_utc": "2026-09-14T08:49:15.651842+00:00",
+        "bytes": 8641208,
+        "entity": "living_room_potted_succulent_0",
+        "world_matrix": [
+          [
+            -0.25258923752149287,
+            -1.0238305608944661e-05,
+            0.9675736028765399,
+            4.760124539011204
+          ],
+          [
+            0.9675490395144378,
+            -0.007128160796622308,
+            0.2525827497244153,
+            1.579009013768908
+          ],
+          [
+            0.006894434204487926,
+            0.9999745942866923,
+            0.001810402763307615,
+            0.45300800853856094
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_013/room_living_room/generated_assets/manipuland/sdf/3ea376d7921e453ecc8f4fd0da884194347b3b94/streaming_media_box.glb",
+        "sha256": "fea08d7cc607cc9968ac858d7ff27744fa153eab223e006c2757902c503d8e74",
+        "mtime_utc": "2026-09-14T08:49:16.041842+00:00",
+        "bytes": 421020,
+        "entity": "living_room_streaming_media_box_0",
+        "world_matrix": [
+          [
+            -0.015407627443702887,
+            0.0001363144600458168,
+            0.9998812861709756,
+            4.6564212542853305
+          ],
+          [
+            0.9998539621095353,
+            -0.007391981508533039,
+            0.015408214148361963,
+            0.972341312705252
+          ],
+          [
+            0.007393204340495986,
+            0.9999726696403988,
+            -2.240165581541372e-05,
+            0.30536689297952074
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_013/room_living_room/generated_assets/manipuland/sdf/c3a6db9251980820f1e2ddcabebf8d21f059e0a4/earbuds_charging_case.glb",
+        "sha256": "62f017705846b92a3a116dd4296c30a4ed425f2e3c850136691d2f2b7acd0c2f",
+        "mtime_utc": "2026-09-14T08:49:16.144842+00:00",
+        "bytes": 946332,
+        "entity": "living_room_earbuds_charging_case_0",
+        "world_matrix": [
+          [
+            -0.1047401993705041,
+            -0.013330436834633494,
+            0.9944102725181518,
+            4.570968552997792
+          ],
+          [
+            0.9944724147316737,
+            -0.008799679434202236,
+            0.10462878179358331,
+            1.0757783673362467
+          ],
+          [
+            0.00735574425745341,
+            0.999872424410061,
+            0.014178431886700885,
+            0.4505207862287845
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_013/room_living_room/generated_assets/manipuland/sdf/e46d683380db1069cea53aaec940d9c400c9b61d/hardcover_book.glb",
+        "sha256": "da98112002487e84520170fd10eeb83ae467747346f9fb99db762e3cacac91e6",
+        "mtime_utc": "2026-09-14T08:49:15.295841+00:00",
+        "bytes": 986944,
+        "entity": "living_room_hardcover_book_0",
+        "world_matrix": [
+          [
+            -0.08099205706586615,
+            5.255130102511142e-07,
+            0.9967147469020229,
+            4.657395537404355
+          ],
+          [
+            0.9967147468982521,
+            -2.7580968968237227e-06,
+            0.0809920570670139,
+            0.3671871424318278
+          ],
+          [
+            2.791598230164628e-06,
+            0.9999999999960585,
+            -3.004026257434425e-07,
+            -2.889878318445117e-07
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      }
+    ],
+    "ceiling_cull": []
+  },
+  "human": {
+    "method": "Deterministic original SMPL-X segment generator from recorded betas and axis-angle joint values; no random pose, optimization or simulation; root transform and scale0.9 preserved. Only texture/face UV registration changed.",
+    "config": {
+      "joint_angles": {
+        "left_hip": {
+          "x": -90.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "right_hip": {
+          "x": -90.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "left_knee": {
+          "x": 90.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "right_knee": {
+          "x": 90.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "neck": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "left_shoulder": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": -75.0
+        },
+        "right_shoulder": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 75.0
+        },
+        "left_elbow": {
+          "x": 0.0,
+          "y": -90.0,
+          "z": 0.0
+        },
+        "right_elbow": {
+          "x": 0.0,
+          "y": 90.0,
+          "z": 0.0
+        }
+      },
+      "betas": [
+        1.5409960746765137,
+        -0.293428897857666,
+        -2.1787893772125244,
+        0.5684312582015991,
+        -1.0845223665237427,
+        -1.3985954523086548,
+        0.40334683656692505,
+        0.8380263447761536,
+        -0.7192575931549072,
+        -0.40334352850914
+      ],
+      "pos": [
+        4.053404331207275,
+        2.8245091438293457,
+        0.9204975962638855
+      ],
+      "quat": [
+        0.5026286840438843,
+        0.502167284488678,
+        -0.49736613035202026,
+        -0.4978146255016327
+      ],
+      "scene_json": "/home/npechuk/src/gen_sim_phri/scene_generation/scenesmith/data/room2_t07_itch_relief_scalp/room_scene.json",
+      "furniture_name": "living_room_armchair_0",
+      "_seat_fit": {
+        "support_top_z": 0.40518,
+        "root_z": 0.9204976200115396,
+        "seat_sink_m": 0.00051,
+        "pelvis_gap_m": 0.00871,
+        "thigh_gap_m": -0.00051,
+        "foot_floor_m": -0.01307,
+        "residual_m": 0.0,
+        "feet_shift_m": 0.00949,
+        "status": "ok"
+      }
+    },
+    "generated_urdf": {
+      "source": "/tmp/orchestrator-3d/work/accept-before/actuate-smplx.urdf",
+      "sha256": "9ad9718e7214fc268df220e1f634bf5e837918f61d2e195359c3113990814645",
+      "mtime_utc": "2026-09-19T18:05:38.152764+00:00",
+      "bytes": 19146
+    },
+    "generated_meshes": [
+      {
+        "source": "/tmp/orchestrator-3d/work/accept-before/meshes/main-body.obj",
+        "sha256": "3755c31ff0b82439376d5e40134190af0eeb45e5bc42bc0cb87250365b6b36de",
+        "mtime_utc": "2026-09-19T18:05:38.151764+00:00",
+        "bytes": 310886
+      },
+      {
+        "source": "/tmp/orchestrator-3d/work/accept-before/meshes/left-forearm.obj",
+        "sha256": "8025a5a5abd91ce5e6b7255c9a7714c7684fafb24a1b6f4ddc281f3d0d6b4287",
+        "mtime_utc": "2026-09-19T18:05:37.111762+00:00",
+        "bytes": 173705
+      },
+      {
+        "source": "/tmp/orchestrator-3d/work/accept-before/meshes/left-upperarm.obj",
+        "sha256": "d84b4a0e842ffc2d4c774bb751f9e6a7c5ddc50fe5091e04ebffb2634b95883d",
+        "mtime_utc": "2026-09-19T18:05:37.202762+00:00",
+        "bytes": 46556
+      },
+      {
+        "source": "/tmp/orchestrator-3d/work/accept-before/meshes/right-forearm.obj",
+        "sha256": "bab9bb4bcce4ea9e2f46fac85ea814dfa9355f10ec849d99248130a8969b5132",
+        "mtime_utc": "2026-09-19T18:05:37.304763+00:00",
+        "bytes": 173301
+      },
+      {
+        "source": "/tmp/orchestrator-3d/work/accept-before/meshes/right-upperarm.obj",
+        "sha256": "294af98a75c771ca026c6d80f58eb2f550e6156e71ef34c8acaddad5b3be11ab",
+        "mtime_utc": "2026-09-19T18:05:37.395763+00:00",
+        "bytes": 46592
+      },
+      {
+        "source": "/tmp/orchestrator-3d/work/accept-before/meshes/left-lowerleg.obj",
+        "sha256": "7275c0b225388e997fd3ce4571fe665ffe5aafc0a2e6ec97a37d7d2b8046bb8a",
+        "mtime_utc": "2026-09-19T18:05:37.490763+00:00",
+        "bytes": 77146
+      },
+      {
+        "source": "/tmp/orchestrator-3d/work/accept-before/meshes/left-upperleg.obj",
+        "sha256": "c6ef256c2e0a5f131027c0462eab7684b02b5dbc9c057c8fd2ba58962b6c87e6",
+        "mtime_utc": "2026-09-19T18:05:37.580763+00:00",
+        "bytes": 40805
+      },
+      {
+        "source": "/tmp/orchestrator-3d/work/accept-before/meshes/right-lowerleg.obj",
+        "sha256": "c1dc930f7ee482b35844b580935e1ec26c6a735d392cd9f47aa7a1559c0bc420",
+        "mtime_utc": "2026-09-19T18:05:37.672763+00:00",
+        "bytes": 77134
+      },
+      {
+        "source": "/tmp/orchestrator-3d/work/accept-before/meshes/right-upperleg.obj",
+        "sha256": "c1228313c3f70be844ab866264fce7b3b3e47e9ebd6ddca323fbe0d803079447",
+        "mtime_utc": "2026-09-19T18:05:37.762763+00:00",
+        "bytes": 40863
+      },
+      {
+        "source": "/tmp/orchestrator-3d/work/accept-before/meshes/head.obj",
+        "sha256": "b6881f9d4cba7e81bced99d8760dd9de51cb8e1c872613dcbf24830718f3ad26",
+        "mtime_utc": "2026-09-19T18:05:38.039764+00:00",
+        "bytes": 922317
+      }
+    ],
+    "generator": {
+      "source": "/home/npechuk/src/gen_sim_phri/human_generation/generate_actuated_mesh.py",
+      "sha256": "03b087cfba1af485d564b0cfcdd69603f0afb32ed5649d29ba96ca21629b8041",
+      "mtime_utc": "2026-09-14T19:18:30.875162+00:00",
+      "bytes": 10756
+    },
+    "model": {
+      "source": "/home/npechuk/src/gen_sim_phri/resources/models/smplx/SMPLX_NEUTRAL.npz",
+      "sha256": "376021446ddc86e99acacd795182bbef903e61d33b76b9d8b359c2b0865bd992",
+      "mtime_utc": "2020-09-11T08:13:54+00:00",
+      "bytes": 108752058
+    },
+    "texture": {
+      "source": "/home/npechuk/src/gen_sim_phri/human_generation/smplitex/requested_20260914/SMPLitex-texture-00002.png",
+      "sha256": "14c825c3be904aff9deb1fbc4da45606ad25d4c52eea2735f7e974b3d081c991",
+      "mtime_utc": "2026-09-14T20:08:49.792725+00:00",
+      "bytes": 383636
+    },
+    "validation_against_retained_original": [
+      {
+        "mesh": "right-forearm.obj",
+        "source_vertices": 1008,
+        "export_vertices": 1008,
+        "max_vertex_distance": 0.0,
+        "source_faces": 1996,
+        "export_faces": 1996
+      },
+      {
+        "mesh": "main-body.obj",
+        "source_vertices": 1740,
+        "export_vertices": 1740,
+        "max_vertex_distance": 0.0,
+        "source_faces": 3354,
+        "export_faces": 3354
+      },
+      {
+        "mesh": "right-upperleg.obj",
+        "source_vertices": 254,
+        "export_vertices": 254,
+        "max_vertex_distance": 0.0,
+        "source_faces": 464,
+        "export_faces": 464
+      },
+      {
+        "mesh": "left-forearm.obj",
+        "source_vertices": 1008,
+        "export_vertices": 1008,
+        "max_vertex_distance": 0.0,
+        "source_faces": 1996,
+        "export_faces": 1996
+      },
+      {
+        "mesh": "right-lowerleg.obj",
+        "source_vertices": 453,
+        "export_vertices": 453,
+        "max_vertex_distance": 0.0,
+        "source_faces": 887,
+        "export_faces": 887
+      },
+      {
+        "mesh": "left-upperarm.obj",
+        "source_vertices": 284,
+        "export_vertices": 284,
+        "max_vertex_distance": 0.0,
+        "source_faces": 524,
+        "export_faces": 524
+      },
+      {
+        "mesh": "right-upperarm.obj",
+        "source_vertices": 284,
+        "export_vertices": 284,
+        "max_vertex_distance": 0.0,
+        "source_faces": 524,
+        "export_faces": 524
+      },
+      {
+        "mesh": "head.obj",
+        "source_vertices": 4929,
+        "export_vertices": 4929,
+        "max_vertex_distance": 0.0,
+        "source_faces": 9782,
+        "export_faces": 9782
+      },
+      {
+        "mesh": "left-upperleg.obj",
+        "source_vertices": 254,
+        "export_vertices": 254,
+        "max_vertex_distance": 0.0,
+        "source_faces": 464,
+        "export_faces": 464
+      },
+      {
+        "mesh": "left-lowerleg.obj",
+        "source_vertices": 453,
+        "export_vertices": 453,
+        "max_vertex_distance": 0.0,
+        "source_faces": 887,
+        "export_faces": 887
+      }
+    ]
+  },
+  "robot": {
+    "source": {
+      "source": "/home/npechuk/src/gen_sim_phri/resources/stretch/stretch_gs_virtual_base_bathing_sphere_rotated_big_aruco.xml",
+      "sha256": "6bcb8d0862be6be720db1539c1113c34232f5776fa1c18d11b9b85d800c868cd",
+      "mtime_utc": "2026-05-20T02:15:34+00:00",
+      "bytes": 34583
+    },
+    "joint_positions": {
+      "joint_base_x": 0,
+      "joint_lift": 0.85,
+      "joint_arm_l0": 0.005,
+      "joint_arm_l1": 0.005,
+      "joint_arm_l2": 0.005,
+      "joint_arm_l3": 0.005,
+      "joint_wrist_yaw": 0,
+      "joint_wrist_pitch": -0.3,
+      "joint_wrist_roll": 0,
+      "joint_head_pan": -1.57,
+      "joint_head_tilt": -0.3
+    },
+    "other_joint_positions": "MuJoCo default qpos0, matching freshly built Genesis renderer without simulation",
+    "configure_rotation": "+90 degrees world Z, applied by original Stretch.configure",
+    "world_base_matrix": [
+      [
+        0.8000172261154042,
+        -0.5999770311592058,
+        0.0,
+        3.6473708882854323
+      ],
+      [
+        0.5999770311592058,
+        0.8000172261154042,
+        0.0,
+        3.255378321571473
+      ],
+      [
+        0.0,
+        0.0,
+        1.0000000000000002,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "visual_geometries": [
+      {
+        "index": 2,
+        "body": "base_link_mobile",
+        "type": 7,
+        "matrix": [
+          [
+            -0.5999770311592065,
+            -0.8000172261154053,
+            0.0,
+            3.454969329894617
+          ],
+          [
+            0.8000172261154053,
+            -0.5999770311592065,
+            0.0,
+            3.111085834347295
+          ],
+          [
+            0.0,
+            0.0,
+            1.0000000000000016,
+            0.025396954155023604
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 26100,
+        "faces": 9842
+      },
+      {
+        "index": 3,
+        "body": "base_link_mobile",
+        "type": 7,
+        "matrix": [
+          [
+            0.0,
+            -0.8000172261154063,
+            0.5999770311592073,
+            3.495510064900155
+          ],
+          [
+            0.0,
+            -0.5999770311592073,
+            -0.8000172261154063,
+            3.141079357300773
+          ],
+          [
+            1.0000000000000029,
+            0.0,
+            0.0,
+            0.15999999642372134
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 20,
+        "faces": 16
+      },
+      {
+        "index": 4,
+        "body": "base_link_mobile",
+        "type": 7,
+        "matrix": [
+          [
+            0.8000172261154042,
+            -0.5999770311592058,
+            0.0,
+            3.4461531730878696
+          ],
+          [
+            0.5999770311592058,
+            0.8000172261154042,
+            0.0,
+            3.100106784020341
+          ],
+          [
+            0.0,
+            0.0,
+            1.0000000000000002,
+            0.1139420725890037
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 8,
+        "faces": 4
+      },
+      {
+        "index": 5,
+        "body": "base_link_mobile",
+        "type": 7,
+        "matrix": [
+          [
+            0.0,
+            -0.8000172261154063,
+            0.5999770311592073,
+            3.4606522256865744
+          ],
+          [
+            0.0,
+            -0.5999770311592073,
+            -0.8000172261154063,
+            3.113783985235895
+          ],
+          [
+            1.0000000000000029,
+            0.0,
+            0.0,
+            0.10131825670883289
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 140,
+        "faces": 70
+      },
+      {
+        "index": 6,
+        "body": "base_link_mobile",
+        "type": 7,
+        "matrix": [
+          [
+            0.10880837592318782,
+            0.5855943589606969,
+            0.8032683138792284,
+            3.5531322367984406
+          ],
+          [
+            0.09240196052532505,
+            -0.8105255901871553,
+            0.5783685203595108,
+            3.188476535468965
+          ],
+          [
+            0.9897588671085724,
+            0.011292227644897254,
+            -0.14230203995298632,
+            0.046993420159512356
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 25074,
+        "faces": 14093
+      },
+      {
+        "index": 7,
+        "body": "base_link_mobile",
+        "type": 7,
+        "matrix": [
+          [
+            0.0,
+            -0.8000172261154063,
+            0.5999770311592073,
+            3.4883219119148734
+          ],
+          [
+            0.0,
+            -0.5999770311592073,
+            -0.8000172261154063,
+            3.3048450907138758
+          ],
+          [
+            1.0000000000000029,
+            0.0,
+            0.0,
+            0.16074700653553012
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 17,
+        "faces": 13
+      },
+      {
+        "index": 8,
+        "body": "base_link_mobile",
+        "type": 7,
+        "matrix": [
+          [
+            0.4791377251336251,
+            -0.8604802401507511,
+            0.1732073805121487,
+            3.4669629526967243
+          ],
+          [
+            0.873479785285777,
+            0.4480183599591286,
+            -0.19055868869365497,
+            3.3121781425007084
+          ],
+          [
+            0.08637189966005886,
+            0.24259700214478808,
+            0.9662745932184467,
+            0.1263795360802482
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 316,
+        "faces": 162
+      },
+      {
+        "index": 9,
+        "body": "base_link_mobile",
+        "type": 7,
+        "matrix": [
+          [
+            -0.04604022381967391,
+            0.5276990234415563,
+            0.8481827859898308,
+            3.560620136908092
+          ],
+          [
+            -0.03301080160942847,
+            -0.8494231409008451,
+            0.5266788534574508,
+            3.1877197494397786
+          ],
+          [
+            0.9983940027703222,
+            -0.0037507813825723444,
+            0.056527399297003414,
+            0.10413896524844024
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 180080,
+        "faces": 72511
+      },
+      {
+        "index": 12,
+        "body": "link_mast",
+        "type": 7,
+        "matrix": [
+          [
+            0.8000172261154053,
+            0.5999770311592065,
+            0.0,
+            3.5127728349292076
+          ],
+          [
+            0.5999770311592065,
+            -0.8000172261154053,
+            0.0,
+            3.3231821860093858
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0000000000000016,
+            0.7359000107288368
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 96,
+        "faces": 60
+      },
+      {
+        "index": 14,
+        "body": "link_head",
+        "type": 7,
+        "matrix": [
+          [
+            0.5999770311592056,
+            0.8000172261154039,
+            0.0,
+            3.5470294128864808
+          ],
+          [
+            -0.8000172261154039,
+            0.5999770311592056,
+            0.0,
+            3.388968257070515
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            1.3850597613400504
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 97513,
+        "faces": 34077
+      },
+      {
+        "index": 15,
+        "body": "link_head",
+        "type": 7,
+        "matrix": [
+          [
+            0.599936694035722,
+            0.800017226115404,
+            -0.00695708761645508,
+            3.553717424141658
+          ],
+          [
+            -0.7999634400670006,
+            0.5999770311592056,
+            0.009276671685255436,
+            3.3804511940869695
+          ],
+          [
+            0.011595589922856558,
+            0.0,
+            0.9999327688871594,
+            1.385020185093414
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 5548,
+        "faces": 2973
+      },
+      {
+        "index": 16,
+        "body": "link_head",
+        "type": 7,
+        "matrix": [
+          [
+            0.8000636318998211,
+            0.0004615521534429162,
+            0.599914970542395,
+            3.600762079087051
+          ],
+          [
+            0.599914870714457,
+            0.0003460874728217541,
+            -0.8000637650332146,
+            3.345741981640454
+          ],
+          [
+            -0.0005768942097056806,
+            0.9999998335965243,
+            1.169207950617333e-16,
+            1.3843595890604137
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 97,
+        "faces": 83
+      },
+      {
+        "index": 17,
+        "body": "link_head",
+        "type": 7,
+        "matrix": [
+          [
+            0.8000172261154053,
+            -0.5999770311592065,
+            0.0,
+            3.6195095102417656
+          ],
+          [
+            0.5999770311592065,
+            0.8000172261154053,
+            0.0,
+            3.3339626312065618
+          ],
+          [
+            0.0,
+            0.0,
+            1.0000000000000016,
+            1.3840623940097225
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 165,
+        "faces": 95
+      },
+      {
+        "index": 18,
+        "body": "link_head",
+        "type": 7,
+        "matrix": [
+          [
+            0.8000172261154053,
+            -0.5999770311592065,
+            0.0,
+            3.59538719241007
+          ],
+          [
+            0.5999770311592065,
+            0.8000172261154053,
+            0.0,
+            3.366127645395381
+          ],
+          [
+            0.0,
+            0.0,
+            1.0000000000000016,
+            1.3840623912585248
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 172,
+        "faces": 96
+      },
+      {
+        "index": 19,
+        "body": "link_head",
+        "type": 7,
+        "matrix": [
+          [
+            0.5999770311592056,
+            0.8000172261154039,
+            0.0,
+            3.594743962228217
+          ],
+          [
+            -0.8000172261154039,
+            0.5999770311592056,
+            0.0,
+            3.330122938318733
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            1.398097770955074
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 38,
+        "faces": 18
+      },
+      {
+        "index": 20,
+        "body": "link_head",
+        "type": 7,
+        "matrix": [
+          [
+            0.5999770311592056,
+            0.8000172261154039,
+            0.0,
+            3.585454064658604
+          ],
+          [
+            -0.8000172261154039,
+            0.5999770311592056,
+            0.0,
+            3.3353882323370816
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            1.3998026316025023
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 151,
+        "faces": 92
+      },
+      {
+        "index": 21,
+        "body": "link_head",
+        "type": 7,
+        "matrix": [
+          [
+            0.0,
+            -0.5999770311592072,
+            -0.8000172261154062,
+            3.582328597485008
+          ],
+          [
+            0.0,
+            0.8000172261154062,
+            -0.5999770311592072,
+            3.3362460689345337
+          ],
+          [
+            1.0000000000000027,
+            0.0,
+            0.0,
+            1.3986326844952686
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 428,
+        "faces": 344
+      },
+      {
+        "index": 22,
+        "body": "link_head",
+        "type": 7,
+        "matrix": [
+          [
+            0.0,
+            -0.5999770311592072,
+            -0.8000172261154062,
+            3.5744499647172048
+          ],
+          [
+            0.0,
+            0.8000172261154062,
+            -0.5999770311592072,
+            3.3458168804043216
+          ],
+          [
+            1.0000000000000027,
+            0.0,
+            0.0,
+            1.4037223463062933
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 589,
+        "faces": 252
+      },
+      {
+        "index": 23,
+        "body": "link_head",
+        "type": 7,
+        "matrix": [
+          [
+            0.0,
+            -0.5999770311592072,
+            -0.8000172261154062,
+            3.5145612546114515
+          ],
+          [
+            0.0,
+            0.8000172261154062,
+            -0.5999770311592072,
+            3.3207936158009295
+          ],
+          [
+            1.0000000000000027,
+            0.0,
+            0.0,
+            1.4101240544872427
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 1556,
+        "faces": 736
+      },
+      {
+        "index": 24,
+        "body": "link_head",
+        "type": 7,
+        "matrix": [
+          [
+            0.0010940038077167636,
+            -0.4558630629958401,
+            0.8900492519808819,
+            3.569108740838408
+          ],
+          [
+            -0.009831429832505598,
+            -0.8900116718355132,
+            -0.4558317309973181,
+            3.314673216529683
+          ],
+          [
+            0.9999510718745821,
+            -0.00825177511893488,
+            -0.005455461874975088,
+            1.3896478580218379
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 16158,
+        "faces": 8636
+      },
+      {
+        "index": 25,
+        "body": "link_head",
+        "type": 7,
+        "matrix": [
+          [
+            -0.019019793845822582,
+            -0.44687296925545755,
+            0.8943952128622348,
+            3.571059379850044
+          ],
+          [
+            -0.03898172717714497,
+            -0.8935454113911914,
+            -0.4472773443044509,
+            3.318523170150077
+          ],
+          [
+            0.9990588933533189,
+            -0.04337219305691759,
+            -0.00042483065381576657,
+            1.3637231506853587
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 25324,
+        "faces": 14555
+      },
+      {
+        "index": 27,
+        "body": "link_aruco_right_base",
+        "type": 7,
+        "matrix": [
+          [
+            0.0,
+            -0.5999770311592072,
+            -0.8000172261154062,
+            3.724463825033209
+          ],
+          [
+            0.0,
+            0.8000172261154062,
+            -0.5999770311592072,
+            3.150076828132665
+          ],
+          [
+            1.0000000000000027,
+            0.0,
+            0.0,
+            0.15962299999406285
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 120,
+        "faces": 76
+      },
+      {
+        "index": 29,
+        "body": "link_aruco_left_base",
+        "type": 7,
+        "matrix": [
+          [
+            0.0,
+            -0.5999770311592072,
+            -0.8000172261154062,
+            3.5678734197628432
+          ],
+          [
+            0.0,
+            0.8000172261154062,
+            -0.5999770311592072,
+            3.358876524045429
+          ],
+          [
+            1.0000000000000027,
+            0.0,
+            0.0,
+            0.15962299999406285
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 120,
+        "faces": 76
+      },
+      {
+        "index": 31,
+        "body": "laser",
+        "type": 7,
+        "matrix": [
+          [
+            0.0,
+            0.8000172261154063,
+            -0.5999770311592073,
+            3.650570957189894
+          ],
+          [
+            0.0,
+            0.5999770311592073,
+            0.8000172261154063,
+            3.2577782296961098
+          ],
+          [
+            1.0000000000000029,
+            0.0,
+            0.0,
+            0.16564861872323208
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 1494,
+        "faces": 684
+      },
+      {
+        "index": 33,
+        "body": "link_right_wheel",
+        "type": 7,
+        "matrix": [
+          [
+            -0.5999770311592072,
+            -0.8000172261154062,
+            0.0,
+            3.74195726190663
+          ],
+          [
+            0.8000172261154062,
+            -0.5999770311592072,
+            0.0,
+            3.1292556028920835
+          ],
+          [
+            0.0,
+            0.0,
+            1.0000000000000027,
+            0.05080000277412877
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 1142,
+        "faces": 636
+      },
+      {
+        "index": 34,
+        "body": "link_right_wheel",
+        "type": 7,
+        "matrix": [
+          [
+            -0.5999770311592073,
+            -0.7903642348524212,
+            -0.12390293922072852,
+            3.7427213784677464
+          ],
+          [
+            0.800017226115406,
+            -0.5927377207409888,
+            -0.0929216461831894,
+            3.1282364862629954
+          ],
+          [
+            0.0,
+            -0.15487533915032886,
+            0.9879340207337107,
+            0.050798647281806414
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 30454,
+        "faces": 12105
+      },
+      {
+        "index": 36,
+        "body": "link_left_wheel",
+        "type": 7,
+        "matrix": [
+          [
+            -0.5999770311592072,
+            -0.8000172261154062,
+            0.0,
+            3.5527845120336874
+          ],
+          [
+            0.8000172261154062,
+            -0.5999770311592072,
+            0.0,
+            3.38150103827807
+          ],
+          [
+            0.0,
+            0.0,
+            1.0000000000000027,
+            0.05079999393775776
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 1134,
+        "faces": 636
+      },
+      {
+        "index": 37,
+        "body": "link_left_wheel",
+        "type": 7,
+        "matrix": [
+          [
+            -0.5999770311592081,
+            0.1239029392207345,
+            0.7903642348524215,
+            3.552019198926651
+          ],
+          [
+            0.8000172261154072,
+            0.09292164618319389,
+            0.592737720740989,
+            3.3825192575513947
+          ],
+          [
+            0.0,
+            0.987934020733711,
+            -0.1548753391503363,
+            0.050799853779885995
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 30510,
+        "faces": 12105
+      },
+      {
+        "index": 39,
+        "body": "link_lift",
+        "type": 7,
+        "matrix": [
+          [
+            -0.6146913705596746,
+            -0.0012388677864125825,
+            0.7887667488973398,
+            3.452749685410507
+          ],
+          [
+            0.7887677218037459,
+            -0.0009654570243199087,
+            0.6146906123679337,
+            3.322059532328611
+          ],
+          [
+            5.551115123125784e-17,
+            0.9999987665489116,
+            0.0015706370230003657,
+            1.0624437222406653
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 5180,
+        "faces": 2716
+      },
+      {
+        "index": 40,
+        "body": "link_lift",
+        "type": 7,
+        "matrix": [
+          [
+            -0.5999770311592056,
+            -0.8000172261154039,
+            0.0,
+            3.426028982497328
+          ],
+          [
+            0.8000172261154039,
+            -0.5999770311592056,
+            0.0,
+            3.20917093537342
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            1.0746753971758174
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 40,
+        "faces": 18
+      },
+      {
+        "index": 41,
+        "body": "link_lift",
+        "type": 7,
+        "matrix": [
+          [
+            -0.5999770311592056,
+            -0.8000172261154039,
+            0.0,
+            3.4167096065178
+          ],
+          [
+            0.8000172261154039,
+            -0.5999770311592056,
+            0.0,
+            3.210449398221666
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            1.0746556270663825
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 289,
+        "faces": 109
+      },
+      {
+        "index": 42,
+        "body": "link_lift",
+        "type": 7,
+        "matrix": [
+          [
+            -0.5999770311592056,
+            -0.8000172261154039,
+            0.0,
+            3.414421195457457
+          ],
+          [
+            0.8000172261154039,
+            -0.5999770311592056,
+            0.0,
+            3.2124676686456373
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            1.0738674109136528
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 717,
+        "faces": 392
+      },
+      {
+        "index": 43,
+        "body": "link_lift",
+        "type": 7,
+        "matrix": [
+          [
+            -0.5999770311592056,
+            -0.8000172261154039,
+            0.0,
+            3.425854012163192
+          ],
+          [
+            0.8000172261154039,
+            -0.5999770311592056,
+            0.0,
+            3.209621212248153
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            1.074037382843336
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 127,
+        "faces": 64
+      },
+      {
+        "index": 44,
+        "body": "link_lift",
+        "type": 7,
+        "matrix": [
+          [
+            -0.3152687494544173,
+            0.0,
+            -0.949002431829051,
+            3.4263216899890914
+          ],
+          [
+            -0.949002431829051,
+            0.0,
+            0.31526874945441724,
+            3.2101571532052215
+          ],
+          [
+            0.0,
+            1.0000000000000024,
+            0.0,
+            1.0738440617180547
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 675,
+        "faces": 306
+      },
+      {
+        "index": 45,
+        "body": "link_lift",
+        "type": 7,
+        "matrix": [
+          [
+            -0.7776911767351323,
+            0.441330894455545,
+            0.44768680483949547,
+            3.491541390840298
+          ],
+          [
+            0.36994152010675674,
+            -0.2544945510044493,
+            0.8935187716047988,
+            3.266713401566665
+          ],
+          [
+            0.508271291073409,
+            0.8604996020383248,
+            0.034651544878370306,
+            1.0556628236091448
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 170,
+        "faces": 142
+      },
+      {
+        "index": 46,
+        "body": "link_lift",
+        "type": 7,
+        "matrix": [
+          [
+            0.024373187012986602,
+            0.9171671988072305,
+            0.3977565551778283,
+            3.474971486704049
+          ],
+          [
+            0.014296075664428571,
+            -0.39815383584925534,
+            0.9172072531435443,
+            3.251776589086718
+          ],
+          [
+            0.9996007052695751,
+            -0.016668906101690615,
+            -0.022816169572172033,
+            1.030252454715233
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 15483,
+        "faces": 7009
+      },
+      {
+        "index": 47,
+        "body": "link_lift",
+        "type": 7,
+        "matrix": [
+          [
+            0.21845671604817643,
+            0.8659518799118484,
+            0.4498933261236363,
+            3.469229846361519
+          ],
+          [
+            -0.18557950923426605,
+            -0.4157492331826192,
+            0.8903442148183137,
+            3.259100955069528
+          ],
+          [
+            0.9580380519404341,
+            -0.2779926559914961,
+            0.06987971271390815,
+            1.0826981003988878
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 20441,
+        "faces": 8889
+      },
+      {
+        "index": 57,
+        "body": "link_arm_l4",
+        "type": 7,
+        "matrix": [
+          [
+            0.8000172261154039,
+            0.0,
+            0.5999770311592056,
+            3.565410564343559
+          ],
+          [
+            0.5999770311592056,
+            0.0,
+            -0.8000172261154039,
+            3.1906836299871832
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            1.0500000000000003
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 166,
+        "faces": 96
+      },
+      {
+        "index": 58,
+        "body": "link_arm_l4",
+        "type": 7,
+        "matrix": [
+          [
+            0.5994994394698258,
+            -0.7283542839785028,
+            0.33181389224312524,
+            3.6319722631355016
+          ],
+          [
+            -0.8003749855350805,
+            -0.5458398779505655,
+            0.24790867304036898,
+            3.101879674572209
+          ],
+          [
+            0.0005519103999108711,
+            -0.4141966497318386,
+            -0.9101872503753479,
+            1.0500422512490288
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 4479,
+        "faces": 2172
+      },
+      {
+        "index": 61,
+        "body": "link_arm_l3",
+        "type": 7,
+        "matrix": [
+          [
+            0.8000172261154039,
+            0.0,
+            0.5999770311592056,
+            3.574917159816505
+          ],
+          [
+            0.5999770311592056,
+            0.0,
+            -0.8000172261154039,
+            3.1780074111569836
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            1.0500000000000003
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 160,
+        "faces": 96
+      },
+      {
+        "index": 62,
+        "body": "link_arm_l3",
+        "type": 7,
+        "matrix": [
+          [
+            0.6002697969867438,
+            -0.7444806177865643,
+            0.29227517952374105,
+            3.6428111929297335
+          ],
+          [
+            -0.7997975245841402,
+            -0.5586154252845421,
+            0.21971055118782512,
+            3.0875023698768347
+          ],
+          [
+            -0.00030082317276811105,
+            -0.3656465730378335,
+            -0.9307537231357784,
+            1.0499713789219092
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 4843,
+        "faces": 2320
+      },
+      {
+        "index": 65,
+        "body": "link_arm_l2",
+        "type": 7,
+        "matrix": [
+          [
+            0.8000172261154039,
+            0.0,
+            0.5999770311592056,
+            3.5856202844499623
+          ],
+          [
+            0.5999770311592056,
+            0.0,
+            -0.8000172261154039,
+            3.1637357246834497
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            1.0500000000000003
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 166,
+        "faces": 96
+      },
+      {
+        "index": 66,
+        "body": "link_arm_l2",
+        "type": 7,
+        "matrix": [
+          [
+            0.6003111668383656,
+            -0.7557113012402661,
+            0.26177649273170017,
+            3.653611162767972
+          ],
+          [
+            -0.7997664612681796,
+            -0.567106925782774,
+            0.19688408305343255,
+            3.0731010272726
+          ],
+          [
+            -0.0003322645625349619,
+            -0.3275517728649339,
+            -0.9448331734720715,
+            1.049970540091544
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 4762,
+        "faces": 2320
+      },
+      {
+        "index": 69,
+        "body": "link_arm_l1",
+        "type": 7,
+        "matrix": [
+          [
+            0.8000172261154039,
+            0.0,
+            0.5999770311592056,
+            3.5962993227354785
+          ],
+          [
+            0.5999770311592056,
+            0.0,
+            -0.8000172261154039,
+            3.1494961552615135
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            1.0500000000000003
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 169,
+        "faces": 96
+      },
+      {
+        "index": 70,
+        "body": "link_arm_l1",
+        "type": 7,
+        "matrix": [
+          [
+            0.6003625603680479,
+            -0.7080384865962096,
+            0.3718148700722939,
+            3.6644151186406217
+          ],
+          [
+            -0.7997278444554637,
+            -0.5312900894138637,
+            0.2795822163393656,
+            3.05869376727364
+          ],
+          [
+            -0.0004134137700252395,
+            -0.46520139981427766,
+            -0.8852047710557693,
+            1.049967530823036
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 5255,
+        "faces": 2376
+      },
+      {
+        "index": 73,
+        "body": "link_arm_l0",
+        "type": 7,
+        "matrix": [
+          [
+            0.6056363344699959,
+            0.1541815684692893,
+            0.780661690051526,
+            3.6807013225245053
+          ],
+          [
+            -0.7956772091374218,
+            0.10486123212647941,
+            0.5965751426737521,
+            3.045751496262759
+          ],
+          [
+            0.01011974451448633,
+            -0.9824622974655437,
+            0.1861865323531621,
+            1.0506523546620514
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 1404,
+        "faces": 654
+      },
+      {
+        "index": 74,
+        "body": "link_arm_l0",
+        "type": 7,
+        "matrix": [
+          [
+            0.8000172261154039,
+            0.0,
+            0.5999770311592056,
+            3.6057499676961324
+          ],
+          [
+            0.5999770311592056,
+            0.0,
+            -0.8000172261154039,
+            3.136894537089583
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            1.050000002692173
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 260,
+        "faces": 111
+      },
+      {
+        "index": 75,
+        "body": "link_arm_l0",
+        "type": 7,
+        "matrix": [
+          [
+            0.7093280204056139,
+            0.013035732546312576,
+            0.7047579933171694,
+            3.7042955936529935
+          ],
+          [
+            -0.6708668297833896,
+            -0.2943427527331664,
+            0.6806614728408361,
+            3.090412813614811
+          ],
+          [
+            0.21631332867820952,
+            -0.955611015837748,
+            -0.20004032154970627,
+            1.0467227289854668
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 14277,
+        "faces": 8064
+      },
+      {
+        "index": 79,
+        "body": "link_aruco_top_wrist",
+        "type": 7,
+        "matrix": [
+          [
+            0.0,
+            0.8000172261154059,
+            -0.5999770311592071,
+            3.7006287153380706
+          ],
+          [
+            0.0,
+            0.5999770311592071,
+            0.8000172261154059,
+            3.0891349924312297
+          ],
+          [
+            1.0000000000000024,
+            0.0,
+            0.0,
+            1.079159999994063
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 120,
+        "faces": 76
+      },
+      {
+        "index": 81,
+        "body": "link_aruco_top_wrist_big",
+        "type": 7,
+        "matrix": [
+          [
+            0.013275055402597671,
+            -0.8003848112106355,
+            0.5993395756058322,
+            3.711516386612479
+          ],
+          [
+            0.008944523257129246,
+            -0.5992733570975016,
+            -0.800494496531237,
+            3.0972839605890687
+          ],
+          [
+            0.999871875996003,
+            0.015987415563850974,
+            -0.0007963264582434573,
+            1.08205788057975
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 236,
+        "faces": 460
+      },
+      {
+        "index": 83,
+        "body": "link_aruco_inner_wrist",
+        "type": 7,
+        "matrix": [
+          [
+            -0.5999770311592072,
+            0.8000172261154062,
+            0.0,
+            3.6843543383714397
+          ],
+          [
+            0.8000172261154062,
+            0.5999770311592072,
+            0.0,
+            3.11083545968486
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0000000000000027,
+            1.0381000000000002
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 120,
+        "faces": 76
+      },
+      {
+        "index": 85,
+        "body": "link_wrist_yaw",
+        "type": 7,
+        "matrix": [
+          [
+            0.8000172261154036,
+            0.5999605537871108,
+            -0.004446551256595389,
+            3.7291835911408424
+          ],
+          [
+            0.5999770311592053,
+            -0.7999952549717895,
+            0.0059290896439958265,
+            3.110645097483024
+          ],
+          [
+            0.0,
+            -0.007411202472208447,
+            -0.9999725366618402,
+            1.038295284445198
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 4626,
+        "faces": 2692
+      },
+      {
+        "index": 87,
+        "body": "link_wrist_yaw",
+        "type": 7,
+        "matrix": [
+          [
+            -0.4247573940659654,
+            -0.19715311387835585,
+            0.8835789754596726,
+            3.684590667668407
+          ],
+          [
+            -0.29405918023847233,
+            -0.8930312824012864,
+            -0.3406234389618509,
+            3.096660619349447
+          ],
+          [
+            0.8562186372088466,
+            -0.4045068334908426,
+            0.32134695728362517,
+            0.9940515773956607
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 1847,
+        "faces": 3729
+      },
+      {
+        "index": 89,
+        "body": "link_DW3_wrist_pitch",
+        "type": 7,
+        "matrix": [
+          [
+            0.7966397901979942,
+            0.5987906774213307,
+            -0.0825516160144969,
+            3.727332849033188
+          ],
+          [
+            0.6030787259290679,
+            -0.7781707351565458,
+            0.175346392257436,
+            3.1122449967344457
+          ],
+          [
+            0.04075653328085444,
+            -0.18947303654934694,
+            -0.9810396900307865,
+            0.9697052181269097
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 1433,
+        "faces": 2842
+      },
+      {
+        "index": 91,
+        "body": "link_DW3_wrist_pitch",
+        "type": 7,
+        "matrix": [
+          [
+            0.5735486775077284,
+            -0.16109832681669592,
+            0.8031744789433981,
+            3.747056655083641
+          ],
+          [
+            -0.7725157840199789,
+            0.2197981160040871,
+            0.5957416819738682,
+            3.0873392788153216
+          ],
+          [
+            -0.2725092254752773,
+            -0.962151816138138,
+            0.0016139185077277966,
+            0.9537843730519272
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 381,
+        "faces": 758
+      },
+      {
+        "index": 93,
+        "body": "link_SG3_gripper_body",
+        "type": 7,
+        "matrix": [
+          [
+            0.796873885521223,
+            0.5572520218223775,
+            -0.23337136660092597,
+            3.7783737010587735
+          ],
+          [
+            0.6027415364551115,
+            -0.7596334861506795,
+            0.2442531615973458,
+            3.046571396973058
+          ],
+          [
+            -0.04116613664218076,
+            -0.33530158200259097,
+            -0.9412110275068601,
+            0.9595443861594232
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 14545,
+        "faces": 24513
+      },
+      {
+        "index": 95,
+        "body": "link_SG3_aruco_d405",
+        "type": 7,
+        "matrix": [
+          [
+            -0.5347853596318675,
+            0.7996070875334862,
+            -0.27319063799777354,
+            3.776989550175141
+          ],
+          [
+            0.7107941776691777,
+            0.6005211542059811,
+            0.3662594440321157,
+            3.0471608647908948
+          ],
+          [
+            0.45692040457284516,
+            0.0016878736127373677,
+            -0.8895059836604,
+            1.0092441582360219
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 120,
+        "faces": 76
+      },
+      {
+        "index": 97,
+        "body": "link_d405",
+        "type": 7,
+        "matrix": [
+          [
+            0.5323832688782464,
+            0.273616415244104,
+            -0.801063113822803,
+            3.787354193978985
+          ],
+          [
+            -0.7121386563273606,
+            -0.3668253522924183,
+            -0.5985797315978973,
+            3.033287861651768
+          ],
+          [
+            -0.4576314993341045,
+            0.8891418437035318,
+            -0.0004388538598065762,
+            1.0003509337829168
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 1948,
+        "faces": 3892
+      },
+      {
+        "index": 98,
+        "body": "link_d405",
+        "type": 7,
+        "matrix": [
+          [
+            -0.27361641524410346,
+            0.5345676410662955,
+            -0.7996070875334874,
+            3.7934735248643316
+          ],
+          [
+            0.3668253522924179,
+            -0.7105022901206317,
+            -0.600521154205982,
+            3.0252479254275992
+          ],
+          [
+            -0.8891418437035307,
+            -0.45762859707207726,
+            -0.0016878736127374232,
+            0.9951585060397322
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 308,
+        "faces": 608
+      },
+      {
+        "index": 99,
+        "body": "link_d405",
+        "type": 7,
+        "matrix": [
+          [
+            0.5345676410662955,
+            0.7996070875334876,
+            0.2736164152441035,
+            3.793588280855177
+          ],
+          [
+            -0.7105022901206318,
+            0.6005211542059821,
+            -0.36682535229241797,
+            3.0253813729761583
+          ],
+          [
+            -0.45762859707207737,
+            0.0016878736127373954,
+            0.8891418437035308,
+            0.9953694414270431
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 224,
+        "faces": 444
+      },
+      {
+        "index": 101,
+        "body": "scratcher",
+        "type": 2,
+        "matrix": [
+          [
+            -0.8000169724553948,
+            0.17837018948696617,
+            -0.572849822628659,
+            3.8567586182862605
+          ],
+          [
+            -0.5999768409256077,
+            -0.23657347618452224,
+            0.7642386935499259,
+            2.940647452132257
+          ],
+          [
+            0.000796326710822897,
+            0.9551005527526165,
+            0.2962807789840822,
+            0.8976970276419657
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 642,
+        "faces": 1280
+      },
+      {
+        "index": 103,
+        "body": "link_gripper_slider",
+        "type": 6,
+        "matrix": [
+          [
+            0.8000169724554096,
+            0.17837018948689404,
+            0.5728498226286615,
+            3.747917151986815
+          ],
+          [
+            0.5999768409255887,
+            -0.2365734761845807,
+            -0.7642386935499231,
+            3.0858528039067425
+          ],
+          [
+            -0.0007963267107332176,
+            0.9551005527526157,
+            -0.2962807789840856,
+            0.9539903756489421
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 8,
+        "faces": 12
+      },
+      {
+        "index": 104,
+        "body": "link_gripper_finger_left",
+        "type": 7,
+        "matrix": [
+          [
+            -0.6376097108358235,
+            0.15547249423060885,
+            -0.7545078927258315,
+            3.8876825421361807
+          ],
+          [
+            -0.768270682050077,
+            -0.20040993052123468,
+            0.607944091879169,
+            2.955675789701033
+          ],
+          [
+            -0.056692290041690116,
+            0.9672973499840632,
+            0.24722827703084793,
+            0.8956088306150544
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 610,
+        "faces": 1218
+      },
+      {
+        "index": 106,
+        "body": "link_gripper_finger_left",
+        "type": 7,
+        "matrix": [
+          [
+            -0.7289188493737202,
+            0.1845668616090172,
+            -0.6592513819655559,
+            3.8340774688355017
+          ],
+          [
+            -0.6837523240227377,
+            -0.24418099143434624,
+            0.6876470045129626,
+            3.02722310287913
+          ],
+          [
+            -0.03405980653501303,
+            0.9520035278390218,
+            0.3041861478780055,
+            0.9247712199814218
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 76,
+        "faces": 150
+      },
+      {
+        "index": 108,
+        "body": "link_gripper_finger_left",
+        "type": 7,
+        "matrix": [
+          [
+            0.1783718503083408,
+            0.730007647113753,
+            -0.659751709488521,
+            3.850691566513212
+          ],
+          [
+            -0.2365634531271094,
+            0.682653918779942,
+            0.6913908878622649,
+            2.9777591750531305
+          ],
+          [
+            0.9551027251883233,
+            0.03274847064879927,
+            0.29445937242344317,
+            0.9082501928870582
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 84,
+        "faces": 174
+      },
+      {
+        "index": 109,
+        "body": "rubber_tip_left",
+        "type": 7,
+        "matrix": [
+          [
+            -0.6238860891925252,
+            0.7589965641308581,
+            0.18625349218098758,
+            3.8909977876799733
+          ],
+          [
+            -0.7777974033082546,
+            -0.5798078085268508,
+            -0.24259864916819215,
+            2.9355184344050187
+          ],
+          [
+            -0.07614031204951378,
+            -0.2962214050483986,
+            0.9520795828459719,
+            0.890218542132115
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 1256,
+        "faces": 2508
+      },
+      {
+        "index": 111,
+        "body": "link_SG3_gripper_left_finger_aruco",
+        "type": 7,
+        "matrix": [
+          [
+            -0.8776213645997032,
+            0.2818674249189706,
+            -0.38772605685935957,
+            3.87350969295271
+          ],
+          [
+            0.24354432397742395,
+            0.9588670861669505,
+            0.14580834449401625,
+            2.9654279324930872
+          ],
+          [
+            0.41287637696596124,
+            0.03353603785861715,
+            -0.9101694520847265,
+            0.9012526656106401
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 120,
+        "faces": 76
+      },
+      {
+        "index": 113,
+        "body": "link_gripper_finger_right",
+        "type": 7,
+        "matrix": [
+          [
+            -0.915640264470292,
+            -0.1440740903400388,
+            0.37529396820821465,
+            3.833241004690041
+          ],
+          [
+            -0.39817368812822995,
+            0.19656049978723006,
+            -0.896003171872601,
+            2.915179845744768
+          ],
+          [
+            0.05532287197119477,
+            -0.9698487647133904,
+            -0.2373452199240046,
+            0.8953825838201354
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 598,
+        "faces": 1117
+      },
+      {
+        "index": 115,
+        "body": "link_gripper_finger_right",
+        "type": 7,
+        "matrix": [
+          [
+            -0.8431277311111621,
+            -0.17860072419243453,
+            0.5071857749871213,
+            3.7876708488311825
+          ],
+          [
+            -0.5371203177027689,
+            0.23544855815669805,
+            -0.8099788520528258,
+            2.9753843941393905
+          ],
+          [
+            0.025246650118886226,
+            -0.9553354163747282,
+            -0.29444328635223566,
+            0.9192411488895803
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 188,
+        "faces": 253
+      },
+      {
+        "index": 117,
+        "body": "link_gripper_finger_right",
+        "type": 7,
+        "matrix": [
+          [
+            -0.17835589676255922,
+            -0.859733065325052,
+            -0.47858983532542526,
+            3.8225097074292234
+          ],
+          [
+            0.23656664702629004,
+            -0.5095887066342734,
+            0.82725786281277,
+            2.9567188756568616
+          ],
+          [
+            -0.9551049134020654,
+            0.03432792533204949,
+            0.29427231935340986,
+            0.908034097201548
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 84,
+        "faces": 174
+      },
+      {
+        "index": 118,
+        "body": "rubber_tip_right",
+        "type": 7,
+        "matrix": [
+          [
+            0.9212965770551284,
+            0.3455408821788891,
+            -0.17836511948680733,
+            3.8517640065934997
+          ],
+          [
+            0.3810222017763478,
+            -0.8937928039016633,
+            0.23655127445674645,
+            2.9061596035507646
+          ],
+          [
+            -0.0776833242080439,
+            -0.2858949500019929,
+            -0.955106998562648,
+            0.8900901458459072
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 1256,
+        "faces": 2508
+      },
+      {
+        "index": 120,
+        "body": "link_SG3_gripper_right_finger_aruco",
+        "type": 7,
+        "matrix": [
+          [
+            0.011657804143802807,
+            -0.022187537864479683,
+            -0.9996858550395042,
+            3.827899492220763
+          ],
+          [
+            0.9110612472150745,
+            0.41226839620562716,
+            0.0014742160494439832,
+            2.931419425471791
+          ],
+          [
+            0.4121061749421686,
+            -0.9107922280375256,
+            0.025020350137089364,
+            0.9007891475495676
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 120,
+        "faces": 76
+      },
+      {
+        "index": 122,
+        "body": "link_aruco_shoulder",
+        "type": 7,
+        "matrix": [
+          [
+            0.0,
+            0.5999770311592072,
+            0.8000172261154062,
+            3.4462063815068555
+          ],
+          [
+            0.0,
+            -0.8000172261154062,
+            0.5999770311592072,
+            3.25653831715418
+          ],
+          [
+            1.0000000000000027,
+            0.0,
+            0.0,
+            1.136374999994063
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 120,
+        "faces": 76
+      },
+      {
+        "index": 124,
+        "body": "link_head_pan",
+        "type": 7,
+        "matrix": [
+          [
+            0.799212106798389,
+            -0.6010251405652269,
+            0.005365515392998406,
+            3.6782431366411394
+          ],
+          [
+            0.6003682075354854,
+            0.798699722016086,
+            0.040457007205900376,
+            3.2801542636693584
+          ],
+          [
+            -0.028601114095635493,
+            -0.0291124451047867,
+            0.9991668738566709,
+            1.3067641773020107
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 4420,
+        "faces": 2001
+      },
+      {
+        "index": 125,
+        "body": "link_head_pan",
+        "type": 7,
+        "matrix": [
+          [
+            0.7840845183640079,
+            0.5342827021035739,
+            -0.31583771512405817,
+            3.658976760844257
+          ],
+          [
+            -0.6131431673340455,
+            0.7457299395447761,
+            -0.2606574641519396,
+            3.264555046075732
+          ],
+          [
+            0.09626486593486036,
+            0.39803121925227025,
+            0.912307088697164,
+            1.3525056058872398
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 8022,
+        "faces": 4153
+      },
+      {
+        "index": 128,
+        "body": "link_head_tilt",
+        "type": 7,
+        "matrix": [
+          [
+            0.5742864557108209,
+            -0.7995211672213035,
+            -0.1759572958197251,
+            3.6624680461611296
+          ],
+          [
+            -0.7643766504393767,
+            -0.6006378975618514,
+            0.23444072230642912,
+            3.2387802138892985
+          ],
+          [
+            -0.2931269401644698,
+            -0.00013848308859196193,
+            -0.9560735211123945,
+            1.2673103573350737
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 11016,
+        "faces": 4502
+      },
+      {
+        "index": 129,
+        "body": "link_head_tilt",
+        "type": 7,
+        "matrix": [
+          [
+            0.5701296410627864,
+            -0.7987754590937006,
+            -0.1921196458753483,
+            3.6431067813199625
+          ],
+          [
+            -0.763656972870262,
+            -0.6014896585517671,
+            0.23460225583295194,
+            3.265179049227331
+          ],
+          [
+            -0.30295250480603325,
+            0.012959807287514283,
+            -0.9529175322276447,
+            1.279318810695353
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 37178,
+        "faces": 15573
+      },
+      {
+        "index": 132,
+        "body": "link_SE3_head_nav_cam",
+        "type": 7,
+        "matrix": [
+          [
+            0.057682481730552335,
+            0.15228535765359857,
+            0.9866518642083075,
+            3.6959113197467377
+          ],
+          [
+            -0.8965061065235381,
+            0.44274512383589315,
+            -0.01592345080548726,
+            3.2822413537827604
+          ],
+          [
+            -0.43926021020281325,
+            -0.8836209171154018,
+            0.16206339058752647,
+            1.2550994800815296
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 3274,
+        "faces": 6042
+      }
+    ],
+    "tool": "Actual placement-renderer default bathing sphere MJCF, including actual visual sphere; no approximate scratcher substituted.",
+    "referenced_assets": [
+      {
+        "file": "resources/stretch/assets/base_link_0.obj",
+        "sha256": "9d3a1643fa7890b33f955242089fe127f7e192e32d858524db5c7da26c5122b4"
+      },
+      {
+        "file": "resources/stretch/assets/base_link_2.obj",
+        "sha256": "59ddb2d2a81b7a2f00fb8f74d0e6711f04c9f404691d8dac442788ea36dab870"
+      },
+      {
+        "file": "resources/stretch/assets/base_link_3.obj",
+        "sha256": "f4929a1511adfa84b91a4912e839a05d21f5715b930260dd81fb677b501b4a46"
+      },
+      {
+        "file": "resources/stretch/assets/base_link_4.obj",
+        "sha256": "5fb87192b939bbc69614454be52ac3211cc42c39410f9a6f72d3cf366125d414"
+      },
+      {
+        "file": "resources/stretch/assets/base_link_5.obj",
+        "sha256": "523f308172b2e910ed8990aa7d2f19bb98e81100335e6b8eef7867938676f302"
+      },
+      {
+        "file": "resources/stretch/assets/base_link_6.obj",
+        "sha256": "ac3ecf44cdc94e163478e8f491f9a8e511d9eaef605671905284df1202a6f6dd"
+      },
+      {
+        "file": "resources/stretch/assets/base_link_7.obj",
+        "sha256": "dfbaf9645fc6d2a9b3ee5e66e25c48f9ca135c42fb1333a516bf2e2d17bb0aa3"
+      },
+      {
+        "file": "resources/stretch/assets/base_link_8.obj",
+        "sha256": "24c7ed85eb63097d8f647c168c718194249b74d98eba7463ada1dd64faed9932"
+      },
+      {
+        "file": "resources/stretch/assets/base_link_casterless.stl",
+        "sha256": "d2d5bd2dc9f1d4ffde2321efd2067debeaabb2172f000b036f2ab6b5d043fac8"
+      },
+      {
+        "file": "resources/stretch/assets/link_aruco_right_base.obj",
+        "sha256": "7f0e7f41b9fe29c2091f39ff18a3b6742cfbe9c65434c60c51cde856db55d73b"
+      },
+      {
+        "file": "resources/stretch/assets/link_aruco_left_base.obj",
+        "sha256": "7f0e7f41b9fe29c2091f39ff18a3b6742cfbe9c65434c60c51cde856db55d73b"
+      },
+      {
+        "file": "resources/stretch/assets/respeaker_base.obj",
+        "sha256": "70acc76cf2a54fa419dc6d509919ae46a06d8f0f4bcdc46e88ba916de3a5c79a"
+      },
+      {
+        "file": "resources/stretch/assets/link_mast.obj",
+        "sha256": "dd28da988909e7f4dda26c296a3a54ba9a84c516c2f7d7059aa36fbc056d98c6"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_0.obj",
+        "sha256": "601b3ad3cf1d024cb0ef9f96e5e3a7cc671fc18d4d26140f3f14317765da1d00"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_1.obj",
+        "sha256": "ecc74a0b02815df93883f35ccbf56e312c707b088d087fb3e18ec780a78f41af"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_2.obj",
+        "sha256": "c81d8441cd7e5dc8fd74b9462783c61c5fda0f02eeaa0f87ed4f6addf3b195c0"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_3.obj",
+        "sha256": "d7e69ff8ae36d1c74ea5a0a941a48eb19c33f8d19d8d4e631545e96e8655f615"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_4.obj",
+        "sha256": "bdbb7bc5b816a9b55dcda9b9863f36e650e3c64ed9357897c7a11ba1e043f88f"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_5.obj",
+        "sha256": "243616144e0e7579582f9fc30573a489d08d33cbad25d714042ad01e7f8fb307"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_6.obj",
+        "sha256": "35eb02b748cb53695622b431c94c2beab837990713d30c163f98ee967f9e4b4a"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_7.obj",
+        "sha256": "7f2e724404d6034b0e893575ec920083dd77fb7e2f89e0964b74b4f23da01ab7"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_8.obj",
+        "sha256": "458e7850c870b35968f3c511d0cb64898c212575e1cea0c83110f70b1c713e81"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_9.obj",
+        "sha256": "e230e0ba13bc8e22abe74326e888cf8295b9546c6b67cc6ac5844253e52b2c92"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_10.obj",
+        "sha256": "f07adce0e40cd224bfd8dc49ff95bedd33cdf615406b627cba77449349a44ba0"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_11.obj",
+        "sha256": "90754a150e6a6c8bf97f188888c0ce87ff2e49c58b1074fd9f45b38f1d1a278d"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_pan_0.obj",
+        "sha256": "b1436e3f2c22d6d08b662deff47405673334839cd563c19b90bad351e2d0ae8b"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_pan_1.obj",
+        "sha256": "54370f2201f4ce69910bb61a902d0c07c167e90f4921882ebeb9432cc152f90a"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_tilt_0.obj",
+        "sha256": "c0330bea8f0c4bee0b35b4366e9e3d3cd5ca1023a121a3d5f0c65dc5f393e03f"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_tilt_1.obj",
+        "sha256": "4d1cb6f2207d6986e45f99428c8eece8fa6a24fba6fb1d3475c5f774df7545eb"
+      },
+      {
+        "file": "resources/stretch/assets/link_right_wheel_0.obj",
+        "sha256": "f2b821eb94f5437ccfdc5efb2b9bdf10c4fd584aa54f45f306e051a4ca04ccbb"
+      },
+      {
+        "file": "resources/stretch/assets/link_right_wheel_1.obj",
+        "sha256": "695bca8ae8e307e1c9e56505b33b293f2806b872254966e4d06a1c36e56b102e"
+      },
+      {
+        "file": "resources/stretch/assets/link_left_wheel_0.obj",
+        "sha256": "32a02f8d4fa8b6f4c8174965365b7c386104e5bcbead3e1d06daa455411eecdf"
+      },
+      {
+        "file": "resources/stretch/assets/link_left_wheel_1.obj",
+        "sha256": "1d38982dc60a8c05c64120b6b05ceba7f40c98bde0904c5385b097d9bf07fc91"
+      },
+      {
+        "file": "resources/stretch/assets/link_lift_0.obj",
+        "sha256": "ad629cb6eaeafec45a814365102c758b3b131df35534fc3215c373c9c34d066f"
+      },
+      {
+        "file": "resources/stretch/assets/link_lift_1.obj",
+        "sha256": "3c4f265261ac9db81af975204c1120dad88c9b41e4869b0f2202ab0bc669b344"
+      },
+      {
+        "file": "resources/stretch/assets/link_lift_2.obj",
+        "sha256": "9cc0064b7e8add7e401a891f9a2cb7b6c11f66fe91007023e449f3eb903ea227"
+      },
+      {
+        "file": "resources/stretch/assets/link_lift_3.obj",
+        "sha256": "0a3e16d2b30bff8a529efa9778e4c2b3f2eeb052bd29e5c414c0da6d7e72ea41"
+      },
+      {
+        "file": "resources/stretch/assets/link_lift_4.obj",
+        "sha256": "9755b22de6e30c44b883fe6720e09e6c608981fe1e3572bd22e81d82eff08288"
+      },
+      {
+        "file": "resources/stretch/assets/link_lift_5.obj",
+        "sha256": "ed85f90c8aa70761c5322f57d7d3245bef1d560711512a995ec1e669815acb65"
+      },
+      {
+        "file": "resources/stretch/assets/link_lift_6.obj",
+        "sha256": "f3811817e908e890ddebd011c733de5b407cd781b537a1e281dccd247da0eb70"
+      },
+      {
+        "file": "resources/stretch/assets/link_lift_7.obj",
+        "sha256": "65122e665930affc87dffc2ce790fdc326e7b988522101ed7f10d4ab6cba8cd7"
+      },
+      {
+        "file": "resources/stretch/assets/link_lift_8.obj",
+        "sha256": "0b67a66d5c8c4ce1067dba66b2cbf7b8539bf905a414a232e1b722e42d4acdf2"
+      },
+      {
+        "file": "resources/stretch/assets/link_lift_9.obj",
+        "sha256": "5eaf46cb89705c2c9910a6453f70d63b2d407c2a86e0fc60caec6abf857ddd35"
+      },
+      {
+        "file": "resources/stretch/assets/link_aruco_shoulder.obj",
+        "sha256": "6a9ace409ff326eec456770a96d2aec9e1e100aa9fcd6afe9b320eb03d62164f"
+      },
+      {
+        "file": "resources/stretch/assets/link_arm_l4_0.obj",
+        "sha256": "f81406eb8b4efa49df82044b5075078a600e44514cd90129e6ddd6136cf22e8f"
+      },
+      {
+        "file": "resources/stretch/assets/link_arm_l4_1.obj",
+        "sha256": "1fb20913eca87594ca504642a48b1b1004f8f594b19cbc45ea709b76375666f5"
+      },
+      {
+        "file": "resources/stretch/assets/link_arm_l3_0.obj",
+        "sha256": "44b748d6c32ff8898d55ea8c92ea177c43ab31fb2a20af4e1069d3d149d6f044"
+      },
+      {
+        "file": "resources/stretch/assets/link_arm_l3_1.obj",
+        "sha256": "f32e67a44270312b51f1af8aa8458a29bf8714f9b7d3d4b892e579056414c4fa"
+      },
+      {
+        "file": "resources/stretch/assets/link_arm_l2_0.obj",
+        "sha256": "e5c7bdce8e28efa3360202623fe01c35dd0bdd404318766d500920d139662500"
+      },
+      {
+        "file": "resources/stretch/assets/link_arm_l2_1.obj",
+        "sha256": "6b0ed71768eb30301a2109bd4375b24137bccaee7529b110fdad7b0e0b5076e4"
+      },
+      {
+        "file": "resources/stretch/assets/link_arm_l1_0.obj",
+        "sha256": "0ebb391b8bfa377332034341ff1c0193c8ca494ff6beb7a593cccbb09aeb0ec8"
+      },
+      {
+        "file": "resources/stretch/assets/link_arm_l1_1.obj",
+        "sha256": "4ef086e1abfbcdea46a546a96ab8b602574f1f0aa1668c95a336c6534700c3eb"
+      },
+      {
+        "file": "resources/stretch/assets/link_arm_l0_0.obj",
+        "sha256": "ebc8bbc182891fa029c677a8f1e32e3ed53f11a986b68a28defb8daa9b714a37"
+      },
+      {
+        "file": "resources/stretch/assets/link_arm_l0_1.obj",
+        "sha256": "0ff60709a54b06ab24330c769c50ba677fd95459eaf0439f15579ab8042346a4"
+      },
+      {
+        "file": "resources/stretch/assets/link_arm_l0_2.obj",
+        "sha256": "bc8bda8c3321fb5f64ebb0294bb8c3191e65ac51e619384f19f0133f362e888d"
+      },
+      {
+        "file": "resources/stretch/assets/link_aruco_inner_wrist.obj",
+        "sha256": "2cba33928cc667457e3b7fb60359c05687688f4923bc7bb6f965a8aae446dbf9"
+      },
+      {
+        "file": "resources/stretch/assets/link_aruco_top_wrist.obj",
+        "sha256": "514f4515903781d69729fe4130396e8b2ae301a4356024c2b5beba9888036074"
+      },
+      {
+        "file": "resources/stretch/assets/laser.obj",
+        "sha256": "febe15452ffde5d069943fa51fb08426079ad4419c983a84b3a47d822d87c8a9"
+      },
+      {
+        "file": "resources/stretch/assets/link_gripper_fingertip_left.stl",
+        "sha256": "7cb02cd1d0d5a2599b75365f1d61963a581ee49f2438fc79aefa964a952df77a"
+      },
+      {
+        "file": "resources/stretch/assets/link_gripper_fingertip_right.stl",
+        "sha256": "dbfb702f50aa53a077e5188e0b4269a8bddff485d197e5c06d9e4321cb5ea6a5"
+      },
+      {
+        "file": "resources/stretch/assets/link_gripper_finger_left_0.obj",
+        "sha256": "7a886141e5501877f9b776b204f2694537994ebccfdf7715c6771c6406234002"
+      },
+      {
+        "file": "resources/stretch/assets/link_gripper_finger_left_1.obj",
+        "sha256": "16291341862cd7aa35ff767c6868252cb695d4222459a55ed1bf8c32cecb9615"
+      },
+      {
+        "file": "resources/stretch/assets/link_gripper_finger_right_0.obj",
+        "sha256": "b5e8d67538153b0f37939f0bcc9c850f80446578a2d1f9cfc78adc3737b480cb"
+      },
+      {
+        "file": "resources/stretch/assets/link_gripper_finger_right_1.obj",
+        "sha256": "37159f986750a6d18f4d7904051fd32f77297660a9aeec2d8751c08ce3aa2575"
+      },
+      {
+        "file": "resources/stretch/assets/link_gripper_0.obj",
+        "sha256": "5feed27dc9f0febc1fc15fcef98c9a47bbe64c451e33197460d4abb7c11b9279"
+      },
+      {
+        "file": "resources/stretch/assets/link_gripper_1.obj",
+        "sha256": "5fa25ae6ee8653098dade84361e5c24385abb56773d261c47602a2e742254a78"
+      },
+      {
+        "file": "resources/stretch/assets/link_wrist_yaw.obj",
+        "sha256": "53fcc361ab7a3b82326b8344bcb2654d61d0b2d06b8e9ab9566f75d9fc266bd4"
+      },
+      {
+        "file": "resources/stretch/assets/link_DW3_tablet_12in.stl",
+        "sha256": "0bfc56ed791d36d68d446a40728d7550c8e5118267ada12aa25da7132abd97e7"
+      },
+      {
+        "file": "resources/stretch/assets/link_DW3_wrist_pitch.stl",
+        "sha256": "9fb47ba958d9ce65d8020d3aa328aa62bc47d4bbb01fd30e3b632a6b25238b5c"
+      },
+      {
+        "file": "resources/stretch/assets/link_DW3_wrist_quick_connect.stl",
+        "sha256": "f5df1f4dd28dd975340e68d2601f66c52a457cace5192585a22f6c14685ea2f5"
+      },
+      {
+        "file": "resources/stretch/assets/link_DW3_wrist_yaw_bottom.stl",
+        "sha256": "e6e7052e8334f01edc3b8d03e698c06bc03d27289f9568e20baed562d6a36cab"
+      },
+      {
+        "file": "resources/stretch/assets/link_SE3_head_nav_cam.stl",
+        "sha256": "be4645b82f4b4912b257a7f675176504d83377c3d5c7e9528efd2aa8e6d5623d"
+      },
+      {
+        "file": "resources/stretch/assets/link_SG3_aruco_d405.obj",
+        "sha256": "8fd74cef03a4fe8b3bd2ad2a003b0f482296d46d228cb3c6c288cc36f1c38834"
+      },
+      {
+        "file": "resources/stretch/assets/link_SG3_gripper_body.stl",
+        "sha256": "7fc5236786c964d83bf48d0fd1ad8ea155dfc771f1ff4bc27c7bc2d86eabb80d"
+      },
+      {
+        "file": "resources/stretch/assets/link_d405.stl",
+        "sha256": "0ab47dd3a933d54a9b4630a629700708fa63bd88f5475a2bdc3b8dfc222ee35a"
+      },
+      {
+        "file": "resources/stretch/assets/link_d405_lens.stl",
+        "sha256": "967f212d148ce40295b3a97f3a006e15943fa48a118fbd3350172faf3818a246"
+      },
+      {
+        "file": "resources/stretch/assets/link_d405_front_plate.stl",
+        "sha256": "20d6fa80713951301393a3d9d4d96c1b8ae8b05a9eab64da76d54445d568a2ee"
+      },
+      {
+        "file": "resources/stretch/assets/link_SG3_gripper_left_finger.stl",
+        "sha256": "9b521e35a032a590879e3d3d520219c3f848ee89e69fddf5c5f6372d06869423"
+      },
+      {
+        "file": "resources/stretch/assets/link_SG3_gripper_right_finger.stl",
+        "sha256": "85a729e0c81cc2caeddf47323ef1deb05bebb521f89af60b60f5fa361c692c70"
+      },
+      {
+        "file": "resources/stretch/assets/link_SG3_gripper_left_finger_0.obj",
+        "sha256": "a504ed43c451dfe771934a68fe7fe0141d873ec876bf16a39e7327ca0ec865cb"
+      },
+      {
+        "file": "resources/stretch/assets/link_SG3_gripper_right_finger_0.obj",
+        "sha256": "bf8786fa70e213ad51a58c4b2a8d1f4c046593f31f1b1f27481c134108f1d368"
+      },
+      {
+        "file": "resources/stretch/assets/link_SG3_gripper_left_finger_1.obj",
+        "sha256": "1b23f6cf2907318cb00b14a41092083303d4945be4ffb750c0a9bf9fc7706ec9"
+      },
+      {
+        "file": "resources/stretch/assets/link_SG3_gripper_right_finger_1.obj",
+        "sha256": "ad42d88c7b94aaa776b617244b1f1675646a54e9f517fc431b721a98ff7cd152"
+      },
+      {
+        "file": "resources/stretch/assets/link_SG3_gripper_left_inner_finger.stl",
+        "sha256": "2021148766fd93c1fae24723eb5f65ec981cd1889fbc6be6f8458793207df383"
+      },
+      {
+        "file": "resources/stretch/assets/link_SG3_gripper_right_inner_finger.stl",
+        "sha256": "9b5becd4ccf93151e4599f038a9be3f7123656fe910462977a0f4a16eada941c"
+      },
+      {
+        "file": "resources/stretch/assets/link_SG3_gripper_inner_finger.stl",
+        "sha256": "3bee8ab82e230fe1132f5703dbf5b18982cc51398d8c45cba9aa2e31347bb6a0"
+      },
+      {
+        "file": "resources/stretch/assets/link_SG3_gripper_left_finger_aruco.obj",
+        "sha256": "19ceeca8956d2e845a2a53c08ab015c79cdded2873dd282d1e764a8e193db491"
+      },
+      {
+        "file": "resources/stretch/assets/link_SG3_gripper_right_finger_aruco.obj",
+        "sha256": "f5555f3a3cd025c7ed1f45fda2b5d5813eba0a079ca05cbe46834220682e1154"
+      },
+      {
+        "file": "resources/stretch/assets/link_SG3_gripper_right_fingertip.stl",
+        "sha256": "c9a680cb46f39fa53dba46e4bff7e537346a4f5caa04f3b41e551cd63d885d4d"
+      },
+      {
+        "file": "resources/stretch/assets/link_SG3_gripper_left_fingertip.stl",
+        "sha256": "bb4ac16a6b9ff712cf4b2c4051ca498547c687ab1a985c51fad484c5d426aefa"
+      },
+      {
+        "file": "resources/stretch/assets/big_aruco_plate.stl",
+        "sha256": "41195315eca742171154d73613cade538413d63ac627cfdbb815600f6e66c3c8"
+      },
+      {
+        "file": "resources/stretch/assets/hand_crush.png",
+        "sha256": "b3fddc2877eca3542299291dce3e098558cc7dcdade10aae5526aeddc95604b8"
+      },
+      {
+        "file": "resources/stretch/assets/serial.png",
+        "sha256": "9f7a63de6f4c5f677d3f302ff0fb78db1e1af30a40668d7f297a147cfcb87b04"
+      },
+      {
+        "file": "resources/stretch/assets/mobile_base_right_corner_aruco_sticker.png",
+        "sha256": "025e8d8eaca6303c45ed979cea2278097dc56b6c40558af15b67b228249725d0"
+      },
+      {
+        "file": "resources/stretch/assets/mobile_base_left_corner_aruco_sticker.png",
+        "sha256": "e99edecf442109ff6c2311c2325ae10e709e723524eb9a4a41af343abcc5b882"
+      },
+      {
+        "file": "resources/stretch/assets/hand_pinch.png",
+        "sha256": "9c4b6d023cdf52828b3c95da8abc14393ed9256bb8ccbb86f220090ef2e81dc7"
+      },
+      {
+        "file": "resources/stretch/assets/arm_inner_wrist_aruco_sticker.png",
+        "sha256": "100ad8dca698e0b7362f57abec97b3f535c2a62e251048e63ad99c435d21c549"
+      },
+      {
+        "file": "resources/stretch/assets/arm_top_wrist_aruco_sticker.png",
+        "sha256": "7cc7ff50704807befd82d6ac441f0de7460e58923dc3771deb8bc8e8f528cedf"
+      },
+      {
+        "file": "resources/stretch/assets/shoulder_aruco_sticker.png",
+        "sha256": "13813d08a1cd2c06ea4726a916b1e789362f2ad500aa11b0998cd2209d8eaef1"
+      },
+      {
+        "file": "resources/stretch/assets/right_finger_aruco.png",
+        "sha256": "acb2a13762796e37352cbf952c62ee4ff8545c23659f66ce341cedae2b8b24c8"
+      },
+      {
+        "file": "resources/stretch/assets/left_finger_aruco.png",
+        "sha256": "6120990ed390a4f6debf6d37218820ca489991324c9ddbd88cb7af89ad972e75"
+      },
+      {
+        "file": "resources/stretch/assets/gripper_cam_aruco_sticker.png",
+        "sha256": "81c18ca457cd12d430729ea06c6d2cbf51a7a03d869a6f3cd3c57031d16ea49c"
+      }
+    ]
+  },
+  "coordinate_conversion": "Z-up simulation to Y-up viewer: (x,y,z)->(x,z,-y)",
+  "export": {
+    "source": "/tmp/orchestrator-3d/accept-before.glb",
+    "sha256": "3d705ebcd1bb5f0abde4cb919b91a062164e8a34f9b6022fbf3ac27c417f7bed",
+    "mtime_utc": "2026-09-19T18:05:54.716789+00:00",
+    "bytes": 141711980
+  },
+  "geometry_policy": "No mesh simplification; original room and robot meshes transformed by recorded configuration. Original SMPL-X generated deterministically from recorded parameters. Texture, UV registration and camera are presentation changes only.",
+  "web_export": {
+    "file": "accept-before.glb",
+    "sha256": "3602cb27de54d674dfb6236b42cf0156d11bf0e168bb57711b837e445998bc04",
+    "bytes": 17217872,
+    "compression": "Lossless EXT_meshopt_compression. No quantization or simplification; texture images resized to1024 max.",
+    "geometry_verification": {
+      "matched_mesh_nodes": 131,
+      "total_mesh_nodes": 131,
+      "positions": "SHA256 equality of raw float32 POSITION buffers",
+      "triangles": "Identical winding-aware triangle sets (meshopt may cyclically rotate index triples)",
+      "transforms": "Maximum matrix difference <=1e-10",
+      "issues": []
+    }
+  }
+}

@@ -1,0 +1,38 @@
+# Task 04/50 of task_suite/tasks_llm.json -- itch_relief / mid_back (sitting).
+# Written by task_suite/room_suite.py configs; description [llm].
+# Original: The person is sitting in a shallow accent chair. The robot gently rubs its bare tip up and down their mid-back to reliably scratch a sudden, annoying itch.
+run_name: room2_t04_itch_relief_mid_back
+task: scratching
+robot: stretch
+human_indices:
+- 0
+cuda_id: 1
+task_description: An adult of average build sits in the bedroom_accent_chair_0, with their mid back, specifically spine1 and spine2, clear above the chair back and side wings. Their knees are bent with lower legs vertical, feet flat on the floor, and hands resting lightly on their knees without limb overlap. The robot base and arm remain entirely outside the chair wings and armrests at all times. Starting from a clearly separated non-contact pose behind the chair, the robot approaches down from above over the top edge of the backrest. It applies the narrow scratcher tip in light, definite contact with the mid back, keeping the rest of the robot fully clear. The robot performs three vertical back-and-forth scratching cycles along spine1 and spine2 before lifting the tip cleanly off the body and retreating to a separated non-contact pose so task completion is clear.
+human_posture: sitting
+furniture_name: bedroom_accent_chair_0
+target_segments:
+- spine1
+- spine2
+human_placement_impl: vlm
+scene:
+  enabled: true
+  order: room_first
+  room_policy: download_delete
+  scene_tries: 16
+  fetch_min_free_gb: 5
+  exclude_support:
+  - 23:bedroom_bed_0
+vlm_model: gemini-3.7-flash
+orchestrator:
+  model: gemini-3.7-flash
+  stage_attempt_cap: 5
+  item_execution_cap: 40
+  outer_loop_cap: 1
+  llm_call_cap: 600
+  review_on_success: true
+  cross_validate_humans: 0
+  stage_timeouts_s:
+    per_vlm_iter: 1800.0
+    per_cross_val_body: 300.0
+    default: 3600.0
+seated_view: back

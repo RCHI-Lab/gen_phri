@@ -1,0 +1,37 @@
+# Task 49/50 of task_suite/tasks_llm.json -- edema_massage / right_foot (lying).
+# Written by task_suite/room_suite.py configs; description [llm].
+# Original: The person is lying in bed with stiff, puffy feet after a long spell off their legs. The robot presses its tip at the base of the right toes and glides firmly up over the top of the foot toward the ankle. The pass helps mobilize the stagnant fluid so they can put their slippers back on comfortably.
+run_name: room2_t49_edema_massag_right_foot
+task: bathing
+robot: stretch
+human_indices:
+- 0
+cuda_id: 1
+task_description: An adult of average build is lying supine on a flat bed with the head resting naturally and both arms resting along the sides of the torso. Both legs extend straight along the mattress with feet slightly parted and pointing upward, leaving the top of the right foot fully exposed. Starting from a clearly separated non-contact pose, a robot approaches with a sponge pad held flat against the skin. The robot makes contact at the base of the right toes and performs a single firm gliding stroke upward across the top of the right foot toward the ankle. Contact is strictly confined to the right toe base and right foot, with only the tool contacting the body while the rest of the robot maintains safe clearance. The robot then lifts the sponge clear of the foot and retreats to a separated non-contact pose so the end of the task is unambiguous.
+human_posture: lying
+furniture_name: bed
+target_segments:
+- rightToeBase
+- rightFoot
+human_placement_impl: vlm
+scene:
+  enabled: true
+  order: room_first
+  room_policy: download_delete
+  scene_tries: 8
+  fetch_min_free_gb: 5
+  exclude_support:
+  - 23:bedroom_bed_0
+vlm_model: gemini-3.7-flash
+orchestrator:
+  model: gemini-3.7-flash
+  stage_attempt_cap: 5
+  item_execution_cap: 40
+  outer_loop_cap: 1
+  llm_call_cap: 600
+  review_on_success: true
+  cross_validate_humans: 0
+  stage_timeouts_s:
+    per_vlm_iter: 1800.0
+    per_cross_val_body: 300.0
+    default: 3600.0

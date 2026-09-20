@@ -1,0 +1,37 @@
+# Task 03/50 of task_suite/tasks_llm.json -- lotion_application / left_hand_and_arm (lying).
+# Written by task_suite/room_suite.py configs; description [llm].
+# Original: The person is lying comfortably in bed after their morning wash, arms resting at their sides. The robot's bare tip gently rubs moisturizer along their left forearm and over the back of their hand to treat dry, flaky skin.
+run_name: room2_t03_lotion_appli_left_hand_and_arm
+task: bathing
+robot: stretch
+human_indices:
+- 0
+cuda_id: 2
+task_description: An adult of average build is lying supine on a standard flat bed with legs extended straight and slightly apart. Both arms rest alongside the torso on the mattress, with the left arm positioned slightly away from the body so the left forearm and left hand are unobstructed. Starting from a clearly separated non-contact pose, the robot approaches the left side of the bed with a sponge pad held flat against the skin. The robot applies moisturizer by pressing lightly and making two continuous smoothing strokes along the left forearm and across the back of the left hand. Only the sponge pad makes contact with the left forearm and left hand while the rest of the robot remains clear of the person and the bed. The robot then lifts the tool clear of the body and retreats to a separated non-contact pose so the end of the task is unambiguous.
+human_posture: lying
+furniture_name: bed
+target_segments:
+- leftHand
+- leftForeArm
+human_placement_impl: vlm
+scene:
+  enabled: true
+  order: room_first
+  room_policy: download_delete
+  scene_tries: 8
+  fetch_min_free_gb: 5
+  exclude_support:
+  - 23:bedroom_bed_0
+vlm_model: gemini-3.7-flash
+orchestrator:
+  model: gemini-3.7-flash
+  stage_attempt_cap: 5
+  item_execution_cap: 40
+  outer_loop_cap: 1
+  llm_call_cap: 600
+  review_on_success: true
+  cross_validate_humans: 0
+  stage_timeouts_s:
+    per_vlm_iter: 1800.0
+    per_cross_val_body: 300.0
+    default: 3600.0

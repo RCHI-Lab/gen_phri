@@ -1,0 +1,358 @@
+/* Demonstration of Generated Simulations
+ *
+ * Spacing scale: 8 / 12 / 16 / 24 / 32 px.
+ * Type scale:    section title (Bulma is-3) > task title 1.5rem >
+ *                body 1rem > meta/labels 0.8rem.
+ * Surfaces:      one radius (10px); shadows only on media panels
+ *                (video, 3D scene, code), never on controls or thumbnails.
+ */
+
+#sim-demos {
+  --sim-accent: #297270;
+  --sim-text: #363636;
+  --sim-text-muted: #6b6b6b;
+  --sim-surface: #eef1f1;
+  --sim-border: rgba(0, 0, 0, 0.06);
+  --sim-radius: 10px;
+  --sim-shadow: 0 10px 25px rgba(0, 0, 0, 0.08), 0 4px 10px rgba(0, 0, 0, 0.04);
+  --sim-ease: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Header */
+.sim-header {
+  margin-bottom: 24px;
+}
+
+#sim-demos .sim-header .title {
+  margin-bottom: 8px;
+}
+
+#sim-demos .sim-subtitle {
+  margin: 0;
+  font-size: 1.125rem;
+  color: var(--sim-text-muted);
+}
+
+/* Toolbar */
+.sim-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.sim-toolbar-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--sim-text-muted);
+}
+
+.sim-toolbar .select select {
+  min-width: 240px;
+  border-color: #dbdbdb;
+  box-shadow: none;
+}
+
+/* Rows */
+.sim-top {
+  margin-bottom: 32px !important;
+}
+
+.sim-top > .column,
+.sim-bottom > .column {
+  padding: 12px;
+}
+
+/* Thumbnail grid */
+.sim-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  transition: opacity 0.25s var(--sim-ease);
+}
+
+.sim-grid.is-leaving {
+  opacity: 0;
+}
+
+.sim-thumb {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  padding: 0;
+  border: 0;
+  border-radius: var(--sim-radius);
+  overflow: hidden;
+  cursor: pointer;
+  background: var(--sim-surface);
+  box-shadow: 0 0 0 0 transparent;
+  transition: box-shadow 0.35s var(--sim-ease);
+  animation: sim-thumb-in 0.45s var(--sim-ease) both;
+  animation-delay: calc(var(--i, 0) * 40ms);
+}
+
+@keyframes sim-thumb-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: none; }
+}
+
+.sim-thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s var(--sim-ease);
+}
+
+.sim-thumb:hover img {
+  transform: scale(1.04);
+}
+
+.sim-thumb-label {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  text-align: center;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.25;
+  background: rgba(0, 0, 0, 0.45);
+  opacity: 0;
+  transition: opacity 0.45s var(--sim-ease);
+}
+
+.sim-thumb:hover .sim-thumb-label,
+.sim-thumb:focus-visible .sim-thumb-label {
+  opacity: 1;
+}
+
+.sim-thumb:focus-visible {
+  outline: none;
+}
+
+.sim-thumb.active {
+  box-shadow: 0 0 0 3px var(--sim-accent);
+}
+
+/* Prompt */
+.sim-prompt {
+  margin-bottom: 16px;
+  transition: opacity 0.25s var(--sim-ease);
+}
+
+#sim-demos .sim-prompt-category {
+  margin: 0 0 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--sim-accent);
+}
+
+#sim-demos .sim-prompt-title {
+  margin: 0 0 8px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--sim-text);
+}
+
+#sim-demos .sim-prompt-text {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.55;
+  color: #4a4a4a;
+  min-height: 4.65em; /* three lines, so the video doesn't jump between prompts */
+}
+
+/* Video */
+.sim-video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: var(--sim-radius);
+  background: var(--sim-surface);
+  box-shadow: var(--sim-shadow);
+  transition: opacity 0.25s var(--sim-ease);
+}
+
+.sim-prompt.is-leaving {
+  opacity: 0;
+}
+
+.sim-video.is-switching {
+  animation: sim-video-switch 0.45s var(--sim-ease);
+}
+
+@keyframes sim-video-switch {
+  from { opacity: 0.35; }
+  to { opacity: 1; }
+}
+
+/* Bottom panels */
+.sim-panel {
+  display: flex;
+  flex-direction: column;
+  height: 460px;
+  border: 1px solid var(--sim-border);
+  border-radius: var(--sim-radius);
+  overflow: hidden;
+  background: #fafafa;
+  box-shadow: var(--sim-shadow);
+}
+
+.sim-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  padding: 0 16px;
+  flex: none;
+  font-family: "Source Code Pro", monospace;
+  font-size: 0.8rem;
+  color: var(--sim-text-muted);
+  background: #f3f3f3;
+  border-bottom: 1px solid var(--sim-border);
+}
+
+.sim-panel-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  margin-right: -6px;
+  padding: 0;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--sim-text-muted);
+  cursor: pointer;
+  transition: background-color 0.2s var(--sim-ease), color 0.2s var(--sim-ease);
+}
+
+.sim-panel-action:hover {
+  background: rgba(0, 0, 0, 0.06);
+  color: var(--sim-text);
+}
+
+.sim-viewer {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  background: var(--sim-surface);
+  cursor: grab;
+}
+
+.sim-viewer:active {
+  cursor: grabbing;
+}
+
+.sim-viewer canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  touch-action: none;
+}
+
+.sim-viewer-status {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--sim-text-muted);
+  font-size: 0.9rem;
+  pointer-events: none;
+}
+
+.sim-viewer-status[hidden] {
+  display: none;
+}
+
+.sim-viewer-hint {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.45);
+  pointer-events: none;
+}
+
+.sim-code-body {
+  flex: 1;
+  min-height: 0;
+  margin: 0;
+  padding: 16px;
+  overflow: auto;
+  background: #fafafa;
+  font-size: 0.8rem;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.sim-code-body code,
+.sim-code-body code.hljs {
+  padding: 0;
+  overflow: visible;
+  background: transparent;
+  font-family: "Source Code Pro", monospace;
+}
+
+.sim-code-body.typing code::after {
+  content: "\258B";
+  color: var(--sim-accent);
+  animation: sim-caret 1s steps(1) infinite;
+}
+
+@keyframes sim-caret {
+  50% { opacity: 0; }
+}
+
+@media (max-width: 768px) {
+  .sim-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+
+  .sim-toolbar .select,
+  .sim-toolbar .select select {
+    width: 100%;
+  }
+
+  .sim-top {
+    margin-bottom: 16px !important;
+  }
+
+  .sim-panel {
+    height: 360px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sim-grid,
+  .sim-thumb,
+  .sim-thumb img,
+  .sim-thumb-label,
+  .sim-prompt,
+  .sim-video,
+  .sim-video.is-switching {
+    transition: none;
+    animation: none;
+  }
+
+  .sim-code-body.typing code::after {
+    animation: none;
+  }
+}

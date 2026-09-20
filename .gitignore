@@ -1,0 +1,4 @@
+# Source data and scratch space for rebuilding the demo scenes (see docs/demos/README.md)
+local-data/
+
+.DS_Store

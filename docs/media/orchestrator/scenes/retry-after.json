@@ -1,0 +1,214 @@
+{
+  "background": "#f2f3f0",
+  "camera": {
+    "position": [
+      1.6008915804143906,
+      0.047579011748008715,
+      2.9138726895436005
+    ],
+    "target": [
+      0.0008915804143905526,
+      -0.30242098825199126,
+      0.21387268954360011
+    ],
+    "fov": 35
+  },
+  "bounds": {
+    "min": [
+      -0.24699452617107392,
+      -1.03966688786705,
+      -0.16152026752305984
+    ],
+    "max": [
+      0.24877768699985503,
+      0.4348249113630676,
+      0.58926564661026
+    ]
+  },
+  "source": {
+    "source_host": "rtx3",
+    "source_directory": "runs/room_suite/_prev/t39_pose_before_retry_2330/human_0/iter_00/human_urdf",
+    "texture_sha256": "791249179b20688cfaadc1c46a1e2854c660a5053fe0009b617b65804fc8257c",
+    "source_files": [
+      {
+        "file": "runs/room_suite/_prev/t39_pose_before_retry_2330/human_0/iter_00/human_urdf/actuate-smplx.urdf",
+        "sha256": "e43e0bc99b255eae9af34d5f3eb21f9416a5ca557f1b6d87b75f5df50b51a31f",
+        "source_mtime_utc": "2026-09-12T08:23:11.175050+00:00"
+      },
+      {
+        "file": "runs/room_suite/_prev/t39_pose_before_retry_2330/human_0/iter_00/human_urdf/meshes/main-body.obj",
+        "sha256": "ae30d73ae2344409d36ee1b41eeaa10b93783f872cfc7fa81308dec93ecd5475",
+        "vertices": 1740,
+        "faces": 3354,
+        "source_mtime_utc": "2026-09-12T08:23:11.174050+00:00"
+      },
+      {
+        "file": "runs/room_suite/_prev/t39_pose_before_retry_2330/human_0/iter_00/human_urdf/meshes/left-forearm.obj",
+        "sha256": "2dfb3f61de64f182aacb34df6fa724168149b96558ba46f2b8a4e44ea8677968",
+        "vertices": 1008,
+        "faces": 1996,
+        "source_mtime_utc": "2026-09-12T08:23:10.152049+00:00"
+      },
+      {
+        "file": "runs/room_suite/_prev/t39_pose_before_retry_2330/human_0/iter_00/human_urdf/meshes/left-upperarm.obj",
+        "sha256": "c550b9c6f5449c31894dd50d41f9ecd2d82b69e3f588761fbe9f651c9455463f",
+        "vertices": 284,
+        "faces": 524,
+        "source_mtime_utc": "2026-09-12T08:23:10.242049+00:00"
+      },
+      {
+        "file": "runs/room_suite/_prev/t39_pose_before_retry_2330/human_0/iter_00/human_urdf/meshes/right-forearm.obj",
+        "sha256": "10cd80d78ed9e3604d71248c568b37c4607d3c752ac404883ad1b79ec3db4774",
+        "vertices": 1008,
+        "faces": 1996,
+        "source_mtime_utc": "2026-09-12T08:23:10.349049+00:00"
+      },
+      {
+        "file": "runs/room_suite/_prev/t39_pose_before_retry_2330/human_0/iter_00/human_urdf/meshes/right-upperarm.obj",
+        "sha256": "9584da7714a092bbc121fe286674f191f43ea6c19c556dbff5d054870b086d2f",
+        "vertices": 284,
+        "faces": 524,
+        "source_mtime_utc": "2026-09-12T08:23:10.439049+00:00"
+      },
+      {
+        "file": "runs/room_suite/_prev/t39_pose_before_retry_2330/human_0/iter_00/human_urdf/meshes/left-lowerleg.obj",
+        "sha256": "3b0e104b82a292bae87e328d1636d6542cd4e621402849241bf8659656868cac",
+        "vertices": 453,
+        "faces": 887,
+        "source_mtime_utc": "2026-09-12T08:23:10.529050+00:00"
+      },
+      {
+        "file": "runs/room_suite/_prev/t39_pose_before_retry_2330/human_0/iter_00/human_urdf/meshes/left-upperleg.obj",
+        "sha256": "586ce4dc399db41a90c794daf6b61a9b4222576463a13ac0f7940ea7c520090d",
+        "vertices": 254,
+        "faces": 464,
+        "source_mtime_utc": "2026-09-12T08:23:10.618050+00:00"
+      },
+      {
+        "file": "runs/room_suite/_prev/t39_pose_before_retry_2330/human_0/iter_00/human_urdf/meshes/right-lowerleg.obj",
+        "sha256": "7d8ce93147256da6ad318ee6da81bef6a457fd39a8a5188fbb71f57c2b53b1dc",
+        "vertices": 453,
+        "faces": 887,
+        "source_mtime_utc": "2026-09-12T08:23:10.708050+00:00"
+      },
+      {
+        "file": "runs/room_suite/_prev/t39_pose_before_retry_2330/human_0/iter_00/human_urdf/meshes/right-upperleg.obj",
+        "sha256": "0189a425e28a29d96e0cbb14dc16ef632ffb54bab68c7ec55aa1193633f836ca",
+        "vertices": 254,
+        "faces": 464,
+        "source_mtime_utc": "2026-09-12T08:23:10.797050+00:00"
+      },
+      {
+        "file": "runs/room_suite/_prev/t39_pose_before_retry_2330/human_0/iter_00/human_urdf/meshes/head.obj",
+        "sha256": "f2b1d9078d1461e6ab640f050f946c9fa331d6153ef0cb446a0f8d18a1948d01",
+        "vertices": 4929,
+        "faces": 9782,
+        "source_mtime_utc": "2026-09-12T08:23:11.057050+00:00"
+      }
+    ],
+    "geometry_treatment": "Original saved URDF meshes and zero-joint forward kinematics. No mesh simplification, regenerated body, or geometry edits. Original Y-up coordinates retained.",
+    "uv_registration": {
+      "texture_specific_adjustment": false,
+      "face_uv_count": 3167,
+      "eye_uv_count": 1092,
+      "eyeball_uv_count": 1092,
+      "non_eye_uv_count": 3837,
+      "lookup_max_error": 0.0,
+      "projection": "canonical_front_xy_affine",
+      "pixels_per_meter": null,
+      "eyes": {
+        "left": {
+          "count": 546,
+          "center_px": [
+            182.74761367474017,
+            90.4013820710561
+          ],
+          "canonical_front_pole": [
+            0.032424,
+            0.324871,
+            0.076672
+          ],
+          "pixel_bounds": [
+            [
+              176.04503973476403,
+              84.00389659092508
+            ],
+            [
+              189.5809224842577,
+              97.13457753696761
+            ]
+          ],
+          "canonical_xy_to_pixel_affine": [
+            [
+              529.7035318065563,
+              -117.18564540046746,
+              203.64272416633966
+            ],
+            [
+              -33.83417040790884,
+              -528.3409740381063,
+              263.1410817890958
+            ]
+          ]
+        },
+        "right": {
+          "count": 546,
+          "center_px": [
+            124.03343061617143,
+            90.77101597769402
+          ],
+          "canonical_front_pole": [
+            -0.032424,
+            0.324869,
+            0.076671
+          ],
+          "pixel_bounds": [
+            [
+              116.88778872759215,
+              83.78370177306388
+            ],
+            [
+              131.04472639494006,
+              98.12209457171576
+            ]
+          ],
+          "canonical_xy_to_pixel_affine": [
+            [
+              554.9477846011963,
+              118.37248376634605,
+              103.57150715539154
+            ],
+            [
+              45.214655084749815,
+              -576.7009830602133,
+              279.5893276199504
+            ]
+          ]
+        }
+      },
+      "calibration_anchor_residuals_px": {
+        "left": [
+          0.7418938747268141,
+          0.8020474321369016,
+          0.6121509077635976,
+          0.9317903991006214
+        ],
+        "right": [
+          0.7729679503443271,
+          0.7149953540685685,
+          0.5899564209243264,
+          0.8980068834880102
+        ]
+      },
+      "method": "SMPL anatomical face registration plus canonical eyeball projection",
+      "source_sha256": "f2b1d9078d1461e6ab640f050f946c9fa331d6153ef0cb446a0f8d18a1948d01",
+      "output_sha256": "41c152674101a47d00645150a01aa83ae23a5bd22cecb761d0f1685faaeca3f7",
+      "non_uv_sha256": "2e2cbe070936ff87cb6e5bcd34dc8875d32b60010ba5ebcc8cc6e592112ed870",
+      "uv_count": 4929,
+      "changed_uv_count": 4259,
+      "landmarks_sha256": "c4eda13335400bf18a9eb585f03e8512632a1345d47426e49aeead018c3a130c",
+      "texture_sha256": "791249179b20688cfaadc1c46a1e2854c660a5053fe0009b617b65804fc8257c"
+    },
+    "remote_hash_verification": "Every URDF and OBJ hash verified against rtx3 source after download."
+  }
+}

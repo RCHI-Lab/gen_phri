@@ -1,0 +1,37 @@
+# Task 02/50 of task_suite/tasks_llm.json -- sponge_bathing / head_and_neck (lying).
+# Written by task_suite/room_suite.py configs; description [llm].
+# Original: The person is lying in bed, just waking up for the day. The robot gently glides its bare tip across their forehead and down their neck, simulating a warm, soapy washcloth to help them feel clean and refreshed for the morning.
+run_name: room2_t02_sponge_bathi_head_and_neck
+task: bathing
+robot: stretch
+human_indices:
+- 0
+cuda_id: 1
+task_description: An adult of average build lies supine on a flat bed mattress. Both arms rest alongside the torso with hands flat on the mattress, and both legs extend straight and slightly separated to prevent self-collision. The head and neck are fully exposed and face upward. Starting from a clearly separated non-contact pose, a robot approaches from the side of the bed holding a sponge pad flat against the skin. The robot makes light physical contact with the head and performs a single smooth downward stroke across the head and down the front of the neck. Contact remains strictly confined to the head and neck, and only the sponge pad touches the person while the rest of the robot stays clear of the body. The robot then lifts the sponge pad cleanly away from the skin and retreats to a separated non-contact pose so the end of the task is unambiguous.
+human_posture: lying
+furniture_name: bed
+target_segments:
+- head
+- neck
+human_placement_impl: vlm
+scene:
+  enabled: true
+  order: room_first
+  room_policy: download_delete
+  scene_tries: 8
+  fetch_min_free_gb: 5
+  exclude_support:
+  - 23:bedroom_bed_0
+vlm_model: gemini-3.7-flash
+orchestrator:
+  model: gemini-3.7-flash
+  stage_attempt_cap: 5
+  item_execution_cap: 40
+  outer_loop_cap: 1
+  llm_call_cap: 600
+  review_on_success: true
+  cross_validate_humans: 0
+  stage_timeouts_s:
+    per_vlm_iter: 1800.0
+    per_cross_val_body: 300.0
+    default: 3600.0

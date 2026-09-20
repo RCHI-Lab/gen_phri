@@ -1,0 +1,38 @@
+# Task 46/50 of task_suite/tasks_llm.json -- hand_warming / both_index_fingers (sitting).
+# Written by task_suite/room_suite.py configs; description [llm].
+# Original: The person is sitting on a simple chair without armrests, with their hands resting flat on their knees. Focusing specifically on the farthest extremities, the robot precisely targets just the left and right index fingers, applying its heated bare tip directly to the digits to thaw the areas that typically lose circulation first.
+run_name: room2_t46_hand_warming_both_index_fingers
+task: bathing
+robot: stretch
+human_indices:
+- 0
+cuda_id: 3
+task_description: An adult of average build sits upright on a plain chair with no armrests and no wings (seat depth about 45 cm), knees bent, lower legs vertical, feet flat on the floor, and both hands resting flat on the knees with the fingers separated, leaving the left index finger (leftHandIndex1) and right index finger (rightHandIndex1) fully accessible. Starting from a clearly separated non-contact pose, the robot approaches from the front, keeping its base and entire arm clear of the chair. The robot presses its sponge pad lightly and flatly onto the right index finger for two short warming passes along the digit, lifts clear, and repeats two warming passes across the left index finger, keeping contact confined strictly to the two target digits. Only the sponge pad contacts the person while the rest of the robot stays clear. The robot then lifts clear and retreats to a separated non-contact pose so the end of the task is unambiguous.
+human_posture: sitting
+furniture_name: bedroom_accent_chair_0
+target_segments:
+- leftHandIndex1
+- rightHandIndex1
+human_placement_impl: vlm
+scene:
+  enabled: true
+  order: room_first
+  room_policy: download_delete
+  scene_tries: 16
+  fetch_min_free_gb: 5
+  exclude_support:
+  - 23:bedroom_bed_0
+vlm_model: gemini-3.7-flash
+orchestrator:
+  model: gemini-3.7-flash
+  stage_attempt_cap: 5
+  item_execution_cap: 40
+  outer_loop_cap: 1
+  llm_call_cap: 600
+  review_on_success: true
+  cross_validate_humans: 0
+  stage_timeouts_s:
+    per_vlm_iter: 1800.0
+    per_cross_val_body: 300.0
+    default: 3600.0
+seated_view: front

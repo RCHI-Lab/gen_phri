@@ -1,0 +1,37 @@
+# Task 07/50 of task_suite/tasks_llm.json -- itch_relief / scalp (sitting).
+# Written by task_suite/room_suite.py configs; description [llm].
+# Original: The person is sitting upright in a shallow accent chair, feet flat on the floor, bothered by a dry, prickling itch across the scalp. The robot rubs its bare tip in small circles over the top of their head, working back and forth across the crown until the irritation settles.
+run_name: room2_t07_itch_relief_scalp
+task: scratching
+robot: stretch
+human_indices:
+- 0
+cuda_id: 1
+task_description: An adult of average build sits upright in a shallow accent chair (seat depth about 40-45 cm), knees bent with lower legs near vertical, feet flat on the floor, and hands resting lightly on the armrests without touching the thighs. The head is held upright, leaving the top of the head exposed and accessible. Starting from a clearly separated non-contact pose, the robot approaches from above and to the front-side, ensuring its base and arm remain entirely outside the chair's back, wings, and armrests without penetrating or resting on them. The robot lightly presses its narrow scratcher tip onto the top of the head, executing three to four small circular scratching strokes back and forth across the upper head. Only the scratcher tip touches the skin while the rest of the robot stays completely clear. The robot then lifts the tip cleanly off the head and retreats to a clearly separated non-contact pose to conclude the task unambiguously.
+human_posture: sitting
+furniture_name: bedroom_accent_chair_0
+target_segments:
+- head
+human_placement_impl: vlm
+scene:
+  enabled: true
+  order: room_first
+  room_policy: download_delete
+  scene_tries: 16
+  fetch_min_free_gb: 5
+  exclude_support:
+  - 23:bedroom_bed_0
+vlm_model: gemini-3.7-flash
+orchestrator:
+  model: gemini-3.7-flash
+  stage_attempt_cap: 5
+  item_execution_cap: 40
+  outer_loop_cap: 1
+  llm_call_cap: 600
+  review_on_success: true
+  cross_validate_humans: 0
+  stage_timeouts_s:
+    per_vlm_iter: 1800.0
+    per_cross_val_body: 300.0
+    default: 3600.0
+seated_view: front

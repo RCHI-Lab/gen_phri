@@ -1,0 +1,37 @@
+# Task 25/50 of task_suite/tasks_llm.json -- lotion_application / right_lower_leg_and_foot (lying).
+# Written by task_suite/room_suite.py configs; description [llm].
+# Original: The person is lying on their back in bed right before sleep, needing their evening skin routine. The robot slowly glides its bare tip along the right calf and over the top of the foot to work in a hydrating night cream.
+run_name: room2_t25_lotion_appli_right_lower_leg_and_foot
+task: bathing
+robot: stretch
+human_indices:
+- 0
+cuda_id: 2
+task_description: An adult of average build is lying on their back on a standard bed with a mattress height of approximately 0.5 m. Both arms rest naturally alongside the torso and both legs extend straight with slight separation between the legs so the right lower leg and right foot are fully accessible. Starting from a clearly separated non-contact pose, the robot approaches from the right side of the bed and applies lotion by making light, steady contact with the sponge pad held flat against the front and side of the right lower leg. It performs a single smooth, continuous gliding stroke downward along the right lower leg and over the top of the right foot. Only the sponge pad touches the person while the rest of the robot stays well clear of the bed and body. Afterward, the robot lifts the tool clear of the foot and retreats to a clearly separated non-contact pose so the end of the task is unambiguous.
+human_posture: lying
+furniture_name: bed
+target_segments:
+- rightLeg
+- rightFoot
+human_placement_impl: vlm
+scene:
+  enabled: true
+  order: room_first
+  room_policy: download_delete
+  scene_tries: 8
+  fetch_min_free_gb: 5
+  exclude_support:
+  - 23:bedroom_bed_0
+vlm_model: gemini-3.7-flash
+orchestrator:
+  model: gemini-3.7-flash
+  stage_attempt_cap: 5
+  item_execution_cap: 40
+  outer_loop_cap: 1
+  llm_call_cap: 600
+  review_on_success: true
+  cross_validate_humans: 0
+  stage_timeouts_s:
+    per_vlm_iter: 1800.0
+    per_cross_val_body: 300.0
+    default: 3600.0

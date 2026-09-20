@@ -1,0 +1,38 @@
+# Task 13/50 of task_suite/tasks_llm.json -- sponge_bathing / right_foot (sitting).
+# Written by task_suite/room_suite.py configs; description [llm].
+# Original: The person is sitting in a shallow accent chair, feeling very ticklish today. The robot applies slow, firm, deliberate strokes with its tip over the top of the right foot and toes to cleanse the skin without triggering a tickle reflex.
+run_name: room2_t13_sponge_bathi_right_foot
+task: bathing
+robot: stretch
+human_indices:
+- 0
+cuda_id: 3
+task_description: An adult of average build is seated upright in a shallow accent chair (seat depth about 40-45 cm), knees bent at ninety degrees with both feet resting flat on the floor spaced slightly apart and hands resting along the chair armrests clear of the thighs. Starting from a clearly separated non-contact pose, the robot approaches from the front low to the ground, keeping its base and arm entirely outside the chair's frame, wings, and armrests. It brings a sponge pad flat against the skin on the top of the right foot, applying three slow, firm, deliberate cleansing strokes along the length of the right foot toward the right toes, keeping contact strictly confined to the right foot and toes while the rest of the robot stays clear. It then lifts the sponge pad clear of the body and retreats to a separated non-contact pose so the end of the task is unambiguous.
+human_posture: sitting
+furniture_name: bedroom_accent_chair_0
+target_segments:
+- rightFoot
+- rightToeBase
+human_placement_impl: vlm
+scene:
+  enabled: true
+  order: room_first
+  room_policy: download_delete
+  scene_tries: 16
+  fetch_min_free_gb: 5
+  exclude_support:
+  - 23:bedroom_bed_0
+vlm_model: gemini-3.7-flash
+orchestrator:
+  model: gemini-3.7-flash
+  stage_attempt_cap: 5
+  item_execution_cap: 40
+  outer_loop_cap: 1
+  llm_call_cap: 600
+  review_on_success: true
+  cross_validate_humans: 0
+  stage_timeouts_s:
+    per_vlm_iter: 1800.0
+    per_cross_val_body: 300.0
+    default: 3600.0
+seated_view: front

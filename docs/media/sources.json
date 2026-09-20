@@ -1,0 +1,14 @@
+{
+  "hero-orbit": "Downloads/01_orbit_scene_montage.mp4",
+  "hero-grid": "Downloads/03_49_task_wall.mp4",
+  "overview": "Downloads/09_pipeline_to_real.mp4",
+  "user-study": "Downloads/08_user_study_grid_faces_blurred.mp4",
+  "critic-revision": "Downloads/11_generate_render_critique.mp4",
+  "pipeline": "gen_sim_phri/paper-video-walkthrough/bathing_pipeline_99s.mp4",
+  "human-generation": "gen_sim_phri/paper-video-walkthrough/assets/generation/revision2/human_pose.mp4",
+  "human-placement": "gen_sim_phri/paper-video-walkthrough/assets/generation/revision2/human_placement_continuous.mp4",
+  "robot-placement": "gen_sim_phri/paper-video-walkthrough/assets/generation/critic_hero_v2/robot_candidate00_hero.mp4",
+  "robot-motion": "gen_sim_phri/paper-video-walkthrough/assets/generation/revision2/robot_motion.mp4",
+  "direct-execution": "gen_sim_phri/paper-video-walkthrough/assets/collection/real_direct_back_leg_8s.mp4",
+  "learned-policy": "gen_sim_phri/paper-video-walkthrough/assets/collection/real_policy_back_leg_8s.mp4"
+}

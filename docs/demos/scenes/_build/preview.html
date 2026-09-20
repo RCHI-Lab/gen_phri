@@ -1,0 +1,25 @@
+<!doctype html><html><head><style>body{margin:0;background:#000}canvas{display:block}</style>
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"}}</script>
+</head><body><script type="module">
+import * as THREE from 'three';
+import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
+import {MeshoptDecoder} from 'three/addons/libs/meshopt_decoder.module.js';
+import {RoomEnvironment} from 'three/addons/environments/RoomEnvironment.js';
+const p=new URLSearchParams(location.search); const t=p.get('t'); const mode=p.get('mode')||'json';
+const W=1280,H=720;
+const r=new THREE.WebGLRenderer({antialias:true,preserveDrawingBuffer:true}); r.setSize(W,H); document.body.appendChild(r.domElement);
+r.outputColorSpace=THREE.SRGBColorSpace; r.toneMapping=THREE.ACESFilmicToneMapping;
+const sc=new THREE.Scene(); sc.background=new THREE.Color(0x9ec9f0);
+const pm=new THREE.PMREMGenerator(r); sc.environment=pm.fromScene(new RoomEnvironment(),0.04).texture;
+sc.add(new THREE.HemisphereLight(0xffffff,0x444444,1.0)); const dl=new THREE.DirectionalLight(0xffffff,1.5); dl.position.set(2,5,1); sc.add(dl);
+const cam=new THREE.PerspectiveCamera(55,W/H,0.02,100);
+const j=await (await fetch(`scenes/${t}.json`)).json();
+const vc=await (await fetch(`export/${t}/inputs/view_camera.json`)).json();
+if(mode==='orig'&&vc){cam.fov=vc.fov;cam.position.set(vc.pos[0],vc.pos[2],-vc.pos[1]);cam.lookAt(vc.lookat[0],vc.lookat[2],-vc.lookat[1]);}
+else{cam.fov=j.camera.fov;cam.position.set(...j.camera.position);cam.lookAt(...j.camera.target);}
+cam.updateProjectionMatrix();
+const g=await new GLTFLoader().setMeshoptDecoder(MeshoptDecoder).loadAsync(`scenes/${t}.glb`);
+sc.add(g.scene);
+const names=g.scene.children.map(c=>c.name);
+r.render(sc,cam); document.title='DONE '+names.join(',');
+</script></body></html>

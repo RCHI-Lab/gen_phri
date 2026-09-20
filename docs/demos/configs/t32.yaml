@@ -1,0 +1,37 @@
+# Task 32/50 of task_suite/tasks_llm.json -- edema_massage / left_shoulder_arm (lying).
+# Written by task_suite/room_suite.py configs; description [llm].
+# Original: The person is lying in bed during a restless night, their left arm throbbing and sore from severe edema. The robot adapts by using extremely slow, gentle upward strokes with its bare tip along the upper arm to the shoulder. This cautious pressure provides relief without aggravating the tender skin.
+run_name: room2_t32_edema_massag_left_shoulder_arm
+task: bathing
+robot: stretch
+human_indices:
+- 0
+cuda_id: 2
+task_description: An adult of average build is lying supine on a flat bed with the mattress surface horizontal. Both legs extend straight without touching, the right arm rests alongside the torso, and the left arm rests slightly abducted on the mattress surface, leaving the left upper arm and left shoulder clearly exposed. Starting from a clearly separated non-contact pose, the robot approaches and performs an edema massage by pressing a sponge pad flat against the skin. It executes two slow, gentle upward strokes along the leftArm to the leftShoulder. Contact remains strictly confined to the leftArm and leftShoulder while only the sponge pad touches the person and the rest of the robot stays completely clear. The robot then lifts the tool clear of the body and retreats to a separated non-contact pose so the end of the task is unambiguous.
+human_posture: lying
+furniture_name: bed
+target_segments:
+- leftArm
+- leftShoulder
+human_placement_impl: vlm
+scene:
+  enabled: true
+  order: room_first
+  room_policy: download_delete
+  scene_tries: 8
+  fetch_min_free_gb: 5
+  exclude_support:
+  - 23:bedroom_bed_0
+vlm_model: gemini-3.7-flash
+orchestrator:
+  model: gemini-3.7-flash
+  stage_attempt_cap: 5
+  item_execution_cap: 40
+  outer_loop_cap: 1
+  llm_call_cap: 600
+  review_on_success: true
+  cross_validate_humans: 0
+  stage_timeouts_s:
+    per_vlm_iter: 1800.0
+    per_cross_val_body: 300.0
+    default: 3600.0

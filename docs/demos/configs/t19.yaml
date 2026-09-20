@@ -1,0 +1,36 @@
+# Task 19/50 of task_suite/tasks_llm.json -- hand_warming / left_hand_back (lying).
+# Written by task_suite/room_suite.py configs; description [llm].
+# Original: Waking up on a chilly morning, the person is lying comfortably in bed with their arms resting at their sides. The robot softly rests its warm tip against the back of their left hand, keeping it perfectly still for a few minutes to provide comforting heat before they have to start the day.
+run_name: room2_t19_hand_warming_left_hand_back
+task: bathing
+robot: stretch
+human_indices:
+- 0
+cuda_id: 3
+task_description: An adult of average build is lying supine on a standard-height bed with their head facing upward, legs extended straight and slightly apart, and both arms resting on the mattress alongside the torso with the left forearm pronated so the back of the left hand faces upward. Starting from a clearly separated non-contact pose, a robot approaches from the left side of the bed and warms the back of the left hand, lowering the sponge pad flat against the skin in a single steady, stationary press. Contact is maintained lightly and confined strictly to the back of the left hand while the rest of the robot stays completely clear of the person. The robot then lifts the sponge clear of the body and retreats to a separated non-contact pose so the end of the task is unambiguous.
+human_posture: lying
+furniture_name: bed
+target_segments:
+- leftHand
+human_placement_impl: vlm
+scene:
+  enabled: true
+  order: room_first
+  room_policy: download_delete
+  scene_tries: 8
+  fetch_min_free_gb: 5
+  exclude_support:
+  - 23:bedroom_bed_0
+vlm_model: gemini-3.7-flash
+orchestrator:
+  model: gemini-3.7-flash
+  stage_attempt_cap: 5
+  item_execution_cap: 40
+  outer_loop_cap: 1
+  llm_call_cap: 600
+  review_on_success: true
+  cross_validate_humans: 0
+  stage_timeouts_s:
+    per_vlm_iter: 1800.0
+    per_cross_val_body: 300.0
+    default: 3600.0

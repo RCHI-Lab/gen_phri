@@ -1,0 +1,69 @@
+/* The film's Libertine speech bubble and critic badge, beside the replay. */
+.construction { grid-template-columns:205px minmax(0,1fr); gap:22px; align-items:start; }
+.construction .stage-tabs { padding-top:0; }
+.construction .stage-tabs button { padding:15px 10px; column-gap:10px; min-height:76px; }
+.construction .stage-tabs button strong { font-size:17px; }
+.construction .stage-panel { display:grid; grid-template-columns:minmax(0,1fr) 280px; gap:24px; }
+.stage-media-panel { min-width:0; }
+.stage-context { padding-bottom:20px; }
+.stage-context .action-prompt { margin:0; }
+.stage-panel .stage-context p { margin:0; min-height:0; color:#000; }
+.stage-panel .stage-error { min-height:0; margin:0 0 12px; font-size:14px; }
+.stage-error[hidden] { display:none; }
+.stage-video { display:block; width:100%; aspect-ratio:16/9; background:#f2f3f0; border-radius:8px; cursor:pointer; }
+.generation-progress { height:3px; background:#dce6e6; margin-top:10px; }
+.generation-progress>span { display:block; width:var(--generation-progress,0%); height:100%; background:var(--teal); }
+.generation-phases { display:flex; gap:3px; margin:9px 0 13px; }
+.generation-phases button { flex:1; padding:8px 4px; border:1px solid transparent; border-radius:4px; background:transparent; color:var(--muted); font:15px/1.15 var(--sans); }
+.generation-phases button[aria-pressed=true] { color:#18353d; background:#d8eeee; border-color:#98c9c8; }
+.stage-critic { min-width:0; padding-top:1px; }
+.stage-critic-heading { display:flex; align-items:center; justify-content:space-between; gap:15px; margin-bottom:18px; }
+.stage-critic-heading h3 { font:26px/1 var(--serif); margin:0; }
+.critic-badge { display:grid; place-items:center; flex:none; width:39px; height:39px; margin-right:6.5px; border:1.5px solid #a67770; border-radius:10.5px; background:#edc7bf; color:#7c2e1f; }
+.critic-symbol { width:28.5px; height:28.5px; }
+.critic-speech { position:relative; background:#fdfaf7; border:1px solid #dec9c1; border-radius:14px; padding:19px 20px; box-shadow:0 5px 16px #321e1409; }
+.critic-speech:before { content:""; position:absolute; width:16px; height:16px; top:-9px; right:18px; background:#fdfaf7; border-left:1px solid #dec9c1; border-top:1px solid #dec9c1; transform:rotate(45deg); }
+.stage-panel #stage-feedback { font:20px/1.25 var(--serif); color:#5d372f; min-height:0; margin:0; }
+.stage-panel .stage-severity { min-height:0; font-size:13px; margin:11px 0 18px; color:#79534a; }
+.stage-severity span { text-transform:capitalize; }
+.construction[data-ready=true][data-phase=initial] .stage-critic-feedback { display:none; }
+.construction[data-phase=revised] .critic-badge { opacity:.75; }
+.construction[data-ready=true][data-media-error=true] .stage-critic-feedback { display:block; }
+.construction button:disabled { cursor:default; opacity:.5; }
+.orchestration-section .orchestration { margin-top:0; }
+.generation-phases button:focus-visible,.stage-video:focus-visible { outline:3px solid var(--teal); outline-offset:3px; }
+@media(min-width:1001px) { .construction { min-height:450px; } }
+@media(max-width:1150px) {
+ .construction { grid-template-columns:175px minmax(0,1fr); gap:18px; }
+ .construction .stage-panel { grid-template-columns:minmax(0,1fr) 245px; gap:18px; }
+ .construction .stage-tabs button { grid-template-columns:25px 1fr; padding:10px 5px; }
+ .construction .stage-tabs button span { width:25px; height:25px; font-size:15px; }
+ .construction .stage-tabs button strong { font-size:16px; }
+}
+@media(max-width:1000px) {
+ .construction { grid-template-columns:1fr; }
+ .construction .stage-tabs { padding:0; display:grid; grid-template-columns:repeat(4,1fr); gap:6px; }
+ .construction .stage-tabs button { min-height:63px; padding:9px; }
+ .construction .stage-panel { grid-template-columns:minmax(0,1fr) 260px; gap:24px; }
+}
+@media(max-width:700px) {
+ .construction .stage-tabs { grid-template-columns:repeat(2,1fr); }
+ .construction .stage-panel { grid-template-columns:1fr; gap:25px; }
+ .stage-critic { padding:18px 0 0; border-top:1px solid var(--line); }
+ .stage-critic-heading { margin-bottom:20px; }
+ .construction .stage-tabs button { min-height:56px; }
+ .generation-phases button { font-size:14px; }
+}
+@media(max-width:760px) {
+ .stage-panel #stage-feedback { font-size:18px; }
+}
+@media(prefers-reduced-motion:no-preference) {
+ .construction[data-phase=initial][data-playing=true]:not([data-media-error=true]) .critic-symbol { animation:critic-spin .6s linear infinite; }
+ .critic-character { animation:critic-character-in .1s ease-out both; animation-delay:var(--character-delay); }
+ html[data-motion-paused=true] .critic-symbol,html[data-motion-paused=true] .critic-character,
+ .construction[data-visible=false] .critic-symbol,.construction[data-visible=false] .critic-character { animation-play-state:paused; }
+ @keyframes critic-spin { to { transform:rotate(360deg); } }
+ @keyframes critic-character-in { from { opacity:0; } to { opacity:1; } }
+ .construction[data-phase=feedback] .stage-critic-feedback { animation:critic-reveal .18s ease-out; }
+ @keyframes critic-reveal { from { opacity:0; transform:translateY(6px); } to { opacity:1; transform:none; } }
+}

@@ -1,0 +1,4354 @@
+{
+  "case": "resume",
+  "side": "before",
+  "run": "room2_t13_sponge_bathi_right_foot",
+  "iteration": 4,
+  "recorded_config": {
+    "source": "/home/npechuk/src/gen_sim_phri/scene_generation/robot_placement/data/room2_t13_sponge_bathi_right_foot/iter_04/robot_config.json",
+    "sha256": "6e0aabc918af5fb516573cdc26ac1d986ddc7dbbad089bbd7561577f4ad779a8",
+    "mtime_utc": "2026-09-11T22:32:19.972848+00:00",
+    "bytes": 3792
+  },
+  "config": {
+    "robot_pos": [
+      2.3396342792547125,
+      2.1044508419000727,
+      0.0
+    ],
+    "robot_quat": [
+      0.8647623416719776,
+      0.0,
+      0.0,
+      -0.5021813342070748
+    ],
+    "human_config": {
+      "joint_angles": {
+        "left_hip": {
+          "x": -85.0,
+          "y": 0.0,
+          "z": 5.0
+        },
+        "right_hip": {
+          "x": -85.0,
+          "y": 0.0,
+          "z": -5.0
+        },
+        "left_knee": {
+          "x": 85.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "right_knee": {
+          "x": 85.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "neck": {
+          "x": 15.0,
+          "y": -15.0,
+          "z": -5.0
+        },
+        "left_shoulder": {
+          "x": 10.0,
+          "y": 0.0,
+          "z": -60.0
+        },
+        "right_shoulder": {
+          "x": 10.0,
+          "y": 0.0,
+          "z": 60.0
+        },
+        "left_elbow": {
+          "x": 0.0,
+          "y": -45.0,
+          "z": 0.0
+        },
+        "right_elbow": {
+          "x": 0.0,
+          "y": 45.0,
+          "z": 0.0
+        }
+      },
+      "betas": [
+        1.5409960746765137,
+        -0.293428897857666,
+        -2.1787893772125244,
+        0.5684312582015991,
+        -1.0845223665237427,
+        -1.3985954523086548,
+        0.40334683656692505,
+        0.8380263447761536,
+        -0.7192575931549072,
+        -0.40334352850914
+      ],
+      "pos": [
+        3.162883996963501,
+        1.643715262413025,
+        0.9755266308784485
+      ],
+      "quat": [
+        -0.49745604395866394,
+        -0.4987594783306122,
+        0.5026935338973999,
+        0.5010746121406555
+      ],
+      "scene_json": "/home/npechuk/src/gen_sim_phri/scene_generation/scenesmith/data/room2_t13_sponge_bathi_right_foot/room_scene.json",
+      "furniture_name": "dining_room_dining_chair_2",
+      "_seat_fit": {
+        "support_top_z": 0.46717,
+        "root_z": 0.9755266392149734,
+        "seat_sink_m": 0.02051,
+        "pelvis_gap_m": 0.00613,
+        "thigh_gap_m": -0.02051,
+        "foot_floor_m": 0.0123,
+        "residual_m": 0.0,
+        "feet_shift_m": -0.01051,
+        "status": "ok"
+      }
+    },
+    "placement_correction": {
+      "applied": true,
+      "search": {
+        "ok": true,
+        "applied": true,
+        "dx_m": 0.014142135623730947,
+        "dy_m": -0.014142135623730954,
+        "dyaw_deg": -20.0,
+        "pos": [
+          2.3396342792547125,
+          2.1044508419000727,
+          0.0
+        ],
+        "rot": [
+          [
+            0.4956278552300194,
+            0.8685350363020036,
+            0.0
+          ],
+          [
+            -0.8685350363020036,
+            0.49562785523001945,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.9999999999999999
+          ]
+        ],
+        "clearance_before_mm": 222.2,
+        "clearance_after_mm": 221.11,
+        "margin_before_mm": 227.2,
+        "reach_before": 0.0,
+        "reach_after": 0.125,
+        "reason": "shifted 0.020 m, yaw -20 deg after 60 exact check(s); no pose within 0.60 m reaches at least 0.25 of the probes with the arm clear AND within one probe of the generated free-travel reach 0.00 -- chose the best by (arm-clear reach, travel-limited reach): 0.12 / 0.12 (generated 0.00 / 0.00); BELOW the arm-clear minimum, worst arm {'link': 'link_SG3_gripper_body', 'surface': 'furniture', 'clearance_mm': -2.9, 'limit_mm': -5.0}; exact-check cap reached",
+        "candidates_2d": 80,
+        "survivors_2d": 80,
+        "exact_checks": 60,
+        "seconds": 100.431,
+        "blockers_before": {
+          "human": 282.7,
+          "furniture": 524.3,
+          "room": 1813.8,
+          "obstacles": 222.2
+        },
+        "reach_free_before": 0.0,
+        "reach_limited_before": 0.0,
+        "arm_clear_reach_frac_before": 0.0,
+        "arm_margin_before_mm": null,
+        "arm_worst_before": null,
+        "margin_after_mm": 226.11,
+        "blockers_after": {
+          "human": 257.0,
+          "furniture": 525.9,
+          "room": 1824.5,
+          "obstacles": 221.1
+        },
+        "reach_limited_after": 0.125,
+        "reach_bar_met": false,
+        "arm_clear_reach_frac_after": 0.125,
+        "arm_margin_after_mm": 2.1,
+        "arm_worst_after": {
+          "link": "link_SG3_gripper_body",
+          "surface": "furniture",
+          "clearance_mm": -2.9,
+          "limit_mm": -5.0
+        },
+        "arm_clear": false,
+        "deferred_2d": 16,
+        "rejections": {
+          "static": 0,
+          "trajectory_margin": 0,
+          "reach_below_generated": 0,
+          "no_reach": 47,
+          "travel": 0,
+          "arm": 13
+        },
+        "prefilter": true,
+        "travel_model": true,
+        "travel_prediction": {
+          "travel": {
+            "bad_ok": 0,
+            "bad_wrong": 0,
+            "good_ok": 60,
+            "good_wrong": 0
+          },
+          "reach": {
+            "bad_ok": 0,
+            "bad_wrong": 0,
+            "good_ok": 13,
+            "good_wrong": 47
+          }
+        },
+        "setup_seconds": 10.758,
+        "prefilter_ms_per_candidate": 2.778
+      },
+      "generated_pos": [
+        2.3254921436309814,
+        2.1185929775238037,
+        0.0
+      ],
+      "generated_rot": [
+        [
+          0.7627943158149719,
+          0.6466412544250488,
+          0.0
+        ],
+        [
+          -0.6466412544250488,
+          0.7627943158149719,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "d_local": [
+        0.01993242898724503,
+        -0.0016426523472878472,
+        0.0
+      ],
+      "dyaw_deg": -19.999999999999996,
+      "d_world": [
+        0.014142135623731011,
+        -0.014142135623731011,
+        0.0
+      ]
+    }
+  },
+  "room": {
+    "source": {
+      "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_036/scene_drake.json",
+      "sha256": "15fce1e2aecd680a452c1d337d84493463b226bd201afb0c711d50a90c6d9e60",
+      "mtime_utc": "2026-09-11T23:11:26.011539+00:00",
+      "bytes": 559737
+    },
+    "drop": [
+      "dining_room_dining_table_0",
+      "dining_room_dining_chair_3"
+    ],
+    "evidence": "orchestrator_log.jsonl line 144, latest scene selection before resume line165; scene036 confirmed by saved scene_selection_human_0_a2.log",
+    "room_marker": null,
+    "mesh_sources": [
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_036/floor_plans/dining_room/floors/floor.glb",
+        "sha256": "5db8f51a52a840f40415dc018534b8e9d59092d8cb6532af60ae1a05b2987f9c",
+        "mtime_utc": "2026-09-11T23:11:30.943548+00:00",
+        "bytes": 2540,
+        "entity": "room_geometry_dining_room__v0",
+        "world_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            2.5
+          ],
+          [
+            0.0,
+            2.220446049250313e-16,
+            -1.0,
+            2.25
+          ],
+          [
+            0.0,
+            1.0,
+            2.220446049250313e-16,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_036/floor_plans/dining_room/walls/north_wall/wall.glb",
+        "sha256": "eb18f73ddaefa2b63e6d0a5020c7c900ad488b9ab1f4a30de32a400125b3d86a",
+        "mtime_utc": "2026-09-11T23:11:31.164548+00:00",
+        "bytes": 16754420,
+        "entity": "room_geometry_dining_room__v1",
+        "world_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            2.5
+          ],
+          [
+            0.0,
+            2.220446049250313e-16,
+            -1.0,
+            4.475
+          ],
+          [
+            0.0,
+            1.0,
+            2.220446049250313e-16,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_036/floor_plans/dining_room/windows/window_1/window.glb",
+        "sha256": "520395d8843c792a30b9f202a2a6c61cd1771eebd97054335c361698dc3001e1",
+        "mtime_utc": "2026-09-11T23:11:31.543549+00:00",
+        "bytes": 2856,
+        "entity": "room_geometry_dining_room__v2",
+        "world_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.9969918237805149
+          ],
+          [
+            0.0,
+            2.220446049250313e-16,
+            -1.0,
+            4.475
+          ],
+          [
+            0.0,
+            1.0,
+            2.220446049250313e-16,
+            1.5
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_036/floor_plans/dining_room/windows/window_2/window.glb",
+        "sha256": "520395d8843c792a30b9f202a2a6c61cd1771eebd97054335c361698dc3001e1",
+        "mtime_utc": "2026-09-11T23:11:31.565549+00:00",
+        "bytes": 2856,
+        "entity": "room_geometry_dining_room__v3",
+        "world_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            3.6916683882473857
+          ],
+          [
+            0.0,
+            2.220446049250313e-16,
+            -1.0,
+            4.475
+          ],
+          [
+            0.0,
+            1.0,
+            2.220446049250313e-16,
+            1.5
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_036/floor_plans/dining_room/walls/north_wall_exterior/wall.glb",
+        "sha256": "549e7981a36411547cad3a190a5e129b279167959bd1ae0a9341a1f874cd87f0",
+        "mtime_utc": "2026-09-11T23:11:31.585549+00:00",
+        "bytes": 8775324,
+        "entity": "room_geometry_dining_room__v4",
+        "world_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            2.5
+          ],
+          [
+            0.0,
+            2.220446049250313e-16,
+            -1.0,
+            4.525
+          ],
+          [
+            0.0,
+            1.0,
+            2.220446049250313e-16,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_036/floor_plans/dining_room/walls/south_wall/wall.glb",
+        "sha256": "92873fae6690e0fcd59ad51b7ee00f4630388cb06f4c4b05fe49cbc50948ba24",
+        "mtime_utc": "2026-09-11T23:11:31.799549+00:00",
+        "bytes": 16752684,
+        "entity": "room_geometry_dining_room__v5",
+        "world_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            2.5
+          ],
+          [
+            0.0,
+            2.220446049250313e-16,
+            -1.0,
+            0.02499999999999991
+          ],
+          [
+            0.0,
+            1.0,
+            2.220446049250313e-16,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_036/floor_plans/dining_room/walls/south_wall_exterior/wall.glb",
+        "sha256": "2e830c09b11b47754c72ed019bf9ed40741ece52b9220987d5af3ebbccd16adb",
+        "mtime_utc": "2026-09-11T23:11:32.098550+00:00",
+        "bytes": 8773588,
+        "entity": "room_geometry_dining_room__v6",
+        "world_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            2.5
+          ],
+          [
+            0.0,
+            2.220446049250313e-16,
+            -1.0,
+            -0.02499999999999991
+          ],
+          [
+            0.0,
+            1.0,
+            2.220446049250313e-16,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_036/floor_plans/dining_room/walls/east_wall/wall.glb",
+        "sha256": "8563c0f72ca5f898ede02b027b1bdb2d45b1ba29ebf8b570286f56e98c2b6558",
+        "mtime_utc": "2026-09-11T23:11:32.225550+00:00",
+        "bytes": 16752916,
+        "entity": "room_geometry_dining_room__v7",
+        "world_matrix": [
+          [
+            -3.6732051035270885e-06,
+            -2.2204460492353336e-16,
+            0.9999999999932538,
+            4.975
+          ],
+          [
+            0.9999999999932538,
+            -8.156153760212811e-22,
+            3.6732051035270885e-06,
+            2.25
+          ],
+          [
+            0.0,
+            1.0,
+            2.220446049250313e-16,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_036/floor_plans/dining_room/windows/window_3/window.glb",
+        "sha256": "7d524a9add2f9fc9c7878ca8cdfcbe93e04dcb8d6b71240fd307fc2a4ad2db5a",
+        "mtime_utc": "2026-09-11T23:11:32.531550+00:00",
+        "bytes": 2856,
+        "entity": "room_geometry_dining_room__v8",
+        "world_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            4.975
+          ],
+          [
+            0.0,
+            2.220446049250313e-16,
+            -1.0,
+            1.8431098932442422
+          ],
+          [
+            0.0,
+            1.0,
+            2.220446049250313e-16,
+            1.5
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_036/floor_plans/dining_room/walls/east_wall_exterior/wall.glb",
+        "sha256": "6325b3da0f2f92a86b2c4c2adb8b9d0cce1a4f38f5ac2f4aa9b08f2d45f26ff8",
+        "mtime_utc": "2026-09-11T23:11:32.545550+00:00",
+        "bytes": 8773820,
+        "entity": "room_geometry_dining_room__v9",
+        "world_matrix": [
+          [
+            -3.6732051035270885e-06,
+            -2.2204460492353336e-16,
+            0.9999999999932538,
+            5.025
+          ],
+          [
+            0.9999999999932538,
+            -8.156153760212811e-22,
+            3.6732051035270885e-06,
+            2.25
+          ],
+          [
+            0.0,
+            1.0,
+            2.220446049250313e-16,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_036/floor_plans/dining_room/walls/west_wall/wall.glb",
+        "sha256": "34874cd5c01c30011493442b1a01002ee1e2c7b30db07a3fc885e9065b035496",
+        "mtime_utc": "2026-09-11T23:11:32.672551+00:00",
+        "bytes": 16751496,
+        "entity": "room_geometry_dining_room__v10",
+        "world_matrix": [
+          [
+            -3.6732051035270885e-06,
+            -2.2204460492353336e-16,
+            0.9999999999932538,
+            0.02499999999999991
+          ],
+          [
+            0.9999999999932538,
+            -8.156153760212811e-22,
+            3.6732051035270885e-06,
+            2.25
+          ],
+          [
+            0.0,
+            1.0,
+            2.220446049250313e-16,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_036/floor_plans/dining_room/walls/west_wall_exterior/wall.glb",
+        "sha256": "ec7a640263fc97a1e982ac1d8871975cdfc74e85c067dc1f7fd47262b7221793",
+        "mtime_utc": "2026-09-11T23:11:32.983551+00:00",
+        "bytes": 8772400,
+        "entity": "room_geometry_dining_room__v11",
+        "world_matrix": [
+          [
+            -3.6732051035270885e-06,
+            -2.2204460492353336e-16,
+            0.9999999999932538,
+            -0.02499999999999991
+          ],
+          [
+            0.9999999999932538,
+            -8.156153760212811e-22,
+            3.6732051035270885e-06,
+            2.25
+          ],
+          [
+            0.0,
+            1.0,
+            2.220446049250313e-16,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_036/room_dining_room/generated_assets/furniture/sdf/3f701a2f5605c6546f70ecd472251460436da20f/dining_chair.glb",
+        "sha256": "f2ebbce538d9130b33206d29608db3bfbd72a974cc1b273e16e82fdd16770182",
+        "mtime_utc": "2026-09-11T23:11:33.114551+00:00",
+        "bytes": 2810528,
+        "entity": "dining_room_dining_chair_0",
+        "world_matrix": [
+          [
+            -0.9998316062573485,
+            -0.00036043253281876973,
+            0.01834745805936329,
+            2.5141349574377143
+          ],
+          [
+            0.018348432511027045,
+            -0.002917369968362701,
+            0.9998273970925462,
+            3.035163788162333
+          ],
+          [
+            -0.0003068439979774836,
+            0.9999956795110952,
+            0.002923492073518233,
+            -0.0021513890786827986
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_036/room_dining_room/generated_assets/furniture/sdf/3f701a2f5605c6546f70ecd472251460436da20f/dining_chair.glb",
+        "sha256": "f2ebbce538d9130b33206d29608db3bfbd72a974cc1b273e16e82fdd16770182",
+        "mtime_utc": "2026-09-11T23:11:33.114551+00:00",
+        "bytes": 2810528,
+        "entity": "dining_room_dining_chair_1",
+        "world_matrix": [
+          [
+            -0.5741399193544264,
+            -0.0025698008861106424,
+            0.8187531673997351,
+            3.1558246593696775
+          ],
+          [
+            0.8187571427782806,
+            -0.0014272640080813682,
+            0.574138227317253,
+            2.7819699915103073
+          ],
+          [
+            -0.00030684399797760854,
+            0.9999956795110952,
+            0.0029234920735183552,
+            -0.002151389078682839
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_036/room_dining_room/generated_assets/furniture/sdf/3f701a2f5605c6546f70ecd472251460436da20f/dining_chair.glb",
+        "sha256": "f2ebbce538d9130b33206d29608db3bfbd72a974cc1b273e16e82fdd16770182",
+        "mtime_utc": "2026-09-11T23:11:33.114551+00:00",
+        "bytes": 2810528,
+        "entity": "dining_room_dining_chair_2",
+        "world_matrix": [
+          [
+            0.007552757569467661,
+            -0.0029210913173560206,
+            0.9999672110017471,
+            3.2185200319259235
+          ],
+          [
+            0.9999714304418191,
+            0.0003289143637578736,
+            -0.007551828618524159,
+            1.6419411449626211
+          ],
+          [
+            -0.00030684399797764324,
+            0.9999956795110951,
+            0.0029234920735182563,
+            -0.002151389078682432
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_036/room_dining_room/generated_assets/furniture/sdf/3f701a2f5605c6546f70ecd472251460436da20f/dining_chair.glb",
+        "sha256": "f2ebbce538d9130b33206d29608db3bfbd72a974cc1b273e16e82fdd16770182",
+        "mtime_utc": "2026-09-11T23:11:33.114551+00:00",
+        "bytes": 2810528,
+        "entity": "dining_room_dining_chair_4",
+        "world_matrix": [
+          [
+            0.36979785791903186,
+            0.0028297221341588375,
+            -0.9291079253515917,
+            1.7401618245477395
+          ],
+          [
+            -0.9291121838213383,
+            0.0007960099160629232,
+            -0.36979712849474256,
+            1.623159989400353
+          ],
+          [
+            -0.00030684399797743507,
+            0.9999956795110951,
+            0.002923492073518273,
+            -0.0021513890786832098
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_036/room_dining_room/generated_assets/furniture/sdf/3f701a2f5605c6546f70ecd472251460436da20f/dining_chair.glb",
+        "sha256": "f2ebbce538d9130b33206d29608db3bfbd72a974cc1b273e16e82fdd16770182",
+        "mtime_utc": "2026-09-11T23:11:33.114551+00:00",
+        "bytes": 2810528,
+        "entity": "dining_room_dining_chair_5",
+        "world_matrix": [
+          [
+            -0.5375746189547889,
+            0.002300185044150512,
+            -0.8432130443751309,
+            1.81736491517144
+          ],
+          [
+            -0.8432161258552724,
+            -0.001830329999121782,
+            0.5375715905716371,
+            2.772915218995939
+          ],
+          [
+            -0.0003068439979775266,
+            0.9999956795110952,
+            0.002923492073518244,
+            -0.002151389078682333
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_036/room_dining_room/generated_assets/wall_mounted/sdf/e0a215e268886dde314b134f63c2a7ea2f9a6d41/painting.glb",
+        "sha256": "f13826bc7058ec99fc8945a6fd195b3c6bf6cfa1a3a03290da306fb58fbb7e3a",
+        "mtime_utc": "2026-09-11T23:11:34.179553+00:00",
+        "bytes": 3727816,
+        "entity": "dining_room_painting_0",
+        "world_matrix": [
+          [
+            -4.996003610813204e-16,
+            2.224782857940255e-16,
+            -1.0,
+            0.04999999999999982
+          ],
+          [
+            -0.999996064951052,
+            0.0028053667160041094,
+            5.002232776254454e-16,
+            2.22452456315593
+          ],
+          [
+            0.0028053667160041094,
+            0.999996064951052,
+            2.2117636943065388e-16,
+            1.530553130726691
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_036/room_dining_room/generated_assets/wall_mounted/sdf/c90407872e08305f4ad17bcc225c602ae52e6722/wall_sconce.glb",
+        "sha256": "ab6f61cb7472c82f7381039723a44b0f553aa4f7caa2a95d4685c75f8a1cd835",
+        "mtime_utc": "2026-09-11T23:11:34.404554+00:00",
+        "bytes": 1814832,
+        "entity": "dining_room_wall_sconce_0",
+        "world_matrix": [
+          [
+            -1.6653345369377348e-16,
+            2.216109240560371e-16,
+            -1.0,
+            0.04999999999999982
+          ],
+          [
+            -0.9999853631208595,
+            -0.005410503122896855,
+            1.653320806654042e-16,
+            0.9983878328510256
+          ],
+          [
+            -0.005410503122896855,
+            0.9999853631208595,
+            2.224750357539794e-16,
+            1.5967599833263255
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_036/room_dining_room/generated_assets/wall_mounted/sdf/c90407872e08305f4ad17bcc225c602ae52e6722/wall_sconce.glb",
+        "sha256": "ab6f61cb7472c82f7381039723a44b0f553aa4f7caa2a95d4685c75f8a1cd835",
+        "mtime_utc": "2026-09-11T23:11:34.404554+00:00",
+        "bytes": 1814832,
+        "entity": "dining_room_wall_sconce_1",
+        "world_matrix": [
+          [
+            1.6653345369377348e-16,
+            2.203098814490545e-16,
+            -1.0,
+            0.04999999999999982
+          ],
+          [
+            -0.9999710810549575,
+            0.0076050676380805884,
+            -1.6484478945464774e-16,
+            3.4938813522084105
+          ],
+          [
+            0.0076050676380805884,
+            0.9999710810549575,
+            2.2117082189131609e-16,
+            1.5980165410063396
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_036/room_dining_room/generated_assets/wall_mounted/sdf/e1725f63ab8658c1a31edbf0be78375fa93770ee/clock.glb",
+        "sha256": "3dd6e468b3d49a162bef7f433f7ecd2e091f36618f3d8dfd7465af34ed48d7c3",
+        "mtime_utc": "2026-09-11T23:11:34.676554+00:00",
+        "bytes": 295628,
+        "entity": "dining_room_clock_0",
+        "world_matrix": [
+          [
+            -0.9999988055039932,
+            -0.0015456359812867399,
+            1.221213700712288e-16,
+            2.533876175328258
+          ],
+          [
+            1.2246471648562266e-16,
+            -2.2204460489676864e-16,
+            1.0,
+            4.45
+          ],
+          [
+            -0.0015456359812867399,
+            0.9999988055039932,
+            2.2223362553761305e-16,
+            1.7605981345406556
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_036/room_dining_room/generated_assets/wall_mounted/sdf/18d33c5c5df8b177bab1b8d8673ff67e58de0bb8/botanical_print.glb",
+        "sha256": "1f3a47a7701e2daf2caa86d66185be49e859c9c9cc1b13b2b756ecd45804a886",
+        "mtime_utc": "2026-09-11T23:11:34.796554+00:00",
+        "bytes": 938388,
+        "entity": "dining_room_botanical_print_0",
+        "world_matrix": [
+          [
+            1.1102230246251565e-16,
+            -2.2291196666301976e-16,
+            1.0000000000000002,
+            4.95
+          ],
+          [
+            0.9999693309224827,
+            -0.007831807865532042,
+            -1.1276131314586647e-16,
+            3.484721385457698
+          ],
+          [
+            0.007831807865532042,
+            0.9999693309224826,
+            2.2117043328384215e-16,
+            1.88
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_036/room_dining_room/generated_assets/wall_mounted/sdf/18d33c5c5df8b177bab1b8d8673ff67e58de0bb8/botanical_print.glb",
+        "sha256": "1f3a47a7701e2daf2caa86d66185be49e859c9c9cc1b13b2b756ecd45804a886",
+        "mtime_utc": "2026-09-11T23:11:34.796554+00:00",
+        "bytes": 938388,
+        "entity": "dining_room_botanical_print_1",
+        "world_matrix": [
+          [
+            1.6653345369377348e-16,
+            -2.2193618470778276e-16,
+            1.0,
+            4.95
+          ],
+          [
+            0.9999993465777401,
+            -0.0011431728184003887,
+            -1.6678728905059623e-16,
+            3.5158783017334567
+          ],
+          [
+            0.0011431728184003887,
+            0.9999993465777401,
+            2.2171919918439812e-16,
+            1.12
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_036/room_dining_room/generated_assets/wall_mounted/sdf/e7ffdf18bea72d67b5f3e2010c1db4c9f5664050/mirror.glb",
+        "sha256": "4e4d4e33ec52a4949b5b0d73e4dba8aede65a5fed58917c76be0799a395b65a7",
+        "mtime_utc": "2026-09-11T23:11:35.023555+00:00",
+        "bytes": 1086320,
+        "entity": "dining_room_mirror_0",
+        "world_matrix": [
+          [
+            1.6653345369377348e-16,
+            -2.237793284010081e-16,
+            0.9999999999999999,
+            4.95
+          ],
+          [
+            0.9998833216089872,
+            -0.015275574234007388,
+            -1.6992531253956664e-16,
+            0.5499999999999998
+          ],
+          [
+            0.015275574234007388,
+            0.9998833216089872,
+            2.2028397364181877e-16,
+            1.55998097477092
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_036/room_dining_room/generated_assets/wall_mounted/sdf/55a5e77efee32b21d7edf4df0223fc30d330fbd9/photograph_print.glb",
+        "sha256": "b385c43ec05d3dc8919f559d09e322779d18b77c8a1e6eb45cb702368804d599",
+        "mtime_utc": "2026-09-11T23:11:35.138555+00:00",
+        "bytes": 1243776,
+        "entity": "dining_room_photograph_print_0",
+        "world_matrix": [
+          [
+            0.9999995115910614,
+            -0.0009883408515248084,
+            -1.226840758557991e-16,
+            1.4100000000000001
+          ],
+          [
+            -1.2246467991473532e-16,
+            2.220446049250313e-16,
+            -1.0,
+            0.04999999999999982
+          ],
+          [
+            0.0009883408515248084,
+            0.9999995115910614,
+            2.2192345963043285e-16,
+            1.5350413826381446
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "source": "/home/npechuk/src/gen_sim_phri/scene_assets/scenesmith/NotGenerated_scene_036/room_dining_room/generated_assets/ceiling_mounted/sdf/9c2594f4917e8d2eb0bfc84c72ce43d27fc8ec31/chandelier.glb",
+        "sha256": "eb549a178bc3ce07cb90017b85a771f29e14b2a9d611d0f847b580232ccb1ad0",
+        "mtime_utc": "2026-09-11T23:11:35.335555+00:00",
+        "bytes": 1250304,
+        "entity": "dining_room_chandelier_0",
+        "world_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            2.5
+          ],
+          [
+            0.0,
+            2.220446049250313e-16,
+            -1.0,
+            2.25
+          ],
+          [
+            0.0,
+            1.0,
+            2.220446049250313e-16,
+            2.7
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      }
+    ],
+    "ceiling_cull": [
+      "dining_room_recessed_downlight_0",
+      "dining_room_recessed_downlight_1",
+      "dining_room_recessed_downlight_2",
+      "dining_room_recessed_downlight_3"
+    ]
+  },
+  "human": {
+    "method": "Deterministic original SMPL-X segment generator from recorded betas and axis-angle joint values; no random pose, optimization or simulation; root transform and scale0.9 preserved. Only texture/face UV registration changed.",
+    "config": {
+      "joint_angles": {
+        "left_hip": {
+          "x": -85.0,
+          "y": 0.0,
+          "z": 5.0
+        },
+        "right_hip": {
+          "x": -85.0,
+          "y": 0.0,
+          "z": -5.0
+        },
+        "left_knee": {
+          "x": 85.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "right_knee": {
+          "x": 85.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "neck": {
+          "x": 15.0,
+          "y": -15.0,
+          "z": -5.0
+        },
+        "left_shoulder": {
+          "x": 10.0,
+          "y": 0.0,
+          "z": -60.0
+        },
+        "right_shoulder": {
+          "x": 10.0,
+          "y": 0.0,
+          "z": 60.0
+        },
+        "left_elbow": {
+          "x": 0.0,
+          "y": -45.0,
+          "z": 0.0
+        },
+        "right_elbow": {
+          "x": 0.0,
+          "y": 45.0,
+          "z": 0.0
+        }
+      },
+      "betas": [
+        1.5409960746765137,
+        -0.293428897857666,
+        -2.1787893772125244,
+        0.5684312582015991,
+        -1.0845223665237427,
+        -1.3985954523086548,
+        0.40334683656692505,
+        0.8380263447761536,
+        -0.7192575931549072,
+        -0.40334352850914
+      ],
+      "pos": [
+        3.162883996963501,
+        1.643715262413025,
+        0.9755266308784485
+      ],
+      "quat": [
+        -0.49745604395866394,
+        -0.4987594783306122,
+        0.5026935338973999,
+        0.5010746121406555
+      ],
+      "scene_json": "/home/npechuk/src/gen_sim_phri/scene_generation/scenesmith/data/room2_t13_sponge_bathi_right_foot/room_scene.json",
+      "furniture_name": "dining_room_dining_chair_2",
+      "_seat_fit": {
+        "support_top_z": 0.46717,
+        "root_z": 0.9755266392149734,
+        "seat_sink_m": 0.02051,
+        "pelvis_gap_m": 0.00613,
+        "thigh_gap_m": -0.02051,
+        "foot_floor_m": 0.0123,
+        "residual_m": 0.0,
+        "feet_shift_m": -0.01051,
+        "status": "ok"
+      }
+    },
+    "generated_urdf": {
+      "source": "/tmp/orchestrator-3d/work/resume-before/actuate-smplx.urdf",
+      "sha256": "12b5de8fa8044735b4798a2598c4143153786722a13ff664b04d37f5f8dbf1ef",
+      "mtime_utc": "2026-09-19T18:05:48.260779+00:00",
+      "bytes": 19134
+    },
+    "generated_meshes": [
+      {
+        "source": "/tmp/orchestrator-3d/work/resume-before/meshes/main-body.obj",
+        "sha256": "41a756ab59db598c9f4b49623e4cc7403a93c9e3110f643dfcd3c6a91d8e8160",
+        "mtime_utc": "2026-09-19T18:05:48.259779+00:00",
+        "bytes": 310918
+      },
+      {
+        "source": "/tmp/orchestrator-3d/work/resume-before/meshes/left-forearm.obj",
+        "sha256": "f4102e4b907919440655d87f9ae8964433e53fc250c2d7ba3e73e991d6f99d3e",
+        "mtime_utc": "2026-09-19T18:05:47.451778+00:00",
+        "bytes": 173665
+      },
+      {
+        "source": "/tmp/orchestrator-3d/work/resume-before/meshes/left-upperarm.obj",
+        "sha256": "859d69fb13125e604500f716ea9c472ac4df04cdc7d473bff748a739a3750c8b",
+        "mtime_utc": "2026-09-19T18:05:47.520778+00:00",
+        "bytes": 46464
+      },
+      {
+        "source": "/tmp/orchestrator-3d/work/resume-before/meshes/right-forearm.obj",
+        "sha256": "25e44d6aa9e669bb284eb10a8266e2bbf9bf460b04103bb321ddc213aeea4cf4",
+        "mtime_utc": "2026-09-19T18:05:47.598778+00:00",
+        "bytes": 174546
+      },
+      {
+        "source": "/tmp/orchestrator-3d/work/resume-before/meshes/right-upperarm.obj",
+        "sha256": "3ab5a43218e2bd8e3e396e3a293322a97ea211e8ea88f361106405fa0deef876",
+        "mtime_utc": "2026-09-19T18:05:47.665778+00:00",
+        "bytes": 46695
+      },
+      {
+        "source": "/tmp/orchestrator-3d/work/resume-before/meshes/left-lowerleg.obj",
+        "sha256": "a12e2cec30d26f712e7d8c430bb09218367ee8c042f0a354fcc1175bcce9d6f6",
+        "mtime_utc": "2026-09-19T18:05:47.734779+00:00",
+        "bytes": 77056
+      },
+      {
+        "source": "/tmp/orchestrator-3d/work/resume-before/meshes/left-upperleg.obj",
+        "sha256": "d9844a0a281b06f3c1e9141b5c7f3bd8adad1274b257e87a7b9c62c76db7ba6e",
+        "mtime_utc": "2026-09-19T18:05:47.800779+00:00",
+        "bytes": 40814
+      },
+      {
+        "source": "/tmp/orchestrator-3d/work/resume-before/meshes/right-lowerleg.obj",
+        "sha256": "dc942e40b4c4dc9a83d2dab50779aa73129fb6803fb5e028ce50e0d12c76c99c",
+        "mtime_utc": "2026-09-19T18:05:47.869779+00:00",
+        "bytes": 77246
+      },
+      {
+        "source": "/tmp/orchestrator-3d/work/resume-before/meshes/right-upperleg.obj",
+        "sha256": "5f279bcc85faf8b1796d146d6c14c424b5f3049b442163c31564ae07fadd164d",
+        "mtime_utc": "2026-09-19T18:05:47.935779+00:00",
+        "bytes": 40913
+      },
+      {
+        "source": "/tmp/orchestrator-3d/work/resume-before/meshes/head.obj",
+        "sha256": "f4844d7ab978a7df527439de29d78da585dd024d7fb9eeef599bfd79521be62f",
+        "mtime_utc": "2026-09-19T18:05:48.174779+00:00",
+        "bytes": 922891
+      }
+    ],
+    "generator": {
+      "source": "/home/npechuk/src/gen_sim_phri/human_generation/generate_actuated_mesh.py",
+      "sha256": "03b087cfba1af485d564b0cfcdd69603f0afb32ed5649d29ba96ca21629b8041",
+      "mtime_utc": "2026-09-14T19:18:30.875162+00:00",
+      "bytes": 10756
+    },
+    "model": {
+      "source": "/home/npechuk/src/gen_sim_phri/resources/models/smplx/SMPLX_NEUTRAL.npz",
+      "sha256": "376021446ddc86e99acacd795182bbef903e61d33b76b9d8b359c2b0865bd992",
+      "mtime_utc": "2020-09-11T08:13:54+00:00",
+      "bytes": 108752058
+    },
+    "texture": {
+      "source": "/home/npechuk/src/gen_sim_phri/human_generation/smplitex/requested_20260914/SMPLitex-texture-00001.png",
+      "sha256": "ee47d3c0009711d26781869194cbc8daea63730bda885bd9a39ca9705ec8bec7",
+      "mtime_utc": "2026-09-14T20:08:49.752725+00:00",
+      "bytes": 385342
+    },
+    "validation_against_retained_original": "Recorded pose/betas applied through the same deterministic generator; ACCEPT control reconstruction exactly matched all10 retained source meshes."
+  },
+  "robot": {
+    "source": {
+      "source": "/home/npechuk/src/gen_sim_phri/resources/stretch/stretch_gs_virtual_base_bathing_sphere_rotated_big_aruco.xml",
+      "sha256": "6bcb8d0862be6be720db1539c1113c34232f5776fa1c18d11b9b85d800c868cd",
+      "mtime_utc": "2026-05-20T02:15:34+00:00",
+      "bytes": 34583
+    },
+    "joint_positions": {
+      "joint_base_x": 0,
+      "joint_lift": 0.85,
+      "joint_arm_l0": 0.005,
+      "joint_arm_l1": 0.005,
+      "joint_arm_l2": 0.005,
+      "joint_arm_l3": 0.005,
+      "joint_wrist_yaw": 0,
+      "joint_wrist_pitch": -0.3,
+      "joint_wrist_roll": 0,
+      "joint_head_pan": -1.57,
+      "joint_head_tilt": -0.3
+    },
+    "other_joint_positions": "MuJoCo default qpos0, matching freshly built Genesis renderer without simulation",
+    "configure_rotation": "+90 degrees world Z, applied by original Stretch.configure",
+    "world_base_matrix": [
+      [
+        0.8685350130257364,
+        -0.49562781514800436,
+        0.0,
+        2.3396342792547125
+      ],
+      [
+        0.49562781514800436,
+        0.8685350130257364,
+        0.0,
+        2.1044508419000727
+      ],
+      [
+        0.0,
+        0.0,
+        1.0000000000000002,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "visual_geometries": [
+      {
+        "index": 2,
+        "body": "base_link_mobile",
+        "type": 7,
+        "matrix": [
+          [
+            -0.495627815148005,
+            -0.8685350130257375,
+            0.0,
+            2.130754420755673
+          ],
+          [
+            0.8685350130257375,
+            -0.495627815148005,
+            0.0,
+            1.9852540036283508
+          ],
+          [
+            0.0,
+            0.0,
+            1.0000000000000016,
+            0.025396954155023604
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 26100,
+        "faces": 9842
+      },
+      {
+        "index": 3,
+        "body": "base_link_mobile",
+        "type": 7,
+        "matrix": [
+          [
+            0.0,
+            -0.8685350130257388,
+            0.4956278151480057,
+            2.174716174668138
+          ],
+          [
+            0.0,
+            -0.4956278151480057,
+            -0.8685350130257388,
+            2.009962844290954
+          ],
+          [
+            1.0000000000000029,
+            0.0,
+            0.0,
+            0.15999999642372134
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 20,
+        "faces": 16
+      },
+      {
+        "index": 4,
+        "body": "base_link_mobile",
+        "type": 7,
+        "matrix": [
+          [
+            0.8685350130257364,
+            -0.49562781514800436,
+            0.0,
+            2.120639074170266
+          ],
+          [
+            0.49562781514800436,
+            0.8685350130257364,
+            0.0,
+            1.9754589063659418
+          ],
+          [
+            0.0,
+            0.0,
+            1.0000000000000002,
+            0.1139420725890037
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 8,
+        "faces": 4
+      },
+      {
+        "index": 5,
+        "body": "base_link_mobile",
+        "type": 7,
+        "matrix": [
+          [
+            0.0,
+            -0.8685350130257388,
+            0.4956278151480057,
+            2.136729200342004
+          ],
+          [
+            0.0,
+            -0.4956278151480057,
+            -0.8685350130257388,
+            1.9872230977588212
+          ],
+          [
+            1.0000000000000029,
+            0.0,
+            0.0,
+            0.10131825670883289
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 140,
+        "faces": 70
+      },
+      {
+        "index": 6,
+        "body": "base_link_mobile",
+        "type": 7,
+        "matrix": [
+          [
+            0.11947295628905603,
+            0.48004796884387385,
+            0.8690685590472335,
+            2.2377945977283797
+          ],
+          [
+            0.07812552524955464,
+            -0.8771695578414115,
+            0.47378261798085647,
+            2.0498115548951388
+          ],
+          [
+            0.9897588671085724,
+            0.011292227644897254,
+            -0.14230203995298632,
+            0.046993420159512356
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 25074,
+        "faces": 14093
+      },
+      {
+        "index": 7,
+        "body": "base_link_mobile",
+        "type": 7,
+        "matrix": [
+          [
+            0.0,
+            -0.8685350130257388,
+            0.4956278151480057,
+            2.1879876465116825
+          ],
+          [
+            0.0,
+            -0.4956278151480057,
+            -0.8685350130257388,
+            2.1733481343839647
+          ],
+          [
+            1.0000000000000029,
+            0.0,
+            0.0,
+            0.16074700653553012
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 17,
+        "faces": 13
+      },
+      {
+        "index": 8,
+        "body": "base_link_mobile",
+        "type": 7,
+        "matrix": [
+          [
+            0.5842314978631084,
+            -0.7979568886147553,
+            0.14811603835131415,
+            2.167708737279991
+          ],
+          [
+            0.8069779748256711,
+            0.5517349893405536,
+            -0.21065386225663565,
+            2.183285167530922
+          ],
+          [
+            0.08637189966005886,
+            0.24259700214478808,
+            0.9662745932184467,
+            0.1263795360802482
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 316,
+        "faces": 162
+      },
+      {
+        "index": 9,
+        "body": "base_link_mobile",
+        "type": 7,
+        "matrix": [
+          [
+            -0.0497943157916313,
+            0.41775748144655933,
+            0.9071930405433455,
+            2.2451298660197714
+          ],
+          [
+            -0.02701742672990921,
+            -0.9085508342049206,
+            0.4168997964960479,
+            2.048127746046309
+          ],
+          [
+            0.9983940027703222,
+            -0.0037507813825723444,
+            0.056527399297003414,
+            0.10413896524844024
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 180080,
+        "faces": 72511
+      },
+      {
+        "index": 12,
+        "body": "link_mast",
+        "type": 7,
+        "matrix": [
+          [
+            0.8685350130257375,
+            0.495627815148005,
+            0.0,
+            2.2145326783370076
+          ],
+          [
+            0.495627815148005,
+            -0.8685350130257375,
+            0.0,
+            2.1884960050436306
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0000000000000016,
+            0.7359000107288368
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 96,
+        "faces": 60
+      },
+      {
+        "index": 14,
+        "body": "link_head",
+        "type": 7,
+        "matrix": [
+          [
+            0.49562781514800425,
+            0.8685350130257362,
+            0.0,
+            2.256718642798876
+          ],
+          [
+            -0.8685350130257362,
+            0.49562781514800425,
+            0.0,
+            2.2495014530087483
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            1.3850597613400504
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 97513,
+        "faces": 34077
+      },
+      {
+        "index": 15,
+        "body": "link_head",
+        "type": 7,
+        "matrix": [
+          [
+            0.4955944935384371,
+            0.8685350130257363,
+            -0.005747096898817612,
+            2.262293399757152
+          ],
+          [
+            -0.8684766204502695,
+            0.4956278151480043,
+            0.010071175844689318,
+            2.2402174915013306
+          ],
+          [
+            0.011595589922856558,
+            0.0,
+            0.9999327688871594,
+            1.385020185093414
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 5548,
+        "faces": 2973
+      },
+      {
+        "index": 16,
+        "body": "link_head",
+        "type": 7,
+        "matrix": [
+          [
+            0.868573312642621,
+            0.0005010749981489732,
+            0.49556043979405356,
+            2.304647065676941
+          ],
+          [
+            0.49556035733107257,
+            0.00028588594827649074,
+            -0.8685734571762656,
+            2.199917417422697
+          ],
+          [
+            -0.0005768942097056806,
+            0.9999998335965243,
+            1.169207950617333e-16,
+            1.3843595890604137
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 97,
+        "faces": 83
+      },
+      {
+        "index": 17,
+        "body": "link_head",
+        "type": 7,
+        "matrix": [
+          [
+            0.8685350130257375,
+            -0.495627815148005,
+            0.0,
+            2.321780829605268
+          ],
+          [
+            0.495627815148005,
+            0.8685350130257375,
+            0.0,
+            2.185894100939298
+          ],
+          [
+            0.0,
+            0.0,
+            1.0000000000000016,
+            1.3840623940097225
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 165,
+        "faces": 95
+      },
+      {
+        "index": 18,
+        "body": "link_head",
+        "type": 7,
+        "matrix": [
+          [
+            0.8685350130257375,
+            -0.495627815148005,
+            0.0,
+            2.3018539139532295
+          ],
+          [
+            0.495627815148005,
+            0.8685350130257375,
+            0.0,
+            2.220813900307806
+          ],
+          [
+            0.0,
+            0.0,
+            1.0000000000000016,
+            1.3840623912585248
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 172,
+        "faces": 96
+      },
+      {
+        "index": 19,
+        "body": "link_head",
+        "type": 7,
+        "matrix": [
+          [
+            0.49562781514800425,
+            0.8685350130257362,
+            0.0,
+            2.29672985951318
+          ],
+          [
+            -0.8685350130257362,
+            0.49562781514800425,
+            0.0,
+            2.185169872156691
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            1.398097770955074
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 38,
+        "faces": 18
+      },
+      {
+        "index": 20,
+        "body": "link_head",
+        "type": 7,
+        "matrix": [
+          [
+            0.49562781514800425,
+            0.8685350130257362,
+            0.0,
+            2.28816835064875
+          ],
+          [
+            -0.8685350130257362,
+            0.49562781514800425,
+            0.0,
+            2.191551571297032
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            1.3998026316025023
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 151,
+        "faces": 92
+      },
+      {
+        "index": 21,
+        "body": "link_head",
+        "type": 7,
+        "matrix": [
+          [
+            0.0,
+            -0.4956278151480056,
+            -0.8685350130257385,
+            2.285174114341812
+          ],
+          [
+            0.0,
+            0.8685350130257385,
+            -0.4956278151480056,
+            2.192792126664346
+          ],
+          [
+            1.0000000000000027,
+            0.0,
+            0.0,
+            1.3986326844952686
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 428,
+        "faces": 344
+      },
+      {
+        "index": 22,
+        "body": "link_head",
+        "type": 7,
+        "matrix": [
+          [
+            0.0,
+            -0.4956278151480056,
+            -0.8685350130257385,
+            2.278549299670994
+          ],
+          [
+            0.0,
+            0.8685350130257385,
+            -0.4956278151480056,
+            2.2032699659958803
+          ],
+          [
+            1.0000000000000027,
+            0.0,
+            0.0,
+            1.4037223463062933
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 589,
+        "faces": 252
+      },
+      {
+        "index": 23,
+        "body": "link_head",
+        "type": 7,
+        "matrix": [
+          [
+            0.0,
+            -0.4956278151480056,
+            -0.8685350130257385,
+            2.2160095705443643
+          ],
+          [
+            0.0,
+            0.8685350130257385,
+            -0.4956278151480056,
+            2.1859032262238296
+          ],
+          [
+            1.0000000000000027,
+            0.0,
+            0.0,
+            1.4101240544872427
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 1556,
+        "faces": 736
+      },
+      {
+        "index": 24,
+        "body": "link_head",
+        "type": 7,
+        "matrix": [
+          [
+            -0.00013942085157829867,
+            -0.5631978976332394,
+            0.8263220368980447,
+            2.2693694956783177
+          ],
+          [
+            -0.009891128282907113,
+            -0.826280845904644,
+            -0.5631714918853807,
+            2.1730344294417536
+          ],
+          [
+            0.9999510718745821,
+            -0.00825177511893488,
+            -0.005455461874975088,
+            1.3896478580218379
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 16158,
+        "faces": 8636
+      },
+      {
+        "index": 25,
+        "body": "link_head",
+        "type": 7,
+        "matrix": [
+          [
+            -0.02372834074449302,
+            -0.554718121773852,
+            0.8316999285927662,
+            2.271784602607193
+          ],
+          [
+            -0.03630831113070652,
+            -0.8309071297354071,
+            -0.5552252230381041,
+            2.1766113546513437
+          ],
+          [
+            0.9990588933533189,
+            -0.04337219305691759,
+            -0.00042483065381576657,
+            1.3637231506853587
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 25324,
+        "faces": 14555
+      },
+      {
+        "index": 27,
+        "body": "link_aruco_right_base",
+        "type": 7,
+        "matrix": [
+          [
+            0.0,
+            -0.4956278151480056,
+            -0.8685350130257385,
+            2.4030069878305067
+          ],
+          [
+            0.0,
+            0.8685350130257385,
+            -0.4956278151480056,
+            1.9903647988246487
+          ],
+          [
+            1.0000000000000027,
+            0.0,
+            0.0,
+            0.15962299999406285
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 120,
+        "faces": 76
+      },
+      {
+        "index": 29,
+        "body": "link_aruco_left_base",
+        "type": 7,
+        "matrix": [
+          [
+            0.0,
+            -0.4956278151480056,
+            -0.8685350130257385,
+            2.273651101843768
+          ],
+          [
+            0.0,
+            0.8685350130257385,
+            -0.4956278151480056,
+            2.2170472260142877
+          ],
+          [
+            1.0000000000000027,
+            0.0,
+            0.0,
+            0.15962299999406285
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 120,
+        "faces": 76
+      },
+      {
+        "index": 31,
+        "body": "laser",
+        "type": 7,
+        "matrix": [
+          [
+            0.0,
+            0.8685350130257388,
+            -0.4956278151480057,
+            2.3431084193068155
+          ],
+          [
+            0.0,
+            0.4956278151480057,
+            0.8685350130257388,
+            2.1064333531606647
+          ],
+          [
+            1.0000000000000029,
+            0.0,
+            0.0,
+            0.16564861872323208
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 1494,
+        "faces": 684
+      },
+      {
+        "index": 33,
+        "body": "link_right_wheel",
+        "type": 7,
+        "matrix": [
+          [
+            -0.4956278151480056,
+            -0.8685350130257385,
+            0.0,
+            2.417769998641795
+          ],
+          [
+            0.8685350130257385,
+            -0.4956278151480056,
+            0.0,
+            1.9675262948029495
+          ],
+          [
+            0.0,
+            0.0,
+            1.0000000000000027,
+            0.05080000277412877
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 1142,
+        "faces": 636
+      },
+      {
+        "index": 34,
+        "body": "link_right_wheel",
+        "type": 7,
+        "matrix": [
+          [
+            -0.49562781514800563,
+            -0.8580552875665214,
+            -0.1345146547062962,
+            2.418401189403658
+          ],
+          [
+            0.8685350130257385,
+            -0.4896475802066322,
+            -0.07676052596338366,
+            1.9664199173606656
+          ],
+          [
+            0.0,
+            -0.15487533915032886,
+            0.9879340207337107,
+            0.050798647281806414
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 30454,
+        "faces": 12105
+      },
+      {
+        "index": 36,
+        "body": "link_left_wheel",
+        "type": 7,
+        "matrix": [
+          [
+            -0.4956278151480056,
+            -0.8685350130257385,
+            0.0,
+            2.2614985570117883
+          ],
+          [
+            0.8685350130257385,
+            -0.4956278151480056,
+            0.0,
+            2.2413753873675155
+          ],
+          [
+            0.0,
+            0.0,
+            1.0000000000000027,
+            0.05079999393775776
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 1134,
+        "faces": 636
+      },
+      {
+        "index": 37,
+        "body": "link_left_wheel",
+        "type": 7,
+        "matrix": [
+          [
+            -0.49562781514800625,
+            0.1345146547063027,
+            0.8580552875665216,
+            2.2608660672253644
+          ],
+          [
+            0.8685350130257397,
+            0.07676052596338737,
+            0.4896475802066323,
+            2.2424810235239616
+          ],
+          [
+            0.0,
+            0.987934020733711,
+            -0.1548753391503363,
+            0.050799853779885995
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 30510,
+        "faces": 12105
+      },
+      {
+        "index": 39,
+        "body": "link_lift",
+        "type": 7,
+        "matrix": [
+          [
+            -0.5116290832567719,
+            -0.0013495014218745268,
+            0.8592053654463235,
+            2.1548373408493426
+          ],
+          [
+            0.8592064252354251,
+            -0.000803583580206873,
+            0.5116284521873216,
+            2.1948603990968794
+          ],
+          [
+            5.551115123125784e-17,
+            0.9999987665489116,
+            0.0015706370230003657,
+            1.0624437222406653
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 5180,
+        "faces": 2716
+      },
+      {
+        "index": 40,
+        "body": "link_lift",
+        "type": 7,
+        "matrix": [
+          [
+            -0.49562781514800425,
+            -0.8685350130257362,
+            0.0,
+            2.114260017622456
+          ],
+          [
+            0.8685350130257362,
+            -0.49562781514800425,
+            0.0,
+            2.086180538375462
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            1.0746753971758174
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 40,
+        "faces": 18
+      },
+      {
+        "index": 41,
+        "body": "link_lift",
+        "type": 7,
+        "matrix": [
+          [
+            -0.49562781514800425,
+            -0.8685350130257362,
+            0.0,
+            2.1051725396689203
+          ],
+          [
+            0.8685350130257362,
+            -0.49562781514800425,
+            0.0,
+            2.0886101433528492
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            1.0746556270663825
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 289,
+        "faces": 109
+      },
+      {
+        "index": 42,
+        "body": "link_lift",
+        "type": 7,
+        "matrix": [
+          [
+            -0.49562781514800425,
+            -0.8685350130257362,
+            0.0,
+            2.1031534161281327
+          ],
+          [
+            0.8685350130257362,
+            -0.49562781514800425,
+            0.0,
+            2.0908978017216655
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            1.0738674109136528
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 717,
+        "faces": 392
+      },
+      {
+        "index": 43,
+        "body": "link_lift",
+        "type": 7,
+        "matrix": [
+          [
+            -0.49562781514800425,
+            -0.8685350130257362,
+            0.0,
+            2.114142510725516
+          ],
+          [
+            0.8685350130257362,
+            -0.49562781514800425,
+            0.0,
+            2.0866491064184594
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            1.074037382843336
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 127,
+        "faces": 64
+      },
+      {
+        "index": 44,
+        "body": "link_lift",
+        "type": 7,
+        "matrix": [
+          [
+            -0.4310487306778338,
+            0.0,
+            -0.9023286495401956,
+            2.1146733175631964
+          ],
+          [
+            -0.9023286495401956,
+            0.0,
+            0.4310487306778337,
+            2.087122603366045
+          ],
+          [
+            0.0,
+            1.0000000000000024,
+            0.0,
+            1.0738440617180547
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 675,
+        "faces": 306
+      },
+      {
+        "index": 45,
+        "body": "link_lift",
+        "type": 7,
+        "matrix": [
+          [
+            -0.7255405091063596,
+            0.4061846218778967,
+            0.5555222971183043,
+            2.186431202751789
+          ],
+          [
+            0.46395179093981026,
+            -0.3074971346887606,
+            0.8307793015247479,
+            2.1351124410517777
+          ],
+          [
+            0.508271291073409,
+            0.8604996020383248,
+            0.034651544878370306,
+            1.0556628236091448
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 170,
+        "faces": 142
+      },
+      {
+        "index": 46,
+        "body": "link_lift",
+        "type": 7,
+        "matrix": [
+          [
+            0.02596442979965799,
+            0.8604147926496003,
+            0.5089324444117598,
+            2.1681294252381624
+          ],
+          [
+            0.01114802268349495,
+            -0.5093216392017162,
+            0.860504032199228,
+            2.122356460886095
+          ],
+          [
+            0.9996007052695751,
+            -0.016668906101690615,
+            -0.022816169572172033,
+            1.030252454715233
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 15483,
+        "faces": 7009
+      },
+      {
+        "index": 47,
+        "body": "link_lift",
+        "type": 7,
+        "matrix": [
+          [
+            0.1936331609056063,
+            0.8074063140506721,
+            0.557316106916728,
+            2.16334506689271
+          ],
+          [
+            -0.2113511060578776,
+            -0.5203990077295573,
+            0.8273545689256878,
+            2.130339109951124
+          ],
+          [
+            0.9580380519404341,
+            -0.2779926559914961,
+            0.06987971271390815,
+            1.0826981003988878
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 20441,
+        "faces": 8889
+      },
+      {
+        "index": 57,
+        "body": "link_arm_l4",
+        "type": 7,
+        "matrix": [
+          [
+            0.8685350130257362,
+            0.0,
+            0.49562781514800425,
+            2.2502522384454298
+          ],
+          [
+            0.49562781514800425,
+            0.0,
+            -0.8685350130257362,
+            2.0504716922160426
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            1.0500000000000003
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 166,
+        "faces": 96
+      },
+      {
+        "index": 58,
+        "body": "link_arm_l4",
+        "type": 7,
+        "matrix": [
+          [
+            0.49510937137854444,
+            -0.7906854862179158,
+            0.36011549849664354,
+            2.305231198249903
+          ],
+          [
+            -0.8688304816061982,
+            -0.45084098885889257,
+            0.20463625533292695,
+            1.9540667326847396
+          ],
+          [
+            0.0005519103999108711,
+            -0.4141966497318386,
+            -0.9101872503753479,
+            1.0500422512490288
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 4479,
+        "faces": 2172
+      },
+      {
+        "index": 61,
+        "body": "link_arm_l3",
+        "type": 7,
+        "matrix": [
+          [
+            0.8685350130257362,
+            0.0,
+            0.49562781514800425,
+            2.2581054276494377
+          ],
+          [
+            0.49562781514800425,
+            0.0,
+            -0.8685350130257362,
+            2.0367098136871715
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            1.0500000000000003
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 160,
+        "faces": 96
+      },
+      {
+        "index": 62,
+        "body": "link_arm_l3",
+        "type": 7,
+        "matrix": [
+          [
+            0.49594567249812627,
+            -0.8082778769751885,
+            0.31737164889584824,
+            2.3141944018501737
+          ],
+          [
+            -0.8683534991210702,
+            -0.4615078084043395,
+            0.18158398427731295,
+            1.9384510267894548
+          ],
+          [
+            -0.00030082317276811105,
+            -0.3656465730378335,
+            -0.9307537231357784,
+            1.0499713789219092
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 4843,
+        "faces": 2320
+      },
+      {
+        "index": 65,
+        "body": "link_arm_l2",
+        "type": 7,
+        "matrix": [
+          [
+            0.8685350130257362,
+            0.0,
+            0.49562781514800425,
+            2.266947043247768
+          ],
+          [
+            0.49562781514800425,
+            0.0,
+            -0.8685350130257362,
+            2.021215823067272
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            1.0500000000000003
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 166,
+        "faces": 96
+      },
+      {
+        "index": 66,
+        "body": "link_arm_l2",
+        "type": 7,
+        "matrix": [
+          [
+            0.49599059019420627,
+            -0.8204790123831374,
+            0.28426664362460974,
+            2.323115954170111
+          ],
+          [
+            -0.8683278321227933,
+            -0.468533911613489,
+            0.16273521324255533,
+            1.9228163243134235
+          ],
+          [
+            -0.0003322645625349619,
+            -0.3275517728649339,
+            -0.9448331734720715,
+            1.049970540091544
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 4762,
+        "faces": 2320
+      },
+      {
+        "index": 69,
+        "body": "link_arm_l1",
+        "type": 7,
+        "matrix": [
+          [
+            0.8685350130257362,
+            0.0,
+            0.49562781514800425,
+            2.2757687616443976
+          ],
+          [
+            0.49562781514800425,
+            0.0,
+            -0.8685350130257362,
+            2.005756700176363
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            1.0500000000000003
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 169,
+        "faces": 96
+      },
+      {
+        "index": 70,
+        "body": "link_arm_l1",
+        "type": 7,
+        "matrix": [
+          [
+            0.4960463945588143,
+            -0.7687152218379028,
+            0.4037510150574374,
+            2.332040724216585
+          ],
+          [
+            -0.8682959193352585,
+            -0.43893571889918737,
+            0.23107927457952102,
+            1.907175253928269
+          ],
+          [
+            -0.0004134137700252395,
+            -0.46520139981427766,
+            -0.8852047710557693,
+            1.049967530823036
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 5255,
+        "faces": 2376
+      },
+      {
+        "index": 73,
+        "body": "link_arm_l0",
+        "type": 7,
+        "matrix": [
+          [
+            0.5017837466165133,
+            0.1660449174838455,
+            0.848906447736902,
+            2.346587549488043
+          ],
+          [
+            -0.864933906378091,
+            0.08483465940590841,
+            0.4946639446745914,
+            1.8923047229899277
+          ],
+          [
+            0.01011974451448633,
+            -0.9824622974655437,
+            0.1861865323531621,
+            1.0506523546620514
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 1404,
+        "faces": 654
+      },
+      {
+        "index": 74,
+        "body": "link_arm_l0",
+        "type": 7,
+        "matrix": [
+          [
+            0.8685350130257362,
+            0.0,
+            0.49562781514800425,
+            2.2835757308030673
+          ],
+          [
+            0.49562781514800425,
+            0.0,
+            -0.8685350130257362,
+            1.9920758119274566
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            1.050000002692173
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 260,
+        "faces": 111
+      },
+      {
+        "index": 75,
+        "body": "link_arm_l0",
+        "type": 7,
+        "matrix": [
+          [
+            0.620217654359494,
+            -0.023738080927473388,
+            0.7840705100529529,
+            2.375562346121403
+          ],
+          [
+            -0.7540149899418247,
+            -0.2936734409568521,
+            0.587551959421124,
+            1.933678435148262
+          ],
+          [
+            0.21631332867820952,
+            -0.955611015837748,
+            -0.20004032154970627,
+            1.0467227289854668
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 14277,
+        "faces": 8064
+      },
+      {
+        "index": 79,
+        "body": "link_aruco_top_wrist",
+        "type": 7,
+        "matrix": [
+          [
+            0.0,
+            0.8685350130257383,
+            -0.49562781514800547,
+            2.3717648350219656
+          ],
+          [
+            0.0,
+            0.49562781514800547,
+            0.8685350130257383,
+            1.9328674277479834
+          ],
+          [
+            1.0000000000000024,
+            0.0,
+            0.0,
+            1.079159999994063
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 120,
+        "faces": 76
+      },
+      {
+        "index": 81,
+        "body": "link_aruco_top_wrist_big",
+        "type": 7,
+        "matrix": [
+          [
+            0.014286020404168542,
+            -0.868812063059292,
+            0.49493586322237193,
+            2.383582954710176
+          ],
+          [
+            0.007220887289734119,
+            -0.4948838263938835,
+            -0.8689291439240047,
+            1.9395964035134456
+          ],
+          [
+            0.999871875996003,
+            0.015987415563850974,
+            -0.0007963264582434573,
+            1.08205788057975
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 236,
+        "faces": 460
+      },
+      {
+        "index": 83,
+        "body": "link_aruco_inner_wrist",
+        "type": 7,
+        "matrix": [
+          [
+            -0.4956278151480056,
+            0.8685350130257385,
+            0.0,
+            2.3583209305390183
+          ],
+          [
+            0.8685350130257385,
+            0.4956278151480056,
+            0.0,
+            1.9564264399711497
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0000000000000027,
+            1.0381000000000002
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 120,
+        "faces": 76
+      },
+      {
+        "index": 85,
+        "body": "link_wrist_yaw",
+        "type": 7,
+        "matrix": [
+          [
+            0.8685350130257359,
+            0.49561420355371544,
+            -0.00367319808892016,
+            2.402777168910548
+          ],
+          [
+            0.495627815148004,
+            -0.8685111601549699,
+            0.006436888835735933,
+            1.950652272370133
+          ],
+          [
+            0.0,
+            -0.007411202472208447,
+            -0.9999725366618402,
+            1.038295284445198
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 4626,
+        "faces": 2692
+      },
+      {
+        "index": 87,
+        "body": "link_wrist_yaw",
+        "type": 7,
+        "matrix": [
+          [
+            -0.45808471439142373,
+            -0.306879958869098,
+            0.8342560070418643,
+            2.3567893712572183
+          ],
+          [
+            -0.23884731469530915,
+            -0.8615096705804985,
+            -0.4480547374586363,
+            1.9423326017346223
+          ],
+          [
+            0.8562186372088466,
+            -0.4045068334908426,
+            0.32134695728362517,
+            0.9940515773956607
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 1847,
+        "faces": 3729
+      },
+      {
+        "index": 89,
+        "body": "link_DW3_wrist_pitch",
+        "type": 7,
+        "matrix": [
+          [
+            0.8655703341382959,
+            0.4971725653288308,
+            -0.06006194255994401,
+            2.4011401791503935
+          ],
+          [
+            0.4991261380198909,
+            -0.8467109357420186,
+            0.18426526976136753,
+            1.9524702901062658
+          ],
+          [
+            0.04075653328085444,
+            -0.18947303654934694,
+            -0.9810396900307865,
+            0.9697052181269097
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 1433,
+        "faces": 2842
+      },
+      {
+        "index": 91,
+        "body": "link_DW3_wrist_pitch",
+        "type": 7,
+        "matrix": [
+          [
+            0.47283179596824926,
+            -0.1324583869424692,
+            0.8711399821211523,
+            2.4176072926795187
+          ],
+          [
+            -0.8379551388662206,
+            0.23815679379493718,
+            0.4910321036521048,
+            1.9253012363464865
+          ],
+          [
+            -0.2725092254752773,
+            -0.962151816138138,
+            0.0016139185077277966,
+            0.9537843730519272
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 381,
+        "faces": 758
+      },
+      {
+        "index": 93,
+        "body": "link_SG3_gripper_body",
+        "type": 7,
+        "matrix": [
+          [
+            0.8657605949284424,
+            0.4582671282630402,
+            -0.20112143451829873,
+            2.443601043553579
+          ],
+          [
+            0.4987624098336897,
+            -0.8231428115826005,
+            0.27142580989431464,
+            1.8809492073736132
+          ],
+          [
+            -0.04116613664218076,
+            -0.33530158200259097,
+            -0.9412110275068601,
+            0.9595443861594232
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 14545,
+        "faces": 24513
+      },
+      {
+        "index": 95,
+        "body": "link_SG3_aruco_d405",
+        "type": 7,
+        "matrix": [
+          [
+            -0.4420604226485629,
+            0.868195862566652,
+            -0.22542964966907536,
+            2.4423011195440476
+          ],
+          [
+            0.771884917985034,
+            0.4962187978148505,
+            0.39744254689504876,
+            1.8817065339520247
+          ],
+          [
+            0.45692040457284516,
+            0.0016878736127373677,
+            -0.8895059836604,
+            1.0092441582360219
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 120,
+        "faces": 76
+      },
+      {
+        "index": 97,
+        "body": "link_d405",
+        "type": 7,
+        "matrix": [
+          [
+            0.43950953936341974,
+            0.22578160271482378,
+            -0.869398661538012,
+            2.4508565637253956
+          ],
+          [
+            -0.7729196437054635,
+            -0.3980570934564743,
+            -0.49411109552732124,
+            1.8666502916539407
+          ],
+          [
+            -0.4576314993341045,
+            0.8891418437035318,
+            -0.0004388538598065762,
+            1.0003509337829168
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 1948,
+        "faces": 3892
+      },
+      {
+        "index": 98,
+        "body": "link_d405",
+        "type": 7,
+        "matrix": [
+          [
+            -0.22578160271482325,
+            0.4418807668338535,
+            -0.8681958625666533,
+            2.4559265166649205
+          ],
+          [
+            0.39805709345647383,
+            -0.7715681791288258,
+            -0.4962187978148512,
+            1.8579105913064424
+          ],
+          [
+            -0.8891418437035307,
+            -0.45762859707207726,
+            -0.0016878736127374232,
+            0.9951585060397322
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 308,
+        "faces": 608
+      },
+      {
+        "index": 99,
+        "body": "link_d405",
+        "type": 7,
+        "matrix": [
+          [
+            0.4418807668338536,
+            0.8681958625666535,
+            0.22578160271482334,
+            2.4560570047748067
+          ],
+          [
+            -0.7715681791288259,
+            0.4962187978148513,
+            -0.3980570934564739,
+            1.858028701588932
+          ],
+          [
+            -0.45762859707207737,
+            0.0016878736127373954,
+            0.8891418437035308,
+            0.9953694414270431
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 224,
+        "faces": 444
+      },
+      {
+        "index": 101,
+        "body": "scratcher",
+        "type": 2,
+        "matrix": [
+          [
+            -0.8685347376409205,
+            0.14750562541044135,
+            -0.47316963129863954,
+            2.508178114467626
+          ],
+          [
+            -0.49562765800022257,
+            -0.25695335102683425,
+            0.8296554706752035,
+            1.7660845946699646
+          ],
+          [
+            0.000796326710822897,
+            0.9551005527526165,
+            0.2962807789840822,
+            0.8976970276419657
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 642,
+        "faces": 1280
+      },
+      {
+        "index": 103,
+        "body": "link_gripper_slider",
+        "type": 6,
+        "matrix": [
+          [
+            0.8685347376409328,
+            0.1475056254103625,
+            0.4731696312986423,
+            2.418275884520884
+          ],
+          [
+            0.49562765800020187,
+            -0.25695335102688327,
+            -0.8296554706752011,
+            1.923719134098253
+          ],
+          [
+            -0.0007963267107332176,
+            0.9551005527526157,
+            -0.2962807789840856,
+            0.9539903756489421
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 8,
+        "faces": 12
+      },
+      {
+        "index": 104,
+        "body": "link_gripper_finger_left",
+        "type": 7,
+        "matrix": [
+          [
+            -0.7283606833058862,
+            0.12929196852471148,
+            -0.6728850584529218,
+            2.5407334722847517
+          ],
+          [
+            -0.6828445644976723,
+            -0.21821875168925756,
+            0.6972115010146999,
+            1.7771430156131034
+          ],
+          [
+            -0.056692290041690116,
+            0.9672973499840632,
+            0.24722827703084793,
+            0.8956088306150544
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 610,
+        "faces": 1218
+      },
+      {
+        "index": 106,
+        "body": "link_gripper_finger_left",
+        "type": 7,
+        "matrix": [
+          [
+            -0.8084282013909088,
+            0.15270619241056807,
+            -0.5684405527364604,
+            2.496460173841295
+          ],
+          [
+            -0.5876085199983605,
+            -0.26527363566990403,
+            0.7644253563584957,
+            1.854811522432228
+          ],
+          [
+            -0.03405980653501303,
+            0.9520035278390218,
+            0.3041861478780055,
+            0.9247712199814218
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 76,
+        "faces": 150
+      },
+      {
+        "index": 108,
+        "body": "link_gripper_finger_left",
+        "type": 7,
+        "matrix": [
+          [
+            0.14750852206657225,
+            0.8093716649161901,
+            -0.5684705304134376,
+            2.5067820950125372
+          ],
+          [
+            -0.2569436129884898,
+            0.5863830196219568,
+            0.7682024043463167,
+            1.8036630489363863
+          ],
+          [
+            0.9551027251883233,
+            0.03274847064879927,
+            0.29445937242344317,
+            0.9082501928870582
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 84,
+        "faces": 174
+      },
+      {
+        "index": 109,
+        "body": "rubber_tip_left",
+        "type": 7,
+        "matrix": [
+          [
+            -0.7159309290825322,
+            0.6808442624771515,
+            0.15457682567244943,
+            2.5415114760407143
+          ],
+          [
+            -0.6940068858909324,
+            -0.6698536925651013,
+            -0.2639137603325639,
+            1.7567296735128712
+          ],
+          [
+            -0.07614031204951378,
+            -0.2962214050483986,
+            0.9520795828459719,
+            0.890218542132115
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 1256,
+        "faces": 2508
+      },
+      {
+        "index": 111,
+        "body": "link_SG3_gripper_left_finger_aruco",
+        "type": 7,
+        "matrix": [
+          [
+            -0.84043992925777,
+            0.3991366999458043,
+            -0.3665387020023556,
+            2.5278860761072632
+          ],
+          [
+            0.3509897757095785,
+            0.9162779212232077,
+            0.19297913987325535,
+            1.7885849714980324
+          ],
+          [
+            0.41287637696596124,
+            0.03353603785861715,
+            -0.9101694520847265,
+            0.9012526656106401
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 120,
+        "faces": 76
+      },
+      {
+        "index": 113,
+        "body": "link_gripper_finger_right",
+        "type": 7,
+        "matrix": [
+          [
+            -0.9581144159576994,
+            -0.11846197944946914,
+            0.26073650561238,
+            2.4816707276789454
+          ],
+          [
+            -0.28099136244891926,
+            0.21297918444962854,
+            -0.9357797396932014,
+            1.74374549061442
+          ],
+          [
+            0.05532287197119477,
+            -0.9698487647133904,
+            -0.2373452199240046,
+            0.8953825838201354
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 598,
+        "faces": 1117
+      },
+      {
+        "index": 115,
+        "body": "link_gripper_finger_right",
+        "type": 7,
+        "matrix": [
+          [
+            -0.9034782780881323,
+            -0.1478745176927085,
+            0.4023184410887196,
+            2.443956542713936
+          ],
+          [
+            -0.4278897143899153,
+            0.25586592042958545,
+            -0.8668581331925329,
+            1.8091585398081866
+          ],
+          [
+            0.025246650118886226,
+            -0.9553354163747282,
+            -0.29444328635223566,
+            0.9192411488895803
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 188,
+        "faces": 253
+      },
+      {
+        "index": 117,
+        "body": "link_gripper_finger_right",
+        "type": 7,
+        "matrix": [
+          [
+            -0.14749229489764315,
+            -0.9165240573163452,
+            -0.37179251647419687,
+            2.4761984046126537
+          ],
+          [
+            0.25694479434513684,
+            -0.39850375895690926,
+            0.8804397348803346,
+            1.7862978751210017
+          ],
+          [
+            -0.9551049134020654,
+            0.03432792533204949,
+            0.29427231935340986,
+            0.908034097201548
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 84,
+        "faces": 174
+      },
+      {
+        "index": 118,
+        "body": "rubber_tip_right",
+        "type": 7,
+        "matrix": [
+          [
+            0.9615897478282561,
+            0.2314906377273211,
+            -0.14750336103354883,
+            2.498925569083591
+          ],
+          [
+            0.2632687942229067,
+            -0.9298796493138026,
+            0.25693069061608936,
+            1.7324877458644916
+          ],
+          [
+            -0.0776833242080439,
+            -0.2858949500019929,
+            -0.955106998562648,
+            0.8900901458459072
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 1256,
+        "faces": 2508
+      },
+      {
+        "index": 120,
+        "body": "link_SG3_gripper_right_finger_aruco",
+        "type": 7,
+        "matrix": [
+          [
+            0.12507633536731158,
+            0.029349971549666426,
+            -0.9917129067936574,
+            2.478394128397214
+          ],
+          [
+            0.9025100613874765,
+            0.411820466364266,
+            0.12601385867395645,
+            1.7605240365084105
+          ],
+          [
+            0.4121061749421686,
+            -0.9107922280375256,
+            0.025020350137089364,
+            0.9007891475495676
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 120,
+        "faces": 76
+      },
+      {
+        "index": 122,
+        "body": "link_aruco_shoulder",
+        "type": 7,
+        "matrix": [
+          [
+            0.0,
+            0.4956278151480056,
+            0.8685350130257385,
+            2.140181714752268
+          ],
+          [
+            0.0,
+            -0.8685350130257385,
+            0.4956278151480056,
+            2.1306649390735077
+          ],
+          [
+            1.0000000000000027,
+            0.0,
+            0.0,
+            1.136374999994063
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 120,
+        "faces": 76
+      },
+      {
+        "index": 124,
+        "body": "link_head_pan",
+        "type": 7,
+        "matrix": [
+          [
+            0.8677849037452583,
+            -0.49683190616562145,
+            0.01036425818238296,
+            2.373352820886349
+          ],
+          [
+            0.49611625361836753,
+            0.8673583587859514,
+            0.03947328640764139,
+            2.125187355001601
+          ],
+          [
+            -0.028601114095635493,
+            -0.0291124451047867,
+            0.9991668738566709,
+            1.3067641773020107
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 4420,
+        "faces": 2001
+      },
+      {
+        "index": 125,
+        "body": "link_head_pan",
+        "type": 7,
+        "matrix": [
+          [
+            0.7015834770087929,
+            0.6230304128386494,
+            -0.34585217863468115,
+            2.3522930526412424
+          ],
+          [
+            -0.7060550264496362,
+            0.6733529929974723,
+            -0.21927618759580356,
+            2.1121100851281747
+          ],
+          [
+            0.09626486593486036,
+            0.39803121925227025,
+            0.912307088697164,
+            1.3525056058872398
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 8022,
+        "faces": 4153
+      },
+      {
+        "index": 128,
+        "body": "link_head_tilt",
+        "type": 7,
+        "matrix": [
+          [
+            0.4745778824478414,
+            -0.8681251568078204,
+            -0.14537725272105978,
+            2.352545841561872
+          ],
+          [
+            -0.8299713431445335,
+            -0.49634533637361217,
+            0.2545365919058154,
+            2.0861011031187946
+          ],
+          [
+            -0.2931269401644698,
+            -0.00013848308859196193,
+            -0.9560735211123945,
+            1.2673103573350737
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 11016,
+        "faces": 4502
+      },
+      {
+        "index": 129,
+        "body": "link_head_tilt",
+        "type": 7,
+        "matrix": [
+          [
+            0.47054312136984006,
+            -0.8674913801620012,
+            -0.16139354471650258,
+            2.336624472321794
+          ],
+          [
+            -0.8287393744497011,
+            -0.4972833686538292,
+            0.2567105383443021,
+            2.11470647123346
+          ],
+          [
+            -0.30295250480603325,
+            0.012959807287514283,
+            -0.9529175322276447,
+            1.279318810695353
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 37178,
+        "faces": 15573
+      },
+      {
+        "index": 132,
+        "body": "link_SE3_head_nav_cam",
+        "type": 7,
+        "matrix": [
+          [
+            -0.05446290090350294,
+            0.20626052627933997,
+            0.9769802391676884,
+            2.3911433695212847
+          ],
+          [
+            -0.896707455170171,
+            0.4203221028391376,
+            -0.13872660057512368,
+            2.125056899406167
+          ],
+          [
+            -0.43926021020281325,
+            -0.8836209171154018,
+            0.16206339058752647,
+            1.2550994800815296
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "vertices": 3274,
+        "faces": 6042
+      }
+    ],
+    "tool": "Actual placement-renderer default bathing sphere MJCF, including actual visual sphere; no approximate scratcher substituted.",
+    "referenced_assets": [
+      {
+        "file": "resources/stretch/assets/base_link_0.obj",
+        "sha256": "9d3a1643fa7890b33f955242089fe127f7e192e32d858524db5c7da26c5122b4"
+      },
+      {
+        "file": "resources/stretch/assets/base_link_2.obj",
+        "sha256": "59ddb2d2a81b7a2f00fb8f74d0e6711f04c9f404691d8dac442788ea36dab870"
+      },
+      {
+        "file": "resources/stretch/assets/base_link_3.obj",
+        "sha256": "f4929a1511adfa84b91a4912e839a05d21f5715b930260dd81fb677b501b4a46"
+      },
+      {
+        "file": "resources/stretch/assets/base_link_4.obj",
+        "sha256": "5fb87192b939bbc69614454be52ac3211cc42c39410f9a6f72d3cf366125d414"
+      },
+      {
+        "file": "resources/stretch/assets/base_link_5.obj",
+        "sha256": "523f308172b2e910ed8990aa7d2f19bb98e81100335e6b8eef7867938676f302"
+      },
+      {
+        "file": "resources/stretch/assets/base_link_6.obj",
+        "sha256": "ac3ecf44cdc94e163478e8f491f9a8e511d9eaef605671905284df1202a6f6dd"
+      },
+      {
+        "file": "resources/stretch/assets/base_link_7.obj",
+        "sha256": "dfbaf9645fc6d2a9b3ee5e66e25c48f9ca135c42fb1333a516bf2e2d17bb0aa3"
+      },
+      {
+        "file": "resources/stretch/assets/base_link_8.obj",
+        "sha256": "24c7ed85eb63097d8f647c168c718194249b74d98eba7463ada1dd64faed9932"
+      },
+      {
+        "file": "resources/stretch/assets/base_link_casterless.stl",
+        "sha256": "d2d5bd2dc9f1d4ffde2321efd2067debeaabb2172f000b036f2ab6b5d043fac8"
+      },
+      {
+        "file": "resources/stretch/assets/link_aruco_right_base.obj",
+        "sha256": "7f0e7f41b9fe29c2091f39ff18a3b6742cfbe9c65434c60c51cde856db55d73b"
+      },
+      {
+        "file": "resources/stretch/assets/link_aruco_left_base.obj",
+        "sha256": "7f0e7f41b9fe29c2091f39ff18a3b6742cfbe9c65434c60c51cde856db55d73b"
+      },
+      {
+        "file": "resources/stretch/assets/respeaker_base.obj",
+        "sha256": "70acc76cf2a54fa419dc6d509919ae46a06d8f0f4bcdc46e88ba916de3a5c79a"
+      },
+      {
+        "file": "resources/stretch/assets/link_mast.obj",
+        "sha256": "dd28da988909e7f4dda26c296a3a54ba9a84c516c2f7d7059aa36fbc056d98c6"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_0.obj",
+        "sha256": "601b3ad3cf1d024cb0ef9f96e5e3a7cc671fc18d4d26140f3f14317765da1d00"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_1.obj",
+        "sha256": "ecc74a0b02815df93883f35ccbf56e312c707b088d087fb3e18ec780a78f41af"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_2.obj",
+        "sha256": "c81d8441cd7e5dc8fd74b9462783c61c5fda0f02eeaa0f87ed4f6addf3b195c0"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_3.obj",
+        "sha256": "d7e69ff8ae36d1c74ea5a0a941a48eb19c33f8d19d8d4e631545e96e8655f615"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_4.obj",
+        "sha256": "bdbb7bc5b816a9b55dcda9b9863f36e650e3c64ed9357897c7a11ba1e043f88f"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_5.obj",
+        "sha256": "243616144e0e7579582f9fc30573a489d08d33cbad25d714042ad01e7f8fb307"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_6.obj",
+        "sha256": "35eb02b748cb53695622b431c94c2beab837990713d30c163f98ee967f9e4b4a"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_7.obj",
+        "sha256": "7f2e724404d6034b0e893575ec920083dd77fb7e2f89e0964b74b4f23da01ab7"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_8.obj",
+        "sha256": "458e7850c870b35968f3c511d0cb64898c212575e1cea0c83110f70b1c713e81"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_9.obj",
+        "sha256": "e230e0ba13bc8e22abe74326e888cf8295b9546c6b67cc6ac5844253e52b2c92"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_10.obj",
+        "sha256": "f07adce0e40cd224bfd8dc49ff95bedd33cdf615406b627cba77449349a44ba0"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_11.obj",
+        "sha256": "90754a150e6a6c8bf97f188888c0ce87ff2e49c58b1074fd9f45b38f1d1a278d"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_pan_0.obj",
+        "sha256": "b1436e3f2c22d6d08b662deff47405673334839cd563c19b90bad351e2d0ae8b"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_pan_1.obj",
+        "sha256": "54370f2201f4ce69910bb61a902d0c07c167e90f4921882ebeb9432cc152f90a"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_tilt_0.obj",
+        "sha256": "c0330bea8f0c4bee0b35b4366e9e3d3cd5ca1023a121a3d5f0c65dc5f393e03f"
+      },
+      {
+        "file": "resources/stretch/assets/link_head_tilt_1.obj",
+        "sha256": "4d1cb6f2207d6986e45f99428c8eece8fa6a24fba6fb1d3475c5f774df7545eb"
+      },
+      {
+        "file": "resources/stretch/assets/link_right_wheel_0.obj",
+        "sha256": "f2b821eb94f5437ccfdc5efb2b9bdf10c4fd584aa54f45f306e051a4ca04ccbb"
+      },
+      {
+        "file": "resources/stretch/assets/link_right_wheel_1.obj",
+        "sha256": "695bca8ae8e307e1c9e56505b33b293f2806b872254966e4d06a1c36e56b102e"
+      },
+      {
+        "file": "resources/stretch/assets/link_left_wheel_0.obj",
+        "sha256": "32a02f8d4fa8b6f4c8174965365b7c386104e5bcbead3e1d06daa455411eecdf"
+      },
+      {
+        "file": "resources/stretch/assets/link_left_wheel_1.obj",
+        "sha256": "1d38982dc60a8c05c64120b6b05ceba7f40c98bde0904c5385b097d9bf07fc91"
+      },
+      {
+        "file": "resources/stretch/assets/link_lift_0.obj",
+        "sha256": "ad629cb6eaeafec45a814365102c758b3b131df35534fc3215c373c9c34d066f"
+      },
+      {
+        "file": "resources/stretch/assets/link_lift_1.obj",
+        "sha256": "3c4f265261ac9db81af975204c1120dad88c9b41e4869b0f2202ab0bc669b344"
+      },
+      {
+        "file": "resources/stretch/assets/link_lift_2.obj",
+        "sha256": "9cc0064b7e8add7e401a891f9a2cb7b6c11f66fe91007023e449f3eb903ea227"
+      },
+      {
+        "file": "resources/stretch/assets/link_lift_3.obj",
+        "sha256": "0a3e16d2b30bff8a529efa9778e4c2b3f2eeb052bd29e5c414c0da6d7e72ea41"
+      },
+      {
+        "file": "resources/stretch/assets/link_lift_4.obj",
+        "sha256": "9755b22de6e30c44b883fe6720e09e6c608981fe1e3572bd22e81d82eff08288"
+      },
+      {
+        "file": "resources/stretch/assets/link_lift_5.obj",
+        "sha256": "ed85f90c8aa70761c5322f57d7d3245bef1d560711512a995ec1e669815acb65"
+      },
+      {
+        "file": "resources/stretch/assets/link_lift_6.obj",
+        "sha256": "f3811817e908e890ddebd011c733de5b407cd781b537a1e281dccd247da0eb70"
+      },
+      {
+        "file": "resources/stretch/assets/link_lift_7.obj",
+        "sha256": "65122e665930affc87dffc2ce790fdc326e7b988522101ed7f10d4ab6cba8cd7"
+      },
+      {
+        "file": "resources/stretch/assets/link_lift_8.obj",
+        "sha256": "0b67a66d5c8c4ce1067dba66b2cbf7b8539bf905a414a232e1b722e42d4acdf2"
+      },
+      {
+        "file": "resources/stretch/assets/link_lift_9.obj",
+        "sha256": "5eaf46cb89705c2c9910a6453f70d63b2d407c2a86e0fc60caec6abf857ddd35"
+      },
+      {
+        "file": "resources/stretch/assets/link_aruco_shoulder.obj",
+        "sha256": "6a9ace409ff326eec456770a96d2aec9e1e100aa9fcd6afe9b320eb03d62164f"
+      },
+      {
+        "file": "resources/stretch/assets/link_arm_l4_0.obj",
+        "sha256": "f81406eb8b4efa49df82044b5075078a600e44514cd90129e6ddd6136cf22e8f"
+      },
+      {
+        "file": "resources/stretch/assets/link_arm_l4_1.obj",
+        "sha256": "1fb20913eca87594ca504642a48b1b1004f8f594b19cbc45ea709b76375666f5"
+      },
+      {
+        "file": "resources/stretch/assets/link_arm_l3_0.obj",
+        "sha256": "44b748d6c32ff8898d55ea8c92ea177c43ab31fb2a20af4e1069d3d149d6f044"
+      },
+      {
+        "file": "resources/stretch/assets/link_arm_l3_1.obj",
+        "sha256": "f32e67a44270312b51f1af8aa8458a29bf8714f9b7d3d4b892e579056414c4fa"
+      },
+      {
+        "file": "resources/stretch/assets/link_arm_l2_0.obj",
+        "sha256": "e5c7bdce8e28efa3360202623fe01c35dd0bdd404318766d500920d139662500"
+      },
+      {
+        "file": "resources/stretch/assets/link_arm_l2_1.obj",
+        "sha256": "6b0ed71768eb30301a2109bd4375b24137bccaee7529b110fdad7b0e0b5076e4"
+      },
+      {
+        "file": "resources/stretch/assets/link_arm_l1_0.obj",
+        "sha256": "0ebb391b8bfa377332034341ff1c0193c8ca494ff6beb7a593cccbb09aeb0ec8"
+      },
+      {
+        "file": "resources/stretch/assets/link_arm_l1_1.obj",
+        "sha256": "4ef086e1abfbcdea46a546a96ab8b602574f1f0aa1668c95a336c6534700c3eb"
+      },
+      {
+        "file": "resources/stretch/assets/link_arm_l0_0.obj",
+        "sha256": "ebc8bbc182891fa029c677a8f1e32e3ed53f11a986b68a28defb8daa9b714a37"
+      },
+      {
+        "file": "resources/stretch/assets/link_arm_l0_1.obj",
+        "sha256": "0ff60709a54b06ab24330c769c50ba677fd95459eaf0439f15579ab8042346a4"
+      },
+      {
+        "file": "resources/stretch/assets/link_arm_l0_2.obj",
+        "sha256": "bc8bda8c3321fb5f64ebb0294bb8c3191e65ac51e619384f19f0133f362e888d"
+      },
+      {
+        "file": "resources/stretch/assets/link_aruco_inner_wrist.obj",
+        "sha256": "2cba33928cc667457e3b7fb60359c05687688f4923bc7bb6f965a8aae446dbf9"
+      },
+      {
+        "file": "resources/stretch/assets/link_aruco_top_wrist.obj",
+        "sha256": "514f4515903781d69729fe4130396e8b2ae301a4356024c2b5beba9888036074"
+      },
+      {
+        "file": "resources/stretch/assets/laser.obj",
+        "sha256": "febe15452ffde5d069943fa51fb08426079ad4419c983a84b3a47d822d87c8a9"
+      },
+      {
+        "file": "resources/stretch/assets/link_gripper_fingertip_left.stl",
+        "sha256": "7cb02cd1d0d5a2599b75365f1d61963a581ee49f2438fc79aefa964a952df77a"
+      },
+      {
+        "file": "resources/stretch/assets/link_gripper_fingertip_right.stl",
+        "sha256": "dbfb702f50aa53a077e5188e0b4269a8bddff485d197e5c06d9e4321cb5ea6a5"
+      },
+      {
+        "file": "resources/stretch/assets/link_gripper_finger_left_0.obj",
+        "sha256": "7a886141e5501877f9b776b204f2694537994ebccfdf7715c6771c6406234002"
+      },
+      {
+        "file": "resources/stretch/assets/link_gripper_finger_left_1.obj",
+        "sha256": "16291341862cd7aa35ff767c6868252cb695d4222459a55ed1bf8c32cecb9615"
+      },
+      {
+        "file": "resources/stretch/assets/link_gripper_finger_right_0.obj",
+        "sha256": "b5e8d67538153b0f37939f0bcc9c850f80446578a2d1f9cfc78adc3737b480cb"
+      },
+      {
+        "file": "resources/stretch/assets/link_gripper_finger_right_1.obj",
+        "sha256": "37159f986750a6d18f4d7904051fd32f77297660a9aeec2d8751c08ce3aa2575"
+      },
+      {
+        "file": "resources/stretch/assets/link_gripper_0.obj",
+        "sha256": "5feed27dc9f0febc1fc15fcef98c9a47bbe64c451e33197460d4abb7c11b9279"
+      },
+      {
+        "file": "resources/stretch/assets/link_gripper_1.obj",
+        "sha256": "5fa25ae6ee8653098dade84361e5c24385abb56773d261c47602a2e742254a78"
+      },
+      {
+        "file": "resources/stretch/assets/link_wrist_yaw.obj",
+        "sha256": "53fcc361ab7a3b82326b8344bcb2654d61d0b2d06b8e9ab9566f75d9fc266bd4"
+      },
+      {
+        "file": "resources/stretch/assets/link_DW3_tablet_12in.stl",
+        "sha256": "0bfc56ed791d36d68d446a40728d7550c8e5118267ada12aa25da7132abd97e7"
+      },
+      {
+        "file": "resources/stretch/assets/link_DW3_wrist_pitch.stl",
+        "sha256": "9fb47ba958d9ce65d8020d3aa328aa62bc47d4bbb01fd30e3b632a6b25238b5c"
+      },
+      {
+        "file": "resources/stretch/assets/link_DW3_wrist_quick_connect.stl",
+        "sha256": "f5df1f4dd28dd975340e68d2601f66c52a457cace5192585a22f6c14685ea2f5"
+      },
+      {
+        "file": "resources/stretch/assets/link_DW3_wrist_yaw_bottom.stl",
+        "sha256": "e6e7052e8334f01edc3b8d03e698c06bc03d27289f9568e20baed562d6a36cab"
+      },
+      {
+        "file": "resources/stretch/assets/link_SE3_head_nav_cam.stl",
+        "sha256": "be4645b82f4b4912b257a7f675176504d83377c3d5c7e9528efd2aa8e6d5623d"
+      },
+      {
+        "file": "resources/stretch/assets/link_SG3_aruco_d405.obj",
+        "sha256": "8fd74cef03a4fe8b3bd2ad2a003b0f482296d46d228cb3c6c288cc36f1c38834"
+      },
+      {
+        "file": "resources/stretch/assets/link_SG3_gripper_body.stl",
+        "sha256": "7fc5236786c964d83bf48d0fd1ad8ea155dfc771f1ff4bc27c7bc2d86eabb80d"
+      },
+      {
+        "file": "resources/stretch/assets/link_d405.stl",
+        "sha256": "0ab47dd3a933d54a9b4630a629700708fa63bd88f5475a2bdc3b8dfc222ee35a"
+      },
+      {
+        "file": "resources/stretch/assets/link_d405_lens.stl",
+        "sha256": "967f212d148ce40295b3a97f3a006e15943fa48a118fbd3350172faf3818a246"
+      },
+      {
+        "file": "resources/stretch/assets/link_d405_front_plate.stl",
+        "sha256": "20d6fa80713951301393a3d9d4d96c1b8ae8b05a9eab64da76d54445d568a2ee"
+      },
+      {
+        "file": "resources/stretch/assets/link_SG3_gripper_left_finger.stl",
+        "sha256": "9b521e35a032a590879e3d3d520219c3f848ee89e69fddf5c5f6372d06869423"
+      },
+      {
+        "file": "resources/stretch/assets/link_SG3_gripper_right_finger.stl",
+        "sha256": "85a729e0c81cc2caeddf47323ef1deb05bebb521f89af60b60f5fa361c692c70"
+      },
+      {
+        "file": "resources/stretch/assets/link_SG3_gripper_left_finger_0.obj",
+        "sha256": "a504ed43c451dfe771934a68fe7fe0141d873ec876bf16a39e7327ca0ec865cb"
+      },
+      {
+        "file": "resources/stretch/assets/link_SG3_gripper_right_finger_0.obj",
+        "sha256": "bf8786fa70e213ad51a58c4b2a8d1f4c046593f31f1b1f27481c134108f1d368"
+      },
+      {
+        "file": "resources/stretch/assets/link_SG3_gripper_left_finger_1.obj",
+        "sha256": "1b23f6cf2907318cb00b14a41092083303d4945be4ffb750c0a9bf9fc7706ec9"
+      },
+      {
+        "file": "resources/stretch/assets/link_SG3_gripper_right_finger_1.obj",
+        "sha256": "ad42d88c7b94aaa776b617244b1f1675646a54e9f517fc431b721a98ff7cd152"
+      },
+      {
+        "file": "resources/stretch/assets/link_SG3_gripper_left_inner_finger.stl",
+        "sha256": "2021148766fd93c1fae24723eb5f65ec981cd1889fbc6be6f8458793207df383"
+      },
+      {
+        "file": "resources/stretch/assets/link_SG3_gripper_right_inner_finger.stl",
+        "sha256": "9b5becd4ccf93151e4599f038a9be3f7123656fe910462977a0f4a16eada941c"
+      },
+      {
+        "file": "resources/stretch/assets/link_SG3_gripper_inner_finger.stl",
+        "sha256": "3bee8ab82e230fe1132f5703dbf5b18982cc51398d8c45cba9aa2e31347bb6a0"
+      },
+      {
+        "file": "resources/stretch/assets/link_SG3_gripper_left_finger_aruco.obj",
+        "sha256": "19ceeca8956d2e845a2a53c08ab015c79cdded2873dd282d1e764a8e193db491"
+      },
+      {
+        "file": "resources/stretch/assets/link_SG3_gripper_right_finger_aruco.obj",
+        "sha256": "f5555f3a3cd025c7ed1f45fda2b5d5813eba0a079ca05cbe46834220682e1154"
+      },
+      {
+        "file": "resources/stretch/assets/link_SG3_gripper_right_fingertip.stl",
+        "sha256": "c9a680cb46f39fa53dba46e4bff7e537346a4f5caa04f3b41e551cd63d885d4d"
+      },
+      {
+        "file": "resources/stretch/assets/link_SG3_gripper_left_fingertip.stl",
+        "sha256": "bb4ac16a6b9ff712cf4b2c4051ca498547c687ab1a985c51fad484c5d426aefa"
+      },
+      {
+        "file": "resources/stretch/assets/big_aruco_plate.stl",
+        "sha256": "41195315eca742171154d73613cade538413d63ac627cfdbb815600f6e66c3c8"
+      },
+      {
+        "file": "resources/stretch/assets/hand_crush.png",
+        "sha256": "b3fddc2877eca3542299291dce3e098558cc7dcdade10aae5526aeddc95604b8"
+      },
+      {
+        "file": "resources/stretch/assets/serial.png",
+        "sha256": "9f7a63de6f4c5f677d3f302ff0fb78db1e1af30a40668d7f297a147cfcb87b04"
+      },
+      {
+        "file": "resources/stretch/assets/mobile_base_right_corner_aruco_sticker.png",
+        "sha256": "025e8d8eaca6303c45ed979cea2278097dc56b6c40558af15b67b228249725d0"
+      },
+      {
+        "file": "resources/stretch/assets/mobile_base_left_corner_aruco_sticker.png",
+        "sha256": "e99edecf442109ff6c2311c2325ae10e709e723524eb9a4a41af343abcc5b882"
+      },
+      {
+        "file": "resources/stretch/assets/hand_pinch.png",
+        "sha256": "9c4b6d023cdf52828b3c95da8abc14393ed9256bb8ccbb86f220090ef2e81dc7"
+      },
+      {
+        "file": "resources/stretch/assets/arm_inner_wrist_aruco_sticker.png",
+        "sha256": "100ad8dca698e0b7362f57abec97b3f535c2a62e251048e63ad99c435d21c549"
+      },
+      {
+        "file": "resources/stretch/assets/arm_top_wrist_aruco_sticker.png",
+        "sha256": "7cc7ff50704807befd82d6ac441f0de7460e58923dc3771deb8bc8e8f528cedf"
+      },
+      {
+        "file": "resources/stretch/assets/shoulder_aruco_sticker.png",
+        "sha256": "13813d08a1cd2c06ea4726a916b1e789362f2ad500aa11b0998cd2209d8eaef1"
+      },
+      {
+        "file": "resources/stretch/assets/right_finger_aruco.png",
+        "sha256": "acb2a13762796e37352cbf952c62ee4ff8545c23659f66ce341cedae2b8b24c8"
+      },
+      {
+        "file": "resources/stretch/assets/left_finger_aruco.png",
+        "sha256": "6120990ed390a4f6debf6d37218820ca489991324c9ddbd88cb7af89ad972e75"
+      },
+      {
+        "file": "resources/stretch/assets/gripper_cam_aruco_sticker.png",
+        "sha256": "81c18ca457cd12d430729ea06c6d2cbf51a7a03d869a6f3cd3c57031d16ea49c"
+      }
+    ]
+  },
+  "coordinate_conversion": "Z-up simulation to Y-up viewer: (x,y,z)->(x,z,-y)",
+  "export": {
+    "source": "/tmp/orchestrator-3d/resume-before.glb",
+    "sha256": "b2a8f1f7045fb8966b5b05e5c3ee1b10c85002fb556c6f5b67592f11a12ea029",
+    "mtime_utc": "2026-09-19T18:05:57.156793+00:00",
+    "bytes": 63866328
+  },
+  "geometry_policy": "No mesh simplification; original room and robot meshes transformed by recorded configuration. Original SMPL-X generated deterministically from recorded parameters. Texture, UV registration and camera are presentation changes only.",
+  "web_export": {
+    "file": "resume-before.glb",
+    "sha256": "65a29a312f7677fcfa99c00ebdc76e53f7ba7c0af5adb680ccf19e1425f75afa",
+    "bytes": 6731984,
+    "compression": "Lossless EXT_meshopt_compression. No quantization or simplification; texture images resized to1024 max.",
+    "geometry_verification": {
+      "matched_mesh_nodes": 117,
+      "total_mesh_nodes": 117,
+      "positions": "SHA256 equality of raw float32 POSITION buffers",
+      "triangles": "Identical winding-aware triangle sets (meshopt may cyclically rotate index triples)",
+      "transforms": "Maximum matrix difference <=1e-10",
+      "issues": []
+    }
+  }
+}

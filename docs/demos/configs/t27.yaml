@@ -1,0 +1,38 @@
+# Task 27/50 of task_suite/tasks_llm.json -- back_percussion / left_mid_back (sitting).
+# Written by task_suite/room_suite.py configs; description [llm].
+# Original: The person is sitting in the accent chair with their back exposed. Since they only have a stubborn pocket of mucus on one side today, the robot performs a quick, concentrated percussion session with its bare tip exclusively over the left shoulder blade and mid-spine.
+run_name: room2_t27_back_percuss_left_mid_back
+task: bathing
+robot: stretch
+human_indices:
+- 0
+cuda_id: 3
+task_description: An adult of average build sits in a bedroom accent chair (seat depth approximately 45 cm), their back well above the chair frame, with knees bent at 90 degrees, feet flat on the floor, and hands resting separated on the front ends of the armrests to prevent mesh self-collision. Positioned behind the chair, the robot approaches by coming down from above over the top edge of the chair back, ensuring its base and arm remain entirely outside the chair's back and wings at all times. Starting from a clearly separated non-contact pose, the robot lowers the scratcher tip into light, rhythmic percussion contact with the left mid back, performing four focused tapping cycles across spine1 and leftShoulder. Only the scratcher tip touches the skin while the rest of the robot stays clear, after which the robot lifts the tool clear of the body and retreats to a separated non-contact pose.
+human_posture: sitting
+furniture_name: bedroom_accent_chair_0
+target_segments:
+- spine1
+- leftShoulder
+human_placement_impl: vlm
+scene:
+  enabled: true
+  order: room_first
+  room_policy: download_delete
+  scene_tries: 16
+  fetch_min_free_gb: 5
+  exclude_support:
+  - 23:bedroom_bed_0
+vlm_model: gemini-3.7-flash
+orchestrator:
+  model: gemini-3.7-flash
+  stage_attempt_cap: 5
+  item_execution_cap: 40
+  outer_loop_cap: 1
+  llm_call_cap: 600
+  review_on_success: true
+  cross_validate_humans: 0
+  stage_timeouts_s:
+    per_vlm_iter: 1800.0
+    per_cross_val_body: 300.0
+    default: 3600.0
+seated_view: back

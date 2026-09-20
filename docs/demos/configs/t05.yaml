@@ -1,0 +1,38 @@
+# Task 05/50 of task_suite/tasks_llm.json -- back_percussion / upper_back (lying).
+# Written by task_suite/room_suite.py configs; description [llm].
+# Original: The person is lying face down in bed with their back up, too congested this morning to sit up. The robot rhythmically taps across their upper back and shoulder blades with its padded ball end, helping to loosen the chest congestion so they can clear their airways.
+run_name: room2_t05_back_percuss_upper_back
+task: bathing
+robot: stretch
+human_indices:
+- 0
+cuda_id: 3
+task_description: An adult of average build is lying face-down on a flat horizontal bed with mattress height around forty-five centimeters. The head is turned gently to the side, both arms rest extended along the sides of the torso without touching the body, and both legs extend straight and slightly apart on the mattress. Starting from a clearly separated non-contact pose, a robot approaches from the side of the bed to perform back percussion on the upper back. The robot presses its sponge pad flat against the skin with light contact, executing three rhythmic passes across leftShoulder, spine2, and rightShoulder. Contact is strictly confined to these upper back segments, with only the tool contacting the person while the robot body stays entirely clear. The robot then lifts the sponge pad clear of the body and retreats to a clearly separated non-contact pose so the end of the task is unambiguous.
+human_posture: lying
+furniture_name: bed
+target_segments:
+- spine2
+- leftShoulder
+- rightShoulder
+human_placement_impl: vlm
+scene:
+  enabled: true
+  order: room_first
+  room_policy: download_delete
+  scene_tries: 8
+  fetch_min_free_gb: 5
+  exclude_support:
+  - 23:bedroom_bed_0
+vlm_model: gemini-3.7-flash
+orchestrator:
+  model: gemini-3.7-flash
+  stage_attempt_cap: 5
+  item_execution_cap: 40
+  outer_loop_cap: 1
+  llm_call_cap: 600
+  review_on_success: true
+  cross_validate_humans: 0
+  stage_timeouts_s:
+    per_vlm_iter: 1800.0
+    per_cross_val_body: 300.0
+    default: 3600.0

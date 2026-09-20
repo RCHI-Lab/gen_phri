@@ -1,0 +1,37 @@
+# Task 41/50 of task_suite/tasks_llm.json -- edema_massage / right_knee_spot (sitting).
+# Written by task_suite/room_suite.py configs; description [llm].
+# Original: The person is sitting in a shallow accent chair right after dinner, pointing out a localized pocket of swelling over their right knee. The robot performs a quick, targeted set of upward sweeping motions over that single spot. This brief pass addresses the pooling fluid before they transition to the bedroom.
+run_name: room2_t41_edema_massag_right_knee_spot
+task: bathing
+robot: stretch
+human_indices:
+- 0
+cuda_id: 3
+task_description: An adult of average build is seated in a shallow accent chair with a seat depth of about 45 cm, sitting upright with hands resting comfortably on the armrests and feet flat on the floor, keeping the lower legs near vertical and clearly separated. The right knee, at the top of rightLeg, is exposed and free of obstruction. Approaching from the front-right without crossing into the chair structure, the robot positions its sponge pad flat against the swollen spot over the right knee. Starting from a clearly separated non-contact pose, it makes light contact and performs three short, gentle upward sweeping strokes over the front of the right knee, with only the sponge pad touching the skin while the rest of the robot remains clear of both person and furniture. The robot then lifts the tool away from the knee and retreats to a separated non-contact pose so the task ending is unambiguous.
+human_posture: sitting
+furniture_name: bedroom_accent_chair_0
+target_segments:
+- rightLeg
+human_placement_impl: vlm
+scene:
+  enabled: true
+  order: room_first
+  room_policy: download_delete
+  scene_tries: 16
+  fetch_min_free_gb: 5
+  exclude_support:
+  - 23:bedroom_bed_0
+vlm_model: gemini-3.7-flash
+orchestrator:
+  model: gemini-3.7-flash
+  stage_attempt_cap: 5
+  item_execution_cap: 40
+  outer_loop_cap: 1
+  llm_call_cap: 600
+  review_on_success: true
+  cross_validate_humans: 0
+  stage_timeouts_s:
+    per_vlm_iter: 1800.0
+    per_cross_val_body: 300.0
+    default: 3600.0
+seated_view: front

@@ -1,0 +1,39 @@
+# Task 22/50 of task_suite/tasks_llm.json -- edema_massage / right_arm_and_hand (sitting).
+# Written by task_suite/room_suite.py configs; description [llm].
+# Original: The person is sitting in a shallow accent chair with their feet flat and right arm resting on the armrest. The robot applies steady, directional pressure with its tip from the back of the hand up through the forearm to the upper arm. This clears out the fluid that built up during their afternoon nap.
+run_name: room2_t22_edema_massag_right_arm_and_hand
+task: bathing
+robot: stretch
+human_indices:
+- 0
+cuda_id: 3
+task_description: An adult of average build is seated in an accent chair with a seat depth of about 40 to 45 cm, knees bent so the lower legs hang vertically with feet flat on the floor, the left hand resting comfortably in the lap, and the right forearm and right hand resting extended along the right armrest with the limb fully exposed. Starting from a clearly separated non-contact pose, the robot approaches from the front-right, positioning its base and arm entirely outside the chair frame to ensure it never collides with or clips through the armrests, backrest, or side wings. The robot presses a sponge pad flat against the skin to apply gentle, continuous pressure, performing three upward massage strokes starting at the back of the rightHand, proceeding along the rightForeArm, and ending on the rightArm, lifting slightly between strokes before returning to the hand. Contact is confined strictly to the sponge pad against the rightHand, rightForeArm, and rightArm without any other part of the robot touching the person. After completing the final stroke, the robot lifts the tool clear of the body and retreats to a separated non-contact pose.
+human_posture: sitting
+furniture_name: bedroom_accent_chair_0
+target_segments:
+- rightHand
+- rightForeArm
+- rightArm
+human_placement_impl: vlm
+scene:
+  enabled: true
+  order: room_first
+  room_policy: download_delete
+  scene_tries: 16
+  fetch_min_free_gb: 5
+  exclude_support:
+  - 23:bedroom_bed_0
+vlm_model: gemini-3.7-flash
+orchestrator:
+  model: gemini-3.7-flash
+  stage_attempt_cap: 5
+  item_execution_cap: 40
+  outer_loop_cap: 1
+  llm_call_cap: 600
+  review_on_success: true
+  cross_validate_humans: 0
+  stage_timeouts_s:
+    per_vlm_iter: 1800.0
+    per_cross_val_body: 300.0
+    default: 3600.0
+seated_view: front

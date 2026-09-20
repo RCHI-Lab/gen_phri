@@ -1,0 +1,183 @@
+{
+  "critics": {
+    "human_generation": {
+      "source": "human_generation/pose_generation/data/room2_t28_skin_assessm_spine/human_0/iter_01/critique.json",
+      "record": {
+        "is_valid": false,
+        "severity": "moderate",
+        "summary": "The torso is not leaning forward to clear the backrest, and the hands are hanging at the sides of the hips rather than resting on top of the knees.",
+        "issues": [
+          {
+            "issue_type": "posture mismatch",
+            "severity": "moderate",
+            "description": "The torso is upright/reclined rather than leaning forward slightly from the hips to expose the spine."
+          },
+          {
+            "issue_type": "posture mismatch",
+            "severity": "moderate",
+            "description": "The arms are positioned along the sides of the pelvis instead of reaching forward onto the tops of the knees."
+          }
+        ],
+        "suggestions": [
+          "Add forward flexion to the spine to create a slight forward lean.",
+          "Flex both shoulders forward to bring the hands onto the tops of the knees."
+        ],
+        "joint_adjustments": [
+          {
+            "joint_name": "spine",
+            "axis": "x",
+            "suggested_delta_deg": 12.0,
+            "reason": "Lean the torso forward slightly to lift the back clear off the backrest."
+          },
+          {
+            "joint_name": "left_shoulder",
+            "axis": "x",
+            "suggested_delta_deg": 15.0,
+            "reason": "Flex the left shoulder forward so the hand reaches the top of the knee."
+          },
+          {
+            "joint_name": "right_shoulder",
+            "axis": "x",
+            "suggested_delta_deg": 15.0,
+            "reason": "Flex the right shoulder forward so the hand reaches the top of the knee."
+          }
+        ]
+      }
+    },
+    "human_placement": {
+      "source": "scene_generation/human_placement/data/room2_t38_hand_warming_left_wrist_and_fingers/human_0/iter_00/critique.json",
+      "record": {
+        "is_valid": false,
+        "severity": "moderate",
+        "summary": "The person is seated properly facing right, but their lower legs are clipping into the front edge/cushion of the seat.",
+        "issues": [
+          {
+            "issue_type": "collision",
+            "severity": "moderate",
+            "description": "The left and right lower legs penetrate the front edge of the seat cushion by over 3 cm."
+          }
+        ],
+        "suggestions": [
+          "Move the person forward (positive x direction) by about 0.07 to clear the lower legs from the front cushion edge."
+        ],
+        "match": "acceptable",
+        "reasoning": "The orientation and posture match the task requirements, but the person is positioned slightly too far back into the seat cushion, causing the calves/lower legs to penetrate the front edge of the furniture.",
+        "delta_x_norm": 0.07,
+        "delta_y_norm": 0.0,
+        "new_facing_dir": "right",
+        "new_head_dir": "out",
+        "suggestion_reasoning": "Increasing x_norm by 0.07 will move the seated human forward toward the right, allowing the calves to clear the front edge of the seat while keeping the pelvis fully supported."
+      }
+    },
+    "robot_motion": {
+      "source": "robot_motion_generation/data/room2_t28_skin_assessm_spine/iter_00/critique.json",
+      "record": {
+        "is_valid": false,
+        "severity": "severe",
+        "summary": "The final retreat waypoint exceeds the robot arm's reachable workspace, and the lowest spine contact point is placed too low (landing on the hips rather than the spine).",
+        "issues": [
+          {
+            "issue_type": "kinematic_unreachable",
+            "severity": "severe",
+            "description": "Waypoint 5 (final retreat pose) is unreachable (waypoints_reachable_frac = 0.8333) due to excessive standoff distance (0.25 m) extending past the robot's arm reach."
+          },
+          {
+            "issue_type": "off_target_contact",
+            "severity": "moderate",
+            "description": "Waypoint 3 lands on the hips rather than the spine segment because the lowest spine interpolation point is weighted too close to the hip landmarks."
+          }
+        ],
+        "suggestions": [
+          "Reduce the retreat standoff distance from 0.25 m to around 0.12-0.15 m so the robot arm remains within reach limits.",
+          "Shift the lowest spine waypoint slightly upward toward the mid-back (e.g. reduce the hip blend weight from 0.8 to around 0.65-0.7) so that the contact stays on the spine."
+        ],
+        "findings": [
+          {
+            "issue_type": "kinematic_unreachable",
+            "severity": "severe",
+            "entity_or_region": "final retreat waypoint",
+            "direction": "decrease standoff distance from the surface",
+            "magnitude_hint": "reduce offset by about 0.10 m (to around 0.15 m total standoff)",
+            "suggestion": "Decrease the retreat standoff offset so the end-effector remains within the kinematic workspace of the robot arm."
+          },
+          {
+            "issue_type": "off_target_contact",
+            "severity": "moderate",
+            "entity_or_region": "lowest spine contact waypoint",
+            "direction": "shift position superiorly (upward along the back toward shoulders)",
+            "magnitude_hint": "move upward by about 5 to 8 cm",
+            "suggestion": "Adjust the lower spine estimation position upward along the torso axis so the third touch point lands on the lower spine rather than the hips."
+          }
+        ]
+      }
+    },
+    "robot_placement": {
+      "source": "room2_t16_back_percuss_mid_back/robot_placement/iter_00/critique.json",
+      "record": {
+        "is_valid": false,
+        "severity": "severe",
+        "summary": "The robot base is placed directly on top of the bed mattress, colliding heavily with the bed furniture.",
+        "issues": [
+          {
+            "issue_type": "furniture collision",
+            "severity": "severe",
+            "description": "The robot base is positioned on the bed mattress instead of standing on the open floor beside the bed, resulting in a severe furniture collision (-200 mm clearance)."
+          }
+        ],
+        "suggestions": [
+          "Move the robot base off the bed mattress onto the open floor beside the bed.",
+          "Place the robot on the open floor to the human's left side (towards the near edge of the bed) where there is clear floor space and direct reach to the mid-back.",
+          "Orient the robot base to face the mid-back workspace head-on from the floor."
+        ],
+        "findings": [
+          {
+            "issue_type": "furniture collision",
+            "severity": "severe",
+            "entity_or_region": "robot base",
+            "direction": "move off the bed onto the open floor to the human's left side (opposite side_dir)",
+            "magnitude_hint": "about 1.0 to 1.2 m",
+            "suggestion": "Shift the robot placement from the right side across the bed to the open floor on the human's left side so the base rests entirely on the floor clear of the bed frame and mattress."
+          }
+        ]
+      }
+    }
+  },
+  "orchestrator": [
+    {
+      "run": "room2_t01_back_percuss_upper_back_seated",
+      "source": "runs/room2_t01_back_percuss_upper_back_seated/orchestrator_log.jsonl",
+      "record": {
+        "t": "2026-09-11T06:15:29.259382+00:00",
+        "event": "llm_decision",
+        "stage": "pose_generation",
+        "action": "retry_with_context",
+        "target": null,
+        "rationale": "The refinement loop plateaued across all 5 iterations (moderate severity throughout) with persistent self-collisions between hands/arms and hips/torso. Re-running with prescriptive context instructs the generator to lean the torso forward and extend the arms to rest on the knees, addressing both task requirements and self-collision."
+      }
+    },
+    {
+      "run": "room2_t05_back_percuss_upper_back",
+      "source": "runs/room2_t05_back_percuss_upper_back/orchestrator_log.jsonl",
+      "record": {
+        "t": "2026-09-12T01:21:55.427233+00:00",
+        "event": "llm_decision",
+        "stage": "robot_motion",
+        "action": "backtrack",
+        "target": "robot_placement",
+        "rationale": "Robot motion has exhausted 10 iterations across 4 attempts with severe unreachable waypoints (89.5% unreachable) and structural link collisions. This persistent kinematic failure indicts the upstream base placement. Backtracking to robot_placement is required to adjust base position for reachable manipulation of the upper back."
+      }
+    },
+    {
+      "run": "room2_t01_back_percuss_upper_back_seated",
+      "source": "runs/room2_t01_back_percuss_upper_back_seated/orchestrator_log.jsonl",
+      "record": {
+        "t": "2026-09-11T06:40:28.153024+00:00",
+        "event": "llm_review",
+        "stage": "scene_selection",
+        "action": "proceed",
+        "target": null,
+        "rationale": "All scene_selection gates passed cleanly with ample access area (1.3884 m2), access arc (270.0 deg), and a well-fitting seat height error (-0.0186 m) without dropping any entities. Moving forward to human_placement."
+      }
+    }
+  ]
+}

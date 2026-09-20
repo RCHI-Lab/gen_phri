@@ -1,0 +1,37 @@
+# Task 44/50 of task_suite/tasks_llm.json -- itch_relief / left_lower_leg (sitting).
+# Written by task_suite/room_suite.py configs; description [llm].
+# Original: The person is sitting upright in a shallow accent chair with their feet flat on the floor. The robot reaches its bare tip low to repeatedly scratch a bothersome, out-of-reach itch on their left lower leg.
+run_name: room2_t44_itch_relief_left_lower_leg
+task: scratching
+robot: stretch
+human_indices:
+- 0
+cuda_id: 1
+task_description: An adult of average build sits upright in a bedroom accent chair with a seat depth of roughly 40 to 45 cm, knees bent at ninety degrees and feet placed flat on the floor slightly separated so the left lower leg is unobstructed, while hands rest separately on the armrests to avoid limb self-collisions. Starting from a clearly separated non-contact pose and approaching low from the front-left, the robot keeps its base and arm entirely outside the chair wings and armrests at all times. It brings the scratcher tip into real light contact with the anterior side of the left lower leg, performing three short back-and-forth scratching cycles along the shin where only the narrow tip touches the skin and all other robot parts stay completely clear. Finally, it lifts the scratcher tip clear of the body and retreats to a separated non-contact pose so task completion is unambiguous.
+human_posture: sitting
+furniture_name: bedroom_accent_chair_0
+target_segments:
+- leftLeg
+human_placement_impl: vlm
+scene:
+  enabled: true
+  order: room_first
+  room_policy: download_delete
+  scene_tries: 16
+  fetch_min_free_gb: 5
+  exclude_support:
+  - 23:bedroom_bed_0
+vlm_model: gemini-3.7-flash
+orchestrator:
+  model: gemini-3.7-flash
+  stage_attempt_cap: 5
+  item_execution_cap: 40
+  outer_loop_cap: 1
+  llm_call_cap: 600
+  review_on_success: true
+  cross_validate_humans: 0
+  stage_timeouts_s:
+    per_vlm_iter: 1800.0
+    per_cross_val_body: 300.0
+    default: 3600.0
+seated_view: front

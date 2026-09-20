@@ -1,0 +1,37 @@
+# Task 42/50 of task_suite/tasks_llm.json -- sponge_bathing / left_leg (lying).
+# Written by task_suite/room_suite.py configs; description [llm].
+# Original: The person is lying flat on the bed during a warm afternoon. The robot methodically runs its bare tip along the left thigh and calf, providing a steady, cleansing motion to the resting leg to wash away sweat.
+run_name: room2_t42_sponge_bathi_left_leg
+task: bathing
+robot: stretch
+human_indices:
+- 0
+cuda_id: 3
+task_description: An adult of average build is lying supine on a flat bed with the head facing upward, both arms resting alongside the torso on the mattress, and both legs extended straight with a distinct gap between them to leave the left leg unobstructed. Starting from a clearly separated non-contact pose beside the bed, the robot approaches the left side of the body. It presses the sponge pad flat against the skin to make real light contact, wiping down along the anterior surface of the left thigh and continuing down along the left lower leg in a single continuous cleansing stroke. Contact is strictly confined to the left thigh and left lower leg, with only the sponge pad touching the skin while the rest of the robot remains fully clear. The robot then lifts the sponge vertically clear of the leg and retreats to a separated non-contact pose so the completion of the task is unambiguous.
+human_posture: lying
+furniture_name: bed
+target_segments:
+- leftUpLeg
+- leftLeg
+human_placement_impl: vlm
+scene:
+  enabled: true
+  order: room_first
+  room_policy: download_delete
+  scene_tries: 8
+  fetch_min_free_gb: 5
+  exclude_support:
+  - 23:bedroom_bed_0
+vlm_model: gemini-3.7-flash
+orchestrator:
+  model: gemini-3.7-flash
+  stage_attempt_cap: 5
+  item_execution_cap: 40
+  outer_loop_cap: 1
+  llm_call_cap: 600
+  review_on_success: true
+  cross_validate_humans: 0
+  stage_timeouts_s:
+    per_vlm_iter: 1800.0
+    per_cross_val_body: 300.0
+    default: 3600.0

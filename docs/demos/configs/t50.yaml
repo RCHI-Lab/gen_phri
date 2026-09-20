@@ -1,0 +1,39 @@
+# Task 50/50 of task_suite/tasks_llm.json -- sponge_bathing / left_arm_sequence (lying).
+# Written by task_suite/room_suite.py configs; description [llm].
+# Original: Lying comfortably in bed, the person receives a highly detailed, sequenced wash. The robot carefully traces its tip in overlapping circles from the left shoulder down the upper arm, forearm, and hand, ensuring no spot is missed.
+run_name: room2_t50_sponge_bathi_left_arm_sequence
+task: bathing
+robot: stretch
+human_indices:
+- 0
+cuda_id: 3
+task_description: An adult of average build lies supine on a standard flat bed with both legs extended straight and slightly separated, the right arm resting alongside the torso, and the left arm abducted slightly away from the body with the left forearm and left hand resting flat on the mattress. Starting from a clearly separated non-contact pose, a robot approaches with a sponge pad held flat against the skin. The robot makes light physical contact at the left shoulder and executes a single continuous sequence of overlapping circular wiping strokes moving down the left arm, along the left forearm, and finishing across the left hand. Contact is confined strictly to the left shoulder, left arm, left forearm, and left hand, with only the sponge pad touching the body while the robot body remains clear. Finally, the robot lifts the sponge clear and retreats to a clearly separated non-contact pose.
+human_posture: lying
+furniture_name: bed
+target_segments:
+- leftShoulder
+- leftArm
+- leftForeArm
+- leftHand
+human_placement_impl: vlm
+scene:
+  enabled: true
+  order: room_first
+  room_policy: download_delete
+  scene_tries: 8
+  fetch_min_free_gb: 5
+  exclude_support:
+  - 23:bedroom_bed_0
+vlm_model: gemini-3.7-flash
+orchestrator:
+  model: gemini-3.7-flash
+  stage_attempt_cap: 5
+  item_execution_cap: 40
+  outer_loop_cap: 1
+  llm_call_cap: 600
+  review_on_success: true
+  cross_validate_humans: 0
+  stage_timeouts_s:
+    per_vlm_iter: 1800.0
+    per_cross_val_body: 300.0
+    default: 3600.0

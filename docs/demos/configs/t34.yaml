@@ -1,0 +1,38 @@
+# Task 34/50 of task_suite/tasks_llm.json -- lotion_application / left_shoulder_neck (sitting).
+# Written by task_suite/room_suite.py configs; description [llm].
+# Original: The person is sitting in a shallow accent chair after lunch, feet flat on the floor. The robot does a quick, targeted pass with its bare tip to gently blend moisturizer onto a small patch of irritated skin on the left shoulder and lower neck.
+run_name: room2_t34_lotion_appli_left_shoulder_neck
+task: bathing
+robot: stretch
+human_indices:
+- 0
+cuda_id: 2
+task_description: An adult of average build is seated upright in a bedroom accent chair (seat depth about 45 cm, seat height about 45 cm), knees bent at ninety degrees with feet flat on the floor and hands resting apart on the chair armrests without touching the torso. Starting from a clearly separated non-contact pose, the robot approaches from the front-left, keeping its base and entire arm outside the chair wings and armrests at all times. The robot brings the sponge pad into light contact flat against the skin of the left shoulder and lower neck, performing three gentle back-and-forth circular smoothing passes across the target area to blend moisturizer, ensuring only the sponge pad touches the skin and contact remains strictly confined to the left shoulder and neck. Finally, the robot lifts the sponge pad clear of the body and retreats to a clearly separated non-contact pose so the end of the task is unambiguous.
+human_posture: sitting
+furniture_name: bedroom_accent_chair_0
+target_segments:
+- leftShoulder
+- neck
+human_placement_impl: vlm
+scene:
+  enabled: true
+  order: room_first
+  room_policy: download_delete
+  scene_tries: 16
+  fetch_min_free_gb: 5
+  exclude_support:
+  - 23:bedroom_bed_0
+vlm_model: gemini-3.7-flash
+orchestrator:
+  model: gemini-3.7-flash
+  stage_attempt_cap: 5
+  item_execution_cap: 40
+  outer_loop_cap: 1
+  llm_call_cap: 600
+  review_on_success: true
+  cross_validate_humans: 0
+  stage_timeouts_s:
+    per_vlm_iter: 1800.0
+    per_cross_val_body: 300.0
+    default: 3600.0
+seated_view: front

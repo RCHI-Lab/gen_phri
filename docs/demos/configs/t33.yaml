@@ -1,0 +1,38 @@
+# Task 33/50 of task_suite/tasks_llm.json -- sponge_bathing / back (lying).
+# Written by task_suite/room_suite.py configs; description [llm].
+# Original: The person is lying face down in bed with their back up, unable to shower today. The robot gently wipes across their upper and lower back with its sponge ball end to wash the skin.
+run_name: room2_t33_sponge_bathi_back
+task: bathing
+robot: stretch
+human_indices:
+- 0
+cuda_id: 3
+task_description: An adult of average build is lying face-down on a standard flat bed mattress, with their head turned comfortably to one side, both arms resting straight alongside the torso, and both legs extended straight with feet slightly apart. Starting from a clearly separated non-contact pose at the bedside, a mobile manipulator equipped with a sponge pad held flat against the skin approaches the exposed back. The robot makes light physical contact on the upper back and wipes smoothly along spine2, spine1, and spine in two continuous longitudinal downward passes. Contact remains strictly confined to the back while the rest of the robot stays well clear of the person. After completing the passes, the robot lifts the sponge clear of the body and retreats to a separated non-contact pose so the end of the task is unambiguous.
+human_posture: lying
+furniture_name: bed
+target_segments:
+- spine
+- spine1
+- spine2
+human_placement_impl: vlm
+scene:
+  enabled: true
+  order: room_first
+  room_policy: download_delete
+  scene_tries: 8
+  fetch_min_free_gb: 5
+  exclude_support:
+  - 23:bedroom_bed_0
+vlm_model: gemini-3.7-flash
+orchestrator:
+  model: gemini-3.7-flash
+  stage_attempt_cap: 5
+  item_execution_cap: 40
+  outer_loop_cap: 1
+  llm_call_cap: 600
+  review_on_success: true
+  cross_validate_humans: 0
+  stage_timeouts_s:
+    per_vlm_iter: 1800.0
+    per_cross_val_body: 300.0
+    default: 3600.0

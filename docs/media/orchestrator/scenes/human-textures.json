@@ -1,0 +1,42 @@
+{
+  "accept": {
+    "id": "00002",
+    "file": "docs/media/orchestrator/scenes/human-accept.png",
+    "source_host": "rtx3",
+    "source": "human_generation/smplitex/requested_20260914/SMPLitex-texture-00002.png",
+    "source_url": "https://dancasas.github.io/projects/SMPLitex/SMPLitex-dataset/textures/SMPLitex-texture-00002.png",
+    "sha256": "14c825c3be904aff9deb1fbc4da45606ad25d4c52eea2735f7e974b3d081c991",
+    "treatment": "Unmodified existing SMPLitex texture; paired scenes use identical texture. Only UV registration changes, no geometry changes.",
+    "source_mtime_utc": "2026-09-14T20:08:49.792725+00:00"
+  },
+  "retry": {
+    "id": "00024",
+    "file": "docs/media/orchestrator/scenes/human-retry.png",
+    "source_host": "rtx3",
+    "source": "human_generation/smplitex/requested_20260914/SMPLitex-texture-00024.png",
+    "source_url": "https://dancasas.github.io/projects/SMPLitex/SMPLitex-dataset/textures/SMPLitex-texture-00024.png",
+    "sha256": "791249179b20688cfaadc1c46a1e2854c660a5053fe0009b617b65804fc8257c",
+    "treatment": "Unmodified existing SMPLitex texture; paired scenes use identical texture. Only UV registration changes, no geometry changes.",
+    "source_mtime_utc": "2026-09-14T20:08:49.762725+00:00"
+  },
+  "resume": {
+    "id": "00001",
+    "file": "docs/media/orchestrator/scenes/human-resume.png",
+    "source_host": "rtx3",
+    "source": "human_generation/smplitex/requested_20260914/SMPLitex-texture-00001.png",
+    "source_url": "https://dancasas.github.io/projects/SMPLitex/SMPLitex-dataset/textures/SMPLitex-texture-00001.png",
+    "sha256": "ee47d3c0009711d26781869194cbc8daea63730bda885bd9a39ca9705ec8bec7",
+    "treatment": "Unmodified existing SMPLitex texture; paired scenes use identical texture. Only UV registration changes, no geometry changes.",
+    "source_mtime_utc": "2026-09-14T20:08:49.752725+00:00"
+  },
+  "backtrack": {
+    "id": "00026",
+    "file": "docs/media/orchestrator/scenes/human-backtrack.png",
+    "source_host": "rtx3",
+    "source": "human_generation/smplitex/requested_20260914/SMPLitex-texture-00026.png",
+    "source_url": "https://dancasas.github.io/projects/SMPLitex/SMPLitex-dataset/textures/SMPLitex-texture-00026.png",
+    "sha256": "d0647ad83f5aab1b899b04ab68085688c4b54522056d9cead9f4c595f4f7f918",
+    "treatment": "Unmodified existing SMPLitex texture; paired scenes use identical texture. Only UV registration changes, no geometry changes.",
+    "source_mtime_utc": "2026-09-14T20:08:49.868725+00:00"
+  }
+}

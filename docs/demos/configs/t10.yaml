@@ -1,0 +1,36 @@
+# Task 10/50 of task_suite/tasks_llm.json -- comforting_touch / right_shoulder (lying).
+# Written by task_suite/room_suite.py configs; description [llm].
+# Original: The person is lying flat in bed just after waking up, feeling a bit disoriented in the early morning. The robot places its bare tip gently on their right shoulder and holds it there steadily for a few moments. This provides a reassuring, grounding presence to help them start the day calmly.
+run_name: room2_t10_comforting_t_right_shoulder
+task: bathing
+robot: stretch
+human_indices:
+- 0
+cuda_id: 1
+task_description: An adult of average build is lying supine on a flat bed mattress, with both legs extended straight and spaced slightly apart. Both arms rest alongside the torso with hands placed flat on the mattress away from the hips, leaving the right shoulder unobstructed. Starting from a clearly separated non-contact pose on the right side of the bed, the robot approaches and applies comforting touch by placing the sponge pad flat against the front and top of the right shoulder, pressing lightly and holding steady in a single sustained contact pass. Throughout the touch, only the sponge pad makes contact while the rest of the robot stays clear of the body. The robot then lifts the sponge straight up clear of the right shoulder and retreats to a clearly separated non-contact pose so the end of the task is unambiguous.
+human_posture: lying
+furniture_name: bed
+target_segments:
+- rightShoulder
+human_placement_impl: vlm
+scene:
+  enabled: true
+  order: room_first
+  room_policy: download_delete
+  scene_tries: 8
+  fetch_min_free_gb: 5
+  exclude_support:
+  - 23:bedroom_bed_0
+vlm_model: gemini-3.7-flash
+orchestrator:
+  model: gemini-3.7-flash
+  stage_attempt_cap: 5
+  item_execution_cap: 40
+  outer_loop_cap: 1
+  llm_call_cap: 600
+  review_on_success: true
+  cross_validate_humans: 0
+  stage_timeouts_s:
+    per_vlm_iter: 1800.0
+    per_cross_val_body: 300.0
+    default: 3600.0

@@ -1,0 +1,38 @@
+# Task 01/50 of task_suite/tasks_llm.json -- back_percussion / upper_back_seated (sitting).
+# Written by task_suite/room_suite.py configs; description [llm].
+# Original: The person is sitting in a shallow accent chair, feet flat on the floor, after a long morning in bed. The robot works its bare tip across the upper back in a careful, overlapping sequence, tapping steadily between the shoulder blades and then down toward the mid-spine to clear the congestion that has settled in the upper lobes of the lungs.
+run_name: room2_t01_back_percuss_upper_back_seated
+task: bathing
+robot: stretch
+human_indices:
+- 0
+cuda_id: 3
+task_description: An adult of average build is seated in a bedroom accent chair (seat depth about 40-45 cm), knees bent with lower legs vertical, feet flat on the floor, and hands resting separated on their respective knees. The upper back along spine2 and spine1 is exposed and clear of the chair. Starting from a clearly separated non-contact pose behind the chair, the robot approaches from behind and comes down from above over the top edge of the chair back, keeping its base, arm, and body entirely clear of the chair back, wings, and armrests. The robot performs four steady tapping passes with the scratcher tip moving downward along spine2 down to spine1, pressing lightly against the skin with only the bare scratcher tip. It then lifts the tip cleanly away and retreats back to a separated non-contact pose behind the chair so the end of the task is unambiguous.
+human_posture: sitting
+furniture_name: bedroom_accent_chair_0
+target_segments:
+- spine1
+- spine2
+human_placement_impl: vlm
+scene:
+  enabled: true
+  order: room_first
+  room_policy: download_delete
+  scene_tries: 16
+  fetch_min_free_gb: 5
+  exclude_support:
+  - 23:bedroom_bed_0
+vlm_model: gemini-3.7-flash
+orchestrator:
+  model: gemini-3.7-flash
+  stage_attempt_cap: 5
+  item_execution_cap: 40
+  outer_loop_cap: 1
+  llm_call_cap: 600
+  review_on_success: true
+  cross_validate_humans: 0
+  stage_timeouts_s:
+    per_vlm_iter: 1800.0
+    per_cross_val_body: 300.0
+    default: 3600.0
+seated_view: back

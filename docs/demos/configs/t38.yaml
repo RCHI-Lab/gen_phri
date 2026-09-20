@@ -1,0 +1,39 @@
+# Task 38/50 of task_suite/tasks_llm.json -- hand_warming / left_wrist_and_fingers (sitting).
+# Written by task_suite/room_suite.py configs; description [llm].
+# Original: The person is sitting in the accent chair, feet flat on the floor. To do a thorough warming pass, the robot systematically presses its warm bare tip along their lower left forearm, then the base of the hand, and finally the index finger, holding each spot to ensure deep, penetrating heat transfer.
+run_name: room2_t38_hand_warming_left_wrist_and_fingers
+task: bathing
+robot: stretch
+human_indices:
+- 0
+cuda_id: 3
+task_description: 'An adult of average build sits upright in a winged accent chair with a seat depth of about 45 cm, their feet flat on the floor and knees bent at ninety degrees. Their left forearm extends slightly forward and inward, resting open with the palm and fingers clear of the thighs and chair armrests to prevent mesh overlap. Approaching from the front-left so the robot base and arm stay entirely outside the chair''s wings and armrests, the robot starts from a clearly separated non-contact pose. It moves the sponge pad flat against the skin, making gentle contact in three consecutive warming holds: first pressing the lower leftForeArm, then advancing along the base of the leftHand, and finally holding over the leftHandIndex1 for a single complete warming sequence. Only the sponge pad contacts the targeted skin while the rest of the robot remains clear. It then lifts the tool vertically clear of the hand and retreats to a separated non-contact pose so the end of the task is unambiguous.'
+human_posture: sitting
+furniture_name: bedroom_accent_chair_0
+target_segments:
+- leftForeArm
+- leftHand
+- leftHandIndex1
+human_placement_impl: vlm
+scene:
+  enabled: true
+  order: room_first
+  room_policy: download_delete
+  scene_tries: 16
+  fetch_min_free_gb: 5
+  exclude_support:
+  - 23:bedroom_bed_0
+vlm_model: gemini-3.7-flash
+orchestrator:
+  model: gemini-3.7-flash
+  stage_attempt_cap: 5
+  item_execution_cap: 40
+  outer_loop_cap: 1
+  llm_call_cap: 600
+  review_on_success: true
+  cross_validate_humans: 0
+  stage_timeouts_s:
+    per_vlm_iter: 1800.0
+    per_cross_val_body: 300.0
+    default: 3600.0
+seated_view: front
