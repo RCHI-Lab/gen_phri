@@ -42,7 +42,7 @@ The original construction-stage clips (retained in `docs/media/`) and 99-second 
 
 - The human pose reveal interpolates a saved generated pose; it is not an optimization trace.
 - The robot-placement stage reveals the initial robot proposal in place. It runs for the same 7.08 seconds as the human generation and placement clips. The full film also contains an illustrated slide between historical placement proposals; that slide is not a navigation trajectory.
-- The direct and policy clips are matched back/leg excerpts at 4× speed.
+- The standalone direct and policy clips use different participants at 4× speed, with continuous footage from the start and no stitching or added blur. Direct execution uses source seconds 0–56 of `sam3 bathing 5.mp4` (14 seconds on the site); policy learning uses source seconds 0–72 of `policy bathing 12.mp4` (18 seconds on the site). Both sources are in `gen_sim_phri/videos-user-studies/`. The 99-second pipeline film retains its original excerpts.
 - The study montage uses the supplied version with faces blurred.
 - The critic-revision film compares saved proposals for task 16. Base–furniture clearance improves, but this is not a claim that all reachability gates pass.
 

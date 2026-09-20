@@ -9,6 +9,6 @@
   "human-placement": "gen_sim_phri/paper-video-walkthrough/assets/generation/revision2/human_placement_continuous.mp4",
   "robot-placement": "gen_sim_phri/paper-video-walkthrough/assets/generation/critic_hero_v2/robot_candidate00_hero.mp4",
   "robot-motion": "gen_sim_phri/paper-video-walkthrough/assets/generation/revision2/robot_motion.mp4",
-  "direct-execution": "gen_sim_phri/paper-video-walkthrough/assets/collection/real_direct_back_leg_8s.mp4",
-  "learned-policy": "gen_sim_phri/paper-video-walkthrough/assets/collection/real_policy_back_leg_8s.mp4"
+  "direct-execution": "gen_sim_phri/videos-user-studies/sam3 bathing 5.mp4",
+  "learned-policy": "gen_sim_phri/videos-user-studies/policy bathing 12.mp4"
 }
